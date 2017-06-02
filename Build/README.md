@@ -7,5 +7,5 @@
 
 ### Содержание
 * [Описание членов JavaScript API](globals.html)
-* [Примеры расширений модуля Web-клиент](https://github.com/DocsVision/Web-client-samples)
+* [Примеры расширений модуля Web-клиент](https://github.com/DocsVision/WebClient-Samples)
 * [Сайт Docsvision](http://docsvision.com)
