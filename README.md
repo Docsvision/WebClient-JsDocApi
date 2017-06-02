@@ -6,6 +6,6 @@
 Информация, представленная в документе, актуальна для модуля «Docsvision 5. Web-клиент» версии 5.4.9.
 
 ### Содержание
-* [Описание членов JavaScript API](globals.html)
+* [Описание членов JavaScript API](https://docsvision.github.io/WebClient-JsDocApi/globals.html)
 * [Примеры расширений модуля Web-клиент](https://github.com/DocsVision/WebClient-Samples)
 * [Сайт Docsvision](http://docsvision.com)
