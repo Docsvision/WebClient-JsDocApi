@@ -52,7 +52,8 @@ namespace DocsMapGenerator
 
             string docsRoot = args[0];
             string srcRoot = args[1];
-            string output = args[2];
+
+            Console.WriteLine("Generating documentation map from source folder {0} and docs folder {1}", Path.GetFullPath(srcRoot), Path.GetFullPath(docsRoot));
 
             Dictionary<string, string> srcFiles = new Dictionary<string, string>();
             Dictionary<string, string> srcFilesOriginal = new Dictionary<string, string>();
@@ -77,27 +78,25 @@ namespace DocsMapGenerator
             }
 
             DocDir root = new DocDir() { name = "App" } ;
-            foreach (string file in Directory.EnumerateFiles(docsRoot + "/classes"))
+            var webDocsRoot = docsRoot + "/docs";
+            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/classes"))
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
-                Console.WriteLine(file);
+                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);
             }
             Console.WriteLine("Classes processed");
-            foreach (string file in Directory.EnumerateFiles(docsRoot + "/interfaces"))
+            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/interfaces"))
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
-                Console.WriteLine(file);                
+                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);                
             }
             Console.WriteLine("Interfaces processed");
-            foreach (string file in Directory.EnumerateFiles(docsRoot + "/enums"))
+            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/enums"))
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
-                Console.WriteLine(file);                
+                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);                
             }
             Console.WriteLine("Enums processed");
 
-
-            using (var fileStream = new FileStream(output, FileMode.Create))
+            var outputFile = docsRoot + "/Build/WebClientTypedocTheme/partials/nicenav.hbs";
+            using (var fileStream = new FileStream(outputFile, FileMode.Create))
             {
                 using (var writer = new StreamWriter(fileStream))
                 {
@@ -111,6 +110,7 @@ namespace DocsMapGenerator
                             " })</script>");
                 }
             }
+            Console.WriteLine("Ouput written to " + outputFile);
 
 
             Console.WriteLine("Complete!");
