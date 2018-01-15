@@ -96,46 +96,31 @@
 					<a name="generatenumber" class="tsd-anchor"></a>
 					<h3>Generate<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Generate<wbr>Number<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, generationRuleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, info<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.isimplebindinginfo.html" class="tsd-signature-type">ISimpleBindingInfo</a>, save<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Generate<wbr>Number<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, generationRuleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, info<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ibindinginfoext.html" class="tsd-signature-type">IBindingInfoExt</a>, save<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:378</li>
+									<li>Defined in layout-extension.d.ts:8628</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Generates new number, assign it to the card and return new number as response.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>ID of the card be new number generated for.</p>
-									</div>
 								</li>
 								<li>
 									<h5>generationRuleId: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The ID of the rule for new number generation.</p>
-									</div>
 								</li>
 								<li>
-									<h5>info: <a href="../interfaces/webclient.isimplebindinginfo.html" class="tsd-signature-type">ISimpleBindingInfo</a></h5>
+									<h5>info: <a href="../interfaces/webclient.ibindinginfoext.html" class="tsd-signature-type">IBindingInfoExt</a></h5>
 								</li>
 								<li>
 									<h5>save: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Should save generated value into the card or not.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Generated number</p>
 						</li>
 					</ul>
 				</section>
@@ -143,20 +128,15 @@
 					<a name="releasenumber" class="tsd-anchor"></a>
 					<h3>Release<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Release<wbr>Number<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, numberId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Release<wbr>Number<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, numberId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, info<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ibindinginfoext.html" class="tsd-signature-type">IBindingInfoExt</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:382</li>
+									<li>Defined in layout-extension.d.ts:8629</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Resets the card number and removes it.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -164,6 +144,9 @@
 								</li>
 								<li>
 									<h5>numberId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>info: <a href="../interfaces/webclient.ibindinginfoext.html" class="tsd-signature-type">IBindingInfoExt</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -174,13 +157,13 @@
 					<a name="sendforacquaintance" class="tsd-anchor"></a>
 					<h3>Send<wbr>For<wbr>Acquaintance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Send<wbr>For<wbr>Acquaintance<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, employeeIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span>, endDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Send<wbr>For<wbr>Acquaintance<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, employeeIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, endDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:383</li>
+									<li>Defined in layout-extension.d.ts:8630</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -189,7 +172,7 @@
 									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>employeeIds: <span class="tsd-signature-type">string[]</span></h5>
+									<h5>employeeIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> endDate: <span class="tsd-signature-type">Date</span></h5>
@@ -210,7 +193,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#getaction">getAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:55</li>
+									<li>Defined in layout-extension.d.ts:2295</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -234,7 +217,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#postaction">postAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:54</li>
+									<li>Defined in layout-extension.d.ts:2294</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -258,7 +241,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#preparerequest">prepareRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:56</li>
+									<li>Defined in layout-extension.d.ts:2296</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,7 +268,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#sendrequest">sendRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:57</li>
+									<li>Defined in layout-extension.d.ts:2297</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -305,6 +288,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -411,5 +418,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -86,6 +78,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#clickabletext" class="tsd-kind-icon">clickable<wbr>Text</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#label" class="tsd-kind-icon">label</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#labeldots" class="tsd-kind-icon">label<wbr>Dots</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#onblur" class="tsd-kind-icon">on<wbr>Blur</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#onfocus" class="tsd-kind-icon">on<wbr>Focus</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#ontextclick" class="tsd-kind-icon">on<wbr>Text<wbr>Click</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#showempty" class="tsd-kind-icon">show<wbr>Empty</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ilabeledtext.html#tabindex" class="tsd-kind-icon">tab<wbr>Index</a></li>
@@ -107,14 +101,9 @@
 					<div class="tsd-signature tsd-kind-icon">attach<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:920</li>
+							<li>Defined in layout-extension.d.ts:386</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Ref to text element handler</p>
-						</div>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -143,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:916</li>
+							<li>Defined in layout-extension.d.ts:384</li>
 						</ul>
 					</aside>
 				</section>
@@ -153,15 +142,9 @@
 					<div class="tsd-signature tsd-kind-icon">clickable<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:934</li>
+							<li>Defined in layout-extension.d.ts:389</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If this parameter true, text will be rendered as clickable (blue and with dashed underline)
-							Default value: false</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="label" class="tsd-anchor"></a>
@@ -169,14 +152,9 @@
 					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:908</li>
+							<li>Defined in layout-extension.d.ts:380</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Label to text value</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="labeldots" class="tsd-anchor"></a>
@@ -184,14 +162,70 @@
 					<div class="tsd-signature tsd-kind-icon">label<wbr>Dots<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.labeldotsmode.html" class="tsd-signature-type">LabelDotsMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:924</li>
+							<li>Defined in layout-extension.d.ts:387</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Show colon after label or not. If value is AutoDots, then requirement for the colons will be detected automaticly.
-							Default value: AutoDots</p>
-						</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onblur" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Blur</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Blur<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:394</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.FocusEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">React.FocusEvent</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onfocus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Focus</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Focus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:393</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.FocusEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">React.FocusEvent</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
@@ -200,14 +234,9 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Text<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:918</li>
+							<li>Defined in layout-extension.d.ts:385</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Click on text element handler</p>
-						</div>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -236,15 +265,9 @@
 					<div class="tsd-signature tsd-kind-icon">show<wbr>Empty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:914</li>
+							<li>Defined in layout-extension.d.ts:382</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If this parameter true and labelText specified, text stub (dashed line) will replace empty text.
-							Default value: false</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="tabindex" class="tsd-anchor"></a>
@@ -252,14 +275,9 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:940</li>
+							<li>Defined in layout-extension.d.ts:392</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tab index for case, when onTextClick specified</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="text" class="tsd-anchor"></a>
@@ -267,14 +285,9 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:910</li>
+							<li>Defined in layout-extension.d.ts:381</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Text value to show</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="title" class="tsd-anchor"></a>
@@ -282,14 +295,9 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:936</li>
+							<li>Defined in layout-extension.d.ts:390</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tooltip</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="valuetitle" class="tsd-anchor"></a>
@@ -297,14 +305,9 @@
 					<div class="tsd-signature tsd-kind-icon">value<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:938</li>
+							<li>Defined in layout-extension.d.ts:391</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tooltip for value. If not specified, used title value</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="visible" class="tsd-anchor"></a>
@@ -312,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:915</li>
+							<li>Defined in layout-extension.d.ts:383</li>
 						</ul>
 					</aside>
 				</section>
@@ -322,17 +325,9 @@
 					<div class="tsd-signature tsd-kind-icon">wrap<wbr>Long<wbr>Text<wbr>Under<wbr>Label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:930</li>
+							<li>Defined in layout-extension.d.ts:388</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This param describes how value will be placed if control too narrow for it
-								If param is true, value will go to new line uner a label first
-								Otherwise it will occupy rest of space to the right of a label
-							Default value: true.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -341,6 +336,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -365,6 +384,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="webclient.ilabeledtext.html#labeldots" class="tsd-kind-icon">label<wbr>Dots</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.ilabeledtext.html#onblur" class="tsd-kind-icon">on<wbr>Blur</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.ilabeledtext.html#onfocus" class="tsd-kind-icon">on<wbr>Focus</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="webclient.ilabeledtext.html#ontextclick" class="tsd-kind-icon">on<wbr>Text<wbr>Click</a>
@@ -465,5 +490,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

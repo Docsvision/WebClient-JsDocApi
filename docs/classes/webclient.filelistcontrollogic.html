@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -90,7 +82,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#extraattach" class="tsd-kind-icon">extra<wbr>Attach</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#filestoremove" class="tsd-kind-icon">files<wbr>ToRemove</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#initialized" class="tsd-kind-icon">initialized</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#lastsavedeffered" class="tsd-kind-icon">last<wbr>Save<wbr>Deffered</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#lastsavedeferred" class="tsd-kind-icon">last<wbr>Save<wbr>Deferred</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#mainattach" class="tsd-kind-icon">main<wbr>Attach</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#parent" class="tsd-kind-icon">parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#props" class="tsd-kind-icon">props</a></li>
@@ -113,6 +105,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#initjqueryuploaderforaddfiles" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Add<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#loadfilemodel" class="tsd-kind-icon">load<wbr>File<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#loadfilesfrommodel" class="tsd-kind-icon">load<wbr>Files<wbr>From<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#loadfilespart" class="tsd-kind-icon">load<wbr>Files<wbr>Part</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#lockfile" class="tsd-kind-icon">lock<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#onfileversionadded" class="tsd-kind-icon">on<wbr>File<wbr>Version<wbr>Added</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#onfilesadded" class="tsd-kind-icon">on<wbr>Files<wbr>Added</a></li>
@@ -126,6 +119,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#showcommentsdialog" class="tsd-kind-icon">show<wbr>Comments<wbr>Dialog</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#showpreviewifsupported" class="tsd-kind-icon">show<wbr>Preview<wbr>IfSupported</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#unlockfile" class="tsd-kind-icon">unlock<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#updateversionsonload" class="tsd-kind-icon">update<wbr>Versions<wbr>OnLoad</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#uploadnewfiles" class="tsd-kind-icon">upload<wbr>New<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.filelistcontrollogic.html#webdav" class="tsd-kind-icon">web<wbr>Dav</a></li>
 							</ul>
@@ -145,7 +139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4419</li>
+									<li>Defined in layout-extension.d.ts:5887</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="webclient.filelistcontrollogic.html" class="tsd-signature-type">FileListControlLogic</a></h4>
@@ -161,17 +155,17 @@
 					<div class="tsd-signature tsd-kind-icon">extra<wbr>Attach<span class="tsd-signature-symbol">:</span> <a href="webclient.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4415</li>
+							<li>Defined in layout-extension.d.ts:5883</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="filestoremove" class="tsd-anchor"></a>
 					<h3>files<wbr>ToRemove</h3>
-					<div class="tsd-signature tsd-kind-icon">files<wbr>ToRemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileListItem[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">files<wbr>ToRemove<span class="tsd-signature-symbol">:</span> <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4419</li>
+							<li>Defined in layout-extension.d.ts:5887</li>
 						</ul>
 					</aside>
 				</section>
@@ -181,17 +175,17 @@
 					<div class="tsd-signature tsd-kind-icon">initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4416</li>
+							<li>Defined in layout-extension.d.ts:5884</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="lastsavedeffered" class="tsd-anchor"></a>
-					<h3>last<wbr>Save<wbr>Deffered</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Save<wbr>Deffered<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="lastsavedeferred" class="tsd-anchor"></a>
+					<h3>last<wbr>Save<wbr>Deferred</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Save<wbr>Deferred<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4417</li>
+							<li>Defined in layout-extension.d.ts:5885</li>
 						</ul>
 					</aside>
 				</section>
@@ -201,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">main<wbr>Attach<span class="tsd-signature-symbol">:</span> <a href="webclient.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4414</li>
+							<li>Defined in layout-extension.d.ts:5882</li>
 						</ul>
 					</aside>
 				</section>
@@ -211,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="webclient.filelistcontrolimpl.html" class="tsd-signature-type">FileListControlImpl</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4418</li>
+							<li>Defined in layout-extension.d.ts:5886</li>
 						</ul>
 					</aside>
 				</section>
@@ -221,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <a href="webclient.filelistcontrolparams.html" class="tsd-signature-type">FileListControlParams</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4448</li>
+							<li>Defined in layout-extension.d.ts:5913</li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.filelistimplstate.html" class="tsd-signature-type">FileListImplState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4447</li>
+							<li>Defined in layout-extension.d.ts:5912</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4446</li>
+									<li>Defined in layout-extension.d.ts:5911</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -265,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4444</li>
+									<li>Defined in layout-extension.d.ts:5909</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4449</li>
+									<li>Defined in layout-extension.d.ts:5914</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -311,7 +305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4430</li>
+									<li>Defined in layout-extension.d.ts:5898</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -340,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4443</li>
+									<li>Defined in layout-extension.d.ts:5908</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -366,13 +360,13 @@
 					<a name="getfiles" class="tsd-anchor"></a>
 					<h3>get<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<span class="tsd-signature-symbol">(</span>mainFiles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<span class="tsd-signature-symbol">(</span>mainFiles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4427</li>
+									<li>Defined in layout-extension.d.ts:5895</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,7 +375,7 @@
 									<h5>mainFiles: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -389,16 +383,16 @@
 					<a name="getitemstoupload" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Items<wbr>ToUpload</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Items<wbr>ToUpload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Items<wbr>ToUpload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4455</li>
+									<li>Defined in layout-extension.d.ts:5920</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -412,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4421</li>
+									<li>Defined in layout-extension.d.ts:5889</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4450</li>
+									<li>Defined in layout-extension.d.ts:5915</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -467,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4429</li>
+									<li>Defined in layout-extension.d.ts:5897</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -493,7 +487,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4428</li>
+									<li>Defined in layout-extension.d.ts:5896</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -513,19 +507,22 @@
 					<a name="loadfilemodel" class="tsd-anchor"></a>
 					<h3>load<wbr>File<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>File<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>File<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a>, appendFiles<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4423</li>
+									<li>Defined in layout-extension.d.ts:5891</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>model: <a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> appendFiles: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -536,13 +533,13 @@
 					<a name="loadfilesfrommodel" class="tsd-anchor"></a>
 					<h3>load<wbr>Files<wbr>From<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Files<wbr>From<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a>, oldFiles<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Files<wbr>From<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a>, oldFiles<span class="tsd-signature-symbol">?: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4422</li>
+									<li>Defined in layout-extension.d.ts:5890</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -551,10 +548,36 @@
 									<h5>model: <a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> oldFiles: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> oldFiles: <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="loadfilespart" class="tsd-anchor"></a>
+					<h3>load<wbr>Files<wbr>Part</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Files<wbr>Part<span class="tsd-signature-symbol">(</span>skipCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, maxCount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:5906</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>skipCount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxCount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -568,7 +591,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4440</li>
+									<li>Defined in layout-extension.d.ts:5903</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -591,7 +614,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4452</li>
+									<li>Defined in layout-extension.d.ts:5917</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -620,7 +643,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4451</li>
+									<li>Defined in layout-extension.d.ts:5916</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -652,7 +675,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4424</li>
+									<li>Defined in layout-extension.d.ts:5892</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -663,13 +686,13 @@
 					<a name="processresponse" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Response</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">process<wbr>Response<span class="tsd-signature-symbol">(</span>responseData<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a>, deffered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, uploadingItems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Response<span class="tsd-signature-symbol">(</span>responseData<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a>, deferred<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, uploadingItems<span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span>, areVersions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4454</li>
+									<li>Defined in layout-extension.d.ts:5919</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -678,10 +701,13 @@
 									<h5>responseData: <a href="../interfaces/webclient.ifilelistdatamodel.html" class="tsd-signature-type">IFileListDataModel</a></h5>
 								</li>
 								<li>
-									<h5>deffered: <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>deferred: <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>uploadingItems: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5>uploadingItems: <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> areVersions: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -698,27 +724,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4437</li>
+									<li>Defined in layout-extension.d.ts:5900</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Mark file for remove, or send remove request imediately</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fileItem: <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>File to remove</p>
-									</div>
 								</li>
 								<li>
 									<h5>immediately: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Send request to the server right now, or wait onSaved</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -735,7 +750,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4438</li>
+									<li>Defined in layout-extension.d.ts:5901</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -758,7 +773,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4445</li>
+									<li>Defined in layout-extension.d.ts:5910</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -775,13 +790,13 @@
 					<a name="sendfiles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> send<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Files<span class="tsd-signature-symbol">(</span>attach<span class="tsd-signature-symbol">: </span><a href="webclient.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Files<span class="tsd-signature-symbol">(</span>attach<span class="tsd-signature-symbol">: </span><a href="webclient.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, items<span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span>, areVersions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4453</li>
+									<li>Defined in layout-extension.d.ts:5918</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -790,7 +805,10 @@
 									<h5>attach: <a href="webclient.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a></h5>
 								</li>
 								<li>
-									<h5>items: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5>items: <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> areVersions: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -801,13 +819,13 @@
 					<a name="sendrequest" class="tsd-anchor"></a>
 					<h3>send<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Request<span class="tsd-signature-symbol">(</span>sendFunc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, savingItems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Request<span class="tsd-signature-symbol">(</span>sendFunc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, savingItems<span class="tsd-signature-symbol">: </span><a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4426</li>
+									<li>Defined in layout-extension.d.ts:5894</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -828,7 +846,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>savingItems: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5>savingItems: <a href="webclient.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -845,7 +863,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4442</li>
+									<li>Defined in layout-extension.d.ts:5905</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -874,7 +892,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4439</li>
+									<li>Defined in layout-extension.d.ts:5902</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -900,7 +918,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4441</li>
+									<li>Defined in layout-extension.d.ts:5904</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -913,20 +931,37 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="uploadnewfiles" class="tsd-anchor"></a>
-					<h3>upload<wbr>New<wbr>Files</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">upload<wbr>New<wbr>Files<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="updateversionsonload" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> update<wbr>Versions<wbr>OnLoad</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Versions<wbr>OnLoad<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4425</li>
+									<li>Defined in layout-extension.d.ts:5907</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="uploadnewfiles" class="tsd-anchor"></a>
+					<h3>upload<wbr>New<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">upload<wbr>New<wbr>Files<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:5893</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -940,7 +975,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:4431</li>
+									<li>Defined in layout-extension.d.ts:5899</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -964,6 +999,30 @@
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
 					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -986,7 +1045,7 @@
 								<a href="webclient.filelistcontrollogic.html#initialized" class="tsd-kind-icon">initialized</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-								<a href="webclient.filelistcontrollogic.html#lastsavedeffered" class="tsd-kind-icon">last<wbr>Save<wbr>Deffered</a>
+								<a href="webclient.filelistcontrollogic.html#lastsavedeferred" class="tsd-kind-icon">last<wbr>Save<wbr>Deferred</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.filelistcontrollogic.html#mainattach" class="tsd-kind-icon">main<wbr>Attach</a>
@@ -1040,6 +1099,9 @@
 								<a href="webclient.filelistcontrollogic.html#loadfilesfrommodel" class="tsd-kind-icon">load<wbr>Files<wbr>From<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.filelistcontrollogic.html#loadfilespart" class="tsd-kind-icon">load<wbr>Files<wbr>Part</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.filelistcontrollogic.html#lockfile" class="tsd-kind-icon">lock<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
@@ -1077,6 +1139,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.filelistcontrollogic.html#unlockfile" class="tsd-kind-icon">unlock<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="webclient.filelistcontrollogic.html#updateversionsonload" class="tsd-kind-icon">update<wbr>Versions<wbr>OnLoad</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.filelistcontrollogic.html#uploadnewfiles" class="tsd-kind-icon">upload<wbr>New<wbr>Files</a>
@@ -1159,5 +1224,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

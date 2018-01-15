@@ -58,13 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Предоставляет информацию о папке.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -85,7 +78,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#disabled" class="tsd-kind-icon">disabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#folderid" class="tsd-kind-icon">folder<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#foldertype" class="tsd-kind-icon">folder<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#hasunloadedsubfolders" class="tsd-kind-icon">has<wbr>Unloaded<wbr>Subfolders</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.ifolderinfo.html#refreshtimeout" class="tsd-kind-icon">refresh<wbr>Timeout</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,29 +94,19 @@
 					<div class="tsd-signature tsd-kind-icon">additional<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:310</li>
+							<li>Defined in layout-extension.d.ts:8531</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Uri папки.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="children" class="tsd-anchor"></a>
 					<h3>children</h3>
-					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IFolderInfo[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="webclient.ifolderinfo.html" class="tsd-signature-type">IFolderInfo</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:316</li>
+							<li>Defined in layout-extension.d.ts:8536</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Информация о подчиненных папках.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="disabled" class="tsd-anchor"></a>
@@ -129,14 +114,9 @@
 					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:314</li>
+							<li>Defined in layout-extension.d.ts:8533</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Флаг, указывающий, возможно ли создание карточек в папке: true - запрещено (для виртуально папки), false - возможно.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="folderid" class="tsd-anchor"></a>
@@ -144,14 +124,9 @@
 					<div class="tsd-signature tsd-kind-icon">folder<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:308</li>
+							<li>Defined in layout-extension.d.ts:8530</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Идентификатор папки.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="foldertype" class="tsd-anchor"></a>
@@ -159,14 +134,19 @@
 					<div class="tsd-signature tsd-kind-icon">folder<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.foldertype.html" class="tsd-signature-type">FolderType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:312</li>
+							<li>Defined in layout-extension.d.ts:8532</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Тип папки.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="hasunloadedsubfolders" class="tsd-anchor"></a>
+					<h3>has<wbr>Unloaded<wbr>Subfolders</h3>
+					<div class="tsd-signature tsd-kind-icon">has<wbr>Unloaded<wbr>Subfolders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:8535</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="name" class="tsd-anchor"></a>
@@ -174,14 +154,19 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:306</li>
+							<li>Defined in layout-extension.d.ts:8529</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Название папки.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="refreshtimeout" class="tsd-anchor"></a>
+					<h3>refresh<wbr>Timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">refresh<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:8534</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -190,6 +175,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -216,7 +225,13 @@
 								<a href="webclient.ifolderinfo.html#foldertype" class="tsd-kind-icon">folder<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.ifolderinfo.html#hasunloadedsubfolders" class="tsd-kind-icon">has<wbr>Unloaded<wbr>Subfolders</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="webclient.ifolderinfo.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.ifolderinfo.html#refreshtimeout" class="tsd-kind-icon">refresh<wbr>Timeout</a>
 							</li>
 						</ul>
 					</li>
@@ -293,5 +308,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

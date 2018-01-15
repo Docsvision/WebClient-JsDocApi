@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -102,8 +94,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#iconclass" class="tsd-kind-icon">icon<wbr>Class</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#level" class="tsd-kind-icon">level</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#nodeclass" class="tsd-kind-icon">node<wbr>Class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#parent" class="tsd-kind-icon">parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#title" class="tsd-kind-icon">title</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.treenode.html#visibleitemscount" class="tsd-kind-icon">visible<wbr>Items<wbr>Count</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,13 +109,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Tree<wbr>Node<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TreeNode[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Tree<wbr>Node<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, parent<span class="tsd-signature-symbol">: </span><a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a>, children<span class="tsd-signature-symbol">?: </span><a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1284</li>
+									<li>Defined in layout-extension.d.ts:718</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -133,7 +127,10 @@
 									<h5>level: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> children: <span class="tsd-signature-type">TreeNode[]</span></h5>
+									<h5>parent: <a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> children: <a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a></h4>
@@ -146,10 +143,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="children" class="tsd-anchor"></a>
 					<h3>children</h3>
-					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TreeNode[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1286</li>
+							<li>Defined in layout-extension.d.ts:721</li>
 						</ul>
 					</aside>
 				</section>
@@ -159,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1287</li>
+							<li>Defined in layout-extension.d.ts:722</li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1296</li>
+							<li>Defined in layout-extension.d.ts:732</li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1291</li>
+							<li>Defined in layout-extension.d.ts:727</li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">expanded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1289</li>
+							<li>Defined in layout-extension.d.ts:724</li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">expanded<wbr>ByDefault<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1297</li>
+							<li>Defined in layout-extension.d.ts:733</li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">html<wbr>Eement<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1290</li>
+							<li>Defined in layout-extension.d.ts:725</li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">icon<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1294</li>
+							<li>Defined in layout-extension.d.ts:730</li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1288</li>
+							<li>Defined in layout-extension.d.ts:723</li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +236,17 @@
 					<div class="tsd-signature tsd-kind-icon">node<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1295</li>
+							<li>Defined in layout-extension.d.ts:731</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="webclient.treenode.html" class="tsd-signature-type">TreeNode</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:726</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1292</li>
+							<li>Defined in layout-extension.d.ts:728</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +266,17 @@
 					<div class="tsd-signature tsd-kind-icon">unique<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1293</li>
+							<li>Defined in layout-extension.d.ts:729</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="visibleitemscount" class="tsd-anchor"></a>
+					<h3>visible<wbr>Items<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">visible<wbr>Items<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:720</li>
 						</ul>
 					</aside>
 				</section>
@@ -270,6 +287,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -314,10 +355,16 @@
 								<a href="webclient.treenode.html#nodeclass" class="tsd-kind-icon">node<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.treenode.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.treenode.html#title" class="tsd-kind-icon">title</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.treenode.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.treenode.html#visibleitemscount" class="tsd-kind-icon">visible<wbr>Items<wbr>Count</a>
 							</li>
 						</ul>
 					</li>
@@ -394,5 +441,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

@@ -58,13 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Базовый интерфейс для описания состояния интерфейсного компонента элемента управления.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -76,6 +69,9 @@
 								<ul class="tsd-hierarchy">
 									<li>
 										<a href="webclient.inputbasedcontrolstate.html" class="tsd-signature-type">InputBasedControlState</a>
+									</li>
+									<li>
+										<a href="webclient.itaskstreestate.html" class="tsd-signature-type">ITasksTreeState</a>
 									</li>
 									<li>
 										<a href="webclient.tasksstate.html" class="tsd-signature-type">TasksState</a>
@@ -96,10 +92,22 @@
 										<a href="webclient.savingbuttonsstate.html" class="tsd-signature-type">SavingButtonsState</a>
 									</li>
 									<li>
+										<a href="webclient.mainmenustate.html" class="tsd-signature-type">MainMenuState</a>
+									</li>
+									<li>
+										<a href="webclient.configurablemainmenucontainerbuttonstate.html" class="tsd-signature-type">ConfigurableMainMenuContainerButtonState</a>
+									</li>
+									<li>
 										<a href="webclient.linksstate.html" class="tsd-signature-type">LinksState</a>
 									</li>
 									<li>
+										<a href="webclient.layouticonbuttonstate.html" class="tsd-signature-type">LayoutIconButtonState</a>
+									</li>
+									<li>
 										<a href="webclient.labelstate.html" class="tsd-signature-type">LabelState</a>
+									</li>
+									<li>
+										<a href="webclient.historystate.html" class="tsd-signature-type">HistoryState</a>
 									</li>
 									<li>
 										<a href="webclient.folderstate.html" class="tsd-signature-type">FolderState</a>
@@ -112,6 +120,9 @@
 									</li>
 									<li>
 										<a href="webclient.cardmanagementstate.html" class="tsd-signature-type">CardManagementState</a>
+									</li>
+									<li>
+										<a href="webclient.cardlinkstate.html" class="tsd-signature-type">CardLinkState</a>
 									</li>
 									<li>
 										<a href="webclient.cardkindstate.html" class="tsd-signature-type">CardKindState</a>
@@ -177,30 +188,20 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#blur">blur</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2377</li>
+							<li>Defined in layout-extension.d.ts:2639</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при потере элементом управления фокуса.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="click" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> click</h3>
-					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="webclient.iclickeventargs.html" class="tsd-signature-type">IClickEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#click">click</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2369</li>
+							<li>Defined in layout-extension.d.ts:2635</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при щелчке мышью в области элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="compactmode" class="tsd-anchor"></a>
@@ -209,14 +210,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#compactmode">compactMode</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2363</li>
+							<li>Defined in layout-extension.d.ts:2632</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, должен ли элемент управления оторажаться в компактном режиме, в котором у элемента отсутствуют отступы и т.п. Компактный режим, например, используется при отрисовке контролов в таблице (см. <a href="../classes/webclient.table.html">Table</a>).</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="controltypename" class="tsd-anchor"></a>
@@ -225,14 +221,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#controltypename">controlTypeName</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2351</li>
+							<li>Defined in layout-extension.d.ts:2626</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает имя класса элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="customcssclasses" class="tsd-anchor"></a>
@@ -241,14 +232,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#customcssclasses">customCssClasses</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2357</li>
+							<li>Defined in layout-extension.d.ts:2629</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Пользовательские классы стилей элемента управления, дополняющие стили из <a href="../classes/webclient.basecontrolparams.html#standardcssclass">BaseControlParams.standardCssClass</a>.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="customcssstyle" class="tsd-anchor"></a>
@@ -257,14 +243,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#customcssstyle">customCssStyle</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2365</li>
+							<li>Defined in layout-extension.d.ts:2633</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Стиль родительского (по отношению к данному элементу управления) div-элемента.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="focus" class="tsd-anchor"></a>
@@ -273,14 +254,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#focus">focus</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2375</li>
+							<li>Defined in layout-extension.d.ts:2638</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при получении элементом управления фокуса.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="isloaded" class="tsd-anchor"></a>
@@ -289,14 +265,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#isloaded">isLoaded</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2367</li>
+							<li>Defined in layout-extension.d.ts:2634</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, завершена ли инициализация элемента управления: <code>true</code> - объект <a href="../classes/webclient.basecontrol.html#controlimpl">BaseControl.controlImpl</a> создан, <code>false</code> - инициализация завершена.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="layout" class="tsd-anchor"></a>
@@ -304,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">:</span> <a href="../classes/webclient.layout.html" class="tsd-signature-type">Layout</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2387</li>
+							<li>Defined in layout-extension.d.ts:2645</li>
 						</ul>
 					</aside>
 				</section>
@@ -315,14 +286,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#loaded">loaded</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2379</li>
+							<li>Defined in layout-extension.d.ts:2640</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее, когда свойство <a href="webclient.basecontrolstate.html#isloaded">isLoaded</a> устанавливается в <code>true</code>.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="mouseout" class="tsd-anchor"></a>
@@ -331,14 +297,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#mouseout">mouseOut</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2373</li>
+							<li>Defined in layout-extension.d.ts:2637</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при выведении мыши из области элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="mouseover" class="tsd-anchor"></a>
@@ -347,14 +308,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#mouseover">mouseOver</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2371</li>
+							<li>Defined in layout-extension.d.ts:2636</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при попадании мыши в область элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="name" class="tsd-anchor"></a>
@@ -363,14 +319,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#name">name</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2353</li>
+							<li>Defined in layout-extension.d.ts:2627</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает уникальное (для текущей разметки) имя элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="parent" class="tsd-anchor"></a>
@@ -379,14 +330,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2349</li>
+							<li>Defined in layout-extension.d.ts:2625</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает ссылку на родительский элемент управления. @see <a href="../classes/webclient.basecontrol.html#parent">BaseControl.parent</a></p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="standardcssclass" class="tsd-anchor"></a>
@@ -395,14 +341,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#standardcssclass">standardCssClass</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2355</li>
+							<li>Defined in layout-extension.d.ts:2628</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает набор стандартных классов, определяющих стиль элемента управления. Стандартные классы, указываемые по умолчанию для всех элементов управления, не могут быть изменены.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="tabstop" class="tsd-anchor"></a>
@@ -411,30 +352,20 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#tabstop">tabStop</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2361</li>
+							<li>Defined in layout-extension.d.ts:2631</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, должен ли элемент управления получать фокус при переходе по Tab: <code>true</code> - должен, <code>false</code> - не должен. @see <a href="../classes/webclient.basecontrolimpl.html#gettabindex">BaseControlImpl.getTabIndex</a></p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="unloading" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unloading</h3>
-					<div class="tsd-signature tsd-kind-icon">unloading<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">unloading<span class="tsd-signature-symbol">:</span> <a href="../globals.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#unloading">unloading</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2381</li>
+							<li>Defined in layout-extension.d.ts:2641</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при удалении элемента управления из разметки.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="visibility" class="tsd-anchor"></a>
@@ -443,14 +374,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#visibility">visibility</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2359</li>
+							<li>Defined in layout-extension.d.ts:2630</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, отображается ли элемент управления на странице: <code>true</code> - отображается, <code>false</code> - скрыт.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="wrapper" class="tsd-anchor"></a>
@@ -459,14 +385,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/webclient.basecontrolparams.html">BaseControlParams</a>.<a href="../classes/webclient.basecontrolparams.html#wrapper">wrapper</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2383</li>
+							<li>Defined in layout-extension.d.ts:2642</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Интерфейсный компонент контрола (см. описание класса <a href="../classes/webclient.basecontrol.html">BaseControl</a>).</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -475,6 +396,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -617,5 +562,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

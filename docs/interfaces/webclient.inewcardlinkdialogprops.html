@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -83,6 +75,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.inewcardlinkdialogprops.html#kinds" class="tsd-kind-icon">kinds</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.inewcardlinkdialogprops.html#linktypes" class="tsd-kind-icon">link<wbr>Types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.inewcardlinkdialogprops.html#onkindselected" class="tsd-kind-icon">on<wbr>Kind<wbr>Selected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.inewcardlinkdialogprops.html#onlinktypeselect" class="tsd-kind-icon">on<wbr>Link<wbr>Type<wbr>Select</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,22 +87,90 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="kinds" class="tsd-anchor"></a>
 					<h3>kinds</h3>
-					<div class="tsd-signature tsd-kind-icon">kinds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IKindModel[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">kinds<span class="tsd-signature-symbol">:</span> <a href="webclient.ikindmodel.html" class="tsd-signature-type">IKindModel</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:3753</li>
+							<li>Defined in layout-extension.d.ts:5262</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="linktypes" class="tsd-anchor"></a>
 					<h3>link<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">link<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILinkType[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">link<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="webclient.ilinktype.html" class="tsd-signature-type">ILinkType</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:3754</li>
+							<li>Defined in layout-extension.d.ts:5263</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onkindselected" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Kind<wbr>Selected</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Kind<wbr>Selected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:5264</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="../classes/webclient.newcardlinkdialog.html" class="tsd-signature-type">NewCardLinkDialog</a>, args<span class="tsd-signature-symbol">: </span><a href="webclient.newcardlinkdialogargs.html" class="tsd-signature-type">NewCardLinkDialogArgs</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>sender: <a href="../classes/webclient.newcardlinkdialog.html" class="tsd-signature-type">NewCardLinkDialog</a></h5>
+											</li>
+											<li>
+												<h5>args: <a href="webclient.newcardlinkdialogargs.html" class="tsd-signature-type">NewCardLinkDialogArgs</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onlinktypeselect" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Link<wbr>Type<wbr>Select</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Link<wbr>Type<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:5265</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="../classes/webclient.newcardlinkdialog.html" class="tsd-signature-type">NewCardLinkDialog</a>, args<span class="tsd-signature-symbol">: </span><a href="webclient.newcardlinkdialogargs.html" class="tsd-signature-type">NewCardLinkDialogArgs</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>sender: <a href="../classes/webclient.newcardlinkdialog.html" class="tsd-signature-type">NewCardLinkDialog</a></h5>
+											</li>
+											<li>
+												<h5>args: <a href="webclient.newcardlinkdialogargs.html" class="tsd-signature-type">NewCardLinkDialogArgs</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -117,6 +179,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -132,6 +218,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="webclient.inewcardlinkdialogprops.html#linktypes" class="tsd-kind-icon">link<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.inewcardlinkdialogprops.html#onkindselected" class="tsd-kind-icon">on<wbr>Kind<wbr>Selected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="webclient.inewcardlinkdialogprops.html#onlinktypeselect" class="tsd-kind-icon">on<wbr>Link<wbr>Type<wbr>Select</a>
 							</li>
 						</ul>
 					</li>
@@ -208,5 +300,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

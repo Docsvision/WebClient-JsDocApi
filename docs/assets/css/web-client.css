@@ -70,3 +70,15 @@ h1 {
 #tsd-search .results a {
 	color: #333;
 }
+
+ul.jslist-ul, ul.docs-dir  {
+	margin: 3px 0;
+	list-style: none;
+}
+div.jsl-collapsed-arrow {
+	margin-top: 6px;
+}
+
+#tree_root.loading {
+	display: none;
+}

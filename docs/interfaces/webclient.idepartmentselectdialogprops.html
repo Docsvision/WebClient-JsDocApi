@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -83,7 +75,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.idepartmentselectdialogprops.html#departmentselected" class="tsd-kind-icon">department<wbr>Selected</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.idepartmentselectdialogprops.html#itemtypes" class="tsd-kind-icon">item<wbr>Types</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.idepartmentselectdialogprops.html#quicksearchindex" class="tsd-kind-icon">quick<wbr>Search<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.idepartmentselectdialogprops.html#searchdelay" class="tsd-kind-icon">search<wbr>Delay</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="webclient.idepartmentselectdialogprops.html#source" class="tsd-kind-icon">source</a></li>
 							</ul>
 						</section>
@@ -98,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">department<wbr>Selected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:5226</li>
+							<li>Defined in layout-extension.d.ts:6741</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -106,14 +98,14 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="../classes/webclient.departmenttreenodedata.html" class="tsd-signature-type">DepartmentTreeNodeData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="webclient.idepartmenttreedigest.html" class="tsd-signature-type">IDepartmentTreeDigest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>node: <a href="../classes/webclient.departmenttreenodedata.html" class="tsd-signature-type">DepartmentTreeNodeData</a></h5>
+												<h5>node: <a href="webclient.idepartmenttreedigest.html" class="tsd-signature-type">IDepartmentTreeDigest</a></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -129,17 +121,17 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.searchdepartmenttype.html" class="tsd-signature-type">SearchDepartmentType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:5225</li>
+							<li>Defined in layout-extension.d.ts:6740</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="quicksearchindex" class="tsd-anchor"></a>
-					<h3>quick<wbr>Search<wbr>Index</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Search<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="searchdelay" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> search<wbr>Delay</h3>
+					<div class="tsd-signature tsd-kind-icon">search<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:5227</li>
+							<li>Defined in layout-extension.d.ts:6743</li>
 						</ul>
 					</aside>
 				</section>
@@ -149,14 +141,9 @@
 					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:5229</li>
+							<li>Defined in layout-extension.d.ts:6742</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Where to perform the search</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -165,6 +152,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -182,7 +193,7 @@
 								<a href="webclient.idepartmentselectdialogprops.html#itemtypes" class="tsd-kind-icon">item<wbr>Types</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="webclient.idepartmentselectdialogprops.html#quicksearchindex" class="tsd-kind-icon">quick<wbr>Search<wbr>Index</a>
+								<a href="webclient.idepartmentselectdialogprops.html#searchdelay" class="tsd-kind-icon">search<wbr>Delay</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="webclient.idepartmentselectdialogprops.html#source" class="tsd-kind-icon">source</a>
@@ -262,5 +273,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

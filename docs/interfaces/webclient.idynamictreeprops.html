@@ -58,14 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -96,6 +88,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="webclient.idynamictreeprops.html#multiselect" class="tsd-kind-icon">multi<wbr>Select</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="webclient.idynamictreeprops.html#nodeselected" class="tsd-kind-icon">node<wbr>Selected</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="webclient.idynamictreeprops.html#toggleondisablednodesclick" class="tsd-kind-icon">toggle<wbr>OnDisabled<wbr>Nodes<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="webclient.idynamictreeprops.html#treeheight" class="tsd-kind-icon">tree<wbr>Height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="webclient.idynamictreeprops.html#virtualizationtype" class="tsd-kind-icon">virtualization<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,7 +104,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#classname">className</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1562</li>
+							<li>Defined in layout-extension.d.ts:1674</li>
 						</ul>
 					</aside>
 				</section>
@@ -121,18 +115,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#collapsedtogglemarkerclass">collapsedToggleMarkerClass</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1208</li>
+							<li>Defined in layout-extension.d.ts:633</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="data" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDynamicTreeNodeData[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="webclient.idynamictreenodedata.html" class="tsd-signature-type">IDynamicTreeNodeData</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#data">data</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1205</li>
+							<li>Defined in layout-extension.d.ts:630</li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +137,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#expandedbydefault">expandedByDefault</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1563</li>
+							<li>Defined in layout-extension.d.ts:1675</li>
 						</ul>
 					</aside>
 				</section>
@@ -154,7 +148,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#expandedtogglemarkerclass">expandedToggleMarkerClass</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1207</li>
+							<li>Defined in layout-extension.d.ts:632</li>
 						</ul>
 					</aside>
 				</section>
@@ -165,7 +159,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#levelident">levelIdent</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1206</li>
+							<li>Defined in layout-extension.d.ts:631</li>
 						</ul>
 					</aside>
 				</section>
@@ -175,20 +169,15 @@
 					<div class="tsd-signature tsd-kind-icon">load<wbr>Nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1561</li>
+							<li>Defined in layout-extension.d.ts:1673</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If parentNode specified, shoudl load child nodes, else root nodes</p>
-						</div>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>parentNode<span class="tsd-signature-symbol">?: </span><a href="webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDynamicTreeNodeData[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>parentNode<span class="tsd-signature-symbol">?: </span><a href="webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="webclient.idynamictreenodedata.html" class="tsd-signature-type">IDynamicTreeNodeData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -198,7 +187,7 @@
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentNode: <a href="webclient.itreenodedata.html" class="tsd-signature-type">ITreeNodeData</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDynamicTreeNodeData[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="webclient.idynamictreenodedata.html" class="tsd-signature-type">IDynamicTreeNodeData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -212,7 +201,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#multiselect">multiSelect</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1209</li>
+							<li>Defined in layout-extension.d.ts:634</li>
 						</ul>
 					</aside>
 				</section>
@@ -223,14 +212,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#nodeselected">nodeSelected</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1214</li>
+							<li>Defined in layout-extension.d.ts:638</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Callback function, that called, when node selected</p>
-						</div>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -260,7 +244,29 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#toggleondisablednodesclick">toggleOnDisabledNodesClick</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:1211</li>
+							<li>Defined in layout-extension.d.ts:636</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="treeheight" class="tsd-anchor"></a>
+					<h3>tree<wbr>Height</h3>
+					<div class="tsd-signature tsd-kind-icon">tree<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#treeheight">treeHeight</a></p>
+						<ul>
+							<li>Defined in layout-extension.d.ts:640</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="virtualizationtype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> virtualization<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">virtualization<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.virtualizationtype.html" class="tsd-signature-type">VirtualizationType</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="webclient.itreebaseprops.html">ITreeBaseProps</a>.<a href="webclient.itreebaseprops.html#virtualizationtype">virtualizationType</a></p>
+						<ul>
+							<li>Defined in layout-extension.d.ts:639</li>
 						</ul>
 					</aside>
 				</section>
@@ -271,6 +277,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -310,6 +340,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="webclient.idynamictreeprops.html#toggleondisablednodesclick" class="tsd-kind-icon">toggle<wbr>OnDisabled<wbr>Nodes<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="webclient.idynamictreeprops.html#treeheight" class="tsd-kind-icon">tree<wbr>Height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="webclient.idynamictreeprops.html#virtualizationtype" class="tsd-kind-icon">virtualization<wbr>Type</a>
 							</li>
 						</ul>
 					</li>
@@ -386,5 +422,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

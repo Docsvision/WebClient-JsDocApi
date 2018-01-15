@@ -80,7 +80,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#addexistingcardlink" class="tsd-kind-icon">Add<wbr>Existing<wbr>Card<wbr>Link</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#cardcreatelinks" class="tsd-kind-icon">Card<wbr>Create<wbr>Links</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#checkreadmainfileavailable" class="tsd-kind-icon">Check<wbr>Read<wbr>Main<wbr>File<wbr>Available</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#deletelink" class="tsd-kind-icon">Delete<wbr>Link</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#getlinks" class="tsd-kind-icon">Get<wbr>Links</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#previewcard" class="tsd-kind-icon">Preview<wbr>Card</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#setlinkdescription" class="tsd-kind-icon">Set<wbr>Link<wbr>Description</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="webclient.layoutlinkscontroller.html#getaction" class="tsd-kind-icon">get<wbr>Action</a></li>
@@ -104,7 +106,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:204</li>
+									<li>Defined in layout-extension.d.ts:8384</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -121,22 +123,45 @@
 					<a name="cardcreatelinks" class="tsd-anchor"></a>
 					<h3>Card<wbr>Create<wbr>Links</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Card<wbr>Create<wbr>Links<span class="tsd-signature-symbol">(</span>allowedKinds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAllowedCardKind[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IKindModel[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Card<wbr>Create<wbr>Links<span class="tsd-signature-symbol">(</span>allowedKinds<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.iallowedcardkind.html" class="tsd-signature-type">IAllowedCardKind</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ikindmodel.html" class="tsd-signature-type">IKindModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:203</li>
+									<li>Defined in layout-extension.d.ts:8383</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>allowedKinds: <span class="tsd-signature-type">IAllowedCardKind[]</span></h5>
+									<h5>allowedKinds: <a href="../interfaces/webclient.iallowedcardkind.html" class="tsd-signature-type">IAllowedCardKind</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IKindModel[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ikindmodel.html" class="tsd-signature-type">IKindModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="checkreadmainfileavailable" class="tsd-anchor"></a>
+					<h3>Check<wbr>Read<wbr>Main<wbr>File<wbr>Available</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Check<wbr>Read<wbr>Main<wbr>File<wbr>Available<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8387</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -150,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:201</li>
+									<li>Defined in layout-extension.d.ts:8381</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -173,6 +198,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="getlinks" class="tsd-anchor"></a>
+					<h3>Get<wbr>Links</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Links<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, bindingInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.isimplebindinginfo.html" class="tsd-signature-type">ISimpleBindingInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ilinksdatamodel.html" class="tsd-signature-type">ILinksDataModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8386</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>bindingInfo: <a href="../interfaces/webclient.isimplebindinginfo.html" class="tsd-signature-type">ISimpleBindingInfo</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ilinksdatamodel.html" class="tsd-signature-type">ILinksDataModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="previewcard" class="tsd-anchor"></a>
 					<h3>Preview<wbr>Card</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -182,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:202</li>
+									<li>Defined in layout-extension.d.ts:8382</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:205</li>
+									<li>Defined in layout-extension.d.ts:8385</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -229,7 +280,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#getaction">getAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:55</li>
+									<li>Defined in layout-extension.d.ts:2295</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,7 +304,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#postaction">postAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:54</li>
+									<li>Defined in layout-extension.d.ts:2294</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -277,7 +328,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#preparerequest">prepareRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:56</li>
+									<li>Defined in layout-extension.d.ts:2296</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -304,7 +355,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#sendrequest">sendRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:57</li>
+									<li>Defined in layout-extension.d.ts:2297</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -325,6 +376,30 @@
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
 					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -341,7 +416,13 @@
 								<a href="webclient.layoutlinkscontroller.html#cardcreatelinks" class="tsd-kind-icon">Card<wbr>Create<wbr>Links</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutlinkscontroller.html#checkreadmainfileavailable" class="tsd-kind-icon">Check<wbr>Read<wbr>Main<wbr>File<wbr>Available</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.layoutlinkscontroller.html#deletelink" class="tsd-kind-icon">Delete<wbr>Link</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutlinkscontroller.html#getlinks" class="tsd-kind-icon">Get<wbr>Links</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.layoutlinkscontroller.html#previewcard" class="tsd-kind-icon">Preview<wbr>Card</a>
@@ -436,5 +517,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

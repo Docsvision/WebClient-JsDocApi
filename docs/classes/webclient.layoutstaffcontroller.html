@@ -79,8 +79,12 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#finddepartments" class="tsd-kind-icon">Find<wbr>Departments</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#findindepartmentsflat" class="tsd-kind-icon">Find<wbr>InDepartments<wbr>Flat</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#findindepartmentstree" class="tsd-kind-icon">Find<wbr>InDepartments<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#getdepartmentpath" class="tsd-kind-icon">Get<wbr>Department<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#getdepartmentsinfo" class="tsd-kind-icon">Get<wbr>Departments<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#getstaffinfo" class="tsd-kind-icon">Get<wbr>Staff<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#loaddepartmentsflat" class="tsd-kind-icon">Load<wbr>Departments<wbr>Flat</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#loaddepartmentstree" class="tsd-kind-icon">Load<wbr>Departments<wbr>Tree</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#getaction" class="tsd-kind-icon">get<wbr>Action</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="webclient.layoutstaffcontroller.html#postaction" class="tsd-kind-icon">post<wbr>Action</a></li>
@@ -103,14 +107,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:68</li>
+									<li>Defined in layout-extension.d.ts:8108</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Search for departments and organisations by typeahead logic.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -118,7 +117,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmentssearchresult.html" class="tsd-signature-type">IDepartmentsSearchResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Departments and organisations, that match</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="findindepartmentsflat" class="tsd-anchor"></a>
+					<h3>Find<wbr>InDepartments<wbr>Flat</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Find<wbr>InDepartments<wbr>Flat<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.idepartmentsflatsearchquery.html" class="tsd-signature-type">IDepartmentsFlatSearchQuery</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.isearchdepartmentsflatresult.html" class="tsd-signature-type">ISearchDepartmentsFlatResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8112</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <a href="../interfaces/webclient.idepartmentsflatsearchquery.html" class="tsd-signature-type">IDepartmentsFlatSearchQuery</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.isearchdepartmentsflatresult.html" class="tsd-signature-type">ISearchDepartmentsFlatResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -132,14 +153,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:72</li>
+									<li>Defined in layout-extension.d.ts:8110</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Load departments and organisations when searching over tree.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -151,33 +167,100 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="getdepartmentsinfo" class="tsd-anchor"></a>
-					<h3>Get<wbr>Departments<wbr>Info</h3>
+					<a name="getdepartmentpath" class="tsd-anchor"></a>
+					<h3>Get<wbr>Department<wbr>Path</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Departments<wbr>Info<span class="tsd-signature-symbol">(</span>departmentIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span>, source<span class="tsd-signature-symbol">?: </span><a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDepartmentExtendedInfo[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Department<wbr>Path<span class="tsd-signature-symbol">(</span>departmentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, source<span class="tsd-signature-symbol">?: </span><a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmentextendedinfo.html" class="tsd-signature-type">IDepartmentExtendedInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:74</li>
+									<li>Defined in layout-extension.d.ts:8114</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get department info, including email and phone.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>departmentIds: <span class="tsd-signature-type">string[]</span></h5>
+									<h5>departmentId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDepartmentExtendedInfo[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmentextendedinfo.html" class="tsd-signature-type">IDepartmentExtendedInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="getdepartmentsinfo" class="tsd-anchor"></a>
+					<h3>Get<wbr>Departments<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Departments<wbr>Info<span class="tsd-signature-symbol">(</span>departmentIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, source<span class="tsd-signature-symbol">?: </span><a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmentextendedinfo.html" class="tsd-signature-type">IDepartmentExtendedInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8113</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>departmentIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmentextendedinfo.html" class="tsd-signature-type">IDepartmentExtendedInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="getstaffinfo" class="tsd-anchor"></a>
+					<h3>Get<wbr>Staff<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Staff<wbr>Info<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.istaffinforequestmodel.html" class="tsd-signature-type">IStaffInfoRequestModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.istaffinforesponsemodel.html" class="tsd-signature-type">IStaffInfoResponseModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8115</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/webclient.istaffinforequestmodel.html" class="tsd-signature-type">IStaffInfoRequestModel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.istaffinforesponsemodel.html" class="tsd-signature-type">IStaffInfoResponseModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="loaddepartmentsflat" class="tsd-anchor"></a>
+					<h3>Load<wbr>Departments<wbr>Flat</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>Departments<wbr>Flat<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.iloaddepartmentsflatquery.html" class="tsd-signature-type">ILoadDepartmentsFlatQuery</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iloaddepartmentsflatresponse.html" class="tsd-signature-type">ILoadDepartmentsFlatResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:8111</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <a href="../interfaces/webclient.iloaddepartmentsflatquery.html" class="tsd-signature-type">ILoadDepartmentsFlatQuery</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iloaddepartmentsflatresponse.html" class="tsd-signature-type">ILoadDepartmentsFlatResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -185,27 +268,22 @@
 					<a name="loaddepartmentstree" class="tsd-anchor"></a>
 					<h3>Load<wbr>Departments<wbr>Tree</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Load<wbr>Departments<wbr>Tree<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.iloaddepartmentstreequery.html" class="tsd-signature-type">ILoadDepartmentsTreeQuery</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDepartmentTreeDigest[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>Departments<wbr>Tree<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.iloaddepartmentstreequery.html" class="tsd-signature-type">ILoadDepartmentsTreeQuery</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmenttreedigest.html" class="tsd-signature-type">IDepartmentTreeDigest</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:70</li>
+									<li>Defined in layout-extension.d.ts:8109</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Load departments and organisations when navigating over tree.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../interfaces/webclient.iloaddepartmentstreequery.html" class="tsd-signature-type">ILoadDepartmentsTreeQuery</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDepartmentTreeDigest[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.idepartmenttreedigest.html" class="tsd-signature-type">IDepartmentTreeDigest</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -220,7 +298,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#getaction">getAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:55</li>
+									<li>Defined in layout-extension.d.ts:2295</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -244,7 +322,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#postaction">postAction</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:54</li>
+									<li>Defined in layout-extension.d.ts:2294</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -268,7 +346,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#preparerequest">prepareRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:56</li>
+									<li>Defined in layout-extension.d.ts:2296</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +373,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="webclient.servercontroller.html">ServerController</a>.<a href="webclient.servercontroller.html#sendrequest">sendRequest</a></p>
 								<ul>
-									<li>Defined in layout-extension.d.ts:57</li>
+									<li>Defined in layout-extension.d.ts:2297</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -316,6 +394,30 @@
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
 					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -329,10 +431,22 @@
 								<a href="webclient.layoutstaffcontroller.html#finddepartments" class="tsd-kind-icon">Find<wbr>Departments</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutstaffcontroller.html#findindepartmentsflat" class="tsd-kind-icon">Find<wbr>InDepartments<wbr>Flat</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.layoutstaffcontroller.html#findindepartmentstree" class="tsd-kind-icon">Find<wbr>InDepartments<wbr>Tree</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutstaffcontroller.html#getdepartmentpath" class="tsd-kind-icon">Get<wbr>Department<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.layoutstaffcontroller.html#getdepartmentsinfo" class="tsd-kind-icon">Get<wbr>Departments<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutstaffcontroller.html#getstaffinfo" class="tsd-kind-icon">Get<wbr>Staff<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.layoutstaffcontroller.html#loaddepartmentsflat" class="tsd-kind-icon">Load<wbr>Departments<wbr>Flat</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.layoutstaffcontroller.html#loaddepartmentstree" class="tsd-kind-icon">Load<wbr>Departments<wbr>Tree</a>
@@ -424,5 +538,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

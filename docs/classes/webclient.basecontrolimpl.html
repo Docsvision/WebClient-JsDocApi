@@ -58,34 +58,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Базовый класс для реализации контролов Web-клиента.
-							Реализация контрола содержит логику, без привязки к окружению (взаимодействие с сервером, с разметкой и т.д.).
-							Реализация используется основным, &#39;интерфейсным&#39; классом контрола, наследующимся от <a href="webclient.basecontrol.html">BaseControl</a>, который обеспечивает связь
-						контрола с внешним миром.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
 						<h4>P<span class="tsd-signature-symbol">: </span><a href="webclient.basecontrolparams.html" class="tsd-signature-type">BaseControlParams</a></h4>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Класс или интерфейс, наследующийся от <a href="webclient.basecontrolparams.html">BaseControlParams</a> и описывающий параметры компонента реализации.</p>
-							</div>
-						</div>
 					</li>
 					<li>
 						<h4>S<span class="tsd-signature-symbol">: </span><a href="../interfaces/webclient.basecontrolimplstate.html" class="tsd-signature-type">BaseControlImplState</a></h4>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Интерфейс, расширяющий <a href="../interfaces/webclient.basecontrolimplstate.html">BaseControlImplState</a> и описывающий внутренние переменные компонента реализации.</p>
-							</div>
-						</div>
 					</li>
 				</ul>
 			</section>
@@ -105,6 +85,9 @@
 										<a href="webclient.inputbasedcontrolimpl.html" class="tsd-signature-type">InputBasedControlImpl</a>
 									</li>
 									<li>
+										<a href="webclient.taskstreeimpl.html" class="tsd-signature-type">TasksTreeImpl</a>
+									</li>
+									<li>
 										<a href="webclient.tasksimpl.html" class="tsd-signature-type">TasksImpl</a>
 									</li>
 									<li>
@@ -120,10 +103,19 @@
 										<a href="webclient.savingbuttonsimpl.html" class="tsd-signature-type">SavingButtonsImpl</a>
 									</li>
 									<li>
+										<a href="webclient.configurablemainmenucontainerbuttonimpl.html" class="tsd-signature-type">ConfigurableMainMenuContainerButtonImpl</a>
+									</li>
+									<li>
 										<a href="webclient.linksimpl.html" class="tsd-signature-type">LinksImpl</a>
 									</li>
 									<li>
+										<a href="webclient.layouticonbuttonimpl.html" class="tsd-signature-type">LayoutIconButtonImpl</a>
+									</li>
+									<li>
 										<a href="webclient.labelimpl.html" class="tsd-signature-type">LabelImpl</a>
+									</li>
+									<li>
+										<a href="webclient.historyimpl.html" class="tsd-signature-type">HistoryImpl</a>
 									</li>
 									<li>
 										<a href="webclient.folderimpl.html" class="tsd-signature-type">FolderImpl</a>
@@ -136,6 +128,9 @@
 									</li>
 									<li>
 										<a href="webclient.cardmanagementimpl.html" class="tsd-signature-type">CardManagementImpl</a>
+									</li>
+									<li>
+										<a href="webclient.cardlinkimpl.html" class="tsd-signature-type">CardLinkImpl</a>
 									</li>
 									<li>
 										<a href="webclient.controlimpl.html" class="tsd-signature-type">ControlImpl</a>
@@ -188,11 +183,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#handlefocus" class="tsd-kind-icon">handle<wbr>Focus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#handlemouseout" class="tsd-kind-icon">handle<wbr>Mouse<wbr>Out</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#handlemouseover" class="tsd-kind-icon">handle<wbr>Mouse<wbr>Over</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#onfocusedkeydown" class="tsd-kind-icon">on<wbr>Focused<wbr>Key<wbr>Down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#preparesetparamvalue" class="tsd-kind-icon">prepare<wbr>Set<wbr>Param<wbr>Value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#registerprophandlers" class="tsd-kind-icon">register<wbr>Prop<wbr>Handlers</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#render" class="tsd-kind-icon">render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#rendercontrol" class="tsd-kind-icon">render<wbr>Control</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#rendercontrolroot" class="tsd-kind-icon">render<wbr>Control<wbr>Root</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#setparamvalue" class="tsd-kind-icon">set<wbr>Param<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.basecontrolimpl.html#setparamvalue" class="tsd-kind-icon">set<wbr>Param<wbr>Value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -210,30 +207,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2704</li>
+									<li>Defined in layout-extension.d.ts:2778</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Инициализирует объект.</p>
-								</div>
-								<p>В конструкторе необходимо создать объекты событий. Например:</p>
-								<pre><code>this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span>PlaceEditOpeninig = CancelableEvent.Create(props.wrapper);
-this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span>PlaceEditOpened = SimpleEvent.Create(props.wrapper);
-</code></pre><p><strong>Внимание!</strong> Значения свойств контрола (<code>props</code>) автоматически копируются в <code>state</code> в методе <code>componentWillUnmount</code>
-									(при помощи <a href="webclient.basecontrolimpl.html#setparamvalue">setParamValue</a>), который вызывается после того, как конструктор завершил выполнение.
-								Соответственно, в теле конструктора значения в <code>state</code> еще недоступны, и нужно обращаться к <code>props</code>.</p>
-								<p><strong> Внимание!</strong> При вызове конструктора объект <code>this.props</code> еще недоступен, необходимо обращаться к параметру <code>props</code>.</p>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>props: <span class="tsd-signature-type">P</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Параметры, переданные компоненту.</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="webclient.basecontrolimpl.html" class="tsd-signature-type">BaseControlImpl</a></h4>
@@ -249,15 +229,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 					<div class="tsd-signature tsd-kind-icon">componentDOMNode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2703</li>
+							<li>Defined in layout-extension.d.ts:2775</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>internal</dt>
-							<dd></dd>
-						</dl>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -272,14 +246,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2735</li>
+									<li>Defined in layout-extension.d.ts:2783</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>См. <a href="https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle">документацию React</a></p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -294,14 +263,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2739</li>
+									<li>Defined in layout-extension.d.ts:2785</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>См. <a href="https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle">документацию React</a></p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -316,14 +280,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2741</li>
+									<li>Defined in layout-extension.d.ts:2786</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>См. <a href="https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle">документацию React</a></p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -347,14 +306,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2737</li>
+									<li>Defined in layout-extension.d.ts:2784</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>См. <a href="https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle">документацию React</a></p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -369,14 +323,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2777</li>
+									<li>Defined in layout-extension.d.ts:2795</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Формирует список классов для основного html-тэга контрола.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -391,14 +340,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2779</li>
+									<li>Defined in layout-extension.d.ts:2796</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Формирует словарь стилей для основного html-тэга контрола (см. <a href="https://facebook.github.io/react/docs/dom-elements.html#style">документацию React</a>)</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">React.CSSProperties</span></h4>
 						</li>
 					</ul>
@@ -413,22 +357,13 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2790</li>
+									<li>Defined in layout-extension.d.ts:2798</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Возвращает полное наименование внутреннего контрола, которое следует передать
-									при его отрисовке в функции Render.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>innerControlName: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>наименование внутреннего контрола</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -445,26 +380,13 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2750</li>
+									<li>Defined in layout-extension.d.ts:2787</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Данный метод вызывается из <a href="webclient.basecontrol.html#getparamvalue">BaseControl.getParamValue</a>.</p>
-								</div>
-								<p>По умолчанию реализуется следующая логика:</p>
-								<ol>
-									<li>Если объявлено get-свойство с декоратором <a href="../globals.html#handler">handler</a>, то возвращается значение данного свойства;</li>
-									<li>Иначе возвращается значение из <code>state</code>.</li>
-								</ol>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>paramName: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Имя параметра, значение которого необходимо получить</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -481,15 +403,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2784</li>
+									<li>Defined in layout-extension.d.ts:2797</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Возвращает 0 если <a href="webclient.basecontrolparams.html#tabstop">BaseControlParams.tabStop</a> == true, и -1 в противном случае. По умолчанию данный метод не используется,
-									он может быть использован производным классом при отрисовке интерактивных элементов.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">-1</span>
@@ -507,14 +423,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2775</li>
+									<li>Defined in layout-extension.d.ts:2794</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик события <code>blur</code>. Генерирует событие <a href="webclient.basecontrolparams.html#blur">BaseControlParams.blur</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -535,14 +446,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2767</li>
+									<li>Defined in layout-extension.d.ts:2790</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик события <code>click</code> по области контрола. Генерирует событие <a href="webclient.basecontrolparams.html#click">BaseControlParams.click</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -563,14 +469,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2773</li>
+									<li>Defined in layout-extension.d.ts:2793</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик события <code>focus</code>. Генерирует событие <a href="webclient.basecontrolparams.html#focus">BaseControlParams.focus</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -591,14 +492,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2771</li>
+									<li>Defined in layout-extension.d.ts:2792</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик события <code>mouseout</code> в области контрола. Генерирует событие <a href="webclient.basecontrolparams.html#mouseout">BaseControlParams.mouseOut</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -619,18 +515,74 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2769</li>
+									<li>Defined in layout-extension.d.ts:2791</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик события <code>mouseover</code> в области контрола. Генерирует событие <a href="webclient.basecontrolparams.html#mouseover">BaseControlParams.mouseOver</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <span class="tsd-signature-type">React.MouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="onfocusedkeydown" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Focused<wbr>Key<wbr>Down</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Focused<wbr>Key<wbr>Down<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.KeyboardEvent</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:2780</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">React.KeyboardEvent</span></h5>
+								</li>
+								<li>
+									<h5>handler: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="preparesetparamvalue" class="tsd-anchor"></a>
+					<h3>prepare<wbr>Set<wbr>Param<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">prepare<wbr>Set<wbr>Param<wbr>Value<span class="tsd-signature-symbol">(</span>propName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout-extension.d.ts:2788</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>propName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -647,14 +599,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2725</li>
+									<li>Defined in layout-extension.d.ts:2781</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Производится обнаружение и регистрация всех свойств, объявленных с декоратором <a href="../globals.html#handler">handler</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -672,12 +619,6 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 									<li>Defined in layout-extension.d.ts:2800</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Основной метод, выполняющий отрисовку контрола.
-									Возвращает результат вызова <a href="webclient.basecontrolimpl.html#rendercontrolroot">renderControlRoot</a>, передавая ему параметром результат вызова <a href="webclient.basecontrolimpl.html#rendercontrol">renderControl</a>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
 						</li>
 					</ul>
@@ -692,18 +633,9 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2733</li>
+									<li>Defined in layout-extension.d.ts:2782</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>При переопределении в дочерних классах, должен содержать логику отрисовки контрола. Например:</p>
-								</div>
-								<pre><code>renderControl() {
-     return <span class="hljs-variable">&lt;span&gt;</span> {this.<span class="hljs-keyword">state</span>.text} &lt;/span&gt;
-}
-</code></pre>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
@@ -718,56 +650,32 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2795</li>
+									<li>Defined in layout-extension.d.ts:2799</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Выполняет отрисовку главного html-тега контрола, внутрь которого помещается содержимое параметра.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>controlContent: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Обычно результат вызова <a href="webclient.basecontrolimpl.html#rendercontrol">renderControl</a></p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="setparamvalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> set<wbr>Param<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<h3>set<wbr>Param<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Param<wbr>Value<span class="tsd-signature-symbol">(</span>propName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, newVal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, initial<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2765</li>
+									<li>Defined in layout-extension.d.ts:2789</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Обработчик, вызываемый всякий раз, когда установливается значение параметра.
-									Происходить это может в следующих случаях:</p>
-									<ol>
-										<li>При инициализации компонента (из метода <code>componentWillMount</code>).</li>
-										<li>При получении новых props компонента (из метода <code>componentWillReceiveProps</code>). Как правило, новые свойства
-										передаются интерфейсным компонентом при вызове <a href="webclient.basecontrol.html#setparamvalue">BaseControl.setParamValue</a>.</li>
-									</ol>
-								</div>
-								<p>Метод Реализует следующую логику:</p>
-								<ol>
-									<li>Если объявлено set-свойство с декоратором <a href="../globals.html#handler">handler</a>, то возвращается значение данного свойства;</li>
-									<li>Иначе устаналивается значение в <code>state</code>.</li>
-								</ol>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -778,9 +686,6 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 								</li>
 								<li>
 									<h5>initial: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Значение истино, если метод вызывается при инициализации компонента (из componentWillMount).</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -794,6 +699,30 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -853,6 +782,12 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 								<a href="webclient.basecontrolimpl.html#handlemouseover" class="tsd-kind-icon">handle<wbr>Mouse<wbr>Over</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="webclient.basecontrolimpl.html#onfocusedkeydown" class="tsd-kind-icon">on<wbr>Focused<wbr>Key<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.basecontrolimpl.html#preparesetparamvalue" class="tsd-kind-icon">prepare<wbr>Set<wbr>Param<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 								<a href="webclient.basecontrolimpl.html#registerprophandlers" class="tsd-kind-icon">register<wbr>Prop<wbr>Handlers</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -864,7 +799,7 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.basecontrolimpl.html#rendercontrolroot" class="tsd-kind-icon">render<wbr>Control<wbr>Root</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.basecontrolimpl.html#setparamvalue" class="tsd-kind-icon">set<wbr>Param<wbr>Value</a>
 							</li>
 						</ul>
@@ -942,5 +877,6 @@ this.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">in</span
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>

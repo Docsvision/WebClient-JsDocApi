@@ -58,13 +58,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Содержит публичные свойства элемента управления <a href="webclient.agreementhistory.html">Ход согласования</a>.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -90,6 +83,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#agreementhistorymode" class="tsd-kind-icon">agreement<wbr>History<wbr>Mode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#approvingreportclosed" class="tsd-kind-icon">approving<wbr>Report<wbr>Closed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#approvingreportclosing" class="tsd-kind-icon">approving<wbr>Report<wbr>Closing</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#approvingreportopened" class="tsd-kind-icon">approving<wbr>Report<wbr>Opened</a></li>
@@ -114,6 +108,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#showreportallowed" class="tsd-kind-icon">show<wbr>Report<wbr>Allowed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#standardcssclass" class="tsd-kind-icon">standard<wbr>Css<wbr>Class</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#tabstop" class="tsd-kind-icon">tab<wbr>Stop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#tip" class="tsd-kind-icon">tip</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#unloading" class="tsd-kind-icon">unloading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#visibility" class="tsd-kind-icon">visibility</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="webclient.agreementhistoryparams.html#wrapper" class="tsd-kind-icon">wrapper</a></li>
@@ -125,19 +120,24 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="agreementhistorymode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> agreement<wbr>History<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">agreement<wbr>History<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.agreementhistorymode.html" class="tsd-signature-type">AgreementHistoryMode</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:7812</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportclosed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> approving<wbr>Report<wbr>Closed</h3>
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Closed<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6073</li>
+							<li>Defined in layout-extension.d.ts:7818</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает после закрытия окна хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportclosing" class="tsd-anchor"></a>
@@ -145,14 +145,9 @@
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Closing<span class="tsd-signature-symbol">:</span> <a href="../globals.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6067</li>
+							<li>Defined in layout-extension.d.ts:7815</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает при закрытии окна хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportopened" class="tsd-anchor"></a>
@@ -160,14 +155,9 @@
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Opened<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iapprovingreportopenedeventargs.html" class="tsd-signature-type">IApprovingReportOpenedEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6071</li>
+							<li>Defined in layout-extension.d.ts:7817</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает после открытия окна хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportopening" class="tsd-anchor"></a>
@@ -175,14 +165,9 @@
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Opening<span class="tsd-signature-symbol">:</span> <a href="../globals.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iapprovingreportopeningeventargs.html" class="tsd-signature-type">IApprovingReportOpeningEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6065</li>
+							<li>Defined in layout-extension.d.ts:7814</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает при открытии окна хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportrefreshed" class="tsd-anchor"></a>
@@ -190,14 +175,9 @@
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Refreshed<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iapprovingreportrefreshedeventargs.html" class="tsd-signature-type">IApprovingReportRefreshedEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6075</li>
+							<li>Defined in layout-extension.d.ts:7819</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает после обновления данных хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="approvingreportrefreshing" class="tsd-anchor"></a>
@@ -205,14 +185,9 @@
 					<div class="tsd-signature tsd-kind-icon">approving<wbr>Report<wbr>Refreshing<span class="tsd-signature-symbol">:</span> <a href="../globals.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iapprovingreportrefreshingeventargs.html" class="tsd-signature-type">IApprovingReportRefreshingEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6069</li>
+							<li>Defined in layout-extension.d.ts:7816</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие возникает при обновлении данных хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="blur" class="tsd-anchor"></a>
@@ -221,14 +196,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#blur">blur</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2377</li>
+							<li>Defined in layout-extension.d.ts:2639</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при потере элементом управления фокуса.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="buttontext" class="tsd-anchor"></a>
@@ -236,30 +206,20 @@
 					<div class="tsd-signature tsd-kind-icon">button<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6057</li>
+							<li>Defined in layout-extension.d.ts:7808</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Текст, отображаемый на кнопке открытия хода согласования.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="click" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> click</h3>
-					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.iclickeventargs.html" class="tsd-signature-type">IClickEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#click">click</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2369</li>
+							<li>Defined in layout-extension.d.ts:2635</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при щелчке мышью в области элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="compactmode" class="tsd-anchor"></a>
@@ -268,14 +228,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#compactmode">compactMode</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2363</li>
+							<li>Defined in layout-extension.d.ts:2632</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, должен ли элемент управления оторажаться в компактном режиме, в котором у элемента отсутствуют отступы и т.п. Компактный режим, например, используется при отрисовке контролов в таблице (см. <a href="webclient.table.html">Table</a>).</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="controltypename" class="tsd-anchor"></a>
@@ -284,14 +239,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#controltypename">controlTypeName</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2351</li>
+							<li>Defined in layout-extension.d.ts:2626</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает имя класса элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="customcssclasses" class="tsd-anchor"></a>
@@ -300,14 +250,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#customcssclasses">customCssClasses</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2357</li>
+							<li>Defined in layout-extension.d.ts:2629</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Пользовательские классы стилей элемента управления, дополняющие стили из <a href="webclient.basecontrolparams.html#standardcssclass">BaseControlParams.standardCssClass</a>.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="customcssstyle" class="tsd-anchor"></a>
@@ -316,14 +261,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#customcssstyle">customCssStyle</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2365</li>
+							<li>Defined in layout-extension.d.ts:2633</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Стиль родительского (по отношению к данному элементу управления) div-элемента.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="focus" class="tsd-anchor"></a>
@@ -332,14 +272,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#focus">focus</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2375</li>
+							<li>Defined in layout-extension.d.ts:2638</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при получении элементом управления фокуса.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="isloaded" class="tsd-anchor"></a>
@@ -348,14 +283,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#isloaded">isLoaded</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2367</li>
+							<li>Defined in layout-extension.d.ts:2634</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, завершена ли инициализация элемента управления: <code>true</code> - объект <a href="webclient.basecontrol.html#controlimpl">BaseControl.controlImpl</a> создан, <code>false</code> - инициализация завершена.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="isreportshown" class="tsd-anchor"></a>
@@ -363,14 +293,9 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Report<wbr>Shown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6061</li>
+							<li>Defined in layout-extension.d.ts:7810</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает состояние окна хода согласования: <code>true</code> - окно с ходом согласования открыто, <code>false</code> - закрыто.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="loaded" class="tsd-anchor"></a>
@@ -379,14 +304,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#loaded">loaded</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2379</li>
+							<li>Defined in layout-extension.d.ts:2640</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее, когда свойство <a href="webclient.agreementhistoryparams.html#isloaded">isLoaded</a> устанавливается в <code>true</code>.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="mouseout" class="tsd-anchor"></a>
@@ -395,14 +315,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#mouseout">mouseOut</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2373</li>
+							<li>Defined in layout-extension.d.ts:2637</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при выведении мыши из области элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="mouseover" class="tsd-anchor"></a>
@@ -411,14 +326,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#mouseover">mouseOver</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2371</li>
+							<li>Defined in layout-extension.d.ts:2636</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при попадании мыши в область элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="name" class="tsd-anchor"></a>
@@ -427,14 +337,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#name">name</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2353</li>
+							<li>Defined in layout-extension.d.ts:2627</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает уникальное (для текущей разметки) имя элемента управления.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="parent" class="tsd-anchor"></a>
@@ -443,14 +348,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2349</li>
+							<li>Defined in layout-extension.d.ts:2625</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает ссылку на родительский элемент управления. @see <a href="webclient.basecontrol.html#parent">BaseControl.parent</a></p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="showreportallowed" class="tsd-anchor"></a>
@@ -458,14 +358,9 @@
 					<div class="tsd-signature tsd-kind-icon">show<wbr>Report<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:6063</li>
+							<li>Defined in layout-extension.d.ts:7811</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, возможно ли показать ход согласования: <code>true</code> - возможно (элемент управления связан с данными и разрешена настроенная операция редактирования), <code>false</code> - невозможно.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 					<a name="standardcssclass" class="tsd-anchor"></a>
@@ -474,14 +369,9 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#standardcssclass">standardCssClass</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:6059</li>
+							<li>Defined in layout-extension.d.ts:7809</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Стандартный CSS класс со стилями элемента управления</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="tabstop" class="tsd-anchor"></a>
@@ -490,30 +380,30 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#tabstop">tabStop</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2361</li>
+							<li>Defined in layout-extension.d.ts:2631</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, должен ли элемент управления получать фокус при переходе по Tab: <code>true</code> - должен, <code>false</code> - не должен. @see <a href="webclient.basecontrolimpl.html#gettabindex">BaseControlImpl.getTabIndex</a></p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="tip" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tip</h3>
+					<div class="tsd-signature tsd-kind-icon">tip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout-extension.d.ts:7813</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="unloading" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unloading</h3>
-					<div class="tsd-signature tsd-kind-icon">unloading<span class="tsd-signature-symbol">:</span> <a href="../globals.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">unloading<span class="tsd-signature-symbol">:</span> <a href="../globals.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/webclient.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#unloading">unloading</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2381</li>
+							<li>Defined in layout-extension.d.ts:2641</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Событие, возникающее при удалении элемента управления из разметки.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="visibility" class="tsd-anchor"></a>
@@ -522,14 +412,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#visibility">visibility</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2359</li>
+							<li>Defined in layout-extension.d.ts:2630</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Определяет, отображается ли элемент управления на странице: <code>true</code> - отображается, <code>false</code> - скрыт.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="wrapper" class="tsd-anchor"></a>
@@ -538,14 +423,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="webclient.basecontrolparams.html">BaseControlParams</a>.<a href="webclient.basecontrolparams.html#wrapper">wrapper</a></p>
 						<ul>
-							<li>Defined in layout-extension.d.ts:2383</li>
+							<li>Defined in layout-extension.d.ts:2642</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Интерфейсный компонент контрола (см. описание класса <a href="webclient.basecontrol.html">BaseControl</a>).</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -554,6 +434,30 @@
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../globals.html">Web<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.breadcrumbs.html">Web<wbr>Client.<wbr>Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.departmenthelpers.html">Web<wbr>Client.<wbr>Department<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.mainmenuhelpers.html">Web<wbr>Client.<wbr>Main<wbr>Menu<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.partnerhelpers.html">Web<wbr>Client.<wbr>Partner<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.html">Web<wbr>Client.<wbr>Styled</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.helpers.html">Web<wbr>Client.<wbr>Styled.<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.styled.mixins.html">Web<wbr>Client.<wbr>Styled.<wbr>Mixins</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/webclient.svgicons.html">Web<wbr>Client.<wbr>Svg<wbr>Icons</a>
 					</li>
 				</ul>
 			</nav>
@@ -564,6 +468,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="webclient.agreementhistoryparams.html" class="tsd-kind-icon">Agreement<wbr>History<wbr>Params</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.agreementhistoryparams.html#agreementhistorymode" class="tsd-kind-icon">agreement<wbr>History<wbr>Mode</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="webclient.agreementhistoryparams.html#approvingreportclosed" class="tsd-kind-icon">approving<wbr>Report<wbr>Closed</a>
 							</li>
@@ -635,6 +542,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="webclient.agreementhistoryparams.html#tabstop" class="tsd-kind-icon">tab<wbr>Stop</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="webclient.agreementhistoryparams.html#tip" class="tsd-kind-icon">tip</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="webclient.agreementhistoryparams.html#unloading" class="tsd-kind-icon">unloading</a>
@@ -720,5 +630,6 @@
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 <script src="../assets/js/web-client.js"></script>
+<script src="../assets/js/jsLists.min.js"></script>
 </body>
 </html>
