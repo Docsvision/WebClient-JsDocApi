@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>"C:\WebClient-JsDocApi\docs" "C:\WebClient" "C:\WebClient-JsDocApi\index.html"</StartArguments>
+    <StartArguments>"C:\WebClient-JsDocApi\docs" "C:\WebClient" "C:\WebClient-JsDocApi\Build\WebClientTypedocTheme\partials\nicenav.hbs"</StartArguments>
   </PropertyGroup>
 </Project>

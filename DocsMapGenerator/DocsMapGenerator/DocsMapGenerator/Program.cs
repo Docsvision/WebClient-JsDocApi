@@ -14,6 +14,7 @@ namespace DocsMapGenerator
             public string path;
             public string name;
             public string type;
+            public string logicPath;
         } 
         
         class DocDir
@@ -21,12 +22,15 @@ namespace DocsMapGenerator
             public string name;
             public List<DocDir> subdirs = new List<DocDir>();
             public List<DocItem> items = new List<DocItem>();
+
+            public string path;
         }
 
         static void AddItem(string path, string docFilepath, string type, string name, DocDir root)
         {
             var pathItems = path.Split('\\');
             var currentDir = root;
+            var currentDirPath = root.name;
             for(var i = 1; i< pathItems.Length-1; i++)
             {
                 var item = pathItems[i];
@@ -37,8 +41,10 @@ namespace DocsMapGenerator
                     currentDir.subdirs.Add(dir);
                 }
                 currentDir = dir;
+                currentDirPath += "/" + dir.name;
+                dir.path = currentDirPath;
             }
-            currentDir.items.Add(new DocItem() { name = name, path = docFilepath, type = type });
+            currentDir.items.Add(new DocItem() { name = name, path = docFilepath, type = type, logicPath = path });
         }
 
         static void Main(string[] args)
@@ -74,15 +80,21 @@ namespace DocsMapGenerator
             foreach (string file in Directory.EnumerateFiles(docsRoot + "/classes"))
             {
                 BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
+                Console.WriteLine(file);
             }
+            Console.WriteLine("Classes processed");
             foreach (string file in Directory.EnumerateFiles(docsRoot + "/interfaces"))
             {
                 BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
+                Console.WriteLine(file);                
             }
+            Console.WriteLine("Interfaces processed");
             foreach (string file in Directory.EnumerateFiles(docsRoot + "/enums"))
             {
                 BuildTree(srcFiles, srcFilesOriginal, root, file, docsRoot);
+                Console.WriteLine(file);                
             }
+            Console.WriteLine("Enums processed");
 
 
             using (var fileStream = new FileStream(output, FileMode.Create))
@@ -122,46 +134,50 @@ namespace DocsMapGenerator
             {
                 var fileTextLower = srcFiles.ElementAt(i);
                 var index = -1;
-                var classIndex = fileTextLower.Value.IndexOf(classMath + className);
-                if (classIndex >= 0)
+                // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
+                if (fileTextLower.Value.Contains(classMath + className) || fileTextLower.Value.Contains(classAbstractMath + className) ||
+                    fileTextLower.Value.Contains(interfaceMath + className) || fileTextLower.Value.Contains(enumMath + className))
                 {
-                    resultType = "tsd-kind-class";
-                    index = classIndex + classMath.Length;
-                }
-                else
-                {
-                    var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className);
-                    if (abstractClassIndex >= 0)
+                    var classIndex = fileTextLower.Value.IndexOf(classMath + className);
+                    if (classIndex >= 0)
                     {
                         resultType = "tsd-kind-class";
-                        index = abstractClassIndex + classAbstractMath.Length;
+                        index = classIndex + classMath.Length;
                     }
                     else
                     {
-                        var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className);
-                        if (interfaceIndex >= 0)
+                        var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className);
+                        if (abstractClassIndex >= 0)
                         {
-                            resultType = "tsd-kind-interface";
-                            index = interfaceIndex + interfaceMath.Length;
+                            resultType = "tsd-kind-class";
+                            index = abstractClassIndex + classAbstractMath.Length;
                         }
                         else
                         {
-                            var enumIndex = fileTextLower.Value.IndexOf(enumMath + className);
-                            if (enumIndex >= 0)
+                            var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className);
+                            if (interfaceIndex >= 0)
                             {
-                                resultType = "tsd-kind-enum";
-                                index = enumIndex + enumMath.Length;
+                                resultType = "tsd-kind-interface";
+                                index = interfaceIndex + interfaceMath.Length;
+                            }
+                            else
+                            {
+                                var enumIndex = fileTextLower.Value.IndexOf(enumMath + className);
+                                if (enumIndex >= 0)
+                                {
+                                    resultType = "tsd-kind-enum";
+                                    index = enumIndex + enumMath.Length;
+                                }
                             }
                         }
                     }
+                    if (index >= 0)
+                    {
+                        var originalText = srcFilesOriginal.ElementAt(i).Value;
+                        resultName = originalText.Substring(index, className.Length);
+                        resultNicePath = fileTextLower.Key;
+                    }
                 }
-                if (index >= 0)
-                {
-                    var originalText = srcFilesOriginal.ElementAt(i).Value;
-                    resultName = originalText.Substring(index, className.Length);
-                    resultNicePath = fileTextLower.Key;
-                }
-               
             }
             if (!String.IsNullOrEmpty(resultNicePath))
             {
@@ -177,8 +193,8 @@ namespace DocsMapGenerator
         {
             var ident = new string(' ', level);            
             stream.Write(ident + "<li>");
-            stream.Write(ident + "<b>" + currentDir.name + "</b>");
-            stream.WriteLine(ident + @"<ul class=""docs-dir"">");
+            stream.Write(ident + "<span class=dir-name>" + currentDir.name + "</span>");
+            stream.WriteLine(ident + @"<ul class=""docs-dir"" data-dir-path=""" +  currentDir.path + @""">");
             
             foreach(var dir in currentDir.subdirs)
             {
@@ -189,7 +205,7 @@ namespace DocsMapGenerator
             {
                 stream.Write(ident + "<li class='" + item.type + "'>");
                 stream.Write(@"<span class=""tsd-kind-icon"">");
-                stream.Write("<a href=\"" + item.path + "\" class=doc-link>" + item.name + "</a>");
+                stream.Write("<a href=\"{{relativeURL " + "\"" + item.path.Replace("\\", "/") + "\"}}\" class=doc-link data-path=\"" + item.logicPath  + "\" >" + item.name + "</a>");
                 stream.Write("</span>");
                 stream.Write("</li>");
             }
