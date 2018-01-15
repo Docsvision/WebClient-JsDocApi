@@ -58,6 +58,35 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>review</dt>
+						<dd><p>Хелпер для создания комбобокса (позволяет выбирать значение из выпадающего списка)</p>
+							<p>Пример использования:</p>
+							<p>   constructor() {
+								this.state.elements = [
+								{ id: &#39;1&#39;, title: &#39;Первый элемент&#39; },
+								{ id: &#39;2&#39;, title: &#39;Второй элемент&#39; },
+								{ id: &#39;3&#39;, title: &#39;Третий элемент&#39;, disabled: true },
+								{ id: &#39;4&#39;, title: &#39;Четвёртый элемент&#39; }
+								];
+								this.state.selectedID = &#39;2&#39;;
+							}</p>
+							<p>   render() {
+								<CommonComboBox elements={this.state.elements}
+								allowEmpty={true}
+								tabIndex
+								selectedID={this.state.selectedID}
+								defaultTitle="Выберите элемент из списка"
+								onChange={(selectedElement: IComboBoxElement) => {
+								this.setState({ selectedID: selectedElement.id });
+								}} /&gt;
+							}</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -124,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2040</li>
+									<li>Defined in layout-extension.d.ts:3376</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -146,9 +175,14 @@
 					<div class="tsd-signature tsd-kind-icon">el<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2039</li>
+							<li>Defined in layout-extension.d.ts:3372</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Корневой узел combobox</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="focusedelement" class="tsd-anchor"></a>
@@ -156,9 +190,14 @@
 					<div class="tsd-signature tsd-kind-icon">focused<wbr>Element<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2040</li>
+							<li>Defined in layout-extension.d.ts:3376</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Текущий сфокусированный элемент списка</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="getelementbyid" class="tsd-anchor"></a>
@@ -166,9 +205,25 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Element<wbr>ByID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2045</li>
+							<li>Defined in layout-extension.d.ts:3391</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ищет элемент списка по его ИД</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>ИД элемента</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Не создавать пустой элемент, если элемент не найден по ИД</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Пользовательские props</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -203,9 +258,19 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Blur<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2047</li>
+							<li>Defined in layout-extension.d.ts:3401</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При снятии фокуса у элемента списка</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Текущий элемент</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -234,9 +299,19 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Element<wbr>Selected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2044</li>
+							<li>Defined in layout-extension.d.ts:3384</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При выборе элемента в выпадающем списке</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>ИД выбранного элемента</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -265,9 +340,19 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Focus<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2046</li>
+							<li>Defined in layout-extension.d.ts:3396</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При фокусе элемента списка</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Текущий элемент</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -296,9 +381,22 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Focus<wbr>Sibling<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:2048</li>
+							<li>Defined in layout-extension.d.ts:3407</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При фокусе соседнего элемента в списке (навигация по стрелочкам)</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Текущий элемент</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Какой из соседних элементов должен получить фокус (предыдущий или следующий)</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -337,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2042</li>
+									<li>Defined in layout-extension.d.ts:3378</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -354,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2043</li>
+									<li>Defined in layout-extension.d.ts:3379</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,9 +475,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2049</li>
+									<li>Defined in layout-extension.d.ts:3411</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Создаёт список элементов</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -394,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2052</li>
+									<li>Defined in layout-extension.d.ts:3420</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
@@ -411,9 +514,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2051</li>
+									<li>Defined in layout-extension.d.ts:3419</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Рендерит тело комбобокса</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
 						</li>
 					</ul>
@@ -428,9 +536,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:2050</li>
+									<li>Defined in layout-extension.d.ts:3415</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Рендерит заголовок комбобокса</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
 						</li>
 					</ul>

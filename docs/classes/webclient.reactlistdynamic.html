@@ -58,6 +58,44 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>review</dt>
+						<dd><p>ReactList с возможностью динамической подгрузки результатов</p>
+							<p>Если нужно задать высоту контейнера, то её необходимо задать через свойства
+							Если элемент списка не удалось загрузить динамически (к примеру, он отсутствует), то вместо него необходимо вернуть ReactListDynamic.UNDEFINED_ITEM</p>
+							<p>Пример использования:</p>
+							<p>   constructor(props) {
+							super(props);</p>
+							<pre><code> this.<span class="hljs-keyword">state</span> = {
+   items: []
+ };
+</code></pre><p>   }</p>
+							<p>   itemsFetcher = (start: number, end: number) =&gt; {
+								...
+							}</p>
+							<p>   loadItems = (indexes: number[]) =&gt; {
+								this.itemsFetcher(indexes).then(items =&gt; {
+								indexes.forEach(index =&gt; this.state.items[index] = items[index]);
+								this.forceUpdate();
+								}, err =&gt; {
+								indexes.forEach(index =&gt; this.state.items[index] = ReactListDynamic.EMPTY_ITEM);
+								this.forceUpdate();
+								});
+							};</p>
+							<p>   renderItem = (key: number, itemData: any) =&gt; {
+								return <div key={key} style={{ height: 30 }}>{itemData.title}</div>;
+							};</p>
+							<p>   render() {
+								return <ReactListDynamic style={{ height: 180, overflow: 'auto' }}
+								itemsThreshold={3} length={50} itemHeight={30}
+								items={this.state.items} loadItems={this.loadItems} renderItem={this.renderItem} />;
+							}</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -122,7 +160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1044</li>
+									<li>Defined in layout-extension.d.ts:1233</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,9 +182,14 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1042</li>
+							<li>Defined in layout-extension.d.ts:1225</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Контейнер по умолчанию</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="loaditems" class="tsd-anchor"></a>
@@ -154,9 +197,14 @@
 					<div class="tsd-signature tsd-kind-icon">load<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1048</li>
+							<li>Defined in layout-extension.d.ts:1240</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Загружает список элементов</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -179,9 +227,14 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Scroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1049</li>
+							<li>Defined in layout-extension.d.ts:1244</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При скролле списка</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -204,9 +257,14 @@
 					<div class="tsd-signature tsd-kind-icon">react<wbr>List<span class="tsd-signature-symbol">:</span> <a href="webclient.reactlist.html" class="tsd-signature-type">ReactList</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1043</li>
+							<li>Defined in layout-extension.d.ts:1229</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Экземпляр ReactList</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="renderitem" class="tsd-anchor"></a>
@@ -214,9 +272,14 @@
 					<div class="tsd-signature tsd-kind-icon">render<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1050</li>
+							<li>Defined in layout-extension.d.ts:1248</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Отрисовываем элемент списка</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -251,9 +314,14 @@
 					<div class="tsd-signature tsd-kind-icon">threshold<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1044</li>
+							<li>Defined in layout-extension.d.ts:1233</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Задержка перед загрузкой при прокрутке списка</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 					<a name="fetch_threshold" class="tsd-anchor"></a>
@@ -261,9 +329,14 @@
 					<div class="tsd-signature tsd-kind-icon">FETCH_<wbr>THRESHOLD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1040</li>
+							<li>Defined in layout-extension.d.ts:1221</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Задержка перед загрузкой элемента списка по умолчанию</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 					<a name="undefined_item" class="tsd-anchor"></a>
@@ -271,9 +344,14 @@
 					<div class="tsd-signature tsd-kind-icon">UNDEFINED_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__type</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1041</li>
+							<li>Defined in layout-extension.d.ts:1223</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Элемент списка должен быть равен UNDEFINED_ITEM, если его по какой-то причине не удалось загрузить</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -288,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1046</li>
+									<li>Defined in layout-extension.d.ts:1235</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -305,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1047</li>
+									<li>Defined in layout-extension.d.ts:1236</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -322,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1051</li>
+									<li>Defined in layout-extension.d.ts:1249</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>

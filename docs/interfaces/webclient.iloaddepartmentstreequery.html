@@ -58,6 +58,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Query, that would be sent by Department control when user navigated over the tree.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -90,9 +97,14 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.searchdepartmenttype.html" class="tsd-signature-type">SearchDepartmentType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8237</li>
+							<li>Defined in layout-extension.d.ts:12169</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Search over departments, organisations or both</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="parentnodeid" class="tsd-anchor"></a>
@@ -100,9 +112,15 @@
 					<div class="tsd-signature tsd-kind-icon">parent<wbr>Node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8235</li>
+							<li>Defined in layout-extension.d.ts:12162</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If specified, only chidren of this node shoudl be loaded. If value is not specified, root items will be returned.
+							If searchQuery provided, parameter should be ignored.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="source" class="tsd-anchor"></a>
@@ -110,9 +128,14 @@
 					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.departmentsource.html" class="tsd-signature-type">DepartmentSource</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8238</li>
+							<li>Defined in layout-extension.d.ts:12171</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Where to perform the search</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="treeleveldown" class="tsd-anchor"></a>
@@ -120,9 +143,16 @@
 					<div class="tsd-signature tsd-kind-icon">tree<wbr>Level<wbr>Down<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8236</li>
+							<li>Defined in layout-extension.d.ts:12167</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>How deep into tree should we look.
+								Value &quot;1&quot; means only children of parent (or only root departments itself),
+							&quot;2&quot; - children and its children, etc. Default value 2.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>

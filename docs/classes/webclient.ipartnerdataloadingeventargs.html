@@ -89,9 +89,18 @@
 					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.ipartnerdirectoryrequest.html" class="tsd-signature-type">IPartnerDirectoryRequest</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4403</li>
+							<li>Defined in layout-extension.d.ts:6780</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Запрашиваемая информация, включая текущий фильтр.</p>
+						</div>
+						<p>В зависимости от значения <a href="webclient.ipartnerdataloadingeventargs.html#querytype">queryType</a> объект может быть представлен одним из производных интерфейсов:
+							1) при <code>PartnerQueryTypes.QuickSearch</code> объект типа <a href="../interfaces/webclient.ipartnerdirectorysearchrequest.html">IPartnerDirectorySearchRequest</a>
+							2) при <code>PartnerQueryTypes.DirectorySearch</code> объект типа <a href="../interfaces/webclient.ipartnerdirectorysearchrequest.html">IPartnerDirectorySearchRequest</a>
+						3) при <code>PartnerQueryTypes.LoadTree</code> объект типа <a href="../interfaces/webclient.ipartnerdirectorytreeloadrequest.html">IPartnerDirectoryTreeLoadRequest</a></p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="querytype" class="tsd-anchor"></a>
@@ -99,9 +108,14 @@
 					<div class="tsd-signature tsd-kind-icon">query<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.partnerquerytypes.html" class="tsd-signature-type">PartnerQueryTypes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4402</li>
+							<li>Defined in layout-extension.d.ts:6771</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Из какого места контрола производится загрузка данных.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="result" class="tsd-anchor"></a>
@@ -109,9 +123,18 @@
 					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.ipartnerdirectoryresponse.html" class="tsd-signature-type">IPartnerDirectoryResponse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:4404</li>
+							<li>Defined in layout-extension.d.ts:6789</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Результат выполнения запроса.</p>
+						</div>
+						<p>В зависимости от значения <a href="webclient.ipartnerdataloadingeventargs.html#querytype">queryType</a> объект может быть представлен одним из производных интерфейсов:
+							1) при <code>PartnerQueryTypes.QuickSearch</code> объект типа <a href="../interfaces/webclient.ipartnerdirectoryquicksearchresponse.html">IPartnerDirectoryQuickSearchResponse</a>
+							2) при <code>PartnerQueryTypes.DirectorySearch</code> объект типа <a href="../interfaces/webclient.ipartnerdirectorysearchresponse.html">IPartnerDirectorySearchResponse</a>
+						3) при <code>PartnerQueryTypes.LoadTree</code> объект типа <a href="../interfaces/webclient.ipartnerdirectorytreeloadresponse.html">IPartnerDirectoryTreeLoadResponse</a></p>
+					</div>
 				</section>
 			</section>
 		</div>

@@ -58,6 +58,43 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Компонент, который обеспечивает позиционирование всплывающего модального окна.</p>
+					</div>
+					<p>Замечание: при показе всплывающего окна создается элемент в body документа (или в указанном контейнере) с абсолютной позицией,
+						который при помощи свойств top и left размещается над целевым элементом. При этом, обновление координат происходит
+						при перерисовке компонента, при ресайзе и скроле окна, а также при скроле элемента-контейнера. Можно запустить перессчет
+						позиции вручную при помощи метода <a href="webclient.popover.html#updatepositions">updatePositions</a>. Предпочитительнее использовать этот метод, вместо перерисовки
+						компонента, т.к. данный метод только обновляет позицию, в то время как перерисовка запускает обновление содержимого
+					всплывающего окна (это критично, если нужно обновлять позицию в события, возникающих часто).</p>
+					<p>Из принципа работы компонента также следует, что анимации при показе окна могут некорректно работать при смене значения isOpen,
+						т.к. при показе окна элемент каждый раз создается заново. Если нужно при показе только сменить css-класс (для выполнения анимации),
+						то следует держать значение isOpen всегда true, и скрывать только содержимое всплывающего окна при помощи css. Сам компонент
+					не создает никаких видимых артефактов на экране, поэтому данный сценарий допустим.</p>
+					<p>Также следует отметить, что физически всплывающее окна располагается в другом месте DOM, не там где отрендерен элемент Popover.
+						Поэтому, наследование css-стилей не будет работать для содержимого вслывающего окна. При необходимости, можно задать
+						<a href="../interfaces/webclient.ipopoverprops.html#container">IPopoverProps.container</a>, чтобы указать место в DOM, где должен размещаться элемент. Однако, в этом случае могут возникнуть
+					проблемы с перекрыванием содержимого с другими элементами на странице.</p>
+					<p>Пример использования:</p>
+					<pre><code>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Popover</span> <span class="hljs-attr">isOpen</span>=<span class="hljs-string">{this.state.popoverOpen}</span> <span class="hljs-attr">onClickOutside</span>=<span class="hljs-string">{this.closePopover}</span> <span class="hljs-attr">onEscPressed</span>=<span class="hljs-string">{this.closePopover}</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">PopoverBox</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">PopoverHead</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">PopoverTitle</span>&gt;</span>Заголовок<span class="hljs-tag">&lt;/<span class="hljs-name">PopoverTitle</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">PopoverHead</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">PopoverContent</span>&gt;</span>
+                  Содержимое
+              <span class="hljs-tag">&lt;/<span class="hljs-name">PopoverContent</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">PopoverBox</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Элемент, около которого появится окно<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><p> См. также: <a href="../globals.html#popoverbox">PopoverBox</a>, <a href="../globals.html#popoverhead">PopoverHead</a>, <a href="../globals.html#popovertitle">PopoverTitle</a>,
+					<a href="../globals.html#popoverclosebutton">PopoverCloseButton</a>, <a href="../globals.html#popoveracceptbutton">PopoverAcceptButton</a>, <a href="../globals.html#popovercancelbutton">PopoverCancelButton</a>, <a href="../globals.html#popovercontent">PopoverContent</a></p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -113,9 +150,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1123</li>
+									<li>Defined in layout-extension.d.ts:1438</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -139,9 +182,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1144</li>
+									<li>Defined in layout-extension.d.ts:1468</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -156,9 +205,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1143</li>
+									<li>Defined in layout-extension.d.ts:1466</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -173,9 +228,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1126</li>
+									<li>Defined in layout-extension.d.ts:1444</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -199,9 +260,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1125</li>
+									<li>Defined in layout-extension.d.ts:1442</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -216,9 +283,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1130</li>
+									<li>Defined in layout-extension.d.ts:1449</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Скрывает всплывающее окна и очищает все занимаемые ресурсы.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -233,9 +305,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1145</li>
+									<li>Defined in layout-extension.d.ts:1470</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
 						</li>
 					</ul>
@@ -250,9 +328,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1137</li>
+									<li>Defined in layout-extension.d.ts:1459</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Перессчитать позицию всплывающего окна.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>

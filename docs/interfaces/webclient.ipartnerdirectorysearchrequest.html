@@ -58,6 +58,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Запрос, который шлется контролом Сотрудник контрагента при быстром поиске и поиске в окне справочника.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -92,9 +99,21 @@
 					<div class="tsd-signature tsd-kind-icon">department<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8335</li>
+							<li>Defined in layout-extension.d.ts:12309</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ограничение выбранной организацией или подразделением.</p>
+						</div>
+						<p>Если значение задано, то
+							1) Если mode == SearchDepartments, то в результатах поиска должны
+							отображаться подчиненные Организации и Подразделения всех уровней (отображать Название).
+							2) Если mode == SearchEmpoloyees, то все сотрудники организации, включая сотрудников подчиненных организаций и
+							подразделений в алфавитном порядке.
+						3) Если mode == SearchAll, то как организации так и сотрудников.</p>
+						<p>Если значение не задано, то поиск производится по всему справочнику.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="maxcount" class="tsd-anchor"></a>
@@ -102,9 +121,14 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8338</li>
+							<li>Defined in layout-extension.d.ts:12315</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Максимальное количество результатов в ответе.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="searchmode" class="tsd-anchor"></a>
@@ -112,9 +136,14 @@
 					<div class="tsd-signature tsd-kind-icon">search<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.partnerdirectorysearchmode.html" class="tsd-signature-type">PartnerDirectorySearchMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8333</li>
+							<li>Defined in layout-extension.d.ts:12294</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Режим поиска</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="searchtext" class="tsd-anchor"></a>
@@ -122,9 +151,14 @@
 					<div class="tsd-signature tsd-kind-icon">search<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8334</li>
+							<li>Defined in layout-extension.d.ts:12296</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Текст поискового запроса при mode равном SearchDepartments или SearchEmployees</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="skip" class="tsd-anchor"></a>
@@ -132,9 +166,14 @@
 					<div class="tsd-signature tsd-kind-icon">skip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8336</li>
+							<li>Defined in layout-extension.d.ts:12311</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Количество результатов, которое следует пропустить (они уже загружены клиентом).</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="skipdepartments" class="tsd-anchor"></a>
@@ -142,9 +181,14 @@
 					<div class="tsd-signature tsd-kind-icon">skip<wbr>Departments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:8337</li>
+							<li>Defined in layout-extension.d.ts:12313</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Колличество подразеделений и орагнизаций, которые уже загружены</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>

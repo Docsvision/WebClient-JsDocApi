@@ -64,6 +64,51 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Альтернатива для создания новых компонентов
+						Пример использования:</p>
+					</div>
+					<pre><code>interface IShopItem {
+    className?: string;
+    available: boolean;
+    price?: number;
+    comments?: string[];
+    name: string;
+    onClick?: <span class="hljs-function">(<span class="hljs-params">e: React.MouseEvent</span>) =&gt;</span> <span class="hljs-keyword">void</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShopItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">IShopItem</span>, <span class="hljs-title">undefined</span>&gt; </span>{
+    render() {
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{this.props.className}</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.props.onClick}</span>&gt;</span>{this.props.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+    }
+}
+
+<span class="hljs-keyword">const</span> PerfectQualityShopItem = <span class="hljs-keyword">new</span> Styled.Helpers.ComponentBuilder(ShopItem)
+    .setClasses(<span class="hljs-string">'shop-item'</span>, [<span class="hljs-string">'shop-item_perfect-quality'</span>])
+    .setPropsForClasses({
+        <span class="hljs-attr">available</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">price</span>: <span class="hljs-function">(<span class="hljs-params">name: string, value: number</span>) =&gt;</span> (value &gt; <span class="hljs-number">1000</span>) ? <span class="hljs-string">'highPrice'</span> : <span class="hljs-string">'lowPrice'</span>, <span class="hljs-comment">//CamelCase</span>
+        comments: <span class="hljs-function">(<span class="hljs-params">name: string, value: string[] | <span class="hljs-literal">null</span></span>) =&gt;</span> value &amp;&amp; (value.length &gt; <span class="hljs-number">0</span>)
+    })
+    .build()<span class="hljs-string">`
+        color: <span class="hljs-subst">${props =&gt; props.available ? <span class="hljs-string">'green'</span> : <span class="hljs-string">'gray'</span>}</span>;
+    `</span>;
+
+<span class="hljs-keyword">const</span> LowQualityShopItem = <span class="hljs-keyword">new</span> Styled.Helpers.ComponentBuilder&lt;IShopItem&gt;(styled.styled.div)
+    .setClasses(<span class="hljs-string">'shop-item'</span>, [<span class="hljs-string">'shop-item_low-quality'</span>])
+    .setPropsForClasses({
+        <span class="hljs-attr">available</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">price</span>: <span class="hljs-function">(<span class="hljs-params">name: string, value: number</span>) =&gt;</span> (value &gt; <span class="hljs-number">1000</span>) ? <span class="hljs-string">'highPrice'</span> : <span class="hljs-string">'lowPrice'</span>, <span class="hljs-comment">//CamelCase</span>
+        comments: <span class="hljs-function">(<span class="hljs-params">name: string, value: string[] | <span class="hljs-literal">null</span></span>) =&gt;</span> value &amp;&amp; (value.length &gt; <span class="hljs-number">0</span>)
+    })
+    .build()<span class="hljs-string">`
+        color: <span class="hljs-subst">${props =&gt; props.available ? <span class="hljs-string">'green'</span> : <span class="hljs-string">'gray'</span>}</span>;
+    `</span>;
+</code></pre>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -137,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:268</li>
+									<li>Defined in layout-extension.d.ts:440</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,9 +204,14 @@
 					<div class="tsd-signature tsd-kind-icon">additional<wbr>Class<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:267</li>
+							<li>Defined in layout-extension.d.ts:438</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Список дополнительных классов</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="buildclasses" class="tsd-anchor"></a>
@@ -169,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">build<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:272</li>
+							<li>Defined in layout-extension.d.ts:461</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -200,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">component<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">styled.ThemedStyledFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:265</li>
+							<li>Defined in layout-extension.d.ts:434</li>
 						</ul>
 					</aside>
 				</section>
@@ -210,9 +260,14 @@
 					<div class="tsd-signature tsd-kind-icon">main<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:266</li>
+							<li>Defined in layout-extension.d.ts:436</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Название главного класса. Отличается от дополнительных тем, что на основе него строятся названия классов для свойств.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="propsforclasses" class="tsd-anchor"></a>
@@ -220,9 +275,14 @@
 					<div class="tsd-signature tsd-kind-icon">props<wbr>For<wbr>Classes<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.styled.helpers.icomponentbuilderpropsforclasses.html" class="tsd-signature-type">IComponentBuilderPropsForClasses</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:268</li>
+							<li>Defined in layout-extension.d.ts:440</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Список аттрибутов, которые будут указаны в HTML-классах</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 					<a name="modifier_delimiter" class="tsd-anchor"></a>
@@ -230,7 +290,7 @@
 					<div class="tsd-signature tsd-kind-icon">MODIFIER_<wbr>DELIMITER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:264</li>
+							<li>Defined in layout-extension.d.ts:433</li>
 						</ul>
 					</aside>
 				</section>
@@ -247,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:273</li>
+									<li>Defined in layout-extension.d.ts:462</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,9 +330,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:274</li>
+									<li>Defined in layout-extension.d.ts:466</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Создаёт компонент (должен вызываться в самом конце).</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">styled.ThemedStyledFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -287,16 +352,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:270</li>
+									<li>Defined in layout-extension.d.ts:447</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Устанавливает классы для компонента</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mainClassName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Название главного класса <a href="webclient.styled.helpers.componentbuilder.html#mainclassname">mainClassName</a></p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> additionalClassNames: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Список дополнительных классов <a href="webclient.styled.helpers.componentbuilder.html#additionalclassnames">additionalClassNames</a></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="webclient.styled.helpers.componentbuilder.html" class="tsd-signature-type">ComponentBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -313,13 +389,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:271</li>
+									<li>Defined in layout-extension.d.ts:460</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Устанавливает список свойств, который будет использован для формирования модифицирующих css-классов
+									Примеры использования:</p>
+								</div>
+								<pre><code>.setPropsForClasses({
+    <span class="hljs-symbol">'selected'</span>: null,
+    <span class="hljs-symbol">'price'</span>: (name: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">value</span>: number) =&gt; (<span class="hljs-keyword">value</span> &gt; <span class="hljs-number">50</span>) ? <span class="hljs-symbol">'highPrice'</span> : <span class="hljs-symbol">'lowPrice'</span>,
+    <span class="hljs-symbol">'errors'</span>: (name: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">value</span>: <span class="hljs-built_in">string</span><span class="hljs-literal">[]</span>) =&gt; <span class="hljs-keyword">value</span> &amp;&amp; (<span class="hljs-keyword">value</span>.length &gt; <span class="hljs-number">0</span>)
+})
+</code></pre>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>propsForClasses: <a href="../interfaces/webclient.styled.helpers.icomponentbuilderpropsforclasses.html" class="tsd-signature-type">IComponentBuilderPropsForClasses</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>

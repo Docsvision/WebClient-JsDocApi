@@ -58,6 +58,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>review</dt>
+						<dd><p>Вспомогательный класс для рекурсивного обхода древовидных структур с использованием <a href="../interfaces/webclient.ireadonlyaccessor.html">IReadonlyAccessor</a> для доступа к дочерним узлам.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -114,13 +123,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1822</li>
+									<li>Defined in layout-extension.d.ts:2813</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>children: <a href="../interfaces/webclient.ireadonlyaccessor.html" class="tsd-signature-type">IReadonlyAccessor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Способ, при помощи которого будет осуществляться доступ к дочерним узлам.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="webclient.recursivevisitor.html" class="tsd-signature-type">RecursiveVisitor</a></h4>
@@ -136,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.ireadonlyaccessor.html" class="tsd-signature-type">IReadonlyAccessor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1822</li>
+							<li>Defined in layout-extension.d.ts:2813</li>
 						</ul>
 					</aside>
 				</section>
@@ -153,9 +169,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1827</li>
+									<li>Defined in layout-extension.d.ts:2843</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>review</dt>
+									<dd><p>Преобразует дерево в плоский список</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -166,9 +189,15 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>tree: <span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Дерево</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onVisitNode: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Вызывается при посещении каждого узла дерева. Должно вернуть булево значение - добавлять ли узел в плоский список или нет</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -203,22 +232,41 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1824</li>
+									<li>Defined in layout-extension.d.ts:2825</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>review</dt>
+									<dd><p>Рекурсивно обходит дерево вглубь (то есть, сначала спускается вниз, потом вширь).</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>node: <span class="tsd-signature-type">NodeT</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текущий узел дерева</p>
+									</div>
 								</li>
 								<li>
 									<h5>visitor: <a href="../globals.html#recursivevisitorcallback" class="tsd-signature-type">RecursiveVisitorCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Логика, которую необходимо выполнить для каждого узла.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parent: <span class="tsd-signature-type">NodeT</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Родительский узел (будет передан в visitor, параметр не обязателен)</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currentLevel: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текущий уровень узла (0 - корень дерева). Если не значение не задано, то считается что node - корень дерева.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/webclient.visitresult.html" class="tsd-signature-type">VisitResult</a>
@@ -238,22 +286,41 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1825</li>
+									<li>Defined in layout-extension.d.ts:2833</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>review</dt>
+									<dd><p>Рекурсивно обходит дерево вширь (то есть, сначала просматриваются соседние узлы, потом их дети).</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>node: <span class="tsd-signature-type">NodeT</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текущий узел дерева</p>
+									</div>
 								</li>
 								<li>
 									<h5>visitor: <a href="../globals.html#recursivevisitorcallback" class="tsd-signature-type">RecursiveVisitorCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NodeT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Логика, которую необходимо выполнить для каждого узла.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parent: <span class="tsd-signature-type">NodeT</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Родительский узел (будет передан в visitor, параметр не обязателен)</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currentLevel: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текущий уровень узла (0 - корень дерева). Если не значение не задано, то считается что node - корень дерева.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/webclient.visitresult.html" class="tsd-signature-type">VisitResult</a>
@@ -273,9 +340,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1826</li>
+									<li>Defined in layout-extension.d.ts:2837</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>См. <a href="webclient.recursivevisitor.html#visitwide">visitWide</a></p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

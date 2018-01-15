@@ -58,6 +58,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Предоставляет статические методы для отображения простых модальных окон.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -94,19 +101,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1352</li>
+									<li>Defined in layout-extension.d.ts:2187</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает модальное окно с запросом подтвердить какое-либо действие.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текст запроса</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customCaptionText: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Заголовок диалога</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; при согласии, и &quot;rejected&quot; при отказе.</p>
+							<p>Пример использования:</p>
+							<p>   MessageBox.ShowConfirmation(&quot;Вы действительно хотите удалить файл?&quot;).done(() =&gt; {
+								this.removeFile();
+								}).fail(() =&gt; {
+								// Пользователь отменил удаление
+							});</p>
 						</li>
 					</ul>
 				</section>
@@ -120,19 +145,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1349</li>
+									<li>Defined in layout-extension.d.ts:2140</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает модальное окно с сообщением об ошибке.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текст сообщения обо ошибке</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customCaptionText: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Заголовок диалога</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<p>Пример использования:</p>
+							<p>   MessageBox.ShowError(&quot;Неправильное имя файла!&quot;).done(() =&gt; {
+								console.info(&quot;Диалог закрыт&quot;);
+							});</p>
 						</li>
 					</ul>
 				</section>
@@ -146,19 +187,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1350</li>
+									<li>Defined in layout-extension.d.ts:2155</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает модальное окно с информационным сообщением.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текст сообщения</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customCaptionText: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Заголовок диалога</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<p>Пример использования:</p>
+							<p>   MessageBox.ShowInfo(&quot;Операция успешно выполнена!&quot;).done(() =&gt; {
+								console.info(&quot;Диалог закрыт&quot;);
+							});</p>
 						</li>
 					</ul>
 				</section>
@@ -172,19 +229,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:1351</li>
+									<li>Defined in layout-extension.d.ts:2170</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает модальное окно с предупреждением.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Текст предупреждения</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customCaptionText: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSX.Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Заголовок диалога</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<p>Пример использования:</p>
+							<p>   MessageBox.ShowWarning(&quot;Не все файлы были загружены!&quot;).done(() =&gt; {
+								console.info(&quot;Диалог закрыт&quot;);
+							});</p>
 						</li>
 					</ul>
 				</section>

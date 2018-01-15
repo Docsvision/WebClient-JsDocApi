@@ -58,6 +58,28 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Предоставляет контейнер для отрисовки модального окна. Позволяет отображать диалоговое окно вне react-компонент.</p>
+					</div>
+					<p>Пример использования:</p>
+					<pre><code><span class="hljs-keyword">let</span> host = <span class="hljs-keyword">new</span> ModalHost(<span class="hljs-string">"time-dialog"</span>, () =&gt; {
+     <span class="hljs-keyword">return</span> (
+         <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ModalBackdrop</span> <span class="hljs-attr">visible</span>=<span class="hljs-string">{true}</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">ModalDialog</span> <span class="hljs-attr">isOpen</span>=<span class="hljs-string">{true}</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">ModalDialogCloseButton</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> host.unmount()} /&gt;
+                 <span class="hljs-tag">&lt;<span class="hljs-name">ModalDialogHeader</span>&gt;</span>Текущее время<span class="hljs-tag">&lt;/<span class="hljs-name">ModalDialogHeader</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Текущее время: {(new Date()).toTimeString()}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">ModalDialog</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ModalBackdrop</span>&gt;</span>
+     );
+ });
+ host.mount();
+ setInterval(() =&gt; host.forceUpdate(), 1000);</span>
+</code></pre>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -99,16 +121,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:423</li>
+									<li>Defined in layout-extension.d.ts:718</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Инициализирует объект ModalDialogHost</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>className: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Класс, который будет задан элементу-контейнеру в DOM</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>render: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Функция, выполняющая отрисовку модального окна</p>
+										</div>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -140,9 +177,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:425</li>
+									<li>Defined in layout-extension.d.ts:728</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Иницирует перерисовку модального окна. При этом вызывается функция render, переданная в конструктор.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -157,9 +199,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:426</li>
+									<li>Defined in layout-extension.d.ts:732</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Создает в DOM элемент-контейнер, и запускает отрисовку модального окна.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -174,9 +221,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:427</li>
+									<li>Defined in layout-extension.d.ts:736</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Удаляет все созданные элементы из DOM.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>

@@ -58,6 +58,22 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>internal</dt>
+						<dd><p>Помогает с автоматической фокусировкой на своём содержимом
+							Ищет среди своих потомков фокусируемый элемент и передаёт фокус ему, запоминая прошлый сфокусированный элемент.</p>
+							<p>Фокусирование внутреннего элемента происходит при создании компонента (при условии, что компонент виден на странице) или при становлении его видимым (через css)
+							Возвращение фокуса происходит при уничтожении компонента или изменении его видимости на &quot;невидимый&quot; (пр. &quot;display: none&quot; в css)</p>
+							<p>Пример использования:</p>
+							<Focusable>
+								<div tabindex={0}>Содержимое</div>
+							</Focusable>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -117,9 +133,14 @@
 					<div class="tsd-signature tsd-kind-icon">el<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:324</li>
+							<li>Defined in layout-extension.d.ts:547</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Узел Focusable</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="isinitialfocused" class="tsd-anchor"></a>
@@ -127,9 +148,14 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Initial<wbr>Focused<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:327</li>
+							<li>Defined in layout-extension.d.ts:553</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Был ли проинициализирован Focusable</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="isvisible" class="tsd-anchor"></a>
@@ -137,9 +163,14 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:333</li>
+							<li>Defined in layout-extension.d.ts:563</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Виден ли Focusable на странице</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="mode" class="tsd-anchor"></a>
@@ -147,9 +178,14 @@
 					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.ifocusablemode.html" class="tsd-signature-type">IFocusableMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:334</li>
+							<li>Defined in layout-extension.d.ts:567</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Режим Focusable</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="prevfocusable" class="tsd-anchor"></a>
@@ -157,9 +193,14 @@
 					<div class="tsd-signature tsd-kind-icon">prev<wbr>Focusable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:325</li>
+							<li>Defined in layout-extension.d.ts:549</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Элемент, имевший фокус до Focusable</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="previsvisible" class="tsd-anchor"></a>
@@ -167,9 +208,14 @@
 					<div class="tsd-signature tsd-kind-icon">prev<wbr>IsVisible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:326</li>
+							<li>Defined in layout-extension.d.ts:551</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Был ли виден Focusable в пердыдущем рендеринге</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 					<a name="default_mode" class="tsd-anchor"></a>
@@ -177,9 +223,14 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>MODE<span class="tsd-signature-symbol">:</span> <a href="../interfaces/webclient.ifocusablemode.html" class="tsd-signature-type">IFocusableMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:328</li>
+							<li>Defined in layout-extension.d.ts:555</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Режим Focusable по умолчанию</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -194,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:329</li>
+									<li>Defined in layout-extension.d.ts:556</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -211,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:331</li>
+									<li>Defined in layout-extension.d.ts:558</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -228,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:332</li>
+									<li>Defined in layout-extension.d.ts:559</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -251,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:330</li>
+									<li>Defined in layout-extension.d.ts:557</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -268,9 +319,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:336</li>
+									<li>Defined in layout-extension.d.ts:575</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Находит текущий элемент с фокусом (нужно для возврата фокуса)</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
 					</ul>
@@ -285,9 +341,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:335</li>
+									<li>Defined in layout-extension.d.ts:571</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ищет внутри себя элемент для передачи фокуса</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
 					</ul>
@@ -302,9 +363,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:337</li>
+									<li>Defined in layout-extension.d.ts:579</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Передать фокус элементу внутри</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -325,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:339</li>
+									<li>Defined in layout-extension.d.ts:584</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
@@ -342,9 +408,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout-extension.d.ts:338</li>
+									<li>Defined in layout-extension.d.ts:583</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Вернуть фокус исходному элементу</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

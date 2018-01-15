@@ -58,6 +58,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Свойства для  <a href="../classes/webclient.popover.html">Popover</a></p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -96,9 +103,14 @@
 					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JSX.Element</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1105</li>
+							<li>Defined in layout-extension.d.ts:1380</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Содержимое модального окна. Используйте <a href="../globals.html#popoverbox">PopoverBox</a> для создания белой панели со скругленными краями.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="container" class="tsd-anchor"></a>
@@ -106,9 +118,14 @@
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1097</li>
+							<li>Defined in layout-extension.d.ts:1353</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Место на странице, куда будет добавлен элемент всплывающего окна. По умолчанию: document.body</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="isopen" class="tsd-anchor"></a>
@@ -116,9 +133,14 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1096</li>
+							<li>Defined in layout-extension.d.ts:1351</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>При смене значения на true всплывающее окно откроется, при смене в false - скроется.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="mode" class="tsd-anchor"></a>
@@ -126,9 +148,17 @@
 					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/webclient.popovermode.html" class="tsd-signature-type">PopoverMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1100</li>
+							<li>Defined in layout-extension.d.ts:1370</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Место относительно целевого элемента, где будет размещено вспылвающее окно.</p>
+						</div>
+						<p>Замечение: если места сверху будет недостаточно (будут мешать границы экрана), то всплывающее окно
+						автоматически сместится вниз.</p>
+						<p>По умолчанию: PopoverMode.Above</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="onclickoutside" class="tsd-anchor"></a>
@@ -136,9 +166,14 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Click<wbr>Outside<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1102</li>
+							<li>Defined in layout-extension.d.ts:1374</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Событие click вне всплывающего окна.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -167,9 +202,14 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Enter<wbr>Pressed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1103</li>
+							<li>Defined in layout-extension.d.ts:1376</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Событие нажатия Enter (срабатывает, даже когда фокус вне модального окна).</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -198,9 +238,14 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Esc<wbr>Pressed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1104</li>
+							<li>Defined in layout-extension.d.ts:1378</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Событие нажатия Esc (срабатывает, даже когда фокус вне модального окна).</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -229,9 +274,14 @@
 					<div class="tsd-signature tsd-kind-icon">screen<wbr>Padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1099</li>
+							<li>Defined in layout-extension.d.ts:1362</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Минимальная дистанция до границ экрана в пикселях.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="target" class="tsd-anchor"></a>
@@ -239,9 +289,16 @@
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1098</li>
+							<li>Defined in layout-extension.d.ts:1360</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Элемент, относительно которого всплывающее окно будет позиционироваться.</p>
+						</div>
+						<p>Замечание: Popover не может корректно позиционироваться относительно элементов с display: inline.</p>
+						<p>По умолчанию: ближайший не-inline родитель Popover.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="xshift" class="tsd-anchor"></a>
@@ -249,9 +306,14 @@
 					<div class="tsd-signature tsd-kind-icon">x<wbr>Shift<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout-extension.d.ts:1101</li>
+							<li>Defined in layout-extension.d.ts:1372</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Статичное смещение всплывающего окна от вычисленного положения по оси X в пикселях.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
