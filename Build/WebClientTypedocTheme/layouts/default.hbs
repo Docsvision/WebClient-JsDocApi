@@ -22,11 +22,7 @@
         </div>
         <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation primary">
-                <ul>
-                    {{#each navigation.children}}
-                        {{> navigation}}
-                    {{/each}}
-                </ul>
+                {{> nicenav}}
             </nav>
 
             <nav class="tsd-navigation secondary menu-sticky">
@@ -46,7 +42,7 @@
 <script src="{{relativeURL "assets/js/main.js"}}"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="{{relativeURL "assets/js/search.js"}}"><' + '/script>');</script>
 <script src="{{relativeURL "assets/js/web-client.js"}}"></script>
-
+<script src="{{relativeURL "assets/js/jsLists.min.js"}}"></script>
 {{> analytics}}
 
 </body>

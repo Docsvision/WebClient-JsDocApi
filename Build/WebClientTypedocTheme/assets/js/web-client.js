@@ -61,4 +61,34 @@
 			}
 		});
 	}
+	
+	// Expand current nav
+	document.addEventListener("DOMContentLoaded", function() {
+		// Expand root 
+		var rootUl = document.querySelector("#tree_root>li>ul");
+		rootUl.classList.add("jsl-open");
+		var rootToggler = document.querySelector("#tree_root>li>div.jsl-collapsed-arrow");
+		rootToggler.classList.add("jsl-open-arrow");
+		
+		if (location.pathname.indexOf("classes") >= 0 || location.pathname.indexOf("interfaces") >= 0 || location.pathname.indexOf("enums") >= 0) {		
+			var path = location.pathname.split('/');
+			var match = path[path.length-2] + "/" + path[path.length-1];
+			var link = [].find.call(document.querySelectorAll("a.doc-link"), (a) => a.href.indexOf(match) >= 0);
+			if (link) {
+				link.style.fontWeight = "bold"
+				var parent = link.parentElement;
+				while (parent != null) {
+					if (parent.tagName == "UL") {
+						parent.classList.add("jsl-open");
+						var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
+						if (toggler) {
+							toggler.classList.add("jsl-open-arrow");
+						}
+					}
+					parent = parent.parentElement;
+				}
+			}
+		}
+	});
 })();
+

@@ -70,3 +70,31 @@ h1 {
 #tsd-search .results a {
 	color: #333;
 }
+
+ul.jslist-ul, ul.docs-dir  {
+	margin: 3px 0;
+	list-style: none;
+}
+div.jsl-collapsed-arrow {
+	margin-top: 6px;
+}
+
+#tree_root.loading {
+	display: none;
+}
+
+.tsd-navigation .jslist-ul {
+	margin-left: 15px;
+	margin-top: 3px;
+	margin-botom: 30px;
+	marign-right: 0;
+}
+
+.tsd-navigation.primary a.doc-link {
+	padding-left: 0 !important;
+	display: inline;
+}
+
+.tsd-navigation.primary li {
+	margin-left: 0;
+}
