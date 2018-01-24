@@ -3,4 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartArguments>"C:\WebClient-JsDocApi" "C:\WebClient"</StartArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>"C:\WebClient-JsDocApi\docs" "C:\WebClient"</StartArguments>
+  </PropertyGroup>
 </Project>

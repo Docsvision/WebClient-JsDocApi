@@ -1,6 +1,23 @@
 "use strict";
 
 (function() { 
+	let labelTags = document.getElementsByTagName("dt");
+	// Hide review tags
+	for(let tag of labelTags) { 
+		if (tag.textContent == "review") 
+			tag.style.display = "none"; 
+	}
+	// Update internal tag text
+	for(let tag of labelTags) { 
+		if (tag.textContent == "internal")  { 
+			tag.textContent = 'Это внутренний нестабильный API, который может измениться в следующих версиях Web-client.'; 
+			tag.style.color = "red"; 
+			tag.style.float = "none"; 
+			tag.style.marginBottom = "10px"; 
+			tag.style.display = "block";
+		} 
+	}
+
     // Show inherited toggle
 	var WebClientDocsShowInherited = "WebClientDocsShowInherited";
 	function toggleInherited(show) {

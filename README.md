@@ -9,3 +9,4 @@
 * [Описание членов JavaScript API](globals.html)
 * [Примеры расширений модуля Web-клиент](https://github.com/DocsVision/WebClient-Samples)
 * [Сайт Docsvision](http://docsvision.com)
+* [Документация JavaScript API для WebClient версии 9](docs-webclient9/index.html)

@@ -352,6 +352,9 @@ declare namespace WebClient {
 }
 declare namespace WebClient {
     namespace Styled {
+        /**
+         * @internal
+         */
         namespace Helpers {
             /**
              * Позволяет присоединить свой интерфейс для стандартных html-узлов (styled.div, styled.button и т.п.) для автодополнения.
@@ -388,6 +391,7 @@ declare namespace WebClient {
              */
             const combineMixins: (...mixins: styled.ThemedCssFunction<any>[]) => (strings: any, ...values: any[]) => styled.InterpolationValue[];
             /**
+             * @internal
              * Альтернатива для создания новых компонентов
              * Пример использования:
              *
@@ -465,7 +469,14 @@ declare namespace WebClient {
                  */
                 build(): styled.ThemedStyledFunction<P, T, O>;
             }
-            /** Возвращаем boolean, если хотим работать с имеющимся в name названием атрибута, а если хотим собственное название - возвращаем его в виде строки в camelCase (предпочтительнее) или в hyphen-case */
+            /**
+             * Функция, позволяющая преобразовать переданное название параметра в нужное название css-класса. Также может использоваться как фильтр.
+             *
+             * Поведение зависит от возвращаемого результата:
+             *   1) true - в качестве CSS-класса используется исходное название переданного параметра name
+             *   2) false - атрибут не преобразуется в CSS-класс
+             *   3) string - модифицированное название атрибута name для последующего преобразования в CSS-класс (желательно использовать camelCase или hyphen-case).
+             */
             type AttributesForClassesHandler = (name: string, value: any) => boolean | string;
             interface IComponentBuilderPropsForClasses {
                 [name: string]: void | AttributesForClassesHandler;
@@ -475,6 +486,9 @@ declare namespace WebClient {
 }
 declare namespace WebClient {
     namespace Styled {
+        /**
+         * @internal
+         */
         namespace Mixins {
             const hover: (strings: TemplateStringsArray, ...values: styled.SimpleInterpolation[]) => styled.InterpolationValue[];
             const focus: (strings: TemplateStringsArray, ...values: styled.SimpleInterpolation[]) => styled.InterpolationValue[];
@@ -537,9 +551,9 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *    <Focusable>
-      *      <div tabindex={0}>Содержимое</div>
-      *    </Focusable>
+      *     <Focusable>
+      *       <div tabindex={0}>Содержимое</div>
+      *     </Focusable>
       *
       */
     class Focusable extends React.Component<IFocusableProps, undefined> {
@@ -602,7 +616,7 @@ declare namespace WebClient {
     }
     /** @internal Represents a text, where search match is highlighted
       * Usage example:
-      *     <HighlightedSearchResult text={item.name} searchQuery={this.state.searchInput.value}  />
+      *      <HighlightedSearchResult text={item.name} searchQuery={this.state.searchInput.value}  />
       */
     const HighlightedSearchResult: (props: IHighlightedSearchResultProps) => JSX.Element;
 }
@@ -622,7 +636,7 @@ declare namespace WebClient {
       *
       * Usage example:
       *
-      *     <HighlightedSimpleSearchResult text={item.name} searchQuery={this.state.searchInput.value}  />
+      *      <HighlightedSimpleSearchResult text={item.name} searchQuery={this.state.searchInput.value}  />
       */
     const HighlightedSimpleSearchResult: (props: IHighlightedSimpleSearchResult) => JSX.Element;
 }
@@ -655,8 +669,8 @@ declare namespace WebClient {
     /** @internal Represents a button, that looks like small icon
       * Usage example:
       *  <IconButton name="open-dictionary" onClick={this.onOpenDictionaryClick}
-      *      iconClassName="dv-ico dv-ico-dictionary" visible={ super.getEditAvailable()}
-      *      title={resources.Numerator_GenerateNewNumberTooltip}  />
+      *       iconClassName="dv-ico dv-ico-dictionary" visible={ super.getEditAvailable()}
+      *       title={resources.Numerator_GenerateNewNumberTooltip}  />
       */
     const IconButton: (props: IIconButtonProps) => JSX.Element;
 }
@@ -681,11 +695,11 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalBackdrop onClick={() => this.setState({ sidebarOpen: false })} >
-      *         <ModalSidebar isOpen={this.state.sidebarOpen} >
-      *             Sidebar content
-      *         </ModalSidebar>
-      *     </ModalBackdrop>
+      *      <ModalBackdrop onClick={() => this.setState({ sidebarOpen: false })} >
+      *          <ModalSidebar isOpen={this.state.sidebarOpen} >
+      *              Sidebar content
+      *          </ModalSidebar>
+      *      </ModalBackdrop>
       */
     const ModalBackdrop: (props: IModalBackdropProps) => JSX.Element;
 }
@@ -695,19 +709,19 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *     let host = new ModalHost("time-dialog", () => {
-     *          return (
-     *              <ModalBackdrop visible={true}>
-     *                  <ModalDialog isOpen={true}>
-     *                      <ModalDialogCloseButton onClick={() => host.unmount()} />
-     *                      <ModalDialogHeader>Текущее время</ModalDialogHeader>
-     *                      <div>Текущее время: {(new Date()).toTimeString()}</div>
-     *                  </ModalDialog>
-     *              </ModalBackdrop>
-     *          );
-     *      });
-     *      host.mount();
-     *      setInterval(() => host.forceUpdate(), 1000);
+     *      let host = new ModalHost("time-dialog", () => {
+     *           return (
+     *               <ModalBackdrop visible={true}>
+     *                   <ModalDialog isOpen={true}>
+     *                       <ModalDialogCloseButton onClick={() => host.unmount()} />
+     *                       <ModalDialogHeader>Текущее время</ModalDialogHeader>
+     *                       <div>Текущее время: {(new Date()).toTimeString()}</div>
+     *                   </ModalDialog>
+     *               </ModalBackdrop>
+     *           );
+     *       });
+     *       host.mount();
+     *       setInterval(() => host.forceUpdate(), 1000);
      *
      */
     class ModalHost {
@@ -774,14 +788,14 @@ declare namespace WebClient {
       * @internal Хелпер для создания блока с поиском
       * Пример использования:
       *
-      *    <Focusable>
-      *      <SearchBar value="Значение"
-      *        placeholder="Введите значение"
-      *        searchIndex={3}
-      *        searchTimeout={2000}
-      *        onChange={value => console.log(value)}
-      *        onSearch={value => console.log(value)} />
-      *    </Focusable>
+      *     <Focusable>
+      *       <SearchBar value="Значение"
+      *         placeholder="Введите значение"
+      *         searchIndex={3}
+      *         searchTimeout={2000}
+      *         onChange={value => console.log(value)}
+      *         onSearch={value => console.log(value)} />
+      *     </Focusable>
       *
       */
     class SearchBar extends React.Component<ISearchBarProps, undefined> {
@@ -897,29 +911,29 @@ declare namespace WebClient {
       * @internal Помогает с сортировкой дочерних элементов, путём их перетаскивания
       * Пример использования:
       *
-      *    interface IMyItem {
-      *      id: string;
-      *      value: string;
-      *    }
+      *     interface IMyItem {
+      *         id: string;
+      *         value: string;
+      *     }
       *
-      *    ...
+      *     ...
       *
-      *    constructor() {
-      *      this.state.myItems = [{id: '1', value: 'Первый элемент'}, {id: '2', value: 'Второй элемент'}];
-      *      this.state.myOrder = undefined;
-      *    }
+      *     constructor() {
+      *         this.state.myItems = [{id: '1', value: 'Первый элемент'}, {id: '2', value: 'Второй элемент'}];
+      *         this.state.myOrder = undefined;
+      *     }
       *
-      *    render() {
-      *      return <Sortable order={this.state.myOrder}
-      *        onReorder={(newOrder: string[], sortedItems: ISortableItem<IMyValue>[]) => {
-      *          this.state.myOrder = newOrder;
-      *          this.forceUpdate();
-      *        }} items={this.state.myItems.map(item => ({
-      *          id: item.id,
-      *          data: item,
-      *          render: (data) => <div>{data.value}</div>
-      *        }))} />
-      *    }
+      *     render() {
+      *         return <Sortable order={this.state.myOrder}
+      *             onReorder={(newOrder: string[], sortedItems: ISortableItem<IMyValue>[]) => {
+      *                 this.state.myOrder = newOrder;
+      *                 this.forceUpdate();
+      *             }} items={this.state.myItems.map(item => ({
+      *                 id: item.id,
+      *                 data: item,
+      *                 render: (data) => <div>{data.value}</div>
+      *             }))} />
+      *     }
       *
       */
     class Sortable extends React.Component<ISortableProps, undefined> {
@@ -999,22 +1013,32 @@ declare namespace WebClient {
 }
 declare namespace WebClient {
     interface SliderCheckBoxProps {
+        /** Вызывается при изменении значения. */
         onChange?: (newValue: boolean) => void;
+        /** Флаг, определяющий возможность изменения значения переключателя: true - разрешено (разрешена настроенная операция редактирования), false - не разрешено. */
         canEdit?: boolean;
+        /** Значение чекбокса. */
         value?: boolean;
-        /** Custom class for checkbox */
+        /** Стандартный CSS класс со стилями переключателя. */
         className?: string;
+        /** Текст всплывающей подсказки. */
         tip?: string;
+        /** Текст метки. */
         labelText?: string;
+        /** Определяет, должен ли переключатель получать фокус при переходе по Tab: `true` - должен, `false` - не должен. */
         tabStop?: boolean;
     }
     interface SliderCheckBoxState {
     }
+    /**
+     * Вспомогательный класс для переключателя между двумя значениями.
+     */
     class SliderCheckBox extends React.Component<SliderCheckBoxProps, SliderCheckBoxState> {
         constructor(props: SliderCheckBoxProps);
         protected handleCheckBoxClick(event: any): void;
         protected getTabIndex(): 0 | -1;
         protected getCssClass(): string;
+        /** @internal */
         render(): JSX.Element;
     }
 }
@@ -1183,37 +1207,37 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *    constructor(props) {
-     *      super(props);
+     *     constructor(props) {
+     *       super(props);
      *
-     *      this.state = {
-     *        items: []
-     *      };
-     *    }
+     *       this.state = {
+     *         items: []
+     *       };
+     *     }
      *
-     *    itemsFetcher = (start: number, end: number) => {
-     *      ...
-     *    }
+     *     itemsFetcher = (start: number, end: number) => {
+     *       ...
+     *     }
      *
-     *    loadItems = (indexes: number[]) => {
-     *      this.itemsFetcher(indexes).then(items => {
-     *        indexes.forEach(index => this.state.items[index] = items[index]);
-     *        this.forceUpdate();
-     *      }, err => {
-     *        indexes.forEach(index => this.state.items[index] = ReactListDynamic.EMPTY_ITEM);
-     *        this.forceUpdate();
-     *      });
-     *    };
+     *     loadItems = (indexes: number[]) => {
+     *       this.itemsFetcher(indexes).then(items => {
+     *         indexes.forEach(index => this.state.items[index] = items[index]);
+     *         this.forceUpdate();
+     *       }, err => {
+     *         indexes.forEach(index => this.state.items[index] = ReactListDynamic.EMPTY_ITEM);
+     *         this.forceUpdate();
+     *       });
+     *     };
      *
-     *    renderItem = (key: number, itemData: any) => {
-     *      return <div key={key} style={{ height: 30 }}>{itemData.title}</div>;
-     *    };
+     *     renderItem = (key: number, itemData: any) => {
+     *       return <div key={key} style={{ height: 30 }}>{itemData.title}</div>;
+     *     };
      *
-     *    render() {
-     *      return <ReactListDynamic style={{ height: 180, overflow: 'auto' }}
-     *        itemsThreshold={3} length={50} itemHeight={30}
-     *        items={this.state.items} loadItems={this.loadItems} renderItem={this.renderItem} />;
-     *    }
+     *     render() {
+     *       return <ReactListDynamic style={{ height: 180, overflow: 'auto' }}
+     *         itemsThreshold={3} length={50} itemHeight={30}
+     *         items={this.state.items} loadItems={this.loadItems} renderItem={this.renderItem} />;
+     *     }
      *
      */
     class ReactListDynamic extends React.Component<IReactListDynamicProps, IReactListDynamicState> {
@@ -1291,32 +1315,32 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *    constructor(props) {
-     *      super(props);
+     *     constructor(props) {
+     *       super(props);
      *
-     *      this.state = {
-     *        items: []
-     *      };
-     *    }
+     *       this.state = {
+     *         items: []
+     *       };
+     *     }
      *
-     *    getPage = (pageNumber: number) => {
-     *      ...
-     *    }
+     *     getPage = (pageNumber: number) => {
+     *       ...
+     *     }
      *
-     *    loadPage = (pageNumber: number) => {
-     *      this.getPage(pageNumber).then(itemsPart => {
-     *        this.setState(prevState => ({ items: prevState.items.concat(itemsPart) }));
-     *      });
-     *    };
+     *     loadPage = (pageNumber: number) => {
+     *       this.getPage(pageNumber).then(itemsPart => {
+     *         this.setState(prevState => ({ items: prevState.items.concat(itemsPart) }));
+     *       });
+     *     };
      *
-     *    renderItem = (index: number, key: number) => {
-     *      return <div key={key}>{this.state.items[index].title}</div>;
-     *    };
+     *     renderItem = (index: number, key: number) => {
+     *       return <div key={key}>{this.state.items[index].title}</div>;
+     *     };
      *
-     *    render() {
-     *      return <ReactListInfiniteScroll customContainer={CustomTreeDefault} items={this.state.items}
-     *          loadPage={this.loadPage} type={ReactListVirtualization.variable} itemRenderer={this.renderItem} />
-     *    }
+     *     render() {
+     *       return <ReactListInfiniteScroll customContainer={CustomTreeDefault} items={this.state.items}
+     *           loadPage={this.loadPage} type={ReactListVirtualization.variable} itemRenderer={this.renderItem} />
+     *     }
      *
      */
     class ReactListInfiniteScroll extends React.Component<IReactListInfiniteScrollProps, undefined> {
@@ -1415,19 +1439,19 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *       <div>
-     *           <Popover isOpen={this.state.popoverOpen} onClickOutside={this.closePopover} onEscPressed={this.closePopover}>
-     *               <PopoverBox>
-     *                   <PopoverHead>
-     *                       <PopoverTitle>Заголовок</PopoverTitle>
-     *                   </PopoverHead>
-     *                   <PopoverContent>
-     *                       Содержимое
-     *                   </PopoverContent>
-     *               </PopoverBox>
-     *           </Popover>
-     *           <span>Элемент, около которого появится окно</span>
-     *       </div>
+     *        <div>
+     *            <Popover isOpen={this.state.popoverOpen} onClickOutside={this.closePopover} onEscPressed={this.closePopover}>
+     *                <PopoverBox>
+     *                    <PopoverHead>
+     *                        <PopoverTitle>Заголовок</PopoverTitle>
+     *                    </PopoverHead>
+     *                    <PopoverContent>
+     *                        Содержимое
+     *                    </PopoverContent>
+     *                </PopoverBox>
+     *            </Popover>
+     *            <span>Элемент, около которого появится окно</span>
+     *        </div>
      *
      *  См. также: {@link PopoverBox}, {@link PopoverHead}, {@link PopoverTitle},
      *  {@link PopoverCloseButton}, {@link PopoverAcceptButton}, {@link PopoverCancelButton}, {@link PopoverContent}
@@ -1480,26 +1504,26 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *      <Popover isOpen={this.state.popoverOpen} onClickOutside={this.cancel} onEscPressed={this.cancel}>
-      *          <PopoverBox>
-      *              <PopoverHead>
-      *                  <HorizontalStack>
-      *                      <StackSpringItem>
-      *                          <PopoverTitle>Заголовок</PopoverTitle>
-      *                      </StackSpringItem>
-      *                      <StackStaticItem>
-      *                          <PopoverAcceptButton onClick={this.accept} />
-      *                      </StackStaticItem>
-      *                      <StackStaticItem>
-      *                          <PopoverCancelButton onClick={this.cancel} />
-      *                      </StackStaticItem>
-      *                  </HorizontalStack>
-      *              </PopoverHead>
-      *              <PopoverContent>
-      *                  Содержимое
-      *              </PopoverContent>
-      *         </PopoverBox>
-      *      </Popover>
+      *       <Popover isOpen={this.state.popoverOpen} onClickOutside={this.cancel} onEscPressed={this.cancel}>
+      *           <PopoverBox>
+      *               <PopoverHead>
+      *                   <HorizontalStack>
+      *                       <StackSpringItem>
+      *                           <PopoverTitle>Заголовок</PopoverTitle>
+      *                       </StackSpringItem>
+      *                       <StackStaticItem>
+      *                           <PopoverAcceptButton onClick={this.accept} />
+      *                       </StackStaticItem>
+      *                       <StackStaticItem>
+      *                           <PopoverCancelButton onClick={this.cancel} />
+      *                       </StackStaticItem>
+      *                   </HorizontalStack>
+      *               </PopoverHead>
+      *               <PopoverContent>
+      *                   Содержимое
+      *               </PopoverContent>
+      *          </PopoverBox>
+      *       </Popover>
       *
       * См. также {@link Popover}
       */
@@ -1515,11 +1539,11 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <Popover isOpen={this.state.popoverOpen} >
-      *         <PopoverBox>
-      *             <div>Содержимое</div>
-      *         </PopoverBox>
-      *     </Popover>
+      *      <Popover isOpen={this.state.popoverOpen} >
+      *          <PopoverBox>
+      *              <div>Содержимое</div>
+      *          </PopoverBox>
+      *      </Popover>
       *
       * См. также {@link Popover}
       */
@@ -1535,26 +1559,26 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *      <Popover isOpen={this.state.popoverOpen} onClickOutside={this.cancel} onEscPressed={this.cancel}>
-      *          <PopoverBox>
-      *              <PopoverHead>
-      *                  <HorizontalStack>
-      *                      <StackSpringItem>
-      *                          <PopoverTitle>Заголовок</PopoverTitle>
-      *                      </StackSpringItem>
-      *                      <StackStaticItem>
-      *                          <PopoverAcceptButton onClick={this.accept} />
-      *                      </StackStaticItem>
-      *                      <StackStaticItem>
-      *                          <PopoverCancelButton onClick={this.cancel} />
-      *                      </StackStaticItem>
-      *                  </HorizontalStack>
-      *              </PopoverHead>
-      *              <PopoverContent>
-      *                  Содержимое
-      *              </PopoverContent>
-      *         </PopoverBox>
-      *      </Popover>
+      *       <Popover isOpen={this.state.popoverOpen} onClickOutside={this.cancel} onEscPressed={this.cancel}>
+      *           <PopoverBox>
+      *               <PopoverHead>
+      *                   <HorizontalStack>
+      *                       <StackSpringItem>
+      *                           <PopoverTitle>Заголовок</PopoverTitle>
+      *                       </StackSpringItem>
+      *                       <StackStaticItem>
+      *                           <PopoverAcceptButton onClick={this.accept} />
+      *                       </StackStaticItem>
+      *                       <StackStaticItem>
+      *                           <PopoverCancelButton onClick={this.cancel} />
+      *                       </StackStaticItem>
+      *                   </HorizontalStack>
+      *               </PopoverHead>
+      *               <PopoverContent>
+      *                   Содержимое
+      *               </PopoverContent>
+      *          </PopoverBox>
+      *       </Popover>
       *
       * См. также {@link Popover}
       */
@@ -1570,23 +1594,23 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *      <Popover isOpen={this.state.popoverOpen} onClickOutside={this.closePopover} onEscPressed={this.closePopover}>
-      *          <PopoverBox>
-      *              <PopoverHead>
-      *                  <HorizontalStack>
-      *                      <StackSpringItem>
-      *                          <PopoverTitle>Заголовок</PopoverTitle>
-      *                      </StackSpringItem>
-      *                      <StackStaticItem>
-      *                          <PopoverCloseButton onClick={this.closePopover} />
-      *                      </StackStaticItem>
-      *                  </HorizontalStack>
-      *              </PopoverHead>
-      *              <PopoverContent>
-      *                  Содержимое
-      *              </PopoverContent>
-      *         </PopoverBox>
-      *      </Popover>
+      *       <Popover isOpen={this.state.popoverOpen} onClickOutside={this.closePopover} onEscPressed={this.closePopover}>
+      *           <PopoverBox>
+      *               <PopoverHead>
+      *                   <HorizontalStack>
+      *                       <StackSpringItem>
+      *                           <PopoverTitle>Заголовок</PopoverTitle>
+      *                       </StackSpringItem>
+      *                       <StackStaticItem>
+      *                           <PopoverCloseButton onClick={this.closePopover} />
+      *                       </StackStaticItem>
+      *                   </HorizontalStack>
+      *               </PopoverHead>
+      *               <PopoverContent>
+      *                   Содержимое
+      *               </PopoverContent>
+      *          </PopoverBox>
+      *       </Popover>
       *
       * См. также {@link Popover}
       */
@@ -1605,16 +1629,16 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *       <div>
-     *           <Popover isOpen={this.state.popoverOpen} >
-     *               <PopoverBox>
-     *                   <PopoverContent>
-     *                       Содержимое
-     *                   </PopoverContent>
-     *               </PopoverBox>
-     *           </Popover>
-     *           <span>Элемент, около которого появится окно</span>
-     *       </div>
+     *        <div>
+     *            <Popover isOpen={this.state.popoverOpen} >
+     *                <PopoverBox>
+     *                    <PopoverContent>
+     *                        Содержимое
+     *                    </PopoverContent>
+     *                </PopoverBox>
+     *            </Popover>
+     *            <span>Элемент, около которого появится окно</span>
+     *        </div>
      *
      * См. также {@link Popover}
      */
@@ -1631,19 +1655,19 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *       <div>
-     *           <Popover isOpen={this.state.popoverOpen} >
-     *               <PopoverBox>
-     *                   <PopoverHead>
-     *                       <PopoverTitle>Заголовок</PopoverTitle>
-     *                   </PopoverHead>
-     *                   <PopoverContent>
-     *                       Содержимое
-     *                   </PopoverContent>
-     *               </PopoverBox>
-     *           </Popover>
-     *           <span>Элемент, около которого появится окно</span>
-     *       </div>
+     *        <div>
+     *            <Popover isOpen={this.state.popoverOpen} >
+     *                <PopoverBox>
+     *                    <PopoverHead>
+     *                        <PopoverTitle>Заголовок</PopoverTitle>
+     *                    </PopoverHead>
+     *                    <PopoverContent>
+     *                        Содержимое
+     *                    </PopoverContent>
+     *                </PopoverBox>
+     *            </Popover>
+     *            <span>Элемент, около которого появится окно</span>
+     *        </div>
      *
      * См. также {@link Popover}
      */
@@ -1662,16 +1686,16 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *       <div>
-     *           <Popover isOpen={this.state.popoverOpen} >
-     *               <PopoverBox>
-     *                   <PopoverOverflowContent>
-     *                       <Employee parent={this.props.wrapper} modalMode={true} />
-     *                   </PopoverOverflowContent>
-     *               </PopoverBox>
-     *           </Popover>
-     *           <span>Элемент, около которого появится окно</span>
-     *       </div>
+     *        <div>
+     *            <Popover isOpen={this.state.popoverOpen} >
+     *                <PopoverBox>
+     *                    <PopoverOverflowContent>
+     *                        <Employee parent={this.props.wrapper} modalMode={true} />
+     *                    </PopoverOverflowContent>
+     *                </PopoverBox>
+     *            </Popover>
+     *            <span>Элемент, около которого появится окно</span>
+     *        </div>
      *
      * См. также {@link Popover}
      */
@@ -1688,19 +1712,19 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *       <div>
-     *           <Popover isOpen={this.state.popoverOpen} >
-     *               <PopoverBox>
-     *                   <PopoverHead>
-     *                       <PopoverTitle>Заголовок</PopoverTitle>
-     *                   </PopoverHead>
-     *                   <PopoverContent>
-     *                       Содержимое
-     *                   </PopoverContent>
-     *               </PopoverBox>
-     *           </Popover>
-     *           <span>Элемент, около которого появится окно</span>
-     *       </div>
+     *        <div>
+     *            <Popover isOpen={this.state.popoverOpen} >
+     *                <PopoverBox>
+     *                    <PopoverHead>
+     *                        <PopoverTitle>Заголовок</PopoverTitle>
+     *                    </PopoverHead>
+     *                    <PopoverContent>
+     *                        Содержимое
+     *                    </PopoverContent>
+     *                </PopoverBox>
+     *            </Popover>
+     *            <span>Элемент, около которого появится окно</span>
+     *        </div>
      *
      * См. также {@link Popover}
      */
@@ -1878,31 +1902,31 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <div>
-      *         <ModalBackdrop onClick={() => this.setState({ sidebarOpen: false })}>
-      *             <ModalSidebar isOpen={this.state.sidebarOpen} >
-      *                 <ModalSidebarCloseButton onClick={() => this.setState({ sidebarOpen: false })} />
-      *                 <ModalSidebarHeader>Some header</ModalSidebarHeader>
-      *                 <div>Some content</div>
-      *             </ModalSidebar>
-      *         </ModalBackdrop>
-      *     </div>
+      *      <div>
+      *          <ModalBackdrop onClick={() => this.setState({ sidebarOpen: false })}>
+      *              <ModalSidebar isOpen={this.state.sidebarOpen} >
+      *                  <ModalSidebarCloseButton onClick={() => this.setState({ sidebarOpen: false })} />
+      *                  <ModalSidebarHeader>Some header</ModalSidebarHeader>
+      *                  <div>Some content</div>
+      *              </ModalSidebar>
+      *          </ModalBackdrop>
+      *      </div>
       *
       * Пример использование вне компонента:
       *
-      *     let host: ModalHost = new ModalHost("time-sidebar", () => {
-      *       return (
-      *            <ModalBackdrop visible={true} onClick={() => host.unmount()} >
-      *                <ModalSidebar isOpen={true} >
-      *                    <ModalSidebarCloseButton onClick={() => host.unmount()} />
-      *                      <ModalSidebarHeader>Some header</ModalSidebarHeader>
-      *                      <div>Current time {(new Date()).toTimeString()}</div>
-      *                  </ModalSidebar>
-      *           </ModalBackdrop>
-      *       );
-      *     });
-      *     host.mount();
-      *     setInterval(() => host.forceUpdate(), 1000);
+      *      let host: ModalHost = new ModalHost("time-sidebar", () => {
+      *        return (
+      *             <ModalBackdrop visible={true} onClick={() => host.unmount()} >
+      *                 <ModalSidebar isOpen={true} >
+      *                     <ModalSidebarCloseButton onClick={() => host.unmount()} />
+      *                       <ModalSidebarHeader>Some header</ModalSidebarHeader>
+      *                       <div>Current time {(new Date()).toTimeString()}</div>
+      *                   </ModalSidebar>
+      *            </ModalBackdrop>
+      *        );
+      *      });
+      *      host.mount();
+      *      setInterval(() => host.forceUpdate(), 1000);
       *
       */
     const ModalSidebar: (props: IModalSidebarProps) => JSX.Element;
@@ -1919,9 +1943,9 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalSidebar isOpen={this.state.sidebarOpen} >
-      *         <ModalSidebarCloseButton onClick={() => this.setState({ sidebarOpen: false })} />
-      *     </ModalSidebar>
+      *      <ModalSidebar isOpen={this.state.sidebarOpen} >
+      *          <ModalSidebarCloseButton onClick={() => this.setState({ sidebarOpen: false })} />
+      *      </ModalSidebar>
       */
     const ModalSidebarCloseButton: (props: IModalSidebarCloseButtonProps) => JSX.Element;
 }
@@ -1937,9 +1961,9 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalSidebar isOpen={this.state.menuBarExpanded} >
-      *         <ModalSidebarHeader>{resources.MyHeaderText}</ModalSidebarHeader>
-      *     </ModalSidebar>
+      *      <ModalSidebar isOpen={this.state.menuBarExpanded} >
+      *          <ModalSidebarHeader>{resources.MyHeaderText}</ModalSidebarHeader>
+      *      </ModalSidebar>
       */
     const ModalSidebarHeader: (props: IModalSidebarHeaderProps) => JSX.Element;
 }
@@ -1959,24 +1983,24 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *         <ModalBackdrop onClick={() => this.setState({ dialogOpen: false })} />
-      *             <ModalDialog expanded={this.state.dialogOpen} >
-      *                 <ModalDialogBox defaultWidth={true}>
-      *                     <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
-      *                     <ModalDialogHeader>Dialog header</ModalDialogHeader>
-      *                     <ModalDialogContent>Some content</ModalDialogContent>
-      *                     <ModalDialogButtonPanel>
-      *                         <Button onClick={() => this.setState({ dialogOpen: false })} key="cancel">
-      *                             {resources.Navigator_ButtonClose}
-      *                         </Button>
-      *                         <Button disabled={!this.state.directoryDialogSelectedValue}
-      *                             onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
-      *                             {resources.Navigator_ButtonSelect}
-      *                         </Button>
-      *                     </ModalDialogButtonPanel>
-      *                 </ModalDialogBox>
-      *             </ModalDialog>
-      *         </ModalBackdrop>
+      *          <ModalBackdrop onClick={() => this.setState({ dialogOpen: false })} />
+      *              <ModalDialog expanded={this.state.dialogOpen} >
+      *                  <ModalDialogBox defaultWidth={true}>
+      *                      <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
+      *                      <ModalDialogHeader>Dialog header</ModalDialogHeader>
+      *                      <ModalDialogContent>Some content</ModalDialogContent>
+      *                      <ModalDialogButtonPanel>
+      *                          <Button onClick={() => this.setState({ dialogOpen: false })} key="cancel">
+      *                              {resources.Navigator_ButtonClose}
+      *                          </Button>
+      *                          <Button disabled={!this.state.directoryDialogSelectedValue}
+      *                              onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
+      *                              {resources.Navigator_ButtonSelect}
+      *                          </Button>
+      *                      </ModalDialogButtonPanel>
+      *                  </ModalDialogBox>
+      *              </ModalDialog>
+      *          </ModalBackdrop>
       */
     const ModalDialog: (props: IModalDialogProps) => JSX.Element;
 }
@@ -1994,24 +2018,24 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *         <ModalBackdrop onClick={() => this.setState({ dialogOpen: false })} />
-      *             <ModalDialog expanded={this.state.dialogOpen} >
-      *                 <ModalDialogBox defaultWidth={true}>
-      *                     <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
-      *                     <ModalDialogHeader>Dialog header</ModalDialogHeader>
-      *                     <ModalDialogContent>Some content</ModalDialogContent>
-      *                     <ModalDialogButtonPanel>
-      *                         <Button onClick={() => this.setState({ dialogOpen: false })} key="cancel">
-      *                            {resources.Navigator_ButtonClose}
-      *                         </Button>
-      *                         <Button disabled={!this.state.directoryDialogSelectedValue}
-      *                            onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
-      *                             {resources.Navigator_ButtonSelect}
-      *                         </Button>
-      *                     </ModalDialogButtonPanel>
-      *                 </ModalDialogBox>
-      *             </ModalDialog>
-      *         </ModalBackdrop>
+      *          <ModalBackdrop onClick={() => this.setState({ dialogOpen: false })} />
+      *              <ModalDialog expanded={this.state.dialogOpen} >
+      *                  <ModalDialogBox defaultWidth={true}>
+      *                      <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
+      *                      <ModalDialogHeader>Dialog header</ModalDialogHeader>
+      *                      <ModalDialogContent>Some content</ModalDialogContent>
+      *                      <ModalDialogButtonPanel>
+      *                          <Button onClick={() => this.setState({ dialogOpen: false })} key="cancel">
+      *                             {resources.Navigator_ButtonClose}
+      *                          </Button>
+      *                          <Button disabled={!this.state.directoryDialogSelectedValue}
+      *                             onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
+      *                              {resources.Navigator_ButtonSelect}
+      *                          </Button>
+      *                      </ModalDialogButtonPanel>
+      *                  </ModalDialogBox>
+      *              </ModalDialog>
+      *          </ModalBackdrop>
       */
     const ModalDialogBox: (props: IModalDialogBoxProps) => JSX.Element;
 }
@@ -2025,19 +2049,19 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalDialog isOpen={this.state.dialogOpen} >
-      *         <ModalDialogBox defaultWidth={true}>
-      *             <ModalDialogButtonPanel>
-      *                 <Button onClick={this.hideDictionary} key="cancel">
-      *                     {resources.Navigator_ButtonClose}
-      *                 </Button>
-      *                 <Button disabled={!this.state.directoryDialogSelectedValue}
-      *                     onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
-      *                     {resources.Navigator_ButtonSelect}
-      *                 </Button>
-      *             </ModalDialogButtonPanel>
-      *         </ModalDialogBox>
-      *     </ModalDialog>
+      *      <ModalDialog isOpen={this.state.dialogOpen} >
+      *          <ModalDialogBox defaultWidth={true}>
+      *              <ModalDialogButtonPanel>
+      *                  <Button onClick={this.hideDictionary} key="cancel">
+      *                      {resources.Navigator_ButtonClose}
+      *                  </Button>
+      *                  <Button disabled={!this.state.directoryDialogSelectedValue}
+      *                      onClick={this.onDirectoryDialogSelectButtonClick} key="ok">
+      *                      {resources.Navigator_ButtonSelect}
+      *                  </Button>
+      *              </ModalDialogButtonPanel>
+      *          </ModalDialogBox>
+      *      </ModalDialog>
       */
     const ModalDialogButtonPanel: (props: IModalDialogButtonPanelProps) => JSX.Element;
 }
@@ -2053,11 +2077,11 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalDialog isOpen={this.state.dialogOpen} >
-      *         <ModalDialogBox defaultWidth={true}>
-      *             <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
-      *         </ModalDialogBox>
-      *     </ModalDialog>
+      *      <ModalDialog isOpen={this.state.dialogOpen} >
+      *          <ModalDialogBox defaultWidth={true}>
+      *              <ModalDialogCloseButton onClick={() => this.setState({ dialogOpen: false })} />
+      *          </ModalDialogBox>
+      *      </ModalDialog>
       */
     const ModalDialogCloseButton: (props: IModalSidebarCloseButtonProps) => JSX.Element;
 }
@@ -2071,12 +2095,12 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalDialog isOpen={this.state.dialogOpen} >
-      *         <ModalDialogBox defaultWidth={true}>
-      *             <ModalDialogHeader>Dialog header</ModalDialogHeader>
-      *             <ModalDialogContent>Dialog content</ModalDialogContent>
-      *         </ModalDialogBox>
-      *     </ModalDialog>
+      *      <ModalDialog isOpen={this.state.dialogOpen} >
+      *          <ModalDialogBox defaultWidth={true}>
+      *              <ModalDialogHeader>Dialog header</ModalDialogHeader>
+      *              <ModalDialogContent>Dialog content</ModalDialogContent>
+      *          </ModalDialogBox>
+      *      </ModalDialog>
       */
     const ModalDialogContent: (props: IModalDialogContentProps) => JSX.Element;
 }
@@ -2090,12 +2114,12 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalDialog isOpen={this.state.dialogOpen} >
-      *         <ModalDialogBox defaultWidth={true}>
-      *             <ModalDialogHeader>Dialog header</ModalDialogHeader>
-      *             <ModalDialogContent>Dialog content</ModalDialogContent>
-      *         </ModalDialogBox>
-      *     </ModalDialog>
+      *      <ModalDialog isOpen={this.state.dialogOpen} >
+      *          <ModalDialogBox defaultWidth={true}>
+      *              <ModalDialogHeader>Dialog header</ModalDialogHeader>
+      *              <ModalDialogContent>Dialog content</ModalDialogContent>
+      *          </ModalDialogBox>
+      *      </ModalDialog>
       */
     const ModalDialogHeader: (props: IModalDialogHeaderProps) => JSX.Element;
 }
@@ -2108,11 +2132,11 @@ declare namespace WebClient {
       *
       * Пример использования:
       *
-      *     <ModalDialog isOpen={this.state.dialogOpen} >
-      *         <ModalDialogBox defaultWidth={true}>
-      *             <ModalDialogTopBorder color="red" />
-      *         </ModalDialogBox>
-      *     </ModalDialog>
+      *      <ModalDialog isOpen={this.state.dialogOpen} >
+      *          <ModalDialogBox defaultWidth={true}>
+      *              <ModalDialogTopBorder color="red" />
+      *          </ModalDialogBox>
+      *      </ModalDialog>
       */
     const ModalDialogTopBorder: (props: IModalDialogTopBorderProps) => JSX.Element;
 }
@@ -2122,7 +2146,8 @@ declare namespace WebClient {
      */
     class MessageBox {
         private static mMessageBoxContainerProvider;
-        private static getMessageBoxContainer();
+        static lastError: HTMLElement;
+        static getMessageBoxContainer(): BodyContainerProvider;
         /**
          * Показывает модальное окно с сообщением об ошибке.
          *
@@ -2132,9 +2157,9 @@ declare namespace WebClient {
          *
          * Пример использования:
          *
-         *    MessageBox.ShowError("Неправильное имя файла!").done(() => {
-         *        console.info("Диалог закрыт");
-         *    });
+         *     MessageBox.ShowError("Неправильное имя файла!").done(() => {
+         *         console.info("Диалог закрыт");
+         *     });
          *
          */
         static ShowError(content: string | JSX.Element, customCaptionText?: string | JSX.Element): JQueryDeferred<any>;
@@ -2147,9 +2172,9 @@ declare namespace WebClient {
          *
          * Пример использования:
          *
-         *    MessageBox.ShowInfo("Операция успешно выполнена!").done(() => {
-         *        console.info("Диалог закрыт");
-         *    });
+         *     MessageBox.ShowInfo("Операция успешно выполнена!").done(() => {
+         *         console.info("Диалог закрыт");
+         *     });
          *
          */
         static ShowInfo(content: string | JSX.Element, customCaptionText?: string | JSX.Element): JQueryDeferred<any>;
@@ -2162,9 +2187,9 @@ declare namespace WebClient {
          *
          * Пример использования:
          *
-         *    MessageBox.ShowWarning("Не все файлы были загружены!").done(() => {
-         *        console.info("Диалог закрыт");
-         *    });
+         *     MessageBox.ShowWarning("Не все файлы были загружены!").done(() => {
+         *         console.info("Диалог закрыт");
+         *     });
          *
          */
         static ShowWarning(content: string | JSX.Element, customCaptionText?: string | JSX.Element): JQueryDeferred<any>;
@@ -2177,11 +2202,11 @@ declare namespace WebClient {
          *
          * Пример использования:
          *
-         *    MessageBox.ShowConfirmation("Вы действительно хотите удалить файл?").done(() => {
-         *        this.removeFile();
-         *    }).fail(() => {
-         *        // Пользователь отменил удаление
-         *    });
+         *     MessageBox.ShowConfirmation("Вы действительно хотите удалить файл?").done(() => {
+         *         this.removeFile();
+         *     }).fail(() => {
+         *         // Пользователь отменил удаление
+         *     });
          *
          */
         static ShowConfirmation(content: string | JSX.Element, customCaptionText?: string | JSX.Element): JQueryDeferred<any>;
@@ -2193,13 +2218,13 @@ declare namespace WebClient {
          *
          * Пример использования:
          *
-         *    try {
-         *        throw new Error("Произошла неизвестная ошибка");
-         *    } catch (e) {
-         *        MessageBox.ShowException(e).done(() => {
-         *            console.info("Диалог закрыт");
-         *        });
-         *    }
+         *     try {
+         *         throw new Error("Произошла неизвестная ошибка");
+         *     } catch (e) {
+         *         MessageBox.ShowException(e).done(() => {
+         *             console.info("Диалог закрыт");
+         *         });
+         *     }
          * @internal
          */
         private static Show(content, msgType, customCaptionText?);
@@ -2220,16 +2245,16 @@ declare namespace WebClient {
     /** @internal Представляет собой адаптивное меню
       * Пример использования:
       *
-      *    <AdaptiveMenuBar expanded={this.state.menuBarExpanded} >
-      *      <AdaptiveMenuContent>
-      *        <AdaptiveMenuItem onClick={() => console.info("Command 1 clicked") } >
-      *          Комманда 1
-      *        </AdaptiveMenuBarItem>
-      *        <AdaptiveMenuBarItem onClick={() => console.info("Command 2 clicked")} >
-      *          Комманда 2
-      *        </AdaptiveMenuBarItem>
-      *      </AdaptiveMenuContent>
-      *    </AdaptiveMenuBar>
+      *     <AdaptiveMenuBar expanded={this.state.menuBarExpanded} >
+      *       <AdaptiveMenuContent>
+      *         <AdaptiveMenuItem onClick={() => console.info("Command 1 clicked") } >
+      *           Комманда 1
+      *         </AdaptiveMenuBarItem>
+      *         <AdaptiveMenuBarItem onClick={() => console.info("Command 2 clicked")} >
+      *           Комманда 2
+      *         </AdaptiveMenuBarItem>
+      *       </AdaptiveMenuContent>
+      *     </AdaptiveMenuBar>
       *
       * См. также {@link AdaptiveMenuContent}, {@link AdaptiveMenuBarItem}
       */
@@ -2435,8 +2460,8 @@ declare namespace WebClient {
         /** @internal Represents a button, that looks like small icon
           * Usage example:
           *  <IconButton name="open-dictionary" onClick={this.onOpenDictionaryClick}
-          *      iconClassName="dv-ico dv-ico-dictionary" visible={ super.getEditAvailable()}
-          *      title={resources.Numerator_GenerateNewNumberTooltip}  />
+          *       iconClassName="dv-ico dv-ico-dictionary" visible={ super.getEditAvailable()}
+          *       title={resources.Numerator_GenerateNewNumberTooltip}  />
           */
         const Item: (props: IItemProps) => JSX.Element;
     }
@@ -2610,7 +2635,24 @@ declare namespace WebClient {
         White = 1,
         Black = 2,
     }
-    /** @internal */
+    /**
+     * @internal Показывает иконку загрузки
+     * Пример использования:
+     *
+     *     constructor(props) {
+     *         super(props);
+     *
+     *         this.state.requestHelper = new RequestHelper(() => this.forceUpdate());
+     *         this.state.requestHelper.send(() => $.Deferred<{}>().resolve(), () => {
+     *             console.log('Результаты загружены.');
+     *         });
+     *     }
+     *
+     *     render() {
+     *         return <LoadingIcon state={this.state.requestHelper.state} />
+     *     }
+     *
+     */
     class LoadingIcon extends React.Component<ILoadingIconProps, ILoadingIconState> {
         constructor(props: ILoadingIconProps);
         getLoadingIconClass(): string;
@@ -2850,25 +2892,25 @@ declare namespace WebClient {
      *
      * Пример использования (вместо CustomTreeDefault можно использовать div):
      *
-     *    <CustomTreeDefault>
-     *      <div className="display-flex align-items-stretch">
-     *        <CustomTreeLevelIndent level={0} />
-     *        <CustomTreeNodeTogglerDefault expanded visible onClick={() => console.log('Нажат переключатель')} />
-     *        <CustomTreeNodeContentDefault tabIndex selected disabled onClick={() => console.log('Первый узел')}>
-     *          <CustomTreeNodeIconDefault />
-     *          <CustomTreeNodeTextDefault>Первый узел</CustomTreeNodeTextDefault>
-     *        </CustomTreeNodeContentDefault>
-     *      </div>
+     *     <CustomTreeDefault>
+     *       <div className="display-flex align-items-stretch">
+     *         <CustomTreeLevelIndent level={0} />
+     *         <CustomTreeNodeTogglerDefault expanded visible onClick={() => console.log('Нажат переключатель')} />
+     *         <CustomTreeNodeContentDefault tabIndex selected disabled onClick={() => console.log('Первый узел')}>
+     *           <CustomTreeNodeIconDefault />
+     *           <CustomTreeNodeTextDefault>Первый узел</CustomTreeNodeTextDefault>
+     *         </CustomTreeNodeContentDefault>
+     *       </div>
      *
-     *      <div className="display-flex align-items-stretch">
-     *        <CustomTreeLevelIndent level={0} />
-     *        <CustomTreeNodeTogglerDefault expanded visible onClick={() => console.log('Нажат переключатель')} />
-     *        <CustomTreeNodeContentDefault tabIndex selected disabled onClick={() => console.log('Второй узел')}>
-     *          <CustomTreeNodeIconDefault />
-     *          <CustomTreeNodeTextDefault innerRef={attachTooltip('Подсказка второго узла')}>Второй узел</CustomTreeNodeTextDefault>
-     *        </CustomTreeNodeContentDefault>
-     *      </div>
-     *    </CustomTreeDefault>
+     *       <div className="display-flex align-items-stretch">
+     *         <CustomTreeLevelIndent level={0} />
+     *         <CustomTreeNodeTogglerDefault expanded visible onClick={() => console.log('Нажат переключатель')} />
+     *         <CustomTreeNodeContentDefault tabIndex selected disabled onClick={() => console.log('Второй узел')}>
+     *           <CustomTreeNodeIconDefault />
+     *           <CustomTreeNodeTextDefault innerRef={attachTooltip('Подсказка второго узла')}>Второй узел</CustomTreeNodeTextDefault>
+     *         </CustomTreeNodeContentDefault>
+     *       </div>
+     *     </CustomTreeDefault>
      *
      */
     const CustomTreeDefault: styled.StyledComponentClass<React.HTMLProps<HTMLDivElement> & {
@@ -2964,11 +3006,11 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *     render() {
-     *         var componentInfo = getComponentInfo();
+     *      render() {
+     *          var componentInfo = getComponentInfo();
      *
-     *         return <ControlSelector properties={componentInfo.properties} children={componentInfo.children} controlTypeName={componentInfo.controlTypeName} key={componentInfo.properties.name} />
-     *     }
+     *          return <ControlSelector properties={componentInfo.properties} children={componentInfo.children} controlTypeName={componentInfo.controlTypeName} key={componentInfo.properties.name} />
+     *      }
      *
      */
     class ControlSelector extends React.Component<IControlSelectorProps, any> {
@@ -2997,14 +3039,14 @@ declare namespace WebClient {
       * Внутренние элементы должны использовать компонент CommandBarItem.
       * Пример использования:
       *
-      *    <CommandBar expanded={this.state.commandBarExpanded} >
-      *      <CommandBarItem onClick={() => console.info("Command 1 clicked") } >
-      *        Комманда 1
-      *      </CommandBarItem>
-      *      <CommandBarItem onClick={() => console.info("Command 2 clicked")} >
-      *        Комманда 2
-      *      </CommandBarItem>
-      *    </CommandBar>
+      *     <CommandBar expanded={this.state.commandBarExpanded} >
+      *       <CommandBarItem onClick={() => console.info("Command 1 clicked") } >
+      *         Комманда 1
+      *       </CommandBarItem>
+      *       <CommandBarItem onClick={() => console.info("Command 2 clicked")} >
+      *         Комманда 2
+      *       </CommandBarItem>
+      *     </CommandBar>
       *
       * См. также: {@link CommandBarButton}
       */
@@ -3209,93 +3251,93 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *    constructor() {
-     *      this.defaultTitle = 'Выберите элемент';
-     *      this.el = null;
-     *      this.emptyElement = {id: null, title: this.defaultTitle};
-     *      this.focusedElement = null;
+     *     constructor() {
+     *         this.defaultTitle = 'Выберите элемент';
+     *         this.el = null;
+     *         this.emptyElement = {id: null, title: this.defaultTitle};
+     *         this.focusedElement = null;
      *
-     *      this.state.disabled = false;
-     *      this.state.expanded = false;
-     *      this.state.selectedElement = '2222';
-     *      this.state.emptyAllowed = true;
-     *      this.state.elements = [{id: '1111', title: 'Один'}, {id: '2222', title: 'Два'}];
-     *    }
+     *         this.state.disabled = false;
+     *         this.state.expanded = false;
+     *         this.state.selectedElement = '2222';
+     *         this.state.emptyAllowed = true;
+     *         this.state.elements = [{id: '1111', title: 'Один'}, {id: '2222', title: 'Два'}];
+     *     }
      *
      *
-     *    protected onFocusElement = (element) => this.focusedElement = element;
+     *     protected onFocusElement = (element) => this.focusedElement = element;
      *
-     *    protected onBlurElement = (element) => (this.focusedElement && this.focusedElement.id == element.id) && (this.focusedElement = null);
+     *     protected onBlurElement = (element) => (this.focusedElement && this.focusedElement.id == element.id) && (this.focusedElement = null);
      *
-     *    // навигация по стрелочкам
-     *    protected onFocusSiblingElement = (element, mode: 'prev' | 'next') => {
-     *      let elementPosition = this.state.elements.findIndex(el => el.id == element.id);
-     *      if (elementPosition == -1 && !(this.state.emptyAllowed && element.id == null)) {
-     *        return;
-     *      }
+     *     // навигация по стрелочкам
+     *     protected onFocusSiblingElement = (element, mode: 'prev' | 'next') => {
+     *         let elementPosition = this.state.elements.findIndex(el => el.id == element.id);
+     *         if (elementPosition == -1 && !(this.state.emptyAllowed && element.id == null)) {
+     *             return;
+     *         }
      *
-     *      elementPosition += (mode == 'prev') ? -1 : 1;
+     *         elementPosition += (mode == 'prev') ? -1 : 1;
      *
-     *      const siblingElement = (this.state.emptyAllowed && elementPosition == -1) ?
-     *        this.emptyElement :
-     *        this.state.elements[elementPosition];
+     *         const siblingElement = (this.state.emptyAllowed && elementPosition == -1) ?
+     *             this.emptyElement :
+     *             this.state.elements[elementPosition];
      *
-     *      if (siblingElement && (!this.focusedElement || this.focusedElement.id != siblingElement.id)) {
-     *        this.focusedElement = siblingElement;
-     *        this.forceUpdate();
-     *      }
-     *    }
+     *         if (siblingElement && (!this.focusedElement || this.focusedElement.id != siblingElement.id)) {
+     *             this.focusedElement = siblingElement;
+     *             this.forceUpdate();
+     *         }
+     *     }
      *
-     *    render() {
-     *      const title = <ComboBoxTitle disabled={this.state.disabled}
-     *        expanded={this.state.expanded}
-     *        tabIndex
-     *        onClick={() => this.setState(prevState => ({ expanded: !prevState.expanded }))}>
-     *        <ComboBoxTitleContent>
-     *          {this.state.elements[this.state.selectedElement] ? this.state.elements[this.state.selectedElement].title : this.defaultTitle}
-     *        </ComboBoxTitleContent>
-     *      </ComboBoxTitle>;
+     *     render() {
+     *         const title = <ComboBoxTitle disabled={this.state.disabled}
+     *             expanded={this.state.expanded}
+     *             tabIndex
+     *             onClick={() => this.setState(prevState => ({ expanded: !prevState.expanded }))}>
+     *             <ComboBoxTitleContent>
+     *                 {this.state.elements[this.state.selectedElement] ? this.state.elements[this.state.selectedElement].title : this.defaultTitle}
+     *             </ComboBoxTitleContent>
+     *         </ComboBoxTitle>;
      *
-     *      const body = <ComboBoxBody disabled={this.state.disabled}
-     *        expanded={this.state.expanded}
-     *        onClose={() => this.setState({ expanded: false })}
-     *        boundaryTarget={this.el}>
-     *        <Focusable selectorToFocus='.combobox-element-helper-selected'>
-     *          <ComboBoxBodyContent>
-     *            {this.state.emptyAllowed && <ComboBoxElement tabIndex
-     *              selected={this.state.selectedElement == null}
-     *              focused={this.focusedElement && this.focusedElement.id == null}
-     *              onSelect={() => this.setState({ selectedElement: null, expanded: false })}
-     *              onFocus={() => this.onFocusElement(this.emptyElement)}
-     *              onBlur={() => this.onBlurElement(this.emptyElement)}
-     *              onFocusNext={() => this.onFocusSiblingElement(this.emptyElement, 'next')}
-     *              onFocusPrev={() => this.onFocusSiblingElement(this.emptyElement, 'prev')}>
-     *              <ComboBoxElementContent>{this.defaultTitle}</ComboBoxElementContent>
-     *            </ComboBoxElement>}
+     *         const body = <ComboBoxBody disabled={this.state.disabled}
+     *             expanded={this.state.expanded}
+     *             onClose={() => this.setState({ expanded: false })}
+     *             boundaryTarget={this.el}>
+     *             <Focusable selectorToFocus='.combobox-element-helper-selected'>
+     *                 <ComboBoxBodyContent>
+     *                     {this.state.emptyAllowed && <ComboBoxElement tabIndex
+     *                         selected={this.state.selectedElement == null}
+     *                         focused={this.focusedElement && this.focusedElement.id == null}
+     *                         onSelect={() => this.setState({ selectedElement: null, expanded: false })}
+     *                         onFocus={() => this.onFocusElement(this.emptyElement)}
+     *                         onBlur={() => this.onBlurElement(this.emptyElement)}
+     *                         onFocusNext={() => this.onFocusSiblingElement(this.emptyElement, 'next')}
+     *                         onFocusPrev={() => this.onFocusSiblingElement(this.emptyElement, 'prev')}>
+     *                             <ComboBoxElementContent>{this.defaultTitle}</ComboBoxElementContent>
+     *                     </ComboBoxElement>}
      *
-     *            {this.state.elements.map((element) => {
-     *              return <ComboBoxElement key={element.id}
-     *                tabIndex
-     *                selected={element.id == this.state.selectedElement}
-     *                focused={this.focusedElement && this.focusedElement.id == element.id}
-     *                onSelect={() => this.setState({ selectedElement: element.id, expanded: false })}
-     *                onFocus={() => this.onFocusElement(element)}
-     *                onBlur={() => this.onBlurElement(element)}
-     *                onFocusNext={() => this.onFocusSiblingElement(element, 'next')}
-     *                onFocusPrev={() => this.onFocusSiblingElement(element, 'prev')}>
-     *                <ComboBoxElementContent>{element.title}</ComboBoxElementContent>
-     *              </ComboBoxElement>;
-     *            })}
-     *          </ComboBoxBodyContent>
-     *        </Focusable>
-     *      </ComboBoxBody>;
+     *                     {this.state.elements.map((element) => {
+     *                         return <ComboBoxElement key={element.id}
+     *                             tabIndex
+     *                             selected={element.id == this.state.selectedElement}
+     *                             focused={this.focusedElement && this.focusedElement.id == element.id}
+     *                             onSelect={() => this.setState({ selectedElement: element.id, expanded: false })}
+     *                             onFocus={() => this.onFocusElement(element)}
+     *                             onBlur={() => this.onBlurElement(element)}
+     *                             onFocusNext={() => this.onFocusSiblingElement(element, 'next')}
+     *                             onFocusPrev={() => this.onFocusSiblingElement(element, 'prev')}>
+     *                                 <ComboBoxElementContent>{element.title}</ComboBoxElementContent>
+     *                         </ComboBoxElement>;
+     *                     })}
+     *                 </ComboBoxBodyContent>
+     *             </Focusable>
+     *         </ComboBoxBody>;
      *
-     *      return <div ref={el => this.el = el}>
-     *        <ComboBoxWrapper disabled={this.state.disabled}>
-     *          <ComboBoxWrapperContent title={title} body={body}>
-     *        </ComboBoxWrapper>
-     *      </div>
-     *    }
+     *         return <div ref={el => this.el = el}>
+     *             <ComboBoxWrapper disabled={this.state.disabled}>
+     *                 <ComboBoxWrapperContent title={title} body={body}>
+     *             </ComboBoxWrapper>
+     *         </div>
+     *     }
      *
      */
     class ComboBoxWrapper extends React.Component<IComboBoxWrapperProps, undefined> {
@@ -3343,26 +3385,26 @@ declare namespace WebClient {
      *
      * Пример использования:
      *
-     *    constructor() {
-     *      this.state.elements = [
-     *        { id: '1', title: 'Первый элемент' },
-     *        { id: '2', title: 'Второй элемент' },
-     *        { id: '3', title: 'Третий элемент', disabled: true },
-     *        { id: '4', title: 'Четвёртый элемент' }
-     *      ];
-     *      this.state.selectedID = '2';
-     *    }
+     *     constructor() {
+     *       this.state.elements = [
+     *         { id: '1', title: 'Первый элемент' },
+     *         { id: '2', title: 'Второй элемент' },
+     *         { id: '3', title: 'Третий элемент', disabled: true },
+     *         { id: '4', title: 'Четвёртый элемент' }
+     *       ];
+     *       this.state.selectedID = '2';
+     *     }
      *
-     *    render() {
-     *      <CommonComboBox elements={this.state.elements}
-     *        allowEmpty={true}
-     *        tabIndex
-     *        selectedID={this.state.selectedID}
-     *        defaultTitle="Выберите элемент из списка"
-     *        onChange={(selectedElement: IComboBoxElement) => {
-     *          this.setState({ selectedID: selectedElement.id });
-     *        }} />
-     *    }
+     *     render() {
+     *       return <CommonComboBox elements={this.state.elements}
+     *         allowEmpty={true}
+     *         tabIndex
+     *         selectedID={this.state.selectedID}
+     *         defaultTitle="Выберите элемент из списка"
+     *         onChange={(selectedElement: IComboBoxElement) => {
+     *           this.setState({ selectedID: selectedElement.id });
+     *         }} />
+     *     }
      *
      */
     class CommonComboBox extends React.Component<ICommonComboBoxProps, ICommonComboBoxState> {
@@ -3510,34 +3552,34 @@ declare namespace WebClient {
           *
           * Пример использования:
           *
-          *     let Item = Breadrcumbs.ButtonItem;
-          *     let ItemView = Breadrcumbs.LinkItemView;
-          *     let Separator = Breadcrumbs.LinkSeparator;
+          *      let Item = Breadrcumbs.ButtonItem;
+          *      let ItemView = Breadrcumbs.LinkItemView;
+          *      let Separator = Breadcrumbs.LinkSeparator;
           *
-          *      <div className="padding-v-7">
-          *           <Item onClick={() => console.log('Выбран Север')}>
-          *               <ItemView>Север</ItemView>
-          *           </Item>
-          *           <Separator />
-          *           <Item onClick={() => console.log('Выбрана Северная верфь')}>
-          *               <ItemView>Северная верфь</ItemView>
-          *           </Item>
-          *      </div>
+          *       <div className="padding-v-7">
+          *            <Item onClick={() => console.log('Выбран Север')}>
+          *                <ItemView>Север</ItemView>
+          *            </Item>
+          *            <Separator />
+          *            <Item onClick={() => console.log('Выбрана Северная верфь')}>
+          *                <ItemView>Северная верфь</ItemView>
+          *            </Item>
+          *       </div>
           *
           * Пример использования в случае, когда элементы заданы в виде массива:
           *
-          *     let Item = Breadrcumbs.ButtonItem;
-          *     let ItemView = Breadrcumbs.LinkItemView;
-          *     let Separator = Breadcrumbs.LinkSeparator;
+          *      let Item = Breadrcumbs.ButtonItem;
+          *      let ItemView = Breadrcumbs.LinkItemView;
+          *      let Separator = Breadcrumbs.LinkSeparator;
           *
-          *     <div className="padding-v-7">
-          *         {["Север", "Северная гавань"].map((item, index) =>
-          *             <Item onClick={() => console.log('Выбран ' + item)} key={index}>
-          *                 {index > 0 && < Separator />}
-          *                 <ItemView>{item}</ItemView>
-          *             </Item>
-          *         )}
-          *     </div>
+          *      <div className="padding-v-7">
+          *          {["Север", "Северная гавань"].map((item, index) =>
+          *              <Item onClick={() => console.log('Выбран ' + item)} key={index}>
+          *                  {index > 0 && < Separator />}
+          *                  <ItemView>{item}</ItemView>
+          *              </Item>
+          *          )}
+          *      </div>
           *
           */
         const ButtonItem: (props: IBreadcrumbsItemProps) => JSX.Element;
@@ -3618,12 +3660,12 @@ declare namespace WebClient {
         children?: JSX.Element;
     }
     /**
-      * @review Позволяет рендерить содержимое в зависимости от типа экрана
+      * @review Позволяет показывать содержимое в зависимости от типа устройства
       * Пример использования:
       *
-      *    <DevicesVisibility devices={[DeviceType.Desktop, DeviceType.Tablet]}>
-      *      Содержимое
-      *    </DevicesVisibility>
+      *     <DevicesVisibility devices={[DeviceType.Desktop, DeviceType.Tablet]}>
+      *         Содержимое
+      *     </DevicesVisibility>
       *
       */
     const DevicesVisibility: (props: IDevicesVisibilityProps) => JSX.Element;
@@ -3700,7 +3742,7 @@ declare namespace WebClient {
      * Вспомогательный класс для создания всплывающих уведомлений
      */
     class PopupNotification {
-        protected static getDefaultOptions: () => Noty.Options;
+        static getDefaultOptions: () => Noty.Options;
         /**
          * Создаёт уведомление
          * @param options Список опций
@@ -4185,9 +4227,9 @@ declare namespace WebClient {
      * Публичные свойства должны объявляться использованием
      * одного из трех декораторов: {@link r} (свойство, котрое запрещено изменять после создания контрола), {@link rw} (разрешено изменять) или {@link event} (событие). Например:
      *
-     *     @r isLoaded?: boolean;
-     *     @rw visibility?: boolean = true;
-     *     @event click?: BasicApiEvent<IClickEventArgs>;
+     *      @r isLoaded?: boolean;
+     *      @rw visibility?: boolean = true;
+     *      @event click?: BasicApiEvent<IClickEventArgs>;
      *
      * Свойства, которые не существенны для контрола (либо имеют значения по умолчанию) должны быть помечены как необязательные
      * (с помощью знака вопроса, например `@rw compactMode?: boolean = false;`). Это позволит не указывать данные свойства при создании контрола
@@ -4314,7 +4356,7 @@ declare namespace WebClient {
          * Устанавливает значение {@ controlImpl}, в соответствии с идиомой Pimpl.
          * Метод должен передаваться в качестве значения ref в функции render. Например:
          *
-         *     <MyControlImpl ref={this.attachControl} />;
+         *      <MyControlImpl ref={this.attachControl} />;
          *
          * @param control Reference to contorl implementation
          */
@@ -4397,7 +4439,7 @@ declare namespace WebClient {
          * 1. Если объявлено get-свойство с декоратором {@link handler}, то возвращается значение данного свойства
          * 2. Если свойство controlImpl содержит объект, то возвращается реультат вызова {@link BaseControlImpl.getParamValue}.
          * 3. Если свойство controlImpl равно undefined, то выдается предупреждение, о том что controlImpl еще не инициализирован.
-         *    Данная ситуация может возникнуть, если обращение к свойству происходит до вызова componentDidMount.
+         *     Данная ситуация может возникнуть, если обращение к свойству происходит до вызова componentDidMount.
          * @param paramName Имя параметра, значение которого необходимо получить
          * @returns Значение параметра
          */
@@ -4621,8 +4663,8 @@ declare namespace WebClient {
          *
          * В конструкторе необходимо создать объекты событий. Например:
          *
-         *     this.state.inPlaceEditOpeninig = CancelableEvent.Create(props.wrapper);
-         *     this.state.inPlaceEditOpened = SimpleEvent.Create(props.wrapper);
+         *      this.state.inPlaceEditOpeninig = CancelableEvent.Create(props.wrapper);
+         *      this.state.inPlaceEditOpened = SimpleEvent.Create(props.wrapper);
          *
          * **Внимание!** Значения свойств контрола (`props`) автоматически копируются в `state` в методе `componentDidMount`
          * (при помощи {@link setParamValue}), который вызывается после того, как конструктор завершил выполнение.
@@ -4641,9 +4683,9 @@ declare namespace WebClient {
         /**
          * При переопределении в дочерних классах, должен содержать логику отрисовки контрола. Например:
          *
-         *     renderControl() {
-         *          return <span> {this.state.text} </span>
-         *     }
+         *      renderControl() {
+         *           return <span> {this.state.text} </span>
+         *      }
          */
         protected abstract renderControl(): any;
         /** См. [документацию React](https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle) */
@@ -4669,7 +4711,7 @@ declare namespace WebClient {
          * Происходить это может в следующих случаях:
          * 1. При инициализации компонента (из метода `componentWillMount`).
          * 2. При получении новых props компонента (из метода `componentWillReceiveProps`). Как правило, новые свойства
-         *    передаются интерфейсным компонентом при вызове {@link BaseControl.setParamValue}.
+         *     передаются интерфейсным компонентом при вызове {@link BaseControl.setParamValue}.
          *
          * Метод Реализует следующую логику:
          * 1. Если объявлено set-свойство с декоратором {@link handler}, то возвращается значение данного свойства;
@@ -6849,7 +6891,7 @@ declare namespace WebClient {
         * @param saveToTheCard Should be new number saved as the current card number or not.
         * @param ruleId Generation rule id.
         * @param saveCardBefore Should control save the card, before generate number.
-        *        Saving a card required, because card fields can be used in number generation rule.
+        *         Saving a card required, because card fields can be used in number generation rule.
         */
         generateNewNumber(saveToTheCard?: boolean, saveCardBefore?: boolean): JQueryDeferred<INumberInfo>;
         /**
@@ -10555,11 +10597,11 @@ declare namespace WebClient {
         * Данный стиль предопределен для типов карточек: Документ, Задание и Группа заданий.
         * Чтобы создать основной стиль Кнопки для собственного типа, добавьте CSS класс:
         *
-        *    `.document button.button-helper.primary-button {
-        *    color: white;
-        *    background: rgba(0, 149, 218, 0.8);
-        *    }
-        *    .document button.button-helper.primary-button.disabled { color: lightgray; }`
+        *     `.document button.button-helper.primary-button {
+        *     color: white;
+        *     background: rgba(0, 149, 218, 0.8);
+        *     }
+        *     .document button.button-helper.primary-button.disabled { color: lightgray; }`
         *
         */
         primary?: boolean;

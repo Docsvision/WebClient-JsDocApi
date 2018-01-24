@@ -71,6 +71,10 @@ h1 {
 	color: #333;
 }
 
+#tsd-search .results li {
+	color: #333;
+}
+
 ul.jslist-ul, ul.docs-dir  {
 	margin: 3px 0;
 	list-style: none;
@@ -97,4 +101,8 @@ div.jsl-collapsed-arrow {
 
 .tsd-navigation.primary li {
 	margin-left: 0;
+}
+
+.tsd-comment-tags  dt {
+	display: none;
 }
