@@ -135,10 +135,10 @@ namespace DocsMapGenerator
                 var fileTextLower = srcFiles.ElementAt(i);
                 var index = -1;
                 // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
-                if (fileTextLower.Value.Contains(classMath + className) || fileTextLower.Value.Contains(classAbstractMath + className) ||
-                    fileTextLower.Value.Contains(interfaceMath + className) || fileTextLower.Value.Contains(enumMath + className))
+                if (fileTextLower.Value.Contains(classMath + className + " ") || fileTextLower.Value.Contains(classAbstractMath + className + " ") ||
+                    fileTextLower.Value.Contains(interfaceMath + className + " ") || fileTextLower.Value.Contains(enumMath + className + " "))
                 {
-                    var classIndex = fileTextLower.Value.IndexOf(classMath + className);
+                    var classIndex = fileTextLower.Value.IndexOf(classMath + className + " ");
                     if (classIndex >= 0)
                     {
                         resultType = "tsd-kind-class";
@@ -146,7 +146,7 @@ namespace DocsMapGenerator
                     }
                     else
                     {
-                        var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className);
+                        var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className + " ");
                         if (abstractClassIndex >= 0)
                         {
                             resultType = "tsd-kind-class";
@@ -154,7 +154,7 @@ namespace DocsMapGenerator
                         }
                         else
                         {
-                            var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className);
+                            var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className + " ");
                             if (interfaceIndex >= 0)
                             {
                                 resultType = "tsd-kind-interface";
@@ -162,7 +162,7 @@ namespace DocsMapGenerator
                             }
                             else
                             {
-                                var enumIndex = fileTextLower.Value.IndexOf(enumMath + className);
+                                var enumIndex = fileTextLower.Value.IndexOf(enumMath + className + " ");
                                 if (enumIndex >= 0)
                                 {
                                     resultType = "tsd-kind-enum";
