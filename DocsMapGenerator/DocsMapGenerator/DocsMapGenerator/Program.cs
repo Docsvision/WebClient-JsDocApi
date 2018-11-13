@@ -128,6 +128,9 @@ namespace DocsMapGenerator
             const string classAbstractMath = "export abstract class ";
             const string interfaceMath = "export interface ";
             const string enumMath = "export enum ";
+            const string typeAliasMath = "export type ";
+            const string varMath = "export var ";
+            const string constMath = "export const ";
 
 
             for (var i = 0; i< srcFiles.Count && resultNicePath == ""; i++)
@@ -135,8 +138,17 @@ namespace DocsMapGenerator
                 var fileTextLower = srcFiles.ElementAt(i);
                 var index = -1;
                 // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
-                if (fileTextLower.Value.Contains(classMath + className + " ") || fileTextLower.Value.Contains(classAbstractMath + className + " ") ||
-                    fileTextLower.Value.Contains(interfaceMath + className + " ") || fileTextLower.Value.Contains(enumMath + className + " "))
+                if (fileTextLower.Value.Contains(classMath + className + " ") ||
+                    fileTextLower.Value.Contains(classMath + className + "<") ||
+                    fileTextLower.Value.Contains(classAbstractMath + className + " ") ||
+                    fileTextLower.Value.Contains(classAbstractMath + className + "<") ||
+                    fileTextLower.Value.Contains(interfaceMath + className + " ") ||
+                    fileTextLower.Value.Contains(interfaceMath + className + "<") ||
+                    fileTextLower.Value.Contains(enumMath + className + " ") ||
+                    fileTextLower.Value.Contains(typeAliasMath + className + " ") ||
+                    fileTextLower.Value.Contains(typeAliasMath + className + "<")||
+                    fileTextLower.Value.Contains(varMath + className + " ") ||
+                    fileTextLower.Value.Contains(constMath + className + " "))
                 {
                     var classIndex = fileTextLower.Value.IndexOf(classMath + className + " ");
                     if (classIndex >= 0)
@@ -147,6 +159,10 @@ namespace DocsMapGenerator
                     else
                     {
                         var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className + " ");
+                        if (abstractClassIndex < 0)
+                        {
+                            abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className + "<");
+                        }
                         if (abstractClassIndex >= 0)
                         {
                             resultType = "tsd-kind-class";
@@ -155,6 +171,10 @@ namespace DocsMapGenerator
                         else
                         {
                             var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className + " ");
+                            if (interfaceIndex < 0)
+                            {
+                                interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className + "<");
+                            }
                             if (interfaceIndex >= 0)
                             {
                                 resultType = "tsd-kind-interface";
@@ -163,10 +183,45 @@ namespace DocsMapGenerator
                             else
                             {
                                 var enumIndex = fileTextLower.Value.IndexOf(enumMath + className + " ");
+                                if (enumIndex < 0)
+                                {
+                                    enumIndex = fileTextLower.Value.IndexOf(enumIndex + className + "<");
+                                }
                                 if (enumIndex >= 0)
                                 {
                                     resultType = "tsd-kind-enum";
                                     index = enumIndex + enumMath.Length;
+                                }
+                                else
+                                {
+                                    var typeAliasIndex = fileTextLower.Value.IndexOf(typeAliasMath + className + " ");
+                                    if (typeAliasIndex < 0)
+                                    {
+                                        typeAliasIndex = fileTextLower.Value.IndexOf(typeAliasMath + className + "<");
+                                    }
+                                    if (typeAliasIndex >= 0)
+                                    {
+                                        resultType = "tsd-kind-type-alias";
+                                        index = typeAliasIndex + typeAliasMath.Length;
+                                    }
+                                    else
+                                    {
+                                        var constIndex = fileTextLower.Value.IndexOf(constMath + className + " ");
+                                        if (constIndex >= 0)
+                                        {
+                                            resultType = "tsd-kind-variable";
+                                            index = constIndex + constMath.Length;
+                                        }
+                                        else
+                                        {
+                                            var varIndex = fileTextLower.Value.IndexOf(varMath + className + " ");
+                                            if (varIndex >= 0)
+                                            {
+                                                resultType = "tsd-kind-variable";
+                                                index = varIndex + varMath.Length;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
