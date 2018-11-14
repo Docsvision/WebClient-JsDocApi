@@ -7,44 +7,54 @@ using System.Threading.Tasks;
 
 namespace DocsMapGenerator
 {
-    class Program
+    static class Program
     {
-        class DocItem
+        static string[] ignores = new string[]
         {
-            public string path;
-            public string name;
-            public string type;
-            public string logicPath;
-        } 
-        
-        class DocDir
-        {
-            public string name;
-            public List<DocDir> subdirs = new List<DocDir>();
-            public List<DocItem> items = new List<DocItem>();
+            "App\\Approval",
+            "App\\Routes",
+            "App\\Models",
+            "App\\Interfaces",
+            "App\\Core\\Legacy",
+            "App\\Core\\Legacy",
+            "App\\Core\\ActiveXObject",
+            "App\\Core\\Array",
+            "App\\Core\\String",
+            "App\\Controllers",
+            "App\\Core\\JQueryDeferred"
+        };
 
-            public string path;
-        }
-
-        static void AddItem(string path, string docFilepath, string type, string name, DocDir root)
+        public static void AddItem(string pathp, string href, string type, string name, DocDir root)
         {
-            var pathItems = path.Split('\\');
-            var currentDir = root;
-            var currentDirPath = root.name;
-            for(var i = 1; i< pathItems.Length-1; i++)
+            var path = pathp.Replace("~Navigator/", "").Replace("~Layout/", "");
+            if (!ignores.Any(x => path.StartsWith(x)))
             {
-                var item = pathItems[i];
-                var dir = currentDir.subdirs.Find(x => x.name == item);
-                if (dir == null)
+                if (name.StartsWith("$"))
                 {
-                    dir = new DocDir() { name = item };
-                    currentDir.subdirs.Add(dir);
+                    path = path.Replace("App", "App\\Services");
                 }
-                currentDir = dir;
-                currentDirPath += "/" + dir.name;
-                dir.path = currentDirPath;
+
+                var pathItems = path.Split('\\');
+                var currentDir = root;
+                var currentDirPath = root.name;
+                for (var i = 1; i < pathItems.Length - 1; i++)
+                {
+                    var item = pathItems[i];
+                    var dir = currentDir.subdirs.Find(x => x.name == item);
+                    if (dir == null)
+                    {
+                        dir = new DocDir() { name = item };
+                        currentDir.subdirs.Add(dir);
+                    }
+                    currentDir = dir;
+                    currentDirPath += "/" + dir.name;
+                    dir.path = currentDirPath;
+                }
+                if (!currentDir.items.Any(x => x.href == href))
+                {
+                    currentDir.items.Add(new DocItem() { name = name, href = href, type = type, logicPath = path });
+                }
             }
-            currentDir.items.Add(new DocItem() { name = name, path = docFilepath, type = type, logicPath = path });
         }
 
         static void Main(string[] args)
@@ -60,7 +70,7 @@ namespace DocsMapGenerator
             var srcDir = srcRoot + "/WebClient/WebClient/Content/Layout/Scripts/";
             foreach (string file in Directory.EnumerateFiles(srcDir, "*.ts?", SearchOption.AllDirectories))
             {
-                var nicePath = file.Replace(srcDir, "").Replace(Path.GetExtension(file), "");
+                var nicePath = file.Replace(srcDir, "~Layout/").Replace(Path.GetExtension(file), "");
                 var fileText = File.ReadAllText(file);
                 srcFiles.Add(nicePath, fileText.ToLower());
                 srcFilesOriginal.Add(nicePath, fileText);
@@ -68,7 +78,7 @@ namespace DocsMapGenerator
             var srcNavigator = srcRoot + "/WebClient/WebClient/Content/Navigator/Scripts/";
             foreach (string file in Directory.EnumerateFiles(srcNavigator, "*.ts?", SearchOption.AllDirectories))
             {
-                var nicePath = file.Replace(srcNavigator, "").Replace(Path.GetExtension(file), "");
+                var nicePath = file.Replace(srcNavigator, "~Navigator/").Replace(Path.GetExtension(file), "");
                 if (!srcFiles.ContainsKey(nicePath))
                 {
                     var fileText = File.ReadAllText(file);
@@ -79,21 +89,35 @@ namespace DocsMapGenerator
 
             DocDir root = new DocDir() { name = "App" } ;
             var webDocsRoot = docsRoot + "/docs";
-            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/classes"))
+
+            
+            var globals = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "globals.html"));
+            foreach(var glob in globals)
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);
+                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, glob, "");
             }
-            Console.WriteLine("Classes processed");
-            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/interfaces"))
+            Console.WriteLine("Global items processed");
+
+            var webclient = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.html"));
+            foreach (var w in webclient)
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);                
+                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
             }
-            Console.WriteLine("Interfaces processed");
-            foreach (string file in Directory.EnumerateFiles(webDocsRoot + "/enums"))
+            Console.WriteLine("WebClient items processed");
+
+            var genModels = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.genmodels.html"));
+            foreach (var w in genModels)
             {
-                BuildTree(srcFiles, srcFilesOriginal, root, file, webDocsRoot);                
+                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
             }
-            Console.WriteLine("Enums processed");
+            Console.WriteLine("GenModels items processed");
+
+            var genControllers = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.gencontrollers.html"));
+            foreach (var w in genControllers)
+            {
+                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
+            }
+            Console.WriteLine("GenControllers items processed");
 
             var outputFile = docsRoot + "/Build/WebClientTypedocTheme/partials/nicenav.hbs";
             using (var fileStream = new FileStream(outputFile, FileMode.Create))
@@ -116,133 +140,6 @@ namespace DocsMapGenerator
             Console.WriteLine("Complete!");
         }
 
-        private static void BuildTree(Dictionary<string, string> srcFiles, Dictionary<string, string> srcFilesOriginal, DocDir root, string file, string docsRoot)
-        {
-            var className = Path.GetFileNameWithoutExtension(file).Replace("webclient.", "").ToLower();
-            className = className.Split('.').Last();
-            string resultNicePath = "";
-            string resultName = "";
-            string resultType = "";
-
-            const string classMath = "export class ";
-            const string classAbstractMath = "export abstract class ";
-            const string interfaceMath = "export interface ";
-            const string enumMath = "export enum ";
-            const string typeAliasMath = "export type ";
-            const string varMath = "export var ";
-            const string constMath = "export const ";
-
-
-            for (var i = 0; i< srcFiles.Count && resultNicePath == ""; i++)
-            {
-                var fileTextLower = srcFiles.ElementAt(i);
-                var index = -1;
-                // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
-                if (fileTextLower.Value.Contains(classMath + className + " ") ||
-                    fileTextLower.Value.Contains(classMath + className + "<") ||
-                    fileTextLower.Value.Contains(classAbstractMath + className + " ") ||
-                    fileTextLower.Value.Contains(classAbstractMath + className + "<") ||
-                    fileTextLower.Value.Contains(interfaceMath + className + " ") ||
-                    fileTextLower.Value.Contains(interfaceMath + className + "<") ||
-                    fileTextLower.Value.Contains(enumMath + className + " ") ||
-                    fileTextLower.Value.Contains(typeAliasMath + className + " ") ||
-                    fileTextLower.Value.Contains(typeAliasMath + className + "<")||
-                    fileTextLower.Value.Contains(varMath + className + " ") ||
-                    fileTextLower.Value.Contains(constMath + className + " "))
-                {
-                    var classIndex = fileTextLower.Value.IndexOf(classMath + className + " ");
-                    if (classIndex >= 0)
-                    {
-                        resultType = "tsd-kind-class";
-                        index = classIndex + classMath.Length;
-                    }
-                    else
-                    {
-                        var abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className + " ");
-                        if (abstractClassIndex < 0)
-                        {
-                            abstractClassIndex = fileTextLower.Value.IndexOf(classAbstractMath + className + "<");
-                        }
-                        if (abstractClassIndex >= 0)
-                        {
-                            resultType = "tsd-kind-class";
-                            index = abstractClassIndex + classAbstractMath.Length;
-                        }
-                        else
-                        {
-                            var interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className + " ");
-                            if (interfaceIndex < 0)
-                            {
-                                interfaceIndex = fileTextLower.Value.IndexOf(interfaceMath + className + "<");
-                            }
-                            if (interfaceIndex >= 0)
-                            {
-                                resultType = "tsd-kind-interface";
-                                index = interfaceIndex + interfaceMath.Length;
-                            }
-                            else
-                            {
-                                var enumIndex = fileTextLower.Value.IndexOf(enumMath + className + " ");
-                                if (enumIndex < 0)
-                                {
-                                    enumIndex = fileTextLower.Value.IndexOf(enumIndex + className + "<");
-                                }
-                                if (enumIndex >= 0)
-                                {
-                                    resultType = "tsd-kind-enum";
-                                    index = enumIndex + enumMath.Length;
-                                }
-                                else
-                                {
-                                    var typeAliasIndex = fileTextLower.Value.IndexOf(typeAliasMath + className + " ");
-                                    if (typeAliasIndex < 0)
-                                    {
-                                        typeAliasIndex = fileTextLower.Value.IndexOf(typeAliasMath + className + "<");
-                                    }
-                                    if (typeAliasIndex >= 0)
-                                    {
-                                        resultType = "tsd-kind-type-alias";
-                                        index = typeAliasIndex + typeAliasMath.Length;
-                                    }
-                                    else
-                                    {
-                                        var constIndex = fileTextLower.Value.IndexOf(constMath + className + " ");
-                                        if (constIndex >= 0)
-                                        {
-                                            resultType = "tsd-kind-variable";
-                                            index = constIndex + constMath.Length;
-                                        }
-                                        else
-                                        {
-                                            var varIndex = fileTextLower.Value.IndexOf(varMath + className + " ");
-                                            if (varIndex >= 0)
-                                            {
-                                                resultType = "tsd-kind-variable";
-                                                index = varIndex + varMath.Length;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    if (index >= 0)
-                    {
-                        var originalText = srcFilesOriginal.ElementAt(i).Value;
-                        resultName = originalText.Substring(index, className.Length);
-                        resultNicePath = fileTextLower.Key;
-                    }
-                }
-            }
-            if (!String.IsNullOrEmpty(resultNicePath))
-            {
-                AddItem(resultNicePath, file.Replace(docsRoot + "/", ""), resultType, resultName, root);
-            }
-            else
-            {
-                Console.WriteLine("Fail on " + file);
-            }
-        }
 
         static void PrintTree(StreamWriter stream, DocDir currentDir, int level)
         {
@@ -260,7 +157,7 @@ namespace DocsMapGenerator
             {
                 stream.Write(ident + "<li class='" + item.type + "'>");
                 stream.Write(@"<span class=""tsd-kind-icon"">");
-                stream.Write("<a href=\"{{relativeURL " + "\"" + item.path.Replace("\\", "/") + "\"}}\" class=doc-link data-path=\"" + item.logicPath  + "\" >" + item.name + "</a>");
+                stream.Write("<a href=\"{{relativeURL " + "\"" + item.href.Replace("\\", "/") + "\"}}\" class=doc-link data-path=\"" + item.logicPath  + "\" >" + item.name + "</a>");
                 stream.Write("</span>");
                 stream.Write("</li>");
             }
