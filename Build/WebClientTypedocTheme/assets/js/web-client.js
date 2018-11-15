@@ -79,6 +79,10 @@
 		});
 	}
 	
+	function endsWith(str, suffix) {
+		return str.indexOf(suffix, str.length - suffix.length) !== -1;
+	}
+	
 	// Expand current nav
 	document.addEventListener("DOMContentLoaded", function() {
 		// Expand root 
@@ -87,25 +91,43 @@
 		var rootToggler = document.querySelector("#tree_root>li>div.jsl-collapsed-arrow");
 		rootToggler.classList.add("jsl-open-arrow");
 		
-		if (location.pathname.indexOf("classes") >= 0 || location.pathname.indexOf("interfaces") >= 0 || location.pathname.indexOf("enums") >= 0) {		
-			var path = location.pathname.split('/');
-			var match = path[path.length-2] + "/" + path[path.length-1];
-			var link = [].find.call(document.querySelectorAll("a.doc-link"), (a) => a.href.indexOf(match) >= 0);
-			if (link) {
-				link.style.fontWeight = "bold"
-				var parent = link.parentElement;
-				while (parent != null) {
-					if (parent.tagName == "UL") {
-						parent.classList.add("jsl-open");
-						var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
-						if (toggler) {
-							toggler.classList.add("jsl-open-arrow");
-						}
+			
+	
+		var link = [].find.call(document.querySelectorAll("a.doc-link"), (a) => endsWith(location.href, a.href));
+		if (link) {
+			link.style.fontWeight = "bold"
+			var parent = link.parentElement;
+			while (parent != null) {
+				if (parent.tagName == "UL") {
+					parent.classList.add("jsl-open");
+					var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
+					if (toggler) {
+						toggler.classList.add("jsl-open-arrow");
 					}
-					parent = parent.parentElement;
 				}
+				parent = parent.parentElement;
 			}
 		}
+		
 	});
+	
+	// Fix of not working click on search results
+	document.addEventListener("mousedown", 
+		function (ev) {
+			var url = ""; 
+			if(ev.target.matches(".results li")) { 
+				url = ev.target.firstElementChild.href;
+			} else if(ev.target.matches(".results li a")) { 
+				url = ev.target.href;
+			} else if(ev.target.matches(".results li a span")) { 
+				url = ev.target.parentElement.href;
+			};  
+			console.info(url);
+			if (url && url != location.href) {
+			   location.href = url;
+			}
+		}, 
+		{ capture: true }
+	);
 })();
 
