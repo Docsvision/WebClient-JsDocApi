@@ -110,5 +110,24 @@
 		}
 		
 	});
+	
+	// Fix of not working click on search results
+	document.addEventListener("mousedown", 
+		function (ev) {
+			var url = ""; 
+			if(ev.target.matches(".results li")) { 
+				url = ev.target.firstElementChild.href;
+			} else if(ev.target.matches(".results li a")) { 
+				url = ev.target.href;
+			} else if(ev.target.matches(".results li a span")) { 
+				url = ev.target.parentElement.href;
+			};  
+			console.info(url);
+			if (url && url != location.href) {
+			   location.href = url;
+			}
+		}, 
+		{ capture: true }
+	);
 })();
 
