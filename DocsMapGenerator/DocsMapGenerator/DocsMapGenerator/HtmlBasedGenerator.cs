@@ -47,66 +47,20 @@ namespace DocsMapGenerator
             string resultName = "";
             string resultType = "";
 
-            const string classMath = "class ";
-            const string classAbstractMath = "abstract class ";
-            const string interfaceMath = "interface ";
-            const string enumMath = "enum ";
-            const string typeAliasMath = "type ";
-            //const string globalTypeAliasMath = "type ";
-            const string varMath = "var ";
-            const string constMath = "const ";
+            var matchingSources = srcFilesOriginal.Where(x => x.Key.ToLower().Contains(className.ToLower())).ToList();
 
+            for (var i = 0; i < matchingSources.Count && resultNicePath == ""; i++)
+            {
+                var fileText = matchingSources.ElementAt(i);
+                FindDeclarationInSourceCode(className, ref resultNicePath, ref resultName, ref resultType, fileText);
+            }
 
             for (var i = 0; i < srcFilesOriginal.Count && resultNicePath == ""; i++)
             {
                 var fileText = srcFilesOriginal.ElementAt(i);
-
-                var index = -1;
-                // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
-                if (Math(fileText.Value, classMath, className) ||
-                    Math(fileText.Value, classAbstractMath, className) ||
-                    Math(fileText.Value, interfaceMath, className) ||
-                    Math(fileText.Value, enumMath, className) ||
-                    Math(fileText.Value, typeAliasMath, className) ||
-                    //Math(fileText.Value, globalTypeAliasMath, className) ||
-                    Math(fileText.Value, varMath, className) ||
-                    Math(fileText.Value, constMath, className))
-                {
-                    resultType = FindIndex(className, classMath, "tsd-kind-class", fileText, ref index);
-                    if (resultType == null)
-                    {
-                        resultType = FindIndex(className, classAbstractMath, "tsd-kind-class", fileText, ref index);
-                        if (resultType == null)
-                        {
-                            resultType = FindIndex(className, interfaceMath, "tsd-kind-interface", fileText, ref index);
-                            if (resultType == null)
-                            {
-                                resultType = FindIndex(className, enumMath, "tsd-kind-enum", fileText, ref index);
-                                if (resultType == null)
-                                {
-                                    resultType = FindIndex(className, typeAliasMath, "tsd-kind-type-alias", fileText, ref index);
-                                    if (resultType == null)
-                                    {
-
-                                        resultType = FindIndex(className, constMath, "tsd-kind-variable", fileText, ref index);
-                                        if (resultType == null)
-                                        {
-                                            resultType = FindIndex(className, varMath, "tsd-kind-variable", fileText, ref index);
-                                        }
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    if (resultType != null)
-                    {
-                        var originalText = srcFilesOriginal.ElementAt(i).Value;
-                        resultName = originalText.Substring(index, className.Length);
-                        resultNicePath = fileText.Key;
-                    }
-                }
+                FindDeclarationInSourceCode(className, ref resultNicePath, ref resultName, ref resultType, fileText);
             }
+
             if (!String.IsNullOrEmpty(resultNicePath))
             {
                 var href = childLink.GetAttributeValue("href", "");
@@ -123,7 +77,63 @@ namespace DocsMapGenerator
             }
         }
 
-        
+        private static void FindDeclarationInSourceCode(string className, ref string resultNicePath, ref string resultName, ref string resultType, KeyValuePair<string, string> fileText)
+        {
+            const string classMath = "class ";
+            const string classAbstractMath = "abstract class ";
+            const string interfaceMath = "interface ";
+            const string enumMath = "enum ";
+            const string typeAliasMath = "type ";
+            //const string globalTypeAliasMath = "type ";
+            const string varMath = "var ";
+            const string constMath = "const ";
+
+            var index = -1;
+            // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
+            if (Math(fileText.Value, classMath, className) ||
+                Math(fileText.Value, classAbstractMath, className) ||
+                Math(fileText.Value, interfaceMath, className) ||
+                Math(fileText.Value, enumMath, className) ||
+                Math(fileText.Value, typeAliasMath, className) ||
+                //Math(fileText.Value, globalTypeAliasMath, className) ||
+                Math(fileText.Value, varMath, className) ||
+                Math(fileText.Value, constMath, className))
+            {
+                resultType = FindIndex(className, classMath, "tsd-kind-class", fileText, ref index);
+                if (resultType == null)
+                {
+                    resultType = FindIndex(className, classAbstractMath, "tsd-kind-class", fileText, ref index);
+                    if (resultType == null)
+                    {
+                        resultType = FindIndex(className, interfaceMath, "tsd-kind-interface", fileText, ref index);
+                        if (resultType == null)
+                        {
+                            resultType = FindIndex(className, enumMath, "tsd-kind-enum", fileText, ref index);
+                            if (resultType == null)
+                            {
+                                resultType = FindIndex(className, typeAliasMath, "tsd-kind-type-alias", fileText, ref index);
+                                if (resultType == null)
+                                {
+
+                                    resultType = FindIndex(className, constMath, "tsd-kind-variable", fileText, ref index);
+                                    if (resultType == null)
+                                    {
+                                        resultType = FindIndex(className, varMath, "tsd-kind-variable", fileText, ref index);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                if (resultType != null)
+                {
+                    resultName = fileText.Value.Substring(index, className.Length);
+                    resultNicePath = fileText.Key;
+                }
+            }
+        }
+
 
         private static string FindIndex(string className, string math, string kind, KeyValuePair<string, string> fileTextLower, ref int index)
         {
@@ -132,8 +142,16 @@ namespace DocsMapGenerator
             {
                 mathIndex = fileTextLower.Value.IndexOf(math + className + "<");
             }
+            if (mathIndex < 0)
+            {
+                mathIndex = fileTextLower.Value.IndexOf(math + className + ":");
+            }
+            if (mathIndex < 0)
+            {
+                mathIndex = fileTextLower.Value.IndexOf(math + className + "(");
+            }
 
-        
+
             if (mathIndex >= 0)
             {
                 index = mathIndex + math.Length;
@@ -150,7 +168,9 @@ namespace DocsMapGenerator
         private static bool Math(string fileTextLower, string classMath, string className)
         {
             return fileTextLower.Contains(classMath + className + " ") ||
-                                fileTextLower.Contains(classMath + className + "<");
+                fileTextLower.Contains(classMath + className + "<") ||
+                fileTextLower.Contains(classMath + className + ":") ||
+                fileTextLower.Contains(classMath + className + "(");
         }
     }
 }

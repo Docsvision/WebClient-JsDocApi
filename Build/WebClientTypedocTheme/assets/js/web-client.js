@@ -109,6 +109,15 @@
 			}
 		}
 		
+		// Remove quotes and .d from module name
+		var breadcrumbs = document.querySelectorAll(".breadcrumb");
+		[].forEach.call(breadcrumbs, function(elem) {
+			if (elem.innerHTML.indexOf(".d") >= 0) {
+				elem.innerHTML = elem.innerHTML.split("\"").join("").replace(".d", "");
+				elem.parentElement.classList.add("breadcrumb-no-ident");
+			}
+		});
+		document.querySelector(".tsd-breadcrumb").classList.add("show");
 	});
 	
 	// Fix of not working click on search results
