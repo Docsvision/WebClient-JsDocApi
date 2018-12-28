@@ -86,9 +86,9 @@
 	// Expand current nav
 	document.addEventListener("DOMContentLoaded", function() {
 		// Expand root 
-		var rootUl = document.querySelector("#tree_root>li>ul");
+		var rootUl = document.querySelector("#tree_root>li:nth-child(2)>ul");
 		rootUl.classList.add("jsl-open");
-		var rootToggler = document.querySelector("#tree_root>li>div.jsl-collapsed-arrow");
+		var rootToggler = document.querySelector("#tree_root>li:nth-child(2)>div.jsl-collapsed-arrow");
 		rootToggler.classList.add("jsl-open-arrow");
 		
 			
@@ -99,16 +99,43 @@
 			var parent = link.parentElement;
 			while (parent != null) {
 				if (parent.tagName == "UL") {
-					parent.classList.add("jsl-open");
-					var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
-					if (toggler) {
-						toggler.classList.add("jsl-open-arrow");
+					if (parent.id != "tree_root") {
+						parent.classList.add("jsl-open");
+						var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
+						if (toggler) {
+							toggler.classList.add("jsl-open-arrow");
+						}
 					}
 				}
 				parent = parent.parentElement;
 			}
 		}
 		
+		// Remove quotes and .d from module name
+		var breadcrumbs = document.querySelectorAll(".breadcrumb");
+		[].forEach.call(breadcrumbs, function(elem) {
+			if (elem.innerHTML.indexOf(".d") >= 0) {
+				elem.innerHTML = elem.innerHTML.split("\"").join("").replace(".d", "");
+				elem.parentElement.classList.add("breadcrumb-no-ident");
+			}
+		});
+		document.querySelector(".tsd-breadcrumb").classList.add("show");
+		
+		var header = document.querySelector(".tsd-page-title h1");
+		if (header) {
+			header.innerHTML = header.innerHTML.replace("External module \"", "Модуль \"@docsvision/webclient/").replace(".d", "");
+			header.classList.add("show");
+		}
+		
+		if (location.href.indexOf("globals.html") >= 0) {
+			var moduleLinks = document.querySelectorAll(".tsd-kind-external-module a");
+			[].forEach.call(moduleLinks, function(elem) {
+				if (elem.innerHTML.indexOf(".d") >= 0) {
+					elem.innerHTML = elem.innerHTML.split("\"").join("").replace(".d", "");
+					elem.parentElement.classList.add("show");
+				}
+			});
+		}
 	});
 	
 	// Fix of not working click on search results
