@@ -1,0 +1,41 @@
+import { ModalWindow } from "@docsvision/webclient/Legacy/ModalWindow";
+/** @internal */
+export declare class SelectCardLinkDialog {
+    private selectCardModal;
+    private container;
+    private searchInput;
+    private sourceCardId;
+    private selectedFolder;
+    private loader;
+    private nextPageLoader;
+    private cardsScrollContainer;
+    private cardsTableItemsContainer;
+    private allowedCardTypesField;
+    private wrapRows;
+    private sortingColumnName;
+    private sortDescending;
+    private searchMode;
+    private currentPageNumber;
+    private lastQueryTimestamp;
+    private columnHeaders;
+    private modalClosed;
+    private requestFinished;
+    constructor();
+    private readonly firstPage;
+    allowedCardTypes: string[];
+    ShowDialog(sourceCardId: string, allowedLinkTypes: string[], okCallback: (window: ModalWindow) => void, shownCallback?: (window: ModalWindow) => void, closingCallback?: () => JQueryDeferred<any>, closeCallback?: () => void): void;
+    private InitDialog;
+    private UpdateShortcuts;
+    private InitCardRow;
+    private ButtonOkEnabled;
+    private LoadFolder;
+    private LoadSearch;
+    private GetServerResults;
+    private LoaderLogic;
+    private GetResultsFromServer;
+    private ClearCardsTableItems;
+    private SetSorting;
+    private SetRowWrapMode;
+    private OnSearchInputKeyDown;
+    private onCardsScroll;
+}

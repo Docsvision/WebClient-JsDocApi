@@ -1,0 +1,33 @@
+import { TraceProvider } from "@docsvision/webclient/Legacy/TraceProvider";
+import { EmployeeAutoComplete } from "@docsvision/webclient/Legacy/EmployeeAutoComplete";
+export declare class TaskCardCreate {
+    protected form: HTMLFormElement;
+    protected url: string;
+    protected parentCardId: HTMLInputElement;
+    protected controllerForm: HTMLElement;
+    protected saving: boolean;
+    private saveButtonElement;
+    private submiteButtonElement;
+    private cancelButtonElement;
+    private controllerCheckBox;
+    private acceptanceCheckBox;
+    private addFileCheckBox;
+    private sendTaskInput;
+    private uploadFilePanel;
+    private documentsBlock;
+    private performerControl;
+    private controllerControl;
+    private dropDownContainer;
+    private dropdownControl;
+    protected traceProvider: TraceProvider;
+    constructor(formName: HTMLFormElement);
+    static DisableButtons(): void;
+    static EnableButtons(): void;
+    static AddDocumentId(documentPanel: string, documentId: string): void;
+    Save(): JQueryDeferred<any>;
+    protected Initialize(): void;
+    protected SendRequest(form: any): Promise<void>;
+    protected readonly ControllerCheckBox: HTMLInputElement;
+    protected readonly AcceptanceCheckBox: HTMLInputElement;
+    protected readonly ControllerControl: EmployeeAutoComplete;
+}

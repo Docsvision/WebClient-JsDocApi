@@ -1,0 +1,44 @@
+import { GenModels } from "@docsvision/webclient/Generated/DocsVision.WebClient.Models";
+import { ISidebar } from "@docsvision/webclient/Legacy/$Sidebar";
+import { $DeviceType, $IsIE10 } from "@docsvision/webclient/StandardServices";
+import { BasicApiEvent } from "@docsvision/webclient/System/ApiEvent";
+import { $LocalStorage } from "@docsvision/webclient/System/$LocalStorage";
+/** @internal */
+export declare class Sidebar implements ISidebar {
+    private services;
+    private mainMenuLayoutPosition;
+    private mainMenuElementId;
+    private model;
+    private content;
+    private btnPinn;
+    private btnOpen;
+    private linkSwitchView;
+    private isPinned;
+    private isClosed;
+    private canResize;
+    private maxResizeWidth;
+    private minResizeWidth;
+    private deviceType;
+    private isBusy;
+    private traceProvider;
+    toggle?: BasicApiEvent<boolean>;
+    constructor(services: $DeviceType & $LocalStorage & $IsIE10);
+    readonly IsClosed: boolean;
+    readonly CanResize: boolean;
+    IsPinned: boolean;
+    DeviceType: GenModels.DeviceType;
+    readonly Model: HTMLElement;
+    readonly MinResizeWidth: number;
+    readonly MaxResizeWidth: number;
+    close(): void;
+    open(): void;
+    SaveSettings(): void;
+    LoadSettings(): void;
+    LoadLayout(): JQueryDeferred<any>;
+    private SwitchView;
+    private Initialize;
+    private AddHideOnDocumentClickEvent;
+    private toogle;
+    ResetSettings(): void;
+    ReInitialize(): void;
+}

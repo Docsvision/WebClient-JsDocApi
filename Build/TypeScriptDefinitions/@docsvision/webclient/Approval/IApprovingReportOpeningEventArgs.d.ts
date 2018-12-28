@@ -1,0 +1,3 @@
+/** @internal */
+export interface IApprovingReportOpeningEventArgs {
+}

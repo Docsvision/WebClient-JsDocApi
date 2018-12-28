@@ -17,7 +17,8 @@ namespace DocsMapGenerator
 
             List<HtmlNode> navLinksTags = new List<HtmlNode>();
 
-            string[] classes = new string[] { "tsd-kind-class", "tsd-kind-interface", "tsd-kind-enum", "tsd-kind-type-alias", "tsd-kind-variable" };
+            string[] classes = new string[] { "tsd-kind-class", "tsd-kind-interface", "tsd-kind-enum", "tsd-kind-type-alias", "tsd-kind-variable"};
+            string[] moduleCalsses = new string[] { "tsd-parent-kind-external-module" };
 
 
             foreach (HtmlNode listItem in htmlSnippet.DocumentNode.SelectNodes("//li[@class]"))
@@ -26,7 +27,10 @@ namespace DocsMapGenerator
                 if (childLink != null && !listItem.GetAttributeValue("class", "").Contains("jslist-li"))
                 {
                     HtmlAttribute classAttr = listItem.Attributes["class"];
-                    if (classAttr != null && classes.Intersect(classAttr.Value.Split(' ').Select(x => x.Trim())).Count() > 0)
+                    var linkClasses = classAttr.Value.Split(' ').Select(x => x.Trim());
+                    if (classAttr != null && (
+                        classes.Intersect(linkClasses).Count() > 0) ||
+                        (moduleCalsses.Intersect(linkClasses).Count() > 0 && linkClasses.Contains("tsd-parent-kind-external-module")))
                     {
                         navLinksTags.Add(listItem);
                     }
@@ -87,6 +91,7 @@ namespace DocsMapGenerator
             //const string globalTypeAliasMath = "type ";
             const string varMath = "var ";
             const string constMath = "const ";
+            const string functionMath = "function ";
 
             var index = -1;
             // Кто бы мог подумать, Contains в несколько раз быстрее IndexOf!
@@ -97,7 +102,8 @@ namespace DocsMapGenerator
                 Math(fileText.Value, typeAliasMath, className) ||
                 //Math(fileText.Value, globalTypeAliasMath, className) ||
                 Math(fileText.Value, varMath, className) ||
-                Math(fileText.Value, constMath, className))
+                Math(fileText.Value, constMath, className)||
+                Math(fileText.Value, functionMath, className))
             {
                 resultType = FindIndex(className, classMath, "tsd-kind-class", fileText, ref index);
                 if (resultType == null)
@@ -119,6 +125,10 @@ namespace DocsMapGenerator
                                     if (resultType == null)
                                     {
                                         resultType = FindIndex(className, varMath, "tsd-kind-variable", fileText, ref index);
+                                        if (resultType == null)
+                                        {
+                                            resultType = FindIndex(className, functionMath, "tsd-kind-function", fileText, ref index);
+                                        }
                                     }
 
                                 }

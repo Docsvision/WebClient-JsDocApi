@@ -1,0 +1,43 @@
+/** @internal */
+export declare class FilePanel {
+    private static FileVersionCssClass;
+    private static FileSettingsCssClass;
+    private static CommandExpandCssClass;
+    private static CommandBarCssClass;
+    private static FileDeleteOperationCssClass;
+    private static FileOperationCssClass;
+    private static FileLinkCssClass;
+    private static VersionCommentCssClass;
+    private static FileOpenCssClass;
+    private fileSign;
+    private filePanel;
+    private selectedElement;
+    private currentCommandBar;
+    private currentSettings;
+    private traceProvider;
+    constructor(filePanelId: string);
+    private Initialize;
+    private PreviewFileEventHandler;
+    private VersionEventHandler;
+    private SettingEventHandler;
+    private ToggleCommandBar;
+    private ClearAllAnimation;
+    private CommandExpandEventHandler;
+    private readonly GetFileItems;
+    private SelectEventClick;
+    private ShowVersions;
+    private RestoreVersionsExpandedInfo;
+    private StoreVersionsExpandedInfo;
+    private ResetVersionsExpandedInfo;
+    private GetVersionsExpandedInfo;
+    private SaveVersionsExpandedInfo;
+    private GetLocalStorageId;
+    private ShowFileSettingsEventClick;
+    private ShowFileSettings;
+    private DeleteFileEventHandler;
+    private FileOperationWithoutDialog;
+    private AddFileCommentEventHandler;
+    private WrapperEventHandler;
+    private OpenEventHandler;
+    private SuppressEvents;
+}

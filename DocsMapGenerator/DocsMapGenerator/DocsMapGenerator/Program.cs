@@ -30,10 +30,10 @@ namespace DocsMapGenerator
             if (!ignores.Any(x => path.StartsWith(x)))
             {
                 var pathItems = path.Split('\\').ToList();
-                if (name.StartsWith("$") && pathItems.Count > 2)
+                if (name.StartsWith("$"))
                 {
                     pathItems = pathItems.Where(x => x != "Services").ToList();
-                    pathItems.Insert(2, "Services");
+                    root = root.servicesRoot;
                 }
                 var currentDir = root;
                 var currentDirPath = root.name;
@@ -77,6 +77,7 @@ namespace DocsMapGenerator
             }
 
             DocDir root = new DocDir() { name = "App" } ;
+            root.servicesRoot = new DocDir() { name = "Services" };
             var webDocsRoot = docsRoot + "/docs";
 
             foreach (var file in Directory.GetFiles((Path.Combine(webDocsRoot, "modules")), "*.html"))
@@ -116,7 +117,8 @@ namespace DocsMapGenerator
                 using (var writer = new StreamWriter(fileStream))
                 {
                     writer.WriteLine(@"<ul id=""tree_root"" class=""loading"">");
-                    PrintTree(writer, root, 0);
+                    PrintTree(writer, root.servicesRoot, 0);
+                    PrintTree(writer, root, 0);                    
                     writer.WriteLine(@"</ul>");
                     writer.WriteLine(@"<script>document.addEventListener(""DOMContentLoaded"", " +
                             "function() { " +

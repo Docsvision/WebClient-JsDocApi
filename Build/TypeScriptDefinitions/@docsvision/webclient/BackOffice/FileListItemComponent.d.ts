@@ -1,0 +1,42 @@
+import { FileListItem } from "@docsvision/webclient/BackOffice/FileListItem";
+import { FileListControlLogic } from "@docsvision/webclient/BackOffice/FileListControlLogic";
+import { FileListItemProps } from "@docsvision/webclient/BackOffice/FileListItemProps";
+import { GenModels } from "@docsvision/webclient/Generated/DocsVision.WebClient.Models";
+import { RequestHelper } from "@docsvision/webclient/System/RequestHelper";
+import React from "react";
+/** @internal */
+export declare class FileListItemComponent extends React.Component<FileListItemProps, any> {
+    protected fileCommentWindowCloser: () => void;
+    logic: FileListControlLogic;
+    downloadAction: string;
+    versionsRequestHelper: RequestHelper;
+    childVersionsLoaded: boolean;
+    constructor(props: FileListItemProps);
+    componentWillUnmount(): void;
+    canRead(fileItem: FileListItem): boolean;
+    canEdit(fileItem: FileListItem): boolean;
+    canDelete(fileItem: FileListItem): boolean;
+    canLock(fileItem: FileListItem): boolean;
+    canComment(fileItem: FileListItem): boolean;
+    protected onMenuClose(fileItem: FileListItem): void;
+    onLockOperationClick(fileItem: FileListItem): void;
+    onUnlockOperationClick(fileItem: FileListItem): void;
+    protected onDeleteOperationClick(fileItem: FileListItem): void;
+    protected onFileMenuClick(fileItem: FileListItem): void;
+    protected onDownloadOperationClick(fileItem: FileListItem): void;
+    onAddCommentClick(fileItem: FileListItem): void;
+    onEditModeRemoveClick(fileItem: FileListItem): void;
+    render(): JSX.Element;
+    protected getFileVersionText(version: GenModels.VersionedFileModel): string;
+    onVersionClick(fileItem: FileListItem): void;
+    protected onNameClick(fileItem: FileListItem): void;
+    protected onVersionNumberClick(fileItem: FileListItem, version: GenModels.VersionedFileModel): void;
+    protected onDownloadVersionClick(fileItem: FileListItem, version: GenModels.VersionedFileModel): void;
+    onWebDavFileClick(fileItem: FileListItem): void;
+    protected renderViewMode(): JSX.Element;
+    protected renderVersionList(fileItem: FileListItem): JSX.Element;
+    protected getLoaderWidth(i: number): number;
+    protected renderEditMode(item: FileListItem): JSX.Element;
+    protected renderMenuItems(fileItem: FileListItem): React.ReactNode[];
+    protected renderViewModeFileMenu(fileItem: FileListItem): JSX.Element;
+}
