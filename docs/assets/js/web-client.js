@@ -123,7 +123,7 @@
 		
 		var header = document.querySelector(".tsd-page-title h1");
 		if (header) {
-			header.innerHTML = header.innerHTML.replace("External module \"", "Модуль \"@docsvision/webclient/").replace(".d", "");
+			header.innerHTML = header.innerHTML.replace("External module \"", "Модуль @docsvision/webclient/").replace(".d", "");
 			header.classList.add("show");
 		}
 		
