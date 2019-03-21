@@ -90,6 +90,7 @@ namespace DocsMapGenerator
             const string typeAliasMath = "type ";
             //const string globalTypeAliasMath = "type ";
             const string varMath = "var ";
+            const string letMath = "let ";
             const string constMath = "const ";
             const string functionMath = "function ";
 
@@ -103,7 +104,8 @@ namespace DocsMapGenerator
                 //Math(fileText.Value, globalTypeAliasMath, className) ||
                 Math(fileText.Value, varMath, className) ||
                 Math(fileText.Value, constMath, className)||
-                Math(fileText.Value, functionMath, className))
+                Math(fileText.Value, functionMath, className)||
+                Math(fileText.Value, letMath, className))
             {
                 resultType = FindIndex(className, classMath, "tsd-kind-class", fileText, ref index);
                 if (resultType == null)
@@ -128,6 +130,10 @@ namespace DocsMapGenerator
                                         if (resultType == null)
                                         {
                                             resultType = FindIndex(className, functionMath, "tsd-kind-function", fileText, ref index);
+                                            if (resultType == null)
+                                            {
+                                                resultType = FindIndex(className, letMath, "tsd-kind-variable", fileText, ref index);
+                                            }
                                         }
                                     }
 

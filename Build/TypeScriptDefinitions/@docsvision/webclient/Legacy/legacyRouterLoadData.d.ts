@@ -1,1 +1,0 @@
-export declare function legacyRouterLoadData(showOverlay: boolean, customErrorCallback: ((httpRequest: any, callback: any) => void) | undefined, get: boolean, url: string, requestData: any, callback?: Function): void;

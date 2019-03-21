@@ -11,7 +11,6 @@ namespace DocsMapGenerator
     {
         static string[] ignores = new string[]
         {
-            "App\\Approval",
             "App\\Routes",
             "App\\Models",
             "App\\Interfaces",
