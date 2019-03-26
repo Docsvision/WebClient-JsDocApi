@@ -16,6 +16,7 @@ namespace DocsMapGenerator
 
     public class DocDir
     {
+        public DocDir servicesRoot;
         public string name;
         public List<DocDir> subdirs = new List<DocDir>();
         public List<DocItem> items = new List<DocItem>();

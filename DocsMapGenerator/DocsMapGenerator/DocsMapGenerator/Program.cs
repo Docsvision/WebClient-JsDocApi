@@ -11,7 +11,6 @@ namespace DocsMapGenerator
     {
         static string[] ignores = new string[]
         {
-            "App\\Approval",
             "App\\Routes",
             "App\\Models",
             "App\\Interfaces",
@@ -26,18 +25,18 @@ namespace DocsMapGenerator
 
         public static void AddItem(string pathp, string href, string type, string name, DocDir root)
         {
-            var path = pathp.Replace("~Navigator/", "").Replace("~Layout/", "");
+            var path = pathp.Replace("~App/", "");
             if (!ignores.Any(x => path.StartsWith(x)))
             {
+                var pathItems = path.Split('\\').ToList();
                 if (name.StartsWith("$"))
                 {
-                    path = path.Replace("App", "App\\Services");
+                    pathItems = pathItems.Where(x => x != "Services").ToList();
+                    root = root.servicesRoot;
                 }
-
-                var pathItems = path.Split('\\');
                 var currentDir = root;
                 var currentDirPath = root.name;
-                for (var i = 1; i < pathItems.Length - 1; i++)
+                for (var i = 1; i < pathItems.Count - 1; i++)
                 {
                     var item = pathItems[i];
                     var dir = currentDir.subdirs.Find(x => x.name == item);
@@ -67,57 +66,49 @@ namespace DocsMapGenerator
 
             Dictionary<string, string> srcFiles = new Dictionary<string, string>();
             Dictionary<string, string> srcFilesOriginal = new Dictionary<string, string>();
-            var srcDir = srcRoot + "/WebClient/WebClient/Content/Layout/Scripts/";
+            var srcDir = srcRoot + "/WebClient/WebClient/Content/";
             foreach (string file in Directory.EnumerateFiles(srcDir, "*.ts?", SearchOption.AllDirectories))
             {
-                var nicePath = file.Replace(srcDir, "~Layout/").Replace(Path.GetExtension(file), "");
+                var nicePath = file.Replace(srcDir, "~App/").Replace(Path.GetExtension(file), "");
                 var fileText = File.ReadAllText(file);
                 srcFiles.Add(nicePath, fileText.ToLower());
                 srcFilesOriginal.Add(nicePath, fileText);
             }
-            var srcNavigator = srcRoot + "/WebClient/WebClient/Content/Navigator/Scripts/";
-            foreach (string file in Directory.EnumerateFiles(srcNavigator, "*.ts?", SearchOption.AllDirectories))
-            {
-                var nicePath = file.Replace(srcNavigator, "~Navigator/").Replace(Path.GetExtension(file), "");
-                if (!srcFiles.ContainsKey(nicePath))
-                {
-                    var fileText = File.ReadAllText(file);
-                    srcFiles.Add(nicePath, fileText.ToLower());
-                    srcFilesOriginal.Add(nicePath, fileText);
-                }
-            }
 
             DocDir root = new DocDir() { name = "App" } ;
+            root.servicesRoot = new DocDir() { name = "Services" };
             var webDocsRoot = docsRoot + "/docs";
 
-            
-            var globals = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "globals.html"));
-            foreach(var glob in globals)
+            foreach (var file in Directory.GetFiles((Path.Combine(webDocsRoot, "modules")), "*.html"))
             {
-                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, glob, "");
+                var items = HtmlBasedGenerator.FindNodes(file);
+                foreach (var item in items)
+                {
+                    HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, item, "modules");
+                }
+                Console.WriteLine(file + " items processed");
             }
-            Console.WriteLine("Global items processed");
 
-            var webclient = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.html"));
-            foreach (var w in webclient)
-            {
-                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
-            }
-            Console.WriteLine("WebClient items processed");
+            //var globals = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "globals.html"));
+            //foreach(var glob in globals)
+            //{
+            //    HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, glob, "");
+            //}
+            //Console.WriteLine("Global items processed");
 
-            var genModels = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.genmodels.html"));
-            foreach (var w in genModels)
-            {
-                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
-            }
-            Console.WriteLine("GenModels items processed");
+            //var genModels = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "genmodels.html"));
+            //foreach (var w in genModels)
+            //{
+            //    HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
+            //}
+            //Console.WriteLine("GenModels items processed");
 
-            var genControllers = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "webclient.gencontrollers.html"));
-            foreach (var w in genControllers)
-            {
-                HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
-            }
-            Console.WriteLine("GenControllers items processed");
+            //var genControllers = HtmlBasedGenerator.FindNodes(Path.Combine(webDocsRoot, "modules", "gencontrollers.html"));
+            //foreach (var w in genControllers)
+            //{
+            //    HtmlBasedGenerator.BuildTree(srcFilesOriginal, root, w, "modules");
+            //}
+            //Console.WriteLine("GenControllers items processed");
 
             var outputFile = docsRoot + "/Build/WebClientTypedocTheme/partials/nicenav.hbs";
             using (var fileStream = new FileStream(outputFile, FileMode.Create))
@@ -125,7 +116,8 @@ namespace DocsMapGenerator
                 using (var writer = new StreamWriter(fileStream))
                 {
                     writer.WriteLine(@"<ul id=""tree_root"" class=""loading"">");
-                    PrintTree(writer, root, 0);
+                    PrintTree(writer, root.servicesRoot, 0);
+                    PrintTree(writer, root, 0);                    
                     writer.WriteLine(@"</ul>");
                     writer.WriteLine(@"<script>document.addEventListener(""DOMContentLoaded"", " +
                             "function() { " +

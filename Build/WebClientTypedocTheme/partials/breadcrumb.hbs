@@ -1,16 +1,16 @@
 {{#if parent}}
     {{#with parent}}{{> breadcrumb}}{{/with}}
-    <li>
+    <li class="breadcrumb-li">
         {{#if url}}
-            <a href="{{relativeURL url}}">{{name}}</a>
+            <a href="{{relativeURL url}}" class="breadcrumb">{{name}}</a>
         {{else}}
             <span>{{name}}</span>
         {{/if}}
     </li>
 {{else}}
     {{#if url}}
-        <li>
-            <a href="{{relativeURL url}}">Globals</a>
+        <li class="no-after-slash">
+            <a href="{{relativeURL url}}" >@docsvision/webclient/</a>
         </li>
     {{/if}}
 {{/if}}
