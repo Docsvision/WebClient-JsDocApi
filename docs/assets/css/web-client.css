@@ -135,9 +135,6 @@ li.breadcrumb-no-ident {
 .tsd-index-list .tsd-kind-external-module {
 	opacity: 0;
 }
-.tsd-index-section h3 {
-	opacity: 0;
-}
 
 .tsd-index-panel ul.tsd-index-list {
 	column-count: 2;

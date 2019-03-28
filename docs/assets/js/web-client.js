@@ -63,6 +63,10 @@
 	if (!$(".tsd-panel.tsd-typography")[0]) {
 		$(".tsd-navigation.secondary").show();
 	}
+    
+    if (location.href.indexOf("globals.html") >= 0) {
+        $(".tsd-index-section h3").css({ opacity: 0 });
+    }
 	
 	// Hide constructor for controls (it should not be used directly)
 	if ($(".tsd-sources a[href='webclient.basecontrol.html']")[0] || $(".tsd-sources a[href='webclient.basecontrolparams.html']")[0]) {
