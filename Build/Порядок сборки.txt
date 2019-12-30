@@ -6,7 +6,6 @@
 4) Обновиь generate.bat - поднять версию в параметре --name команды запуска typedoc.
 5) Запустить generate.bat
 6) Запустить generateDocsMap.bat
-7) Запустить еще раз generate.bat
-8) Открыть Git Bash в текущей папке и выполнить node ./build-index.js
-9) Скопировать все папки docs-webclientXX в папку docs
-10) Закоммитить все
+7) Открыть Git Bash в текущей папке и выполнить node ./build-index.js
+8) Скопировать все папки docs-webclientXX в папку docs
+9) Закоммитить все

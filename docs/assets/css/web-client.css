@@ -1,3 +1,7 @@
+body {
+	font-family: Circe, "Segoe UI", sans-serif;
+}
+
 .tsd-index-panel .tsd-is-inherited a {
     color: rgb(163, 167, 255)
 }
@@ -20,7 +24,7 @@
 }
 
 .tsd-page-toolbar, .tsd-page-title {
-	background: rgb(0, 70, 76); // #92c83e;
+	background: #271F47;
 	color: white;
 }
 
@@ -138,4 +142,47 @@ li.breadcrumb-no-ident {
 
 .tsd-index-panel ul.tsd-index-list {
 	column-count: 2;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC15.eot');
+    src: local('☺'), url('../fonts/CRC15.woff') format('woff'), url('../fonts/CRC15.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC25.eot');
+    src: local('☺'), url('../fonts/CRC25.woff') format('woff'), url('../fonts/CRC25.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC35.eot');
+    src: local('☺'), url('../fonts/CRC35.woff') format('woff'), url('../fonts/CRC35.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC55.eot');
+    src: local('☺'), url('../fonts/CRC55.woff') format('woff'), url('../fonts/CRC55.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC65.eot');
+    src: local('☺'), url('../fonts/CRC65.woff') format('woff'), url('../fonts/CRC65.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/CRC75.eot');
+    src: local('☺'), url('../fonts/CRC75.woff') format('woff'), url('../fonts/CRC75.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }

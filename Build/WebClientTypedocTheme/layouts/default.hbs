@@ -22,8 +22,12 @@
         </div>
         <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation primary">
-                {{> nicenav}}
-            </nav>
+				<span>Loading...</span>
+                <script src="{{relativeURL "assets/js/ie-polyfill.js"}}"></script>
+				<script src="{{relativeURL "assets/js/jsLists.min.js"}}"></script>
+				<script>document.addEventListener("navContentLoaded", function() { JSLists.applyToList('tree_root', 'ALL'); document.getElementById("tree_root").classList.remove("loading"); })</script>
+				<script src="{{relativeURL "assets/js/nav.js"}}" async></script>
+			</nav>
 
             <nav class="tsd-navigation secondary menu-sticky">
                 <ul class="before-current">
@@ -44,7 +48,6 @@
 <script src="{{relativeURL "assets/js/main.js"}}"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="{{relativeURL "assets/js/search.js"}}"><' + '/script>');</script>
 <script src="{{relativeURL "assets/js/web-client.js"}}"></script>
-<script src="{{relativeURL "assets/js/jsLists.min.js"}}"></script>
 <script defer src="{{relativeURL "assets/js/search.js"}}"></script>
 
 {{> analytics}}

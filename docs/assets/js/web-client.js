@@ -2,21 +2,23 @@
 
 (function() { 
 	let labelTags = document.getElementsByTagName("dt");
-	// Hide review tags
-	for(let tag of labelTags) { 
-		if (tag.textContent == "review") 
-			tag.style.display = "none"; 
-	}
+
+	//Hide review tags
+	[].forEach.call(labelTags, function(tags) { 
+		if (tags.textContent == "review") 
+			tags.style.display = "none"; 
+	});
+
 	// Update internal tag text
-	for(let tag of labelTags) { 
-		if (tag.textContent == "internal")  { 
-			tag.textContent = 'Это внутренний нестабильный API, который может измениться в следующих версиях Web-client.'; 
-			tag.style.color = "red"; 
-			tag.style.float = "none"; 
-			tag.style.marginBottom = "10px"; 
-			tag.style.display = "block";
+	[].forEach.call(labelTags, function(tags) { 
+		if (tags.textContent == "internal")  { 
+			tags.textContent = 'Это внутренний нестабильный API, который может измениться в следующих версиях Web-client.'; 
+			tags.style.color = "red"; 
+			tags.style.float = "none"; 
+			tags.style.marginBottom = "10px"; 
+			tags.style.display = "block";
 		} 
-	}
+	});
 
     // Show inherited toggle
 	var WebClientDocsShowInherited = "WebClientDocsShowInherited";
@@ -64,9 +66,9 @@
 		$(".tsd-navigation.secondary").show();
 	}
     
-    if (location.href.indexOf("globals.html") >= 0) {
-        $(".tsd-index-section h3").css({ opacity: 0 });
-    }
+	if (location.href.indexOf("globals.html") >= 0) {
+			$(".tsd-index-section h3").css({ opacity: 0 });
+	}
 	
 	// Hide constructor for controls (it should not be used directly)
 	if ($(".tsd-sources a[href='webclient.basecontrol.html']")[0] || $(".tsd-sources a[href='webclient.basecontrolparams.html']")[0]) {
@@ -83,38 +85,13 @@
 		});
 	}
 	
-	function endsWith(str, suffix) {
-		return str.indexOf(suffix, str.length - suffix.length) !== -1;
-	}
-	
-	// Expand current nav
+	document.addEventListener("navContentLoaded", function() {
+		expandCurrentNav();
+	});
+
 	document.addEventListener("DOMContentLoaded", function() {
-		// Expand root 
-		var rootUl = document.querySelector("#tree_root>li:nth-child(2)>ul");
-		rootUl.classList.add("jsl-open");
-		var rootToggler = document.querySelector("#tree_root>li:nth-child(2)>div.jsl-collapsed-arrow");
-		rootToggler.classList.add("jsl-open-arrow");
-		
-			
-	
-		var link = [].find.call(document.querySelectorAll("a.doc-link"), (a) => endsWith(location.href, a.href));
-		if (link) {
-			link.style.fontWeight = "bold"
-			var parent = link.parentElement;
-			while (parent != null) {
-				if (parent.tagName == "UL") {
-					if (parent.id != "tree_root") {
-						parent.classList.add("jsl-open");
-						var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
-						if (toggler) {
-							toggler.classList.add("jsl-open-arrow");
-						}
-					}
-				}
-				parent = parent.parentElement;
-			}
-		}
-		
+		expandCurrentNav();
+
 		// Remove quotes and .d from module name
 		var breadcrumbs = document.querySelectorAll(".breadcrumb");
 		[].forEach.call(breadcrumbs, function(elem) {
@@ -160,5 +137,45 @@
 		}, 
 		{ capture: true }
 	);
+
+	function endsWith(str, suffix) {
+		return str.indexOf(suffix, str.length - suffix.length) !== -1;
+	}
+
+	function expandRoot() {
+		var rootUl = document.querySelector("#tree_root>li:nth-child(2)>ul");
+		if (rootUl && !rootUl.classList.contains("jsl-open")) {
+			rootUl.classList.add("jsl-open");
+		}
+
+		var rootToggler = document.querySelector("#tree_root>li:nth-child(2)>div.jsl-collapsed-arrow");
+		if (rootToggler && !rootToggler.classList.contains("jsl-open-arrow")) {
+			rootToggler.classList.add("jsl-open-arrow");
+		}
+	}
+
+	function expandCurrentNav() {
+		expandRoot();
+
+		var link = [].find.call(document.querySelectorAll("a.doc-link"), function(a) { return endsWith(location.href, a.href); });
+		if (link) {
+			link.style.fontWeight = "bold";
+			var parent = link.parentElement;
+			while (parent != null) {
+				if (parent.tagName == "UL") {
+					if (parent.id != "tree_root") {
+						parent.classList.add("jsl-open");
+						var toggler = parent.parentElement.querySelector("li>.jsl-collapsed-arrow");
+						if (toggler) {
+							toggler.classList.add("jsl-open-arrow");
+						}
+					}
+				}
+				parent = parent.parentElement;
+			}
+		}
+	}
 })();
+
+
 

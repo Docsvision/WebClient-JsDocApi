@@ -75,7 +75,7 @@ namespace DocsMapGenerator
                 srcFilesOriginal.Add(nicePath, fileText);
             }
 
-            DocDir root = new DocDir() { name = "App" } ;
+            DocDir root = new DocDir() { name = "App" };
             root.servicesRoot = new DocDir() { name = "Services" };
             var webDocsRoot = docsRoot + "/docs";
 
@@ -110,14 +110,23 @@ namespace DocsMapGenerator
             //}
             //Console.WriteLine("GenControllers items processed");
 
-            var outputFile = docsRoot + "/Build/WebClientTypedocTheme/partials/nicenav.hbs";
+            var outputFile = docsRoot + "/docs/navPrimaryContent.html";
+            PrintTreeToFile(root, outputFile, "");
+            var outputFile2 = docsRoot + "/docs/navSecondaryContent.html";
+            PrintTreeToFile(root, outputFile2, "../");
+
+            Console.WriteLine("Complete!");
+        }
+
+        private static void PrintTreeToFile(DocDir root, string outputFile, string hrefPrefix)
+        {
             using (var fileStream = new FileStream(outputFile, FileMode.Create))
             {
                 using (var writer = new StreamWriter(fileStream))
                 {
                     writer.WriteLine(@"<ul id=""tree_root"" class=""loading"">");
-                    PrintTree(writer, root.servicesRoot, 0);
-                    PrintTree(writer, root, 0);                    
+                    PrintTree(writer, root.servicesRoot, hrefPrefix, 0);
+                    PrintTree(writer, root, hrefPrefix, 0);
                     writer.WriteLine(@"</ul>");
                     writer.WriteLine(@"<script>document.addEventListener(""DOMContentLoaded"", " +
                             "function() { " +
@@ -126,14 +135,10 @@ namespace DocsMapGenerator
                             " })</script>");
                 }
             }
-            Console.WriteLine("Ouput written to " + outputFile);
-
-
-            Console.WriteLine("Complete!");
+            Console.WriteLine("Output written to " + outputFile);
         }
 
-
-        static void PrintTree(StreamWriter stream, DocDir currentDir, int level)
+        static void PrintTree(StreamWriter stream, DocDir currentDir, string hrefPrefix, int level)
         {
             var ident = new string(' ', level);            
             stream.Write(ident + "<li>");
@@ -142,14 +147,14 @@ namespace DocsMapGenerator
             
             foreach(var dir in currentDir.subdirs)
             {
-                PrintTree(stream, dir, level + 1);
+                PrintTree(stream, dir, hrefPrefix, level + 1);
             }
 
             foreach(var item in currentDir.items)
             {
                 stream.Write(ident + "<li class='" + item.type + "'>");
                 stream.Write(@"<span class=""tsd-kind-icon"">");
-                stream.Write("<a href=\"{{relativeURL " + "\"" + item.href.Replace("\\", "/") + "\"}}\" class=doc-link data-path=\"" + item.logicPath  + "\" >" + item.name + "</a>");
+                stream.Write("<a href=\"" + hrefPrefix + item.href.Replace("\\", "/") + "\" class=doc-link data-path=\"" + item.logicPath  + "\" >" + item.name + "</a>");
                 stream.Write("</span>");
                 stream.Write("</li>");
             }
