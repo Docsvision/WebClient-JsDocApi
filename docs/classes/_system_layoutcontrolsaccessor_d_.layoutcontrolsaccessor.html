@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LayoutControlsAccessor | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>LayoutControlsAccessor | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,6 +61,23 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Базовый класс для определения класса доступа к контролам разметки. Используется совместно с декоратором {@see control}</p>
+					</div>
+					<p>Пример использования:</p>
+					<pre><code>export <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyLayout</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LayoutControlsAccessor</span> </span>{
+    <span class="hljs-meta">@control</span> taskName: <span class="hljs-type">TextBox</span>;
+    <span class="hljs-meta">@control</span> comment: <span class="hljs-type">TextArea</span>;
+}
+
+export myButton_click(sender: <span class="hljs-type">Button</span>) {
+     let layout = <span class="hljs-keyword">new</span> <span class="hljs-type">MyLayout</span>(sender.layout);
+     layout.comment.value = layout.taskName.value;
+}</code></pre>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -100,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/LayoutControlsAccessor.d.ts:3</li>
+									<li>Defined in System/LayoutControlsAccessor.d.ts:18</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -122,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_system__layout_d_.ilayout.html" class="tsd-signature-type">ILayout</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/LayoutControlsAccessor.d.ts:3</li>
+							<li>Defined in System/LayoutControlsAccessor.d.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -140,7 +157,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_system_layoutcontrolsaccessor_d_.layoutcontrolsaccessor.html" class="tsd-kind-icon">Layout<wbr>Controls<wbr>Accessor</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -153,7 +170,7 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_system_layoutcontrolsaccessor_d_.html#control" class="tsd-kind-icon">control</a>
 					</li>
 				</ul>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IFilePreviewState | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>IFilePreviewState | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -85,14 +85,18 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#currentpage" class="tsd-kind-icon">current<wbr>Page</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#idpdfjsmode" class="tsd-kind-icon">id<wbr>PdfJSMode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#iseditingpageinput" class="tsd-kind-icon">is<wbr>Editing<wbr>Page<wbr>Input</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#iseditingtop" class="tsd-kind-icon">is<wbr>Editing<wbr>Top</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#isimageloading" class="tsd-kind-icon">is<wbr>Image<wbr>Loading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#isloading" class="tsd-kind-icon">is<wbr>Loading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#ispageinputerror" class="tsd-kind-icon">is<wbr>Page<wbr>Input<wbr>Error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#isscaling" class="tsd-kind-icon">is<wbr>Scaling</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#loadpdffilehelper" class="tsd-kind-icon">load<wbr>Pdf<wbr>File<wbr>Helper</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#loadpdfjshelper" class="tsd-kind-icon">load<wbr>Pdf<wbr>JsHelper</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pageinput" class="tsd-kind-icon">page<wbr>Input</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pageinputvalue" class="tsd-kind-icon">page<wbr>Input<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pdfjsdoc" class="tsd-kind-icon">pdfJSDoc</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#preview" class="tsd-kind-icon">preview</a></li>
 							</ul>
 						</section>
@@ -107,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:51</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:65</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,12 +121,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="idpdfjsmode" class="tsd-anchor"></a>
+					<h3>id<wbr>PdfJSMode</h3>
+					<div class="tsd-signature tsd-kind-icon">id<wbr>PdfJSMode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Является ли файл PDF и выставлен ли режим прредпросмотра через pdf.js</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="iseditingpageinput" class="tsd-anchor"></a>
 					<h3>is<wbr>Editing<wbr>Page<wbr>Input</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Editing<wbr>Page<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:42</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:48</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Editing<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:43</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:49</li>
 						</ul>
 					</aside>
 				</section>
@@ -147,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Image<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:47</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:53</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:45</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:51</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Page<wbr>Input<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:40</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:46</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Scaling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:49</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:55</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,12 +221,42 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="loadpdffilehelper" class="tsd-anchor"></a>
+					<h3>load<wbr>Pdf<wbr>File<wbr>Helper</h3>
+					<div class="tsd-signature tsd-kind-icon">load<wbr>Pdf<wbr>File<wbr>Helper<span class="tsd-signature-symbol">:</span> <a href="../classes/_system_requesthelper_d_.requesthelper.html" class="tsd-signature-type">RequestHelper</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:61</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Загрузка файла</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="loadpdfjshelper" class="tsd-anchor"></a>
+					<h3>load<wbr>Pdf<wbr>JsHelper</h3>
+					<div class="tsd-signature tsd-kind-icon">load<wbr>Pdf<wbr>JsHelper<span class="tsd-signature-symbol">:</span> <a href="../classes/_system_requesthelper_d_.requesthelper.html" class="tsd-signature-type">RequestHelper</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Загрузка библиотеки pdf.js по требованию</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="pageinput" class="tsd-anchor"></a>
 					<h3>page<wbr>Input</h3>
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLInputElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:53</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:67</li>
 						</ul>
 					</aside>
 				</section>
@@ -217,9 +266,24 @@
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Input<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:52</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:66</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="pdfjsdoc" class="tsd-anchor"></a>
+					<h3>pdfJSDoc</h3>
+					<div class="tsd-signature tsd-kind-icon">pdfJSDoc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Документ для PDF.js просмотра</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="preview" class="tsd-anchor"></a>
@@ -227,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">preview<span class="tsd-signature-symbol">:</span> <a href="_legacy_ifilepreviewmodel_d_.ifilepreviewmodel.html" class="tsd-signature-type">IFilePreviewModel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:38</li>
+							<li>Defined in Helpers/FilePreview/FilePreview.d.ts:44</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,19 +312,25 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_helpers_filepreview_filepreview_d_.filepreview.html" class="tsd-kind-icon">File<wbr>Preview</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_helpers_filepreview_filepreview_d_.ifilepreviewprops.html" class="tsd-kind-icon">IFile<wbr>Preview<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_helpers_filepreview_filepreview_d_.ifilepreviewservice.html" class="tsd-kind-icon">IFile<wbr>Preview<wbr>Service</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html" class="tsd-kind-icon">IFile<wbr>Preview<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#currentpage" class="tsd-kind-icon">current<wbr>Page</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#idpdfjsmode" class="tsd-kind-icon">id<wbr>PdfJSMode</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#iseditingpageinput" class="tsd-kind-icon">is<wbr>Editing<wbr>Page<wbr>Input</a>
@@ -281,10 +351,19 @@
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#isscaling" class="tsd-kind-icon">is<wbr>Scaling</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#loadpdffilehelper" class="tsd-kind-icon">load<wbr>Pdf<wbr>File<wbr>Helper</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#loadpdfjshelper" class="tsd-kind-icon">load<wbr>Pdf<wbr>JsHelper</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pageinput" class="tsd-kind-icon">page<wbr>Input</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pageinputvalue" class="tsd-kind-icon">page<wbr>Input<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#pdfjsdoc" class="tsd-kind-icon">pdfJSDoc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_filepreview_filepreview_d_.ifilepreviewstate.html#preview" class="tsd-kind-icon">preview</a>
@@ -293,6 +372,12 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_helpers_filepreview_filepreview_d_.html#_filepreviewservice" class="tsd-kind-icon">$<wbr>File<wbr>Preview<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_helpers_filepreview_filepreview_d_.html#_filepreviewservice-1" class="tsd-kind-icon">$<wbr>File<wbr>Preview<wbr>Service</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

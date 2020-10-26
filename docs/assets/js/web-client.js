@@ -104,7 +104,13 @@
 		
 		var header = document.querySelector(".tsd-page-title h1");
 		if (header) {
-			header.innerHTML = header.innerHTML.replace("External module \"", "Модуль @docsvision/webclient/").replace(".d", "");
+            var title = document.querySelector(".title").textContent;
+            if (title.indexOf("docsvision.web") >= 0) {
+                header.innerHTML = header.innerHTML.replace("External module \"", "Модуль " + title + "/").replace(".d", "");
+                document.querySelector(".tsd-breadcrumb .no-after-slash a").innerText = title + "/";
+            } else {
+                header.innerHTML = header.innerHTML.replace("External module \"", "Модуль @docsvision/webclient/").replace(".d", "");
+            }
 			header.classList.add("show");
 		}
 		
@@ -176,6 +182,11 @@
 		}
 	}
 })();
+
+// https://github.com/advisories/GHSA-gxr4-xjj5-5px2
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
 
 
 

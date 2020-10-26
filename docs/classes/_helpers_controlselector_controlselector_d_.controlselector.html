@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ControlSelector | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>ControlSelector | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -67,15 +67,16 @@
 						<dt>review</dt>
 						<dd><p>Компонент для рендеринга контролов разметок. Например, при получении данных контрола с сервера при загрузке разметки.</p>
 							<p>Пример использования:</p>
-							<pre><code>render() {
+							<pre><code><span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">var</span> componentInfo = getComponentInfo();
 
     <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ControlSelector</span>
         <span class="hljs-attr">properties</span>=<span class="hljs-string">{componentInfo.properties}</span>
         <span class="hljs-attr">children</span>=<span class="hljs-string">{componentInfo.children}</span>
         <span class="hljs-attr">controlTypeName</span>=<span class="hljs-string">{componentInfo.controlTypeName}</span>
-        <span class="hljs-attr">key</span>=<span class="hljs-string">{componentInfo.properties.name}</span> /&gt;</span>
-}</span></code></pre></dd>
+        <span class="hljs-attr">key</span>=<span class="hljs-string">{componentInfo.properties.name}</span> /&gt;</span></span>
+}</code></pre>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -95,7 +96,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html" class="tsd-signature-type">IControlContainer</a></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -112,16 +113,21 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#attachcontrol" class="tsd-kind-icon">attach<wbr>Control</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#controlinfo" class="tsd-kind-icon">control<wbr>Info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#state" class="tsd-kind-icon">state</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#controlinfo" class="tsd-kind-icon">control<wbr>Info</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentdidcatch" class="tsd-kind-icon">component<wbr>Did<wbr>Catch</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentwillmount" class="tsd-kind-icon">component<wbr>Will<wbr>Mount</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#getcontrolinstance" class="tsd-kind-icon">get<wbr>Control<wbr>Instance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#loadcontrol" class="tsd-kind-icon">load<wbr>Control</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_controlselector_controlselector_d_.controlselector.html#loadcontrolfrommodule" class="tsd-kind-icon">load<wbr>Control<wbr>From<wbr>Module</a></li>
@@ -173,7 +179,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -192,17 +198,6 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="controlinfo" class="tsd-anchor"></a>
-					<h3>control<wbr>Info</h3>
-					<div class="tsd-signature tsd-kind-icon">control<wbr>Info<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html">IControlContainer</a>.<a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html#controlinfo">controlInfo</a></p>
-						<ul>
-							<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:33</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_helpers_controlselector_controlselector_d_.icontrolselectorstate.html" class="tsd-signature-type">IControlSelectorState</a></div>
@@ -214,7 +209,82 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="controlinfo" class="tsd-anchor"></a>
+					<h3>control<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> controlInfo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:33</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unsafe_componentwillmount" class="tsd-anchor"></a>
+					<h3>UNSAFE_<wbr>component<wbr>Will<wbr>Mount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:37</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unsafe_componentwillreceiveprops" class="tsd-anchor"></a>
+					<h3>UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:39</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nextProps: <a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></h5>
+								</li>
+								<li>
+									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="componentdidcatch" class="tsd-anchor"></a>
 					<h3>component<wbr>Did<wbr>Catch</h3>
@@ -247,65 +317,10 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="componentwillmount" class="tsd-anchor"></a>
-					<h3>component<wbr>Will<wbr>Mount</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:37</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>internal</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="componentwillreceiveprops" class="tsd-anchor"></a>
-					<h3>component<wbr>Will<wbr>Receive<wbr>Props</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:39</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>internal</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>nextProps: <a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></h5>
-								</li>
-								<li>
-									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getcontrolinstance" class="tsd-anchor"></a>
 					<h3>get<wbr>Control<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Control<wbr>Instance<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Control<wbr>Instance<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -314,7 +329,7 @@
 									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:35</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -322,7 +337,7 @@
 					<a name="loadcontrol" class="tsd-anchor"></a>
 					<h3>load<wbr>Control</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Control<span class="tsd-signature-symbol">(</span>controlTypeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_layoutcontroltype_d_.layoutcontroltype.html" class="tsd-signature-type">LayoutControlType</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Control<span class="tsd-signature-symbol">(</span>controlTypeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_layoutcontroltype_d_.layoutcontroltype.html" class="tsd-signature-type">LayoutControlType</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -337,7 +352,7 @@
 									<h5>controlTypeName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_layoutcontroltype_d_.layoutcontroltype.html" class="tsd-signature-type">LayoutControlType</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_layoutcontroltype_d_.layoutcontroltype.html" class="tsd-signature-type">LayoutControlType</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -345,7 +360,7 @@
 					<a name="loadcontrolfrommodule" class="tsd-anchor"></a>
 					<h3>load<wbr>Control<wbr>From<wbr>Module</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Control<wbr>From<wbr>Module<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Control<wbr>From<wbr>Module<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -363,7 +378,7 @@
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -371,12 +386,11 @@
 					<a name="reload" class="tsd-anchor"></a>
 					<h3>reload</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html">IControlContainer</a>.<a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html#reload">reload</a></p>
 								<ul>
 									<li>Defined in Helpers/ControlSelector/ControlSelector.d.ts:34</li>
 								</ul>
@@ -387,7 +401,7 @@
 									<h5>props: <a href="../interfaces/_helpers_controlselector_icontrolselectorprops_d_.icontrolselectorprops.html" class="tsd-signature-type">IControlSelectorProps</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -428,7 +442,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_helpers_controlselector_controlselector_d_.controlselector.html" class="tsd-kind-icon">Control<wbr>Selector</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -438,19 +452,19 @@
 								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#attachcontrol" class="tsd-kind-icon">attach<wbr>Control</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#controlinfo" class="tsd-kind-icon">control<wbr>Info</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#state" class="tsd-kind-icon">state</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentdidcatch" class="tsd-kind-icon">component<wbr>Did<wbr>Catch</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentwillmount" class="tsd-kind-icon">component<wbr>Will<wbr>Mount</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_helpers_controlselector_controlselector_d_.controlselector.html#getcontrolinstance" class="tsd-kind-icon">get<wbr>Control<wbr>Instance</a>
@@ -471,7 +485,7 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/_helpers_controlselector_controlselector_d_.icontrolselectorstate.html" class="tsd-kind-icon">IControl<wbr>Selector<wbr>State</a>
 					</li>
 				</ul>

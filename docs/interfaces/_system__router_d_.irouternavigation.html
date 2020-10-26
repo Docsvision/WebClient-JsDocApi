@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRouterNavigation | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>IRouterNavigation | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,12 +69,6 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_system_router_d_.router.html" class="tsd-signature-type">Router</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -84,6 +78,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_system__router_d_.irouternavigation.html#back" class="tsd-kind-icon">back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_system__router_d_.irouternavigation.html#goto" class="tsd-kind-icon">go<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_system__router_d_.irouternavigation.html#openurl" class="tsd-kind-icon">open<wbr>Url</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_system__router_d_.irouternavigation.html#refresh" class="tsd-kind-icon">refresh</a></li>
 							</ul>
 						</section>
@@ -96,16 +91,22 @@
 					<a name="back" class="tsd-anchor"></a>
 					<h3>back</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">back<span class="tsd-signature-symbol">(</span>isCancel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/$Router.d.ts:31</li>
+									<li>Defined in System/$Router.d.ts:32</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> isCancel: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -113,7 +114,7 @@
 					<a name="goto" class="tsd-anchor"></a>
 					<h3>go<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">go<wbr>To<span class="tsd-signature-symbol">(</span>route<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, refresh<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">go<wbr>To<span class="tsd-signature-symbol">(</span>route<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, refresh<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -134,7 +135,33 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">Function</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="openurl" class="tsd-anchor"></a>
+					<h3>open<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mode<span class="tsd-signature-symbol">: </span><a href="../enums/_generated_docsvision_webclient_models_d_.genmodels.openmode.html" class="tsd-signature-type">OpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/$Router.d.ts:31</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>mode: <a href="../enums/_generated_docsvision_webclient_models_d_.genmodels.openmode.html" class="tsd-signature-type">OpenMode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -142,7 +169,7 @@
 					<a name="refresh" class="tsd-anchor"></a>
 					<h3>refresh</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -157,7 +184,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">Function</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -173,12 +200,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_system__router_d_.irouter.html" class="tsd-kind-icon">IRouter</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="_system__router_d_.irouternavigation.html" class="tsd-kind-icon">IRouter<wbr>Navigation</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -188,17 +215,29 @@
 								<a href="_system__router_d_.irouternavigation.html#goto" class="tsd-kind-icon">go<wbr>To</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_system__router_d_.irouternavigation.html#openurl" class="tsd-kind-icon">open<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_system__router_d_.irouternavigation.html#refresh" class="tsd-kind-icon">refresh</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_system__router_d_.html#_router" class="tsd-kind-icon">$<wbr>Router</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_system__router_d_.html#_routernavigation" class="tsd-kind-icon">$<wbr>Router<wbr>Navigation</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_system__router_d_.html#_router-1" class="tsd-kind-icon">$<wbr>Router</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_system__router_d_.html#_routernavigation-1" class="tsd-kind-icon">$<wbr>Router<wbr>Navigation</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_system__router_d_.html#is_back_parameter" class="tsd-kind-icon">IS_<wbr>BACK_<wbr>PARAMETER</a>
 					</li>
 				</ul>
 			</nav>

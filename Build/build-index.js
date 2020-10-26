@@ -34,7 +34,7 @@ if (fs.existsSync(searchJs)) {
 			} else {
 				break;
 			}
-			process.stdout.clearLine();
+			if (typeof(process.stdout.clearLine) == "function")
 			process.stdout.cursorTo(0);
 			process.stdout.write("Done: " + ((pos/length) * 100).toFixed() + "%");
 		}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ControlStore | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>ControlStore | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -79,19 +79,24 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html" class="tsd-signature-type">IControlStoreManager</a></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_system_controlstore_d_.controlstore.html#controlcollection" class="tsd-kind-icon">control<wbr>Collection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_controlstore_d_.controlstore.html#controls" class="tsd-kind-icon">controls</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_system_controlstore_d_.controlstore.html#controlslist" class="tsd-kind-icon">controls<wbr>List</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_controlstore_d_.controlstore.html#controls" class="tsd-kind-icon">controls</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -109,7 +114,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="controlcollection" class="tsd-anchor"></a>
@@ -120,22 +125,6 @@
 							<li>Defined in System/ControlStore.d.ts:6</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="controls" class="tsd-anchor"></a>
-					<h3>controls</h3>
-					<div class="tsd-signature tsd-kind-icon">controls<span class="tsd-signature-symbol">:</span> <a href="_system_controlwrappermap_d_.controlwrappermap.html" class="tsd-signature-type">ControlWrapperMap</a></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html">IControlStoreManager</a>.<a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html#controls">controls</a></p>
-						<ul>
-							<li>Defined in System/ControlStore.d.ts:9</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает словарь контролов, где ключами выступают имена контролов, а значениями их экземпляры.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="controlslist" class="tsd-anchor"></a>
@@ -149,6 +138,31 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="controls" class="tsd-anchor"></a>
+					<h3>controls</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> controls<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_system_controlwrappermap_d_.controlwrappermap.html" class="tsd-signature-type">ControlWrapperMap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/ControlStore.d.ts:9</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Возвращает словарь контролов, где ключами выступают имена контролов, а значениями их экземпляры.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_system_controlwrappermap_d_.controlwrappermap.html" class="tsd-signature-type">ControlWrapperMap</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="add" class="tsd-anchor"></a>
@@ -159,7 +173,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html">IControlStoreManager</a>.<a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html#add">add</a></p>
 								<ul>
 									<li>Defined in System/ControlStore.d.ts:11</li>
 								</ul>
@@ -186,7 +199,7 @@
 					<a name="callsavecallbacks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> call<wbr>Save<wbr>Callbacks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">call<wbr>Save<wbr>Callbacks<span class="tsd-signature-symbol">(</span>beforeSave<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">call<wbr>Save<wbr>Callbacks<span class="tsd-signature-symbol">(</span>beforeSave<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -210,7 +223,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> control: <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -239,7 +252,7 @@
 									<h5>func: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>control<span class="tsd-signature-symbol">: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -265,7 +278,7 @@
 					<a name="onsaved" class="tsd-anchor"></a>
 					<h3>on<wbr>Saved</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Saved<span class="tsd-signature-symbol">(</span>control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Saved<span class="tsd-signature-symbol">(</span>control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -285,7 +298,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> control: <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,7 +306,7 @@
 					<a name="onsaving" class="tsd-anchor"></a>
 					<h3>on<wbr>Saving</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Saving<span class="tsd-signature-symbol">(</span>control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Saving<span class="tsd-signature-symbol">(</span>control<span class="tsd-signature-symbol">?: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -313,7 +326,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> control: <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,7 +339,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html">IControlStoreManager</a>.<a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html#remove">remove</a></p>
 								<ul>
 									<li>Defined in System/ControlStore.d.ts:13</li>
 								</ul>
@@ -355,7 +367,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html">IControlStoreManager</a>.<a href="../interfaces/_system_icontrolstoremanager_d_.icontrolstoremanager.html#removecontrol">removeControl</a></p>
 								<ul>
 									<li>Defined in System/ControlStore.d.ts:15</li>
 								</ul>
@@ -389,17 +400,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_system_controlstore_d_.controlstore.html" class="tsd-kind-icon">Control<wbr>Store</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_system_controlstore_d_.controlstore.html#controlcollection" class="tsd-kind-icon">control<wbr>Collection</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_system_controlstore_d_.controlstore.html#controls" class="tsd-kind-icon">controls</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_system_controlstore_d_.controlstore.html#controlslist" class="tsd-kind-icon">controls<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_system_controlstore_d_.controlstore.html#controls" class="tsd-kind-icon">controls</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_controlstore_d_.controlstore.html#add" class="tsd-kind-icon">add</a>

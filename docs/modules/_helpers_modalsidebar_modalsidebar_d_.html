@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;Helpers/ModalSidebar/ModalSidebar.d&quot; | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>&quot;Helpers/ModalSidebar/ModalSidebar.d&quot; | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -51,7 +51,7 @@
 					<a href="_helpers_modalsidebar_modalsidebar_d_.html" class="breadcrumb">&quot;Helpers/ModalSidebar/ModalSidebar.d&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;Helpers/ModalSidebar/ModalSidebar.d&quot;</h1>
+			<h1>Module &quot;Helpers/ModalSidebar/ModalSidebar.d&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -65,13 +65,13 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_helpers_modalsidebar_modalsidebar_d_.imodalsidebarprops.html" class="tsd-kind-icon">IModal<wbr>Sidebar<wbr>Props</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_helpers_modalsidebar_modalsidebar_d_.imodalsidebarprops.html" class="tsd-kind-icon">IModal<wbr>Sidebar<wbr>Props</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_helpers_modalsidebar_modalsidebar_d_.html#modalsidebar" class="tsd-kind-icon">Modal<wbr>Sidebar</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_helpers_modalsidebar_modalsidebar_d_.html#modalsidebar" class="tsd-kind-icon">Modal<wbr>Sidebar</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,7 +79,7 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="modalsidebar" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Modal<wbr>Sidebar</h3>
 					<div class="tsd-signature tsd-kind-icon">Modal<wbr>Sidebar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
@@ -101,8 +101,9 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Some content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ModalSidebar</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ModalBackdrop</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>Пример использование вне компонента:</p>
-						<pre><code><span class="hljs-keyword">let</span> host: ModalHost = <span class="hljs-keyword">new</span> ModalHost(<span class="hljs-string">"time-sidebar"</span>, () =&gt; {
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+						<p>Пример использование вне компонента:</p>
+						<pre><code><span class="hljs-keyword">let</span> host: ModalHost = <span class="hljs-keyword">new</span> ModalHost(<span class="hljs-string">&quot;time-sidebar&quot;</span>, <span class="hljs-function">() =&gt;</span> {
     <span class="hljs-keyword">return</span> (
         <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ModalBackdrop</span> <span class="hljs-attr">visible</span>=<span class="hljs-string">{true}</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> host.unmount()} &gt;
             <span class="hljs-tag">&lt;<span class="hljs-name">ModalSidebar</span> <span class="hljs-attr">isOpen</span>=<span class="hljs-string">{true}</span> &gt;</span>
@@ -110,17 +111,17 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">ModalSidebarHeader</span>&gt;</span>Some header<span class="hljs-tag">&lt;/<span class="hljs-name">ModalSidebarHeader</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Current time {(new Date()).toTimeString()}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ModalSidebar</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ModalBackdrop</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ModalBackdrop</span>&gt;</span></span>
     );
 });
 host.mount();
-setInterval(() =&gt; host.forceUpdate(), 1000);</span></code></pre>
+<span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> host.forceUpdate(), <span class="hljs-number">1000</span>);</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_modalsidebar_modalsidebar_d_.imodalsidebarprops.html" class="tsd-signature-type">IModalSidebarProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSX.Element</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -150,10 +151,10 @@ setInterval(() =&gt; host.forceUpdate(), 1000);</span></code></pre>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_helpers_modalsidebar_modalsidebar_d_.imodalsidebarprops.html" class="tsd-kind-icon">IModal<wbr>Sidebar<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_helpers_modalsidebar_modalsidebar_d_.html#modalsidebar" class="tsd-kind-icon">Modal<wbr>Sidebar</a>
 					</li>
 				</ul>

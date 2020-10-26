@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CancelableEventArgs | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>CancelableEventArgs | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -98,7 +98,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html" class="tsd-signature-type">ICancelableEventArgs</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -112,12 +112,13 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#autoacceptenabled" class="tsd-kind-icon">auto<wbr>Accept<wbr>Enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#deferred" class="tsd-kind-icon">deferred</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#autoacceptenabled" class="tsd-kind-icon">auto<wbr>Accept<wbr>Enabled</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#deferred" class="tsd-kind-icon">deferred</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#promise" class="tsd-kind-icon">promise</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_cancelableeventargs_d_.cancelableeventargs.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -172,7 +173,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -198,7 +199,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -222,65 +223,138 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="autoacceptenabled" class="tsd-anchor"></a>
 					<h3>auto<wbr>Accept<wbr>Enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">auto<wbr>Accept<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html">ICancelableEventArgs</a>.<a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html#autoacceptenabled">autoAcceptEnabled</a></p>
-						<ul>
-							<li>Defined in System/CancelableEventArgs.d.ts:60</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>См. {@link ICancelableEventArgs<T>.autoAcceptEnabled}</p>
-						</div>
-					</div>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> autoAcceptEnabled<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> autoAcceptEnabled<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>См. {@link ICancelableEventArgs<T>.autoAcceptEnabled}</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:61</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>См. {@link ICancelableEventArgs<T>.autoAcceptEnabled}</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="data" class="tsd-anchor"></a>
 					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html">ICancelableEventArgs</a>.<a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html#data">data</a></p>
-						<ul>
-							<li>Defined in System/CancelableEventArgs.d.ts:53</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>См. {@link ICancelableEventArgs<T>.data}</p>
-						</div>
-					</div>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:53</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>См. {@link ICancelableEventArgs<T>.data}</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="deferred" class="tsd-anchor"></a>
 					<h3>deferred</h3>
-					<div class="tsd-signature tsd-kind-icon">deferred<span class="tsd-signature-symbol">:</span> <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in System/CancelableEventArgs.d.ts:67</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> deferred<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:70</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Используйте {@see promise}</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="promise" class="tsd-anchor"></a>
+					<h3>promise</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> promise<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:68</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../enums/_system_cancelableeventstate_d_.cancelableeventstate.html" class="tsd-signature-type">CancelableEventState</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in System/CancelableEventArgs.d.ts:66</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Возвращает текущее состояние объекта события.
-								Состояние может изменяться вызовом методов accept() или cancel() (они обычно используются подписчиками событий)
-							См. также: autoAcceptEnabled</p>
-						</div>
-					</div>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_system_cancelableeventstate_d_.cancelableeventstate.html" class="tsd-signature-type">CancelableEventState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/CancelableEventArgs.d.ts:67</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Возвращает текущее состояние объекта события.
+										Состояние может изменяться вызовом методов accept() или cancel() (они обычно используются подписчиками событий)
+									См. также: autoAcceptEnabled</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_system_cancelableeventstate_d_.cancelableeventstate.html" class="tsd-signature-type">CancelableEventState</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -294,7 +368,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html">ICancelableEventArgs</a>.<a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html#accept">accept</a></p>
 								<ul>
 									<li>Defined in System/CancelableEventArgs.d.ts:45</li>
 								</ul>
@@ -332,7 +405,7 @@
 									<h5>callback: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -358,12 +431,11 @@
 					<a name="cancel" class="tsd-anchor"></a>
 					<h3>cancel</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html">ICancelableEventArgs</a>.<a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html#cancel">cancel</a></p>
 								<ul>
 									<li>Defined in System/CancelableEventArgs.d.ts:41</li>
 								</ul>
@@ -373,6 +445,12 @@
 									<p>См. {@link ICancelableEventArgs<T>.cancel}</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -401,7 +479,7 @@
 									<h5>callback: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -432,7 +510,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html">ICancelableEventArgs</a>.<a href="../interfaces/_system_icancelableeventargs_d_.icancelableeventargs.html#wait">wait</a></p>
 								<ul>
 									<li>Defined in System/CancelableEventArgs.d.ts:49</li>
 								</ul>
@@ -460,22 +537,25 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_system_cancelableeventargs_d_.cancelableeventargs.html" class="tsd-kind-icon">Cancelable<wbr>Event<wbr>Args</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#autoacceptenabled" class="tsd-kind-icon">auto<wbr>Accept<wbr>Enabled</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#data" class="tsd-kind-icon">data</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#deferred" class="tsd-kind-icon">deferred</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#promise" class="tsd-kind-icon">promise</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_system_cancelableeventargs_d_.cancelableeventargs.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">

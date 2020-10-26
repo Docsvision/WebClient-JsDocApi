@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ComboBoxWrapper | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>ComboBoxWrapper | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -68,16 +68,16 @@
 						<dd><p>Обёртка для комбобокса (для комбобоксов существует готовая реализация для общих случаев - <a href="_helpers_combobox_commoncombobox_d_.commoncombobox.html">CommonComboBox</a>).</p>
 							<p>Пример использования:</p>
 							<pre><code><span class="hljs-keyword">constructor</span>() {
-    <span class="hljs-keyword">this</span>.defaultTitle = <span class="hljs-string">'Выберите элемент'</span>;
+    <span class="hljs-keyword">this</span>.defaultTitle = <span class="hljs-string">&#x27;Выберите элемент&#x27;</span>;
     <span class="hljs-keyword">this</span>.el = <span class="hljs-literal">null</span>;
     <span class="hljs-keyword">this</span>.emptyElement = {id: <span class="hljs-literal">null</span>, title: <span class="hljs-keyword">this</span>.defaultTitle};
     <span class="hljs-keyword">this</span>.focusedElement = <span class="hljs-literal">null</span>;
 
     <span class="hljs-keyword">this</span>.state.disabled = <span class="hljs-literal">false</span>;
     <span class="hljs-keyword">this</span>.state.expanded = <span class="hljs-literal">false</span>;
-    <span class="hljs-keyword">this</span>.state.selectedElement = <span class="hljs-string">'2222'</span>;
+    <span class="hljs-keyword">this</span>.state.selectedElement = <span class="hljs-string">&#x27;2222&#x27;</span>;
     <span class="hljs-keyword">this</span>.state.emptyAllowed = <span class="hljs-literal">true</span>;
-    <span class="hljs-keyword">this</span>.state.elements = [{id: <span class="hljs-string">'1111'</span>, title: <span class="hljs-string">'Один'</span>}, {id: <span class="hljs-string">'2222'</span>, title: <span class="hljs-string">'Два'</span>}];
+    <span class="hljs-keyword">this</span>.state.elements = [{id: <span class="hljs-string">&#x27;1111&#x27;</span>, title: <span class="hljs-string">&#x27;Один&#x27;</span>}, {id: <span class="hljs-string">&#x27;2222&#x27;</span>, title: <span class="hljs-string">&#x27;Два&#x27;</span>}];
 }
 
 
@@ -86,13 +86,13 @@
 <span class="hljs-keyword">protected</span> onBlurElement = (element) =&gt; (<span class="hljs-keyword">this</span>.focusedElement &amp;&amp; <span class="hljs-keyword">this</span>.focusedElement.id == element.id) &amp;&amp; (<span class="hljs-keyword">this</span>.focusedElement = <span class="hljs-literal">null</span>);
 
 <span class="hljs-comment">// навигация по стрелочкам</span>
-<span class="hljs-keyword">protected</span> onFocusSiblingElement = (element, mode: <span class="hljs-string">'prev'</span> | <span class="hljs-string">'next'</span>) =&gt; {
+<span class="hljs-keyword">protected</span> onFocusSiblingElement = (element, mode: <span class="hljs-string">&#x27;prev&#x27;</span> | <span class="hljs-string">&#x27;next&#x27;</span>) =&gt; {
     let elementPosition = <span class="hljs-keyword">this</span>.state.elements.findIndex(el =&gt; el.id == element.id);
     <span class="hljs-keyword">if</span> (elementPosition == -<span class="hljs-number">1</span> &amp;&amp; !(<span class="hljs-keyword">this</span>.state.emptyAllowed &amp;&amp; element.id == <span class="hljs-literal">null</span>)) {
         <span class="hljs-keyword">return</span>;
     }
 
-    elementPosition += (mode == <span class="hljs-string">'prev'</span>) ? -<span class="hljs-number">1</span> : <span class="hljs-number">1</span>;
+    elementPosition += (mode == <span class="hljs-string">&#x27;prev&#x27;</span>) ? -<span class="hljs-number">1</span> : <span class="hljs-number">1</span>;
 
     <span class="hljs-keyword">const</span> siblingElement = (<span class="hljs-keyword">this</span>.state.emptyAllowed &amp;&amp; elementPosition == -<span class="hljs-number">1</span>) ?
         <span class="hljs-keyword">this</span>.emptyElement :
@@ -118,7 +118,7 @@ render() {
         expanded={<span class="hljs-keyword">this</span>.state.expanded}
         onClose={() =&gt; <span class="hljs-keyword">this</span>.setState({ expanded: <span class="hljs-literal">false</span> })}
         boundaryTarget={<span class="hljs-keyword">this</span>.el}&gt;
-        &lt;Focusable selectorToFocus=<span class="hljs-string">'.combobox-element-helper-selected'</span>&gt;
+        &lt;Focusable selectorToFocus=<span class="hljs-string">&#x27;.combobox-element-helper-selected&#x27;</span>&gt;
             &lt;ComboBoxBodyContent&gt;
                 {<span class="hljs-keyword">this</span>.state.emptyAllowed &amp;&amp; &lt;ComboBoxElement tabIndex
                     selected={<span class="hljs-keyword">this</span>.state.selectedElement == <span class="hljs-literal">null</span>}
@@ -126,8 +126,8 @@ render() {
                     onSelect={() =&gt; <span class="hljs-keyword">this</span>.setState({ selectedElement: <span class="hljs-literal">null</span>, expanded: <span class="hljs-literal">false</span> })}
                     onFocus={() =&gt; <span class="hljs-keyword">this</span>.onFocusElement(<span class="hljs-keyword">this</span>.emptyElement)}
                     onBlur={() =&gt; <span class="hljs-keyword">this</span>.onBlurElement(<span class="hljs-keyword">this</span>.emptyElement)}
-                    onFocusNext={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(<span class="hljs-keyword">this</span>.emptyElement, <span class="hljs-string">'next'</span>)}
-                    onFocusPrev={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(<span class="hljs-keyword">this</span>.emptyElement, <span class="hljs-string">'prev'</span>)}&gt;
+                    onFocusNext={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(<span class="hljs-keyword">this</span>.emptyElement, <span class="hljs-string">&#x27;next&#x27;</span>)}
+                    onFocusPrev={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(<span class="hljs-keyword">this</span>.emptyElement, <span class="hljs-string">&#x27;prev&#x27;</span>)}&gt;
                         &lt;ComboBoxElementContent&gt;{<span class="hljs-keyword">this</span>.defaultTitle}&lt;/ComboBoxElementContent&gt;
                 &lt;/ComboBoxElement&gt;}
 
@@ -139,8 +139,8 @@ render() {
                         onSelect={() =&gt; <span class="hljs-keyword">this</span>.setState({ selectedElement: element.id, expanded: <span class="hljs-literal">false</span> })}
                         onFocus={() =&gt; <span class="hljs-keyword">this</span>.onFocusElement(element)}
                         onBlur={() =&gt; <span class="hljs-keyword">this</span>.onBlurElement(element)}
-                        onFocusNext={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(element, <span class="hljs-string">'next'</span>)}
-                        onFocusPrev={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(element, <span class="hljs-string">'prev'</span>)}&gt;
+                        onFocusNext={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(element, <span class="hljs-string">&#x27;next&#x27;</span>)}
+                        onFocusPrev={() =&gt; <span class="hljs-keyword">this</span>.onFocusSiblingElement(element, <span class="hljs-string">&#x27;prev&#x27;</span>)}&gt;
                             &lt;ComboBoxElementContent&gt;{element.title}&lt;/ComboBoxElementContent&gt;
                     &lt;/ComboBoxElement&gt;;
                 })}
@@ -153,7 +153,8 @@ render() {
             &lt;ComboBoxWrapperContent title={title} body={body}&gt;
         &lt;/ComboBoxWrapper&gt;
     &lt;/div&gt;
-}</code></pre></dd>
+}</code></pre>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -222,7 +223,7 @@ render() {
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_helpers_combobox_comboboxwrapper_d_.comboboxwrapper.html" class="tsd-kind-icon">Combo<wbr>Box<wbr>Wrapper</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -232,7 +233,7 @@ render() {
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_helpers_combobox_comboboxwrapper_d_.icomboboxwrapperprops.html" class="tsd-kind-icon">ICombo<wbr>Box<wbr>Wrapper<wbr>Props</a>
 					</li>
 				</ul>

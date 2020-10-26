@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MessageBox | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>MessageBox | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -118,7 +118,7 @@
 					<a name="showconfirmation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Show<wbr>Confirmation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Show<wbr>Confirmation<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Show<wbr>Confirmation<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span>, customButtonOkText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span>, customButtonCancelText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span>, hideByBackdropClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -146,13 +146,22 @@
 										<p>Заголовок диалога</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customButtonOkText: <span class="tsd-signature-type">React.ReactNode</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customButtonCancelText: <span class="tsd-signature-type">React.ReactNode</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> hideByBackdropClick: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; при согласии, и &quot;rejected&quot; при отказе.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise объект, который перейдет в состояние &quot;resolved&quot; при согласии, и &quot;rejected&quot; при отказе.</p>
 							<p>Пример использования:</p>
-							<p>   MessageBox.ShowConfirmation(&quot;Вы действительно хотите удалить файл?&quot;).done(() =&gt; {
+							<p>   MessageBox.ShowConfirmation(&quot;Вы действительно хотите удалить файл?&quot;).then(() =&gt; {
 								this.removeFile();
-								}).fail(() =&gt; {
+								}).catch(() =&gt; {
 								// Пользователь отменил удаление
 							});</p>
 						</li>
@@ -162,7 +171,7 @@
 					<a name="showerror" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Show<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Show<wbr>Error<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Show<wbr>Error<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -191,10 +200,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
 							<p>Пример использования:</p>
-							<p>   MessageBox.ShowError(&quot;Неправильное имя файла!&quot;).done(() =&gt; {
+							<p>   MessageBox.ShowError(&quot;Неправильное имя файла!&quot;).then(() =&gt; {
 								console.info(&quot;Диалог закрыт&quot;);
 							});</p>
 						</li>
@@ -204,7 +213,7 @@
 					<a name="showinfo" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Show<wbr>Info</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Show<wbr>Info<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Show<wbr>Info<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -233,10 +242,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
 							<p>Пример использования:</p>
-							<p>   MessageBox.ShowInfo(&quot;Операция успешно выполнена!&quot;).done(() =&gt; {
+							<p>   MessageBox.ShowInfo(&quot;Операция успешно выполнена!&quot;).then(() =&gt; {
 								console.info(&quot;Диалог закрыт&quot;);
 							});</p>
 						</li>
@@ -246,7 +255,7 @@
 					<a name="showwarning" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Show<wbr>Warning</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Show<wbr>Warning<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Show<wbr>Warning<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span>, customCaptionText<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -275,10 +284,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>JQueryDeferred объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise объект, который перейдет в состояние &quot;resolved&quot; после закрытия диалога.</p>
 							<p>Пример использования:</p>
-							<p>   MessageBox.ShowWarning(&quot;Не все файлы были загружены!&quot;).done(() =&gt; {
+							<p>   MessageBox.ShowWarning(&quot;Не все файлы были загружены!&quot;).then(() =&gt; {
 								console.info(&quot;Диалог закрыт&quot;);
 							});</p>
 						</li>
@@ -315,7 +324,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_helpers_messagebox_messagebox_d_.messagebox.html" class="tsd-kind-icon">Message<wbr>Box</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">

@@ -66,7 +66,11 @@ namespace DocsMapGenerator
 
             Dictionary<string, string> srcFiles = new Dictionary<string, string>();
             Dictionary<string, string> srcFilesOriginal = new Dictionary<string, string>();
-            var srcDir = srcRoot + "/WebClient/WebClient/Content/";
+            var srcDir = srcRoot;
+            if (Directory.Exists(srcRoot + "/WebClient/WebClient/Content/"))
+            {
+                srcDir = srcRoot + "/WebClient/WebClient/Content/";
+            }
             foreach (string file in Directory.EnumerateFiles(srcDir, "*.ts?", SearchOption.AllDirectories))
             {
                 var nicePath = file.Replace(srcDir, "~App/").Replace(Path.GetExtension(file), "");

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BasicGridHtmlBuilder | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>BasicGridHtmlBuilder | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,21 +74,13 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">BasicGridHtmlBuilder</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_legacy_desktopgridhtmlbuilder_d_.desktopgridhtmlbuilder.html" class="tsd-signature-type">DesktopGridHtmlBuilder</a>
-							</li>
-							<li>
-								<a href="_legacy_mobilegridhtmlbuilder_d_.mobilegridhtmlbuilder.html" class="tsd-signature-type">MobileGridHtmlBuilder</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html" class="tsd-signature-type">IGridHtmlBuilder</a></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -133,7 +125,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#addactionbuttons" class="tsd-kind-icon">add<wbr>Action<wbr>Buttons</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#applygridfilter" class="tsd-kind-icon">apply<wbr>Grid<wbr>Filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#applygridfilters" class="tsd-kind-icon">apply<wbr>Grid<wbr>Filters</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildfilters" class="tsd-kind-icon">build<wbr>Filters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildexportexcelbutton" class="tsd-kind-icon">build<wbr>Export<wbr>Excel<wbr>Button</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildgrid" class="tsd-kind-icon">build<wbr>Grid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildgridfooter" class="tsd-kind-icon">build<wbr>Grid<wbr>Footer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildheader" class="tsd-kind-icon">build<wbr>Header</a></li>
@@ -147,6 +139,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#closeupdaterequest" class="tsd-kind-icon">close<wbr>Update<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#creategrouprow" class="tsd-kind-icon">create<wbr>Group<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#destroygrid" class="tsd-kind-icon">destroy<wbr>Grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#downloadexcelreport" class="tsd-kind-icon">download<wbr>Excel<wbr>Report</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#getchanges" class="tsd-kind-icon">get<wbr>Changes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#getcurrentpage" class="tsd-kind-icon">get<wbr>Current<wbr>Page</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#getdatafromserver" class="tsd-kind-icon">get<wbr>Data<wbr>From<wbr>Server</a></li>
@@ -163,11 +156,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#rebuildgrid" class="tsd-kind-icon">rebuild<wbr>Grid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#rebuildifneeded" class="tsd-kind-icon">rebuild<wbr>IfNeeded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#reload" class="tsd-kind-icon">reload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#resetfoldersettings" class="tsd-kind-icon">reset<wbr>Folder<wbr>Settings</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#savefoldersettings" class="tsd-kind-icon">save<wbr>Folder<wbr>Settings</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#shouldbuildheader" class="tsd-kind-icon">should<wbr>Build<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#showerrormessage" class="tsd-kind-icon">show<wbr>Error<wbr>Message</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#showupdaterequest" class="tsd-kind-icon">show<wbr>Update<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#updatehtmlrowreadstatus" class="tsd-kind-icon">update<wbr>Html<wbr>Row<wbr>Read<wbr>Status</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#destroyfilters" class="tsd-kind-icon">destroy<wbr>Filters</a></li>
 							</ul>
 						</section>
 					</div>
@@ -185,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:43</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:45</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -207,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">allow<wbr>Row<wbr>Resize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:13</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">filter<wbr>Layout<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.layoutviewmodel.html" class="tsd-signature-type">LayoutViewModel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:37</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">folder<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:11</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -236,9 +230,8 @@
 					<h3>get<wbr>Model</h3>
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#getmodel">getModel</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:33</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -250,7 +243,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -268,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">grid<wbr>Footer<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:18</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -277,9 +270,8 @@
 					<h3>model<wbr>Changed</h3>
 					<div class="tsd-signature tsd-kind-icon">model<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#modelchanged">modelChanged</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:35</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:37</li>
 						</ul>
 					</aside>
 				</section>
@@ -289,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="_legacy_gridoptions_d_.gridoptions.html" class="tsd-signature-type">GridOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:25</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -298,9 +290,8 @@
 					<h3>refreshed</h3>
 					<div class="tsd-signature tsd-kind-icon">refreshed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#refreshed">refreshed</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:34</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">root<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:23</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -319,9 +310,8 @@
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> rows<wbr>Selection<wbr>Mode</h3>
 					<div class="tsd-signature tsd-kind-icon">rows<wbr>Selection<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#rowsselectionmode">rowsSelectionMode</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:45</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:47</li>
 						</ul>
 					</aside>
 				</section>
@@ -330,9 +320,8 @@
 					<h3>rows<wbr>Selection<wbr>Mode<wbr>Changed</h3>
 					<div class="tsd-signature tsd-kind-icon">rows<wbr>Selection<wbr>Mode<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#rowsselectionmodechanged">rowsSelectionModeChanged</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:36</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -341,9 +330,8 @@
 					<h3>selection<wbr>Changed</h3>
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#selectionchanged">selectionChanged</a></p>
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:54</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:56</li>
 						</ul>
 					</aside>
 				</section>
@@ -353,17 +341,17 @@
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Logic<span class="tsd-signature-symbol">:</span> <a href="_legacy_gridrowsselectionlogic_d_.gridrowsselectionlogic.html" class="tsd-signature-type">GridRowsSelectionLogic</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:31</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:33</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="services" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> services</h3>
-					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_gridcontroller" class="tsd-signature-type">$GridController</a></div>
+					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_gridcontroller" class="tsd-signature-type">$GridController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__webframecontext_d_.html#_webframecontext" class="tsd-signature-type">$WebFrameContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:43</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:45</li>
 						</ul>
 					</aside>
 				</section>
@@ -373,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<wbr>Body<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:17</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -383,7 +371,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<wbr>Header<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:16</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -393,7 +381,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:24</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -403,7 +391,7 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Back<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:40</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:42</li>
 						</ul>
 					</aside>
 				</section>
@@ -413,7 +401,7 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Fore<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:39</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:41</li>
 						</ul>
 					</aside>
 				</section>
@@ -423,7 +411,7 @@
 					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Settings<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:41</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:43</li>
 						</ul>
 					</aside>
 				</section>
@@ -433,7 +421,7 @@
 					<div class="tsd-signature tsd-kind-icon">Row<wbr>Default<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:38</li>
+							<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -450,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:55</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:57</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -472,9 +460,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#applygridfilter">applyGridFilter</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:86</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -491,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:74</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:78</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -510,27 +497,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="buildfilters" class="tsd-anchor"></a>
-					<h3>build<wbr>Filters</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Filters<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="_legacy_gridoptions_d_.gridoptions.html" class="tsd-signature-type">GridOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="buildexportexcelbutton" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> build<wbr>Export<wbr>Excel<wbr>Button</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Export<wbr>Excel<wbr>Button<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLSpanElement</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildfilters">buildFilters</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:84</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:58</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="_legacy_gridoptions_d_.gridoptions.html" class="tsd-signature-type">GridOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLSpanElement</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -543,9 +523,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildgrid">buildGrid</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:46</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -573,9 +552,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildgridfooter">buildGridFooter</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:82</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:87</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -600,9 +578,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildheader">buildHeader</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:75</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -631,7 +608,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:85</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:88</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -648,7 +625,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:77</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:82</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -674,7 +651,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:49</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -706,7 +683,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:81</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:86</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -737,9 +714,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildtablebody">buildTableBody</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:70</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:74</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -764,9 +740,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#buildtableheader">buildTableHeader</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:58</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:62</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -794,9 +769,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#clearselection">clearSelection</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:53</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:55</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -818,9 +792,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#closeupdaterequest">closeUpdateRequest</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:124</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -837,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:98</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:101</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -875,9 +848,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:57</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:61</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="downloadexcelreport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> download<wbr>Excel<wbr>Report</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">download<wbr>Excel<wbr>Report<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -891,9 +887,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#getchanges">getChanges</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:50</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -910,7 +905,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:56</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:60</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span>
@@ -930,7 +925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:90</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:93</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -956,13 +951,13 @@
 					<a name="getpage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Page</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<span class="tsd-signature-symbol">(</span>pageNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, refresh<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<span class="tsd-signature-symbol">(</span>pageNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, refresh<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:113</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:116</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -974,7 +969,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> refresh: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -988,7 +983,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:112</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:115</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1019,9 +1014,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#getselection">getSelection</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:51</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:53</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1038,7 +1032,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:92</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:95</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1067,7 +1061,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:107</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:110</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1093,7 +1087,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:71</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:75</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1119,7 +1113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:72</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1142,7 +1136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:125</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:128</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1168,7 +1162,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:48</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:50</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1185,7 +1179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:73</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:77</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1208,7 +1202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:115</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:118</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1224,9 +1218,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#rebuildifneeded">rebuildIfNeeded</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:47</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:49</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1246,17 +1239,33 @@
 					<a name="reload" class="tsd-anchor"></a>
 					<h3>reload</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#reload">reload</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:89</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:92</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_globals_jquerydeferred_d_.jquerydeferred.html" class="tsd-signature-type">JQueryDeferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="resetfoldersettings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> reset<wbr>Folder<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Folder<wbr>Settings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:81</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1270,7 +1279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:76</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:80</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1293,7 +1302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:59</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:63</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1310,6 +1319,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showerrormessage" class="tsd-anchor"></a>
+					<h3>show<wbr>Error<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Error<wbr>Message<span class="tsd-signature-symbol">(</span>serverResponse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>serverResponse: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="showupdaterequest" class="tsd-anchor"></a>
 					<h3>show<wbr>Update<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1318,9 +1350,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html">IGridHtmlBuilder</a>.<a href="../interfaces/_legacy_igridhtmlbuilder_d_.igridhtmlbuilder.html#showupdaterequest">showUpdateRequest</a></p>
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:123</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:126</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1348,7 +1379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:106</li>
+									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:109</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1360,23 +1391,6 @@
 									<h5>setRead: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="destroyfilters" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> destroy<wbr>Filters</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">destroy<wbr>Filters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in Legacy/BasicGridHtmlBuilder.d.ts:83</li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1395,7 +1409,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html" class="tsd-kind-icon">Basic<wbr>Grid<wbr>Html<wbr>Builder</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -1473,8 +1487,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#applygridfilters" class="tsd-kind-icon">apply<wbr>Grid<wbr>Filters</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildfilters" class="tsd-kind-icon">build<wbr>Filters</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildexportexcelbutton" class="tsd-kind-icon">build<wbr>Export<wbr>Excel<wbr>Button</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#buildgrid" class="tsd-kind-icon">build<wbr>Grid</a>
@@ -1514,6 +1528,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#destroygrid" class="tsd-kind-icon">destroy<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#downloadexcelreport" class="tsd-kind-icon">download<wbr>Excel<wbr>Report</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#getchanges" class="tsd-kind-icon">get<wbr>Changes</a>
@@ -1564,10 +1581,16 @@
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#reload" class="tsd-kind-icon">reload</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#resetfoldersettings" class="tsd-kind-icon">reset<wbr>Folder<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#savefoldersettings" class="tsd-kind-icon">save<wbr>Folder<wbr>Settings</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#shouldbuildheader" class="tsd-kind-icon">should<wbr>Build<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#showerrormessage" class="tsd-kind-icon">show<wbr>Error<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#showupdaterequest" class="tsd-kind-icon">show<wbr>Update<wbr>Request</a>
@@ -1575,17 +1598,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#updatehtmlrowreadstatus" class="tsd-kind-icon">update<wbr>Html<wbr>Row<wbr>Read<wbr>Status</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_legacy_basicgridhtmlbuilder_d_.basicgridhtmlbuilder.html#destroyfilters" class="tsd-kind-icon">destroy<wbr>Filters</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/_legacy_basicgridhtmlbuilder_d_.html#resizeable_storage_id" class="tsd-kind-icon">RESIZEABLE_<wbr>STORAGE_<wbr>ID</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/_legacy_basicgridhtmlbuilder_d_.html#width_store" class="tsd-kind-icon">WIDTH_<wbr>STORE</a>
 					</li>
 				</ul>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRouteInfo | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>IRouteInfo | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -94,6 +94,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#cancelrequested" class="tsd-kind-icon">cancel<wbr>Requested</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#identity" class="tsd-kind-icon">identity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#routesemantics" class="tsd-kind-icon">route<wbr>Semantics</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#routetype" class="tsd-kind-icon">route<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_irouteinfo_d_.irouteinfo.html#unmounted" class="tsd-kind-icon">unmounted</a></li>
 							</ul>
@@ -109,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">cancel<wbr>Requested<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/IRouteInfo.d.ts:16</li>
+							<li>Defined in System/IRouteInfo.d.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -124,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/IRouteInfo.d.ts:14</li>
+							<li>Defined in System/IRouteInfo.d.ts:16</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -139,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">identity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/IRouteInfo.d.ts:12</li>
+							<li>Defined in System/IRouteInfo.d.ts:14</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -152,17 +153,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="routetype" class="tsd-anchor"></a>
-					<h3>route<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">route<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_routetype_d_.html#routetype" class="tsd-signature-type">RouteType</a></div>
+					<a name="routesemantics" class="tsd-anchor"></a>
+					<h3>route<wbr>Semantics</h3>
+					<div class="tsd-signature tsd-kind-icon">route<wbr>Semantics<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_routesemantics_d_.html#routesemantics" class="tsd-signature-type">RouteSemantics</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in System/IRouteInfo.d.ts:5</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="routetype" class="tsd-anchor"></a>
+					<h3>route<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">route<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_routetype_d_.html#routetype" class="tsd-signature-type">RouteType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/IRouteInfo.d.ts:7</li>
+						</ul>
+					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Уникальный идентификатор тип роута.</p>
+							<p>Уникальный идентификатор тип роута, определяющий его структуру данных.</p>
 						</div>
 					</div>
 				</section>
@@ -172,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">unmounted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/IRouteInfo.d.ts:18</li>
+							<li>Defined in System/IRouteInfo.d.ts:20</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,7 +206,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_system_irouteinfo_d_.irouteinfo.html" class="tsd-kind-icon">IRoute<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -206,6 +217,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_system_irouteinfo_d_.irouteinfo.html#identity" class="tsd-kind-icon">identity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_system_irouteinfo_d_.irouteinfo.html#routesemantics" class="tsd-kind-icon">route<wbr>Semantics</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_system_irouteinfo_d_.irouteinfo.html#routetype" class="tsd-kind-icon">route<wbr>Type</a>

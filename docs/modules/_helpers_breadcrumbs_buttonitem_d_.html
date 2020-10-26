@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;Helpers/Breadcrumbs/ButtonItem.d&quot; | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>&quot;Helpers/Breadcrumbs/ButtonItem.d&quot; | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -51,7 +51,7 @@
 					<a href="_helpers_breadcrumbs_buttonitem_d_.html" class="breadcrumb">&quot;Helpers/Breadcrumbs/ButtonItem.d&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;Helpers/Breadcrumbs/ButtonItem.d&quot;</h1>
+			<h1>Module &quot;Helpers/Breadcrumbs/ButtonItem.d&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -65,13 +65,13 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_helpers_breadcrumbs_buttonitem_d_.ibreadcrumbsitemprops.html" class="tsd-kind-icon">IBreadcrumbs<wbr>Item<wbr>Props</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_helpers_breadcrumbs_buttonitem_d_.ibreadcrumbsitemprops.html" class="tsd-kind-icon">IBreadcrumbs<wbr>Item<wbr>Props</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_helpers_breadcrumbs_buttonitem_d_.html#buttonitem" class="tsd-kind-icon">Button<wbr>Item</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_helpers_breadcrumbs_buttonitem_d_.html#buttonitem" class="tsd-kind-icon">Button<wbr>Item</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,7 +79,7 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="buttonitem" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Button<wbr>Item</h3>
 					<div class="tsd-signature tsd-kind-icon">Button<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
@@ -97,34 +97,36 @@
 <span class="hljs-keyword">let</span> ItemView = Breadcrumbs.LinkItemView;
 <span class="hljs-keyword">let</span> Separator = Breadcrumbs.LinkSeparator;
 
- <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"padding-v-7"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.log('Выбран Север')}&gt;
+ <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;padding-v-7&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.log(&#x27;Выбран Север&#x27;)}&gt;
           <span class="hljs-tag">&lt;<span class="hljs-name">ItemView</span>&gt;</span>Север<span class="hljs-tag">&lt;/<span class="hljs-name">ItemView</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">Separator</span> /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.log('Выбрана Северная верфь')}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.log(&#x27;Выбрана Северная верфь&#x27;)}&gt;
           <span class="hljs-tag">&lt;<span class="hljs-name">ItemView</span>&gt;</span>Северная верфь<span class="hljs-tag">&lt;/<span class="hljs-name">ItemView</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
- <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><p>Пример использования в случае, когда элементы заданы в виде массива:</p>
-								<pre><code><span class="hljs-symbol">let</span> <span class="hljs-keyword">Item </span>= <span class="hljs-keyword">Breadrcumbs.ButtonItem;
-</span><span class="hljs-symbol">let</span> <span class="hljs-keyword">ItemView </span>= <span class="hljs-keyword">Breadrcumbs.LinkItemView;
-</span><span class="hljs-symbol">let</span> Separator = <span class="hljs-keyword">Breadcrumbs.LinkSeparator;
-</span>
-&lt;div className=<span class="hljs-string">"padding-v-7"</span>&gt;
-    {[<span class="hljs-string">"Север"</span>, <span class="hljs-string">"Северная гавань"</span>].map((<span class="hljs-keyword">item, </span>index) =&gt;
-        &lt;<span class="hljs-keyword">Item </span>onClick={() =&gt; console.log(<span class="hljs-string">'Выбран '</span> + <span class="hljs-keyword">item)} </span>key={index}&gt;
-            {index &gt; <span class="hljs-number">0</span> &amp;&amp; &lt; Separator /&gt;}
-            &lt;<span class="hljs-keyword">ItemView&gt;{item}&lt;/ItemView&gt;
-</span>        &lt;/<span class="hljs-keyword">Item&gt;
-</span>    )}
-&lt;/div&gt;</code></pre></dd>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+								<p>Пример использования в случае, когда элементы заданы в виде массива:</p>
+								<pre><code><span class="hljs-keyword">let</span> Item = Breadrcumbs.ButtonItem;
+<span class="hljs-keyword">let</span> ItemView = Breadrcumbs.LinkItemView;
+<span class="hljs-keyword">let</span> Separator = Breadcrumbs.LinkSeparator;
+
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;padding-v-7&quot;</span>&gt;</span>
+    </span><span class="xquery">{[<span class="hljs-string">&quot;Север&quot;</span>, <span class="hljs-string">&quot;Северная гавань&quot;</span>].<span class="hljs-keyword">map</span>((<span class="hljs-type">item</span>, index) =&gt;
+        &lt;Item onClick={() =&gt; console.log(<span class="hljs-string">&#x27;Выбран &#x27;</span> + <span class="hljs-type">item</span>)}</span><span class="xml"> key=</span><span class="xquery">{index}</span><span class="xml">&gt;
+            </span><span class="xquery">{index &gt; <span class="hljs-number">0</span> &amp;&amp; &lt; Separator /&gt;}</span><span class="xml">
+            </span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ItemView</span>&gt;</span></span><span class="xquery">{<span class="hljs-type">item</span>}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">ItemView</span>&gt;</span></span><span class="xml">
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span></span>
+    )}
+&lt;/div&gt;</code></pre>
+							</dd>
 						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_breadcrumbs_buttonitem_d_.ibreadcrumbsitemprops.html" class="tsd-signature-type">IBreadcrumbsItemProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSX.Element</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -154,10 +156,10 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_helpers_breadcrumbs_buttonitem_d_.ibreadcrumbsitemprops.html" class="tsd-kind-icon">IBreadcrumbs<wbr>Item<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_helpers_breadcrumbs_buttonitem_d_.html#buttonitem" class="tsd-kind-icon">Button<wbr>Item</a>
 					</li>
 				</ul>

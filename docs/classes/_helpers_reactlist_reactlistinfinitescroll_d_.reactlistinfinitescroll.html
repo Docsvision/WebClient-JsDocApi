@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ReactListInfiniteScroll | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>ReactListInfiniteScroll | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -68,32 +68,33 @@
 						<dd><p>ReactList с возможностью бесконечного скролла</p>
 							<p>Если нужно задать высоту контейнера, то её необходимо задать через свойства</p>
 							<p>Пример использования:</p>
-							<pre><code><span class="hljs-keyword">constructor</span>(props) {
-    <span class="hljs-keyword">super</span>(props);
+							<pre><code><span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">props</span>)</span> {
+    <span class="hljs-built_in">super</span>(props);
 
-    <span class="hljs-keyword">this</span>.state = {
+    <span class="hljs-built_in">this</span>.state = {
         <span class="hljs-attr">items</span>: []
     };
 }
 
-getPage = <span class="hljs-function">(<span class="hljs-params">pageNumber: number</span>) =&gt;</span> {
+getPage = <span class="hljs-function">(<span class="hljs-params">pageNumber: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
     ...
 }
 
-loadPage = <span class="hljs-function">(<span class="hljs-params">pageNumber: number</span>) =&gt;</span> {
-    <span class="hljs-keyword">this</span>.getPage(pageNumber).then(<span class="hljs-function"><span class="hljs-params">itemsPart</span> =&gt;</span> {
-        <span class="hljs-keyword">this</span>.setState(<span class="hljs-function"><span class="hljs-params">prevState</span> =&gt;</span> ({ <span class="hljs-attr">items</span>: prevState.items.concat(itemsPart) }));
+loadPage = <span class="hljs-function">(<span class="hljs-params">pageNumber: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
+    <span class="hljs-built_in">this</span>.getPage(pageNumber).then(<span class="hljs-function"><span class="hljs-params">itemsPart</span> =&gt;</span> {
+        <span class="hljs-built_in">this</span>.setState(<span class="hljs-function"><span class="hljs-params">prevState</span> =&gt;</span> ({ <span class="hljs-attr">items</span>: prevState.items.concat(itemsPart) }));
     });
 };
 
-renderItem = <span class="hljs-function">(<span class="hljs-params">index: number, key: number</span>) =&gt;</span> {
+renderItem = <span class="hljs-function">(<span class="hljs-params">index: <span class="hljs-built_in">number</span>, key: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
     <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{key}</span>&gt;</span>{this.state.items[index].title}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
 };
 
-render() {
+<span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ReactListInfiniteScroll</span> <span class="hljs-attr">customContainer</span>=<span class="hljs-string">{CustomTreeDefault}</span> <span class="hljs-attr">items</span>=<span class="hljs-string">{this.state.items}</span>
-        <span class="hljs-attr">loadPage</span>=<span class="hljs-string">{this.loadPage}</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{ReactListVirtualization.variable}</span> <span class="hljs-attr">itemRenderer</span>=<span class="hljs-string">{this.renderItem}</span> /&gt;</span>
-}</span></code></pre></dd>
+        <span class="hljs-attr">loadPage</span>=<span class="hljs-string">{this.loadPage}</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{ReactListVirtualization.variable}</span> <span class="hljs-attr">itemRenderer</span>=<span class="hljs-string">{this.renderItem}</span> /&gt;</span></span>
+}</code></pre>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -137,8 +138,8 @@ render() {
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#render" class="tsd-kind-icon">render</a></li>
 							</ul>
 						</section>
@@ -186,7 +187,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -237,7 +238,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -267,7 +268,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -307,15 +308,15 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.SyntheticEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.SyntheticEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>e: <span class="tsd-signature-type">React.SyntheticEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&gt;</span></h5>
+												<h5>e: <span class="tsd-signature-type">React.SyntheticEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -342,7 +343,7 @@ render() {
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="default_container" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT_<wbr>CONTAINER</h3>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> DEFAULT_<wbr>CONTAINER</h3>
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>CONTAINER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -352,8 +353,8 @@ render() {
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="default_gap" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT_<wbr>GAP</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>GAP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">20</span><span class="tsd-signature-symbol"> =&nbsp;20</span></div>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> DEFAULT_<wbr>GAP</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>GAP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">20</span><span class="tsd-signature-symbol"> = 20</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Helpers/ReactList/ReactListInfiniteScroll.d.ts:74</li>
@@ -364,27 +365,10 @@ render() {
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="componentdidmount" class="tsd-anchor"></a>
-					<h3>component<wbr>Did<wbr>Mount</h3>
+					<a name="unsafe_componentwillreceiveprops" class="tsd-anchor"></a>
+					<h3>UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in Helpers/ReactList/ReactListInfiniteScroll.d.ts:84</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="componentwillreceiveprops" class="tsd-anchor"></a>
-					<h3>component<wbr>Will<wbr>Receive<wbr>Props</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_reactlist_reactlistinfinitescroll_d_.ireactlistinfinitescrollprops.html" class="tsd-signature-type">IReactListInfiniteScrollProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_reactlist_reactlistinfinitescroll_d_.ireactlistinfinitescrollprops.html" class="tsd-signature-type">IReactListInfiniteScrollProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -399,6 +383,23 @@ render() {
 									<h5>nextProps: <a href="../interfaces/_helpers_reactlist_reactlistinfinitescroll_d_.ireactlistinfinitescrollprops.html" class="tsd-signature-type">IReactListInfiniteScrollProps</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="componentdidmount" class="tsd-anchor"></a>
+					<h3>component<wbr>Did<wbr>Mount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Helpers/ReactList/ReactListInfiniteScroll.d.ts:84</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -434,7 +435,7 @@ render() {
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html" class="tsd-kind-icon">React<wbr>List<wbr>Infinite<wbr>Scroll</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -468,10 +469,10 @@ render() {
 								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#default_gap" class="tsd-kind-icon">DEFAULT_<wbr>GAP</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
+								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a>
+								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_helpers_reactlist_reactlistinfinitescroll_d_.reactlistinfinitescroll.html#render" class="tsd-kind-icon">render</a>
@@ -480,7 +481,7 @@ render() {
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_helpers_reactlist_reactlistinfinitescroll_d_.ireactlistinfinitescrollprops.html" class="tsd-kind-icon">IReact<wbr>List<wbr>Infinite<wbr>Scroll<wbr>Props</a>
 					</li>
 				</ul>

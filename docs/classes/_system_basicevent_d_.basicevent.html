@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BasicEvent | Docsvision 5 Web-client 5.5.14. JavaScript API</title>
+	<title>BasicEvent | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.14. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -82,21 +82,13 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">BasicEvent</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_system_cancelableevent_d_.cancelableevent.html" class="tsd-signature-type">CancelableEvent</a>
-							</li>
-							<li>
-								<a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html" class="tsd-signature-type">IBasicEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -109,13 +101,18 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_system_basicevent_d_.basicevent.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basicevent_d_.basicevent.html#defaultsender" class="tsd-kind-icon">default<wbr>Sender</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_system_basicevent_d_.basicevent.html#handlers" class="tsd-kind-icon">handlers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_system_basicevent_d_.basicevent.html#mdefaultsender" class="tsd-kind-icon">m<wbr>Default<wbr>Sender</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_system_basicevent_d_.basicevent.html#meventinfo" class="tsd-kind-icon">m<wbr>Event<wbr>Info</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_system_basicevent_d_.basicevent.html#defaultsender" class="tsd-kind-icon">default<wbr>Sender</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -160,33 +157,8 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="defaultsender" class="tsd-anchor"></a>
-					<h3>default<wbr>Sender</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in System/BasicEvent.d.ts:13</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="handlers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handlers</h3>
@@ -210,7 +182,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -234,6 +206,65 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="defaultsender" class="tsd-anchor"></a>
+					<h3>default<wbr>Sender</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> defaultSender<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> defaultSender<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/BasicEvent.d.ts:13</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/BasicEvent.d.ts:14</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-signature-type">LayoutControl</a></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="subscribe" class="tsd-anchor"></a>
@@ -244,7 +275,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html">IBasicEvent</a>.<a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in System/BasicEvent.d.ts:11</li>
 								</ul>
@@ -272,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/BasicEvent.d.ts:14</li>
+									<li>Defined in System/BasicEvent.d.ts:15</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -298,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/BasicEvent.d.ts:15</li>
+									<li>Defined in System/BasicEvent.d.ts:16</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,7 +353,6 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html">IBasicEvent</a>.<a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html#unsubscribe">unsubscribe</a></p>
 								<ul>
 									<li>Defined in System/BasicEvent.d.ts:12</li>
 								</ul>
@@ -348,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/BasicEvent.d.ts:16</li>
+									<li>Defined in System/BasicEvent.d.ts:17</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -375,14 +404,11 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_system_basicevent_d_.basicevent.html" class="tsd-kind-icon">Basic<wbr>Event</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_system_basicevent_d_.basicevent.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_system_basicevent_d_.basicevent.html#defaultsender" class="tsd-kind-icon">default<wbr>Sender</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_system_basicevent_d_.basicevent.html#handlers" class="tsd-kind-icon">handlers</a>
@@ -392,6 +418,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_system_basicevent_d_.basicevent.html#meventinfo" class="tsd-kind-icon">m<wbr>Event<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_system_basicevent_d_.basicevent.html#defaultsender" class="tsd-kind-icon">default<wbr>Sender</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_basicevent_d_.basicevent.html#subscribe" class="tsd-kind-icon">subscribe</a>
@@ -412,6 +441,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_system_basicevent_d_.html#callbasiceventhandlers" class="tsd-kind-icon">call<wbr>Basic<wbr>Event<wbr>Handlers</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
