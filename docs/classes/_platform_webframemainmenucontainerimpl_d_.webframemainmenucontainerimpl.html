@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WebFrameMainMenuContainerImpl | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>WebFrameMainMenuContainerImpl | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -88,16 +88,32 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#ispinned" class="tsd-kind-icon">Is<wbr>Pinned</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#preventclick" class="tsd-kind-icon">prevent<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#savesettings" class="tsd-kind-icon">save<wbr>Settings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#setsidebarwidth" class="tsd-kind-icon">set<wbr>Sidebar<wbr>Width</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#switchview" class="tsd-kind-icon">switch<wbr>View</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#isclosed" class="tsd-kind-icon">Is<wbr>Closed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#getelement" class="tsd-kind-icon">get<wbr>Element</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#ispinned-1" class="tsd-kind-icon">is<wbr>Pinned</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#loadsettings" class="tsd-kind-icon">load<wbr>Settings</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#rendercontrol" class="tsd-kind-icon">render<wbr>Control</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#rendercontrolroot" class="tsd-kind-icon">render<wbr>Control<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#resetsettings" class="tsd-kind-icon">reset<wbr>Settings</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,12 +122,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ispinned" class="tsd-anchor"></a>
+					<h3>Is<wbr>Pinned</h3>
+					<div class="tsd-signature tsd-kind-icon">Is<wbr>Pinned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="preventclick" class="tsd-anchor"></a>
 					<h3>prevent<wbr>Click</h3>
 					<div class="tsd-signature tsd-kind-icon">prevent<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:9</li>
+							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -127,6 +174,62 @@
 										<ul class="tsd-parameters">
 											<li>
 												<h5>e: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="savesettings" class="tsd-anchor"></a>
+					<h3>save<wbr>Settings</h3>
+					<div class="tsd-signature tsd-kind-icon">save<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="setsidebarwidth" class="tsd-anchor"></a>
+					<h3>set<wbr>Sidebar<wbr>Width</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Sidebar<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> width: <span class="tsd-signature-type">number</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -142,7 +245,7 @@
 					<div class="tsd-signature tsd-kind-icon">switch<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:10</li>
+							<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -169,6 +272,60 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isclosed" class="tsd-anchor"></a>
+					<h3>Is<wbr>Closed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> IsClosed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:22</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="getelement" class="tsd-anchor"></a>
+					<h3>get<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> getElement<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:16</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="ispinned-1" class="tsd-anchor"></a>
+					<h3>is<wbr>Pinned</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isPinned<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:21</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="unsafe_componentwillmount" class="tsd-anchor"></a>
@@ -180,9 +337,89 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:8</li>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:14</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span>showOnRightSide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:25</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> showOnRightSide: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="componentdidmount" class="tsd-anchor"></a>
+					<h3>component<wbr>Did<wbr>Mount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:15</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadsettings" class="tsd-anchor"></a>
+					<h3>load<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Settings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:29</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="open" class="tsd-anchor"></a>
+					<h3>open</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>showOnRightSide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:26</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> showOnRightSide: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -197,7 +434,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:12</li>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:32</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -214,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:11</li>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:31</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -224,6 +461,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resetsettings" class="tsd-anchor"></a>
+					<h3>reset<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Settings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/WebFrameMainMenuContainerImpl.d.ts:30</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -245,19 +499,52 @@
 						<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html" class="tsd-kind-icon">Web<wbr>Frame<wbr>Main<wbr>Menu<wbr>Container<wbr>Impl</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#ispinned" class="tsd-kind-icon">Is<wbr>Pinned</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#preventclick" class="tsd-kind-icon">prevent<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#savesettings" class="tsd-kind-icon">save<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#setsidebarwidth" class="tsd-kind-icon">set<wbr>Sidebar<wbr>Width</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#switchview" class="tsd-kind-icon">switch<wbr>View</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#isclosed" class="tsd-kind-icon">Is<wbr>Closed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#getelement" class="tsd-kind-icon">get<wbr>Element</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#ispinned-1" class="tsd-kind-icon">is<wbr>Pinned</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#loadsettings" class="tsd-kind-icon">load<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#open" class="tsd-kind-icon">open</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#rendercontrol" class="tsd-kind-icon">render<wbr>Control</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#rendercontrolroot" class="tsd-kind-icon">render<wbr>Control<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_webframemainmenucontainerimpl_d_.webframemainmenucontainerimpl.html#resetsettings" class="tsd-kind-icon">reset<wbr>Settings</a>
 							</li>
 						</ul>
 					</li>

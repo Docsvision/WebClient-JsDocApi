@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICommonResponse | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>ICommonResponse | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -99,9 +99,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#extendeddatasourceinfos" class="tsd-kind-icon">extended<wbr>Data<wbr>Source<wbr>Infos</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#servername" class="tsd-kind-icon">server<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#success" class="tsd-kind-icon">success</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#time" class="tsd-kind-icon">time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#timestamp" class="tsd-kind-icon">timestamp</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#timestampcardid" class="tsd-kind-icon">timestamp<wbr>Card<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_system_icommonresponse_d_.icommonresponse.html#timestamprowid" class="tsd-kind-icon">timestamp<wbr>Row<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ResponseModelT</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/ICommonResponse.d.ts:26</li>
+							<li>Defined in System/ICommonResponse.d.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">extended<wbr>Data<wbr>Source<wbr>Infos<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExtendedDataSourceInfoModel[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/ICommonResponse.d.ts:30</li>
+							<li>Defined in System/ICommonResponse.d.ts:34</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,12 +148,27 @@
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/ICommonResponse.d.ts:22</li>
+							<li>Defined in System/ICommonResponse.d.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Сообщение об ошибке или предупреждение.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="servername" class="tsd-anchor"></a>
+					<h3>server<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">server<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/ICommonResponse.d.ts:38</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Имя сервера.</p>
 						</div>
 					</div>
 				</section>
@@ -166,6 +184,21 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Успешно ли завершился запрос.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="time" class="tsd-anchor"></a>
+					<h3>time</h3>
+					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/ICommonResponse.d.ts:42</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Серверное время.</p>
 						</div>
 					</div>
 				</section>
@@ -199,6 +232,21 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="timestamprowid" class="tsd-anchor"></a>
+					<h3>timestamp<wbr>Row<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">timestamp<wbr>Row<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/ICommonResponse.d.ts:22</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Идентификатор строки, для которой возвращен <a href="_system_icommonresponse_d_.icommonresponse.html#timestamp">timestamp</a></p>
+						</div>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -226,13 +274,22 @@
 								<a href="_system_icommonresponse_d_.icommonresponse.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_system_icommonresponse_d_.icommonresponse.html#servername" class="tsd-kind-icon">server<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_system_icommonresponse_d_.icommonresponse.html#success" class="tsd-kind-icon">success</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_system_icommonresponse_d_.icommonresponse.html#time" class="tsd-kind-icon">time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_system_icommonresponse_d_.icommonresponse.html#timestamp" class="tsd-kind-icon">timestamp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_system_icommonresponse_d_.icommonresponse.html#timestampcardid" class="tsd-kind-icon">timestamp<wbr>Card<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_system_icommonresponse_d_.icommonresponse.html#timestamprowid" class="tsd-kind-icon">timestamp<wbr>Row<wbr>Id</a>
 							</li>
 						</ul>
 					</li>

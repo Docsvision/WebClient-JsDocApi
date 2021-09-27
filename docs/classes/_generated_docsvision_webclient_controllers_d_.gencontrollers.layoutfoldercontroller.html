@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LayoutFolderController | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>LayoutFolderController | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -90,13 +90,19 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#candeletefolder" class="tsd-kind-icon">can<wbr>Delete<wbr>Folder</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#checkfolderforavailablecardkind" class="tsd-kind-icon">check<wbr>Folder<wbr>For<wbr>Available<wbr>Card<wbr>Kind</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#createsubfolder" class="tsd-kind-icon">create<wbr>Subfolder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#deletefolder" class="tsd-kind-icon">delete<wbr>Folder</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#detachuserfolders" class="tsd-kind-icon">detach<wbr>User<wbr>Folders</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfo" class="tsd-kind-icon">get<wbr>Folder<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfomodel" class="tsd-kind-icon">get<wbr>Folder<wbr>Info<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfowithparents" class="tsd-kind-icon">get<wbr>Folder<wbr>Info<wbr>With<wbr>Parents</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolders" class="tsd-kind-icon">get<wbr>Folders</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getuserfolderstreedata" class="tsd-kind-icon">get<wbr>User<wbr>Folders<wbr>Tree<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#refreshfolders" class="tsd-kind-icon">refresh<wbr>Folders</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#restorefolder" class="tsd-kind-icon">restore<wbr>Folder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#setfoldersettings" class="tsd-kind-icon">set<wbr>Folder<wbr>Settings</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,6 +110,33 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="candeletefolder" class="tsd-anchor"></a>
+					<h3>can<wbr>Delete<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Delete<wbr>Folder<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#candeletefolder">canDeleteFolder</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2180</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="checkfolderforavailablecardkind" class="tsd-anchor"></a>
 					<h3>check<wbr>Folder<wbr>For<wbr>Available<wbr>Card<wbr>Kind</h3>
@@ -115,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#checkfolderforavailablecardkind">checkFolderForAvailableCardKind</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1907</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2174</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,6 +165,60 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createsubfolder" class="tsd-anchor"></a>
+					<h3>create<wbr>Subfolder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Subfolder<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.createsubfolderrequestmodel.html" class="tsd-signature-type">CreateSubfolderRequestModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.foldernode.html" class="tsd-signature-type">FolderNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#createsubfolder">createSubfolder</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2181</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.createsubfolderrequestmodel.html" class="tsd-signature-type">CreateSubfolderRequestModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.foldernode.html" class="tsd-signature-type">FolderNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deletefolder" class="tsd-anchor"></a>
+					<h3>delete<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Folder<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#deletefolder">deleteFolder</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2178</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="detachuserfolders" class="tsd-anchor"></a>
 					<h3>detach<wbr>User<wbr>Folders</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -142,7 +229,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#detachuserfolders">detachUserFolders</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1910</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2183</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -169,7 +256,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#getfolderinfo">getFolderInfo</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1908</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2175</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -186,6 +273,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getfolderinfomodel" class="tsd-anchor"></a>
+					<h3>get<wbr>Folder<wbr>Info<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Folder<wbr>Info<wbr>Model<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.folderinfomodel.html" class="tsd-signature-type">FolderInfoModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#getfolderinfomodel">getFolderInfoModel</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.folderinfomodel.html" class="tsd-signature-type">FolderInfoModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getfolderinfowithparents" class="tsd-anchor"></a>
 					<h3>get<wbr>Folder<wbr>Info<wbr>With<wbr>Parents</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -196,7 +310,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#getfolderinfowithparents">getFolderInfoWithParents</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1909</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2182</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -223,7 +337,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#getfolders">getFolders</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1906</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2173</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,7 +364,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#getuserfolderstreedata">getUserFoldersTreeData</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1905</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2172</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -277,7 +391,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#refreshfolders">refreshFolders</a></p>
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1911</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -287,6 +401,60 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="restorefolder" class="tsd-anchor"></a>
+					<h3>restore<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Folder<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#restorefolder">restoreFolder</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2179</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setfoldersettings" class="tsd-anchor"></a>
+					<h3>set<wbr>Folder<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Folder<wbr>Settings<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.setfoldersettingsrequest.html" class="tsd-signature-type">SetFolderSettingsRequest</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.folderdatamodel.html" class="tsd-signature-type">FolderDataModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html">ILayoutFolderController</a>.<a href="../interfaces/_generated_docsvision_webclient_controllers_d_.gencontrollers.ilayoutfoldercontroller.html#setfoldersettings">setFolderSettings</a></p>
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:2177</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.setfoldersettingsrequest.html" class="tsd-signature-type">SetFolderSettingsRequest</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.folderdatamodel.html" class="tsd-signature-type">FolderDataModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,13 +476,25 @@
 						<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html" class="tsd-kind-icon">Layout<wbr>Folder<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#candeletefolder" class="tsd-kind-icon">can<wbr>Delete<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#checkfolderforavailablecardkind" class="tsd-kind-icon">check<wbr>Folder<wbr>For<wbr>Available<wbr>Card<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#createsubfolder" class="tsd-kind-icon">create<wbr>Subfolder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#deletefolder" class="tsd-kind-icon">delete<wbr>Folder</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#detachuserfolders" class="tsd-kind-icon">detach<wbr>User<wbr>Folders</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfo" class="tsd-kind-icon">get<wbr>Folder<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfomodel" class="tsd-kind-icon">get<wbr>Folder<wbr>Info<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#getfolderinfowithparents" class="tsd-kind-icon">get<wbr>Folder<wbr>Info<wbr>With<wbr>Parents</a>
@@ -327,6 +507,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#refreshfolders" class="tsd-kind-icon">refresh<wbr>Folders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#restorefolder" class="tsd-kind-icon">restore<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.layoutfoldercontroller.html#setfoldersettings" class="tsd-kind-icon">set<wbr>Folder<wbr>Settings</a>
 							</li>
 						</ul>
 					</li>

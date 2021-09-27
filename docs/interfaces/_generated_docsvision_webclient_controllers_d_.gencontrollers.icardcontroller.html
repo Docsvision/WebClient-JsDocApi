@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICardController | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>ICardController | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -96,6 +96,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#checklock" class="tsd-kind-icon">check<wbr>Lock</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#checkmodified" class="tsd-kind-icon">check<wbr>Modified</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#deletelink" class="tsd-kind-icon">delete<wbr>Link</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getfoldertypeviewlist" class="tsd-kind-icon">get<wbr>Folder<wbr>Type<wbr>View<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getreferencelist" class="tsd-kind-icon">get<wbr>Reference<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getreferencelistcontent" class="tsd-kind-icon">get<wbr>Reference<wbr>List<wbr>Content</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getviewlist" class="tsd-kind-icon">get<wbr>View<wbr>List</a></li>
@@ -220,7 +221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:146</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:150</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,6 +258,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getfoldertypeviewlist" class="tsd-anchor"></a>
+					<h3>get<wbr>Folder<wbr>Type<wbr>View<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Folder<wbr>Type<wbr>View<wbr>List<span class="tsd-signature-symbol">(</span>folderTypeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:114</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>HTTP: /Card/GetFolderTypeViewList</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderTypeId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getreferencelist" class="tsd-anchor"></a>
 					<h3>get<wbr>Reference<wbr>List</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -266,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:130</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:138</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:142</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:114</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:118</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -466,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:118</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,7 +529,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:122</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:126</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -546,6 +578,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#deletelink" class="tsd-kind-icon">delete<wbr>Link</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getfoldertypeviewlist" class="tsd-kind-icon">get<wbr>Folder<wbr>Type<wbr>View<wbr>List</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.icardcontroller.html#getreferencelist" class="tsd-kind-icon">get<wbr>Reference<wbr>List</a>

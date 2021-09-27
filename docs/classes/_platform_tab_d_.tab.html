@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tab | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>Tab | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -99,6 +99,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_platform_tab_d_.tab.html#createimpl" class="tsd-kind-icon">create<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_platform_tab_d_.tab.html#createparams" class="tsd-kind-icon">create<wbr>Params</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_tab_d_.tab.html#loadalltabpages" class="tsd-kind-icon">load<wbr>All<wbr>Tab<wbr>Pages</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_tab_d_.tab.html#loadtabpage" class="tsd-kind-icon">load<wbr>Tab<wbr>Page</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_tab_d_.tab.html#opentabpage" class="tsd-kind-icon">open<wbr>Tab<wbr>Page</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_tab_d_.tab.html#settabpageheader" class="tsd-kind-icon">set<wbr>Tab<wbr>Page<wbr>Header</a></li>
@@ -202,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/Tab.d.ts:65</li>
+									<li>Defined in Platform/Tab.d.ts:69</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,10 +240,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadalltabpages" class="tsd-anchor"></a>
+					<h3>load<wbr>All<wbr>Tab<wbr>Pages</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>All<wbr>Tab<wbr>Pages<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/Tab.d.ts:62</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Загрузить содержимое всех незагруженных вкладок</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="loadtabpage" class="tsd-anchor"></a>
 					<h3>load<wbr>Tab<wbr>Page</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Tab<wbr>Page<span class="tsd-signature-symbol">(</span>tab<span class="tsd-signature-symbol">: </span><a href="_platform_tabpageinfo_d_.tabpageinfo.html" class="tsd-signature-type">TabPageInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_platform_tabpageinfo_d_.tabpageinfo.html" class="tsd-signature-type">TabPageInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Tab<wbr>Page<span class="tsd-signature-symbol">(</span>tab<span class="tsd-signature-symbol">: </span><a href="_platform_tabpageinfo_d_.tabpageinfo.html" class="tsd-signature-type">TabPageInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -265,7 +288,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_platform_tabpageinfo_d_.tabpageinfo.html" class="tsd-signature-type">TabPageInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -279,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/Tab.d.ts:63</li>
+									<li>Defined in Platform/Tab.d.ts:67</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,6 +391,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_platform_tab_d_.tab.html#createparams" class="tsd-kind-icon">create<wbr>Params</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_tab_d_.tab.html#loadalltabpages" class="tsd-kind-icon">load<wbr>All<wbr>Tab<wbr>Pages</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_tab_d_.tab.html#loadtabpage" class="tsd-kind-icon">load<wbr>Tab<wbr>Page</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IMobileMenuBarProps | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>IMobileMenuBarProps | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -85,8 +85,11 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#currenttarget" class="tsd-kind-icon">current<wbr>Target</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#expanded" class="tsd-kind-icon">expanded</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#handleoutsideclick" class="tsd-kind-icon">handle<wbr>Outside<wbr>Click</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#onchangeorientation" class="tsd-kind-icon">on<wbr>Change<wbr>Orientation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#onhidemenu" class="tsd-kind-icon">on<wbr>Hide<wbr>Menu</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,6 +108,16 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currenttarget" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>Target</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/Menu/MobileMenuBar.d.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="expanded" class="tsd-anchor"></a>
 					<h3>expanded</h3>
 					<div class="tsd-signature tsd-kind-icon">expanded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
@@ -115,12 +128,47 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="handleoutsideclick" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> handle<wbr>Outside<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Outside<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/Menu/MobileMenuBar.d.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="onchangeorientation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Change<wbr>Orientation</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Change<wbr>Orientation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Helpers/Menu/MobileMenuBar.d.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onhidemenu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Hide<wbr>Menu</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Hide<wbr>Menu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Helpers/Menu/MobileMenuBar.d.ts:9</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -160,10 +208,19 @@
 								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#children" class="tsd-kind-icon">children</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#currenttarget" class="tsd-kind-icon">current<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#expanded" class="tsd-kind-icon">expanded</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#handleoutsideclick" class="tsd-kind-icon">handle<wbr>Outside<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#onchangeorientation" class="tsd-kind-icon">on<wbr>Change<wbr>Orientation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_menu_mobilemenubar_d_.imobilemenubarprops.html#onhidemenu" class="tsd-kind-icon">on<wbr>Hide<wbr>Menu</a>
 							</li>
 						</ul>
 					</li>

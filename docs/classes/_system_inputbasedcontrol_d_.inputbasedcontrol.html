@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InputBasedControl | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>InputBasedControl | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -126,6 +126,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-set-signature tsd-parent-kind-class tsd-is-protected"><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#defaultvalue" class="tsd-kind-icon">default<wbr>Value</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#editinplaceinstance" class="tsd-kind-icon">edit<wbr>InPlace<wbr>Instance</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#editpopover" class="tsd-kind-icon">edit<wbr>Popover</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#primaryinstance" class="tsd-kind-icon">primary<wbr>Instance</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
@@ -163,7 +164,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:89</li>
+									<li>Defined in System/InputBasedControl.d.ts:94</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -185,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Accepting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/InputBasedControl.d.ts:89</li>
+							<li>Defined in System/InputBasedControl.d.ts:94</li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:94</li>
+									<li>Defined in System/InputBasedControl.d.ts:99</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,19 +232,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:140</li>
+									<li>Defined in System/InputBasedControl.d.ts:153</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Для контрола в режиме редактирования по месту возвращает экземпляр контрола, находящегося в модальном окне.</p>
-								</div>
-								<p>При открытии окна редактирования по месту контрол создает свою копию в модальном окне, так что пользователь взаимодейсвует
-									именно с ней. При помощи данного свойства имея ссылку на основной контрол, можно получить ссылку на экземпляр данной копии.
-									Если контрол не редактируется в режиме &quot;по месту&quot;, то свойство вернет null. Если обратится к данному свойству из экземпляра копии,
-								то будет возвращена ссылка на текущий экземпляр.</p>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="editpopover" class="tsd-anchor"></a>
+					<h3>edit<wbr>Popover</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> editPopover<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_helpers_popoverhelpers_editpopover_editpopover_d_.editpopover.html" class="tsd-signature-type">EditPopover</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/InputBasedControl.d.ts:155</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_helpers_popoverhelpers_editpopover_editpopover_d_.editpopover.html" class="tsd-signature-type">EditPopover</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -257,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:131</li>
+									<li>Defined in System/InputBasedControl.d.ts:143</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,6 +288,10 @@
 								<p>При открытии окна редактирования по месту контрол создает свою копию в модальном окне, так что пользователь взаимодейсвует
 									именно с ней. При помощи данного свойства имея ссылку на данную копию (например, из свойства sender события) можно обратится к основному
 								контролу. Если контрол не редактируется в режиме &quot;по месту&quot;, то свойство вернет ссылку на сам контрол.</p>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
@@ -283,26 +308,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:122</li>
+									<li>Defined in System/InputBasedControl.d.ts:132</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Тоже что и <a href="_system_inputbasedcontrol_d_.inputbasedcontrolparams.html#value">InputBasedControlParams.value</a></p>
+									<p>Тоже что и <a href="_system_inputbasedcontrol_d_.inputbasedcontrolparams.html#value">InputBasedControlParams.value</a> @covered</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ModelT</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:123</li>
+									<li>Defined in System/InputBasedControl.d.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Тоже что и <a href="_system_inputbasedcontrol_d_.inputbasedcontrolparams.html#value">InputBasedControlParams.value</a></p>
+									<p>Тоже что и <a href="_system_inputbasedcontrol_d_.inputbasedcontrolparams.html#value">InputBasedControlParams.value</a> @covered</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -327,13 +360,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:114</li>
+									<li>Defined in System/InputBasedControl.d.ts:123</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Закрывает диалоговое окно редактирования значения, применяя правки.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -349,13 +386,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:100</li>
+									<li>Defined in System/InputBasedControl.d.ts:106</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Проверяет возможность отображения диалогового окна редактирования.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>true - если операция редактирования доступна и элемент управления находится в режиме редактирования &quot;По месту&quot;; иначе - false.</p>
@@ -372,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:144</li>
+									<li>Defined in System/InputBasedControl.d.ts:159</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,9 +436,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:148</li>
+									<li>Defined in System/InputBasedControl.d.ts:164</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -418,13 +465,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:164</li>
+									<li>Defined in System/InputBasedControl.d.ts:180</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Возвращает модель данных, которая будет передана на сервер при сохранении значения контрола.
-									Сами данные получаются путем вызова <a href="_backoffice_address_d_.address.html#getbindings">getBindings</a>.</p>
+									Сами данные получаются путем вызова <a href="_backoffice_address_d_.address.html#getbindings">getBindings</a>. @covered</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IBindingsWriteRequest[]</span></h4>
@@ -441,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:157</li>
+									<li>Defined in System/InputBasedControl.d.ts:173</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,13 +518,13 @@
 					<a name="getservices" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Services</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Services<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_layoutservices_d_.html#_layoutinfo" class="tsd-signature-type">$LayoutInfo</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system__labelwidth_d_.html#_labelwidth" class="tsd-signature-type">$LabelWidth</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Services<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_layoutservices_d_.html#_layoutinfo" class="tsd-signature-type">$LayoutInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system__labelwidth_d_.html#_labelwidth" class="tsd-signature-type">$LabelWidth</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:92</li>
+									<li>Defined in System/InputBasedControl.d.ts:97</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -485,7 +532,7 @@
 									<p>При переопределении в производных классах должен возвращать объект, содержащий соответствующие сервисы.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_system_layoutservices_d_.html#_layoutinfo" class="tsd-signature-type">$LayoutInfo</a>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system_layoutservices_d_.html#_layoutinfo" class="tsd-signature-type">$LayoutInfo</a><span class="tsd-signature-symbol">&gt;</span>
 								<span class="tsd-signature-symbol"> | </span>
 								<a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_system__labelwidth_d_.html#_labelwidth" class="tsd-signature-type">$LabelWidth</a><span class="tsd-signature-symbol">&gt;</span>
 							</h4>
@@ -502,13 +549,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:119</li>
+									<li>Defined in System/InputBasedControl.d.ts:129</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Проверяет наличие значения у элемента управления.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>true - если значение элемента управления установлено, иначе - false.</p>
@@ -525,13 +576,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:110</li>
+									<li>Defined in System/InputBasedControl.d.ts:118</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Закрывает диалоговое окно редактирования значения, отменяя правки.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -547,7 +602,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:147</li>
+									<li>Defined in System/InputBasedControl.d.ts:162</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,7 +634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:150</li>
+									<li>Defined in System/InputBasedControl.d.ts:166</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:106</li>
+									<li>Defined in System/InputBasedControl.d.ts:113</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -609,6 +664,10 @@
 									<p>Открывает диалоговое окно редактирования значения.</p>
 								</div>
 								<p>Внимание, в связи с изменениями в React 16, в Web-клиент начиная с версии 10 данный метод асинхронный.</p>
+								<dl class="tsd-comment-tags">
+									<dt>covered</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html" class="tsd-signature-type">InputBasedControl</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ModelT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -624,12 +683,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/InputBasedControl.d.ts:142</li>
+									<li>Defined in System/InputBasedControl.d.ts:157</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Запускает валидацию элемента управления.</p>
+									<p>Запускает валидацию элемента управления. @covered</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -670,6 +729,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#editinplaceinstance" class="tsd-kind-icon">edit<wbr>InPlace<wbr>Instance</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#editpopover" class="tsd-kind-icon">edit<wbr>Popover</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_system_inputbasedcontrol_d_.inputbasedcontrol.html#primaryinstance" class="tsd-kind-icon">primary<wbr>Instance</a>

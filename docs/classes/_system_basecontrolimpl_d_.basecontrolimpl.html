@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BaseControlImpl | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>BaseControlImpl | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -118,6 +118,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#attachcontainer" class="tsd-kind-icon">attach<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcontainerelem" class="tsd-kind-icon">get<wbr>Container<wbr>Elem</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#state" class="tsd-kind-icon">state</a></li>
 							</ul>
 						</section>
@@ -132,12 +134,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#attachcontainer" class="tsd-kind-icon">attach<wbr>Container</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#componentwillunmount" class="tsd-kind-icon">component<wbr>Will<wbr>Unmount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#forceupdate" class="tsd-kind-icon">force<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#forceupdateasync" class="tsd-kind-icon">force<wbr>Update<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcontainerelem" class="tsd-kind-icon">get<wbr>Container<wbr>Elem</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcssclass" class="tsd-kind-icon">get<wbr>Css<wbr>Class</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcssstyle" class="tsd-kind-icon">get<wbr>Css<wbr>Style</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getdatacontrolcomponentname" class="tsd-kind-icon">get<wbr>Data<wbr>Control<wbr>Component<wbr>Name</a></li>
@@ -212,6 +212,62 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="attachcontainer" class="tsd-anchor"></a>
+					<h3>attach<wbr>Container</h3>
+					<div class="tsd-signature tsd-kind-icon">attach<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/BaseControlImpl.d.ts:40</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>elem: <span class="tsd-signature-type">HTMLElement</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="getcontainerelem" class="tsd-anchor"></a>
+					<h3>get<wbr>Container<wbr>Elem</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Container<wbr>Elem<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/BaseControlImpl.d.ts:41</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
@@ -326,29 +382,6 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="attachcontainer" class="tsd-anchor"></a>
-					<h3>attach<wbr>Container</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">attach<wbr>Container<span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in System/BaseControlImpl.d.ts:40</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>elem: <span class="tsd-signature-type">HTMLElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="componentdidmount" class="tsd-anchor"></a>
 					<h3>component<wbr>Did<wbr>Mount</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -441,23 +474,6 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getcontainerelem" class="tsd-anchor"></a>
-					<h3>get<wbr>Container<wbr>Elem</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Container<wbr>Elem<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in System/BaseControlImpl.d.ts:41</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1078,6 +1094,12 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#attachcontainer" class="tsd-kind-icon">attach<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcontainerelem" class="tsd-kind-icon">get<wbr>Container<wbr>Elem</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-protected">
@@ -1090,9 +1112,6 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#attachcontainer" class="tsd-kind-icon">attach<wbr>Container</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1103,9 +1122,6 @@ this.state.inPlaceEditOpened = SimpleEvent.<span class="hljs-keyword">Create</sp
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#forceupdateasync" class="tsd-kind-icon">force<wbr>Update<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcontainerelem" class="tsd-kind-icon">get<wbr>Container<wbr>Elem</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_system_basecontrolimpl_d_.basecontrolimpl.html#getcssclass" class="tsd-kind-icon">get<wbr>Css<wbr>Class</a>

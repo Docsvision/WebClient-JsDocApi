@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Router | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>Router | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -97,8 +97,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_router_d_.router.html#locationhashchanged" class="tsd-kind-icon">location<wbr>Hash<wbr>Changed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_router_d_.router.html#openurl" class="tsd-kind-icon">open<wbr>Url</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_router_d_.router.html#preparewindowforopenurl" class="tsd-kind-icon">prepare<wbr>Window<wbr>For<wbr>Open<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_router_d_.router.html#registerroutes" class="tsd-kind-icon">register<wbr>Routes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_system_router_d_.router.html#currentroutestorekey" class="tsd-kind-icon">Current<wbr>Route<wbr>Store<wbr>Key</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_system_router_d_.router.html#maincontentelementid" class="tsd-kind-icon">Main<wbr>Content<wbr>Element<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_system_router_d_.router.html#routerinitialization" class="tsd-kind-icon">Router<wbr>Initialization</a></li>
@@ -134,11 +136,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_system_router_d_.router.html#gethandlers" class="tsd-kind-icon">get<wbr>Handlers</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#getlastrouteprocessingid" class="tsd-kind-icon">get<wbr>Last<wbr>Route<wbr>Processing<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#getlocationfromroute" class="tsd-kind-icon">get<wbr>Location<wbr>From<wbr>Route</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#getnextroute" class="tsd-kind-icon">get<wbr>Next<wbr>Route</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#goto" class="tsd-kind-icon">go<wbr>To</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#gotodashboard" class="tsd-kind-icon">go<wbr>ToDashboard</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#gotoroute" class="tsd-kind-icon">go<wbr>ToRoute</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#initialize" class="tsd-kind-icon">initialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#refresh" class="tsd-kind-icon">refresh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#registerroutefamily" class="tsd-kind-icon">register<wbr>Route<wbr>Family</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_system_router_d_.router.html#removehandler" class="tsd-kind-icon">remove<wbr>Handler</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_system_router_d_.router.html#replaceurlwithoutnotification" class="tsd-kind-icon">replace<wbr>Url<wbr>Without<wbr>Notification</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_system_router_d_.router.html#setcurrentroute" class="tsd-kind-icon">set<wbr>Current<wbr>Route</a></li>
@@ -154,19 +156,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Router<span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><a href="../modules/_legacy__searchpanel_d_.html#_searchpanel" class="tsd-signature-type">$SearchPanel</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_enablerouterlogging" class="tsd-signature-type">$EnableRouterLogging</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__layoutmanager_d_.html#_layoutmanager" class="tsd-signature-type">$LayoutManager</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_system_router_d_.router.html" class="tsd-signature-type">Router</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Router<span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><a href="../modules/_legacy__searchpanel_d_.html#_searchpanel" class="tsd-signature-type">$SearchPanel</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_enablerouterlogging" class="tsd-signature-type">$EnableRouterLogging</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__layoutmanager_d_.html#_layoutmanager" class="tsd-signature-type">$LayoutManager</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$RoutingService</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__companylogo_d_.html#_companylogo" class="tsd-signature-type">$CompanyLogo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_system_router_d_.router.html" class="tsd-signature-type">Router</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:43</li>
+									<li>Defined in System/Router.d.ts:50</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>services: <a href="../modules/_legacy__searchpanel_d_.html#_searchpanel" class="tsd-signature-type">$SearchPanel</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_enablerouterlogging" class="tsd-signature-type">$EnableRouterLogging</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__layoutmanager_d_.html#_layoutmanager" class="tsd-signature-type">$LayoutManager</a></h5>
+									<h5>services: <a href="../modules/_legacy__searchpanel_d_.html#_searchpanel" class="tsd-signature-type">$SearchPanel</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_enablerouterlogging" class="tsd-signature-type">$EnableRouterLogging</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__layoutmanager_d_.html#_layoutmanager" class="tsd-signature-type">$LayoutManager</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$RoutingService</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__companylogo_d_.html#_companylogo" class="tsd-signature-type">$CompanyLogo</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_system_router_d_.router.html" class="tsd-signature-type">Router</a></h4>
@@ -177,12 +179,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="locationhashchanged" class="tsd-anchor"></a>
+					<h3>location<wbr>Hash<wbr>Changed</h3>
+					<div class="tsd-signature tsd-kind-icon">location<wbr>Hash<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/Router.d.ts:140</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>e: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="openurl" class="tsd-anchor"></a>
 					<h3>open<wbr>Url</h3>
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/Router.d.ts:86</li>
+							<li>Defined in System/Router.d.ts:95</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">prepare<wbr>Window<wbr>For<wbr>Open<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/Router.d.ts:81</li>
+							<li>Defined in System/Router.d.ts:90</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,13 +288,44 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="registerroutes" class="tsd-anchor"></a>
+					<h3>register<wbr>Routes</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Routes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/Router.d.ts:139</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>mapper<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system_iroutetypemapper_d_.iroutetypemapper.html" class="tsd-signature-type">IRouteTypeMapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>mapper: <a href="../interfaces/_system_iroutetypemapper_d_.iroutetypemapper.html" class="tsd-signature-type">IRouteTypeMapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="currentroutestorekey" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Current<wbr>Route<wbr>Store<wbr>Key</h3>
 					<div class="tsd-signature tsd-kind-icon">Current<wbr>Route<wbr>Store<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/Router.d.ts:42</li>
+							<li>Defined in System/Router.d.ts:49</li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +335,7 @@
 					<div class="tsd-signature tsd-kind-icon">Main<wbr>Content<wbr>Element<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/Router.d.ts:25</li>
+							<li>Defined in System/Router.d.ts:32</li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +345,7 @@
 					<div class="tsd-signature tsd-kind-icon">Router<wbr>Initialization<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_system_ibasicevent_d_.ibasicevent.html" class="tsd-signature-type">IBasicEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/Router.d.ts:43</li>
+							<li>Defined in System/Router.d.ts:50</li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:62</li>
+									<li>Defined in System/Router.d.ts:71</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +385,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:47</li>
+									<li>Defined in System/Router.d.ts:56</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:110</li>
+									<li>Defined in System/Router.d.ts:115</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -393,7 +457,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:114</li>
+									<li>Defined in System/Router.d.ts:119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,7 +491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:88</li>
+									<li>Defined in System/Router.d.ts:97</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +513,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:125</li>
+									<li>Defined in System/Router.d.ts:130</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +542,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:98</li>
+									<li>Defined in System/Router.d.ts:103</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:102</li>
+									<li>Defined in System/Router.d.ts:107</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,7 +612,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:100</li>
+									<li>Defined in System/Router.d.ts:105</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -607,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:108</li>
+									<li>Defined in System/Router.d.ts:113</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,7 +699,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:112</li>
+									<li>Defined in System/Router.d.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -681,7 +745,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:116</li>
+									<li>Defined in System/Router.d.ts:121</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -715,7 +779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:104</li>
+									<li>Defined in System/Router.d.ts:109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -749,7 +813,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:106</li>
+									<li>Defined in System/Router.d.ts:111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -783,7 +847,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:127</li>
+									<li>Defined in System/Router.d.ts:132</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -811,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:50</li>
+									<li>Defined in System/Router.d.ts:59</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -852,7 +916,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:56</li>
+									<li>Defined in System/Router.d.ts:65</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -881,7 +945,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:45</li>
+									<li>Defined in System/Router.d.ts:54</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -904,7 +968,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:58</li>
+									<li>Defined in System/Router.d.ts:67</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -933,7 +997,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:54</li>
+									<li>Defined in System/Router.d.ts:63</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -968,7 +1032,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:48</li>
+									<li>Defined in System/Router.d.ts:57</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -985,7 +1049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:90</li>
+									<li>Defined in System/Router.d.ts:99</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1004,6 +1068,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getnextroute" class="tsd-anchor"></a>
+					<h3>get<wbr>Next<wbr>Route</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Route<span class="tsd-signature-symbol">(</span>subtype<span class="tsd-signature-symbol">: </span><a href="../enums/_system_routefamilysubtype_d_.routefamilysubtype.html" class="tsd-signature-type">RouteFamilySubtype</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/Router.d.ts:53</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>subtype: <a href="../enums/_system_routefamilysubtype_d_.routefamilysubtype.html" class="tsd-signature-type">RouteFamilySubtype</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="goto" class="tsd-anchor"></a>
 					<h3>go<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1013,7 +1100,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:77</li>
+									<li>Defined in System/Router.d.ts:86</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1041,65 +1128,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="gotodashboard" class="tsd-anchor"></a>
-					<h3>go<wbr>ToDashboard</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">go<wbr>ToDashboard<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in System/Router.d.ts:94</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd><p>Используйте <a href="_platform_dashboardroutehelpers_d_.dashboardroutehelpers.html#gotodashboard">DashboardRouteHelpers.goToDashboard</a></p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>context: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="gotoroute" class="tsd-anchor"></a>
-					<h3>go<wbr>ToRoute</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">go<wbr>ToRoute<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in System/Router.d.ts:92</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>context: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="initialize" class="tsd-anchor"></a>
 					<h3>initialize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1109,7 +1137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:135</li>
+									<li>Defined in System/Router.d.ts:142</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1132,7 +1160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:96</li>
+									<li>Defined in System/Router.d.ts:101</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1150,6 +1178,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="registerroutefamily" class="tsd-anchor"></a>
+					<h3>register<wbr>Route<wbr>Family</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Route<wbr>Family<span class="tsd-signature-symbol">(</span>routeFamily<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system_iroutefamily_d_.iroutefamily.html" class="tsd-signature-type">IRouteFamily</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/Router.d.ts:52</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>routeFamily: <a href="../interfaces/_system_iroutefamily_d_.iroutefamily.html" class="tsd-signature-type">IRouteFamily</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="removehandler" class="tsd-anchor"></a>
 					<h3>remove<wbr>Handler</h3>
@@ -1160,7 +1211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:52</li>
+									<li>Defined in System/Router.d.ts:61</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1198,7 +1249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:133</li>
+									<li>Defined in System/Router.d.ts:138</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1226,7 +1277,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:60</li>
+									<li>Defined in System/Router.d.ts:69</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1261,7 +1312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/Router.d.ts:123</li>
+									<li>Defined in System/Router.d.ts:128</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1294,10 +1345,16 @@
 								<a href="_system_router_d_.router.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_system_router_d_.router.html#locationhashchanged" class="tsd-kind-icon">location<wbr>Hash<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_system_router_d_.router.html#openurl" class="tsd-kind-icon">open<wbr>Url</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_system_router_d_.router.html#preparewindowforopenurl" class="tsd-kind-icon">prepare<wbr>Window<wbr>For<wbr>Open<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_system_router_d_.router.html#registerroutes" class="tsd-kind-icon">register<wbr>Routes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_system_router_d_.router.html#currentroutestorekey" class="tsd-kind-icon">Current<wbr>Route<wbr>Store<wbr>Key</a>
@@ -1375,19 +1432,19 @@
 								<a href="_system_router_d_.router.html#getlocationfromroute" class="tsd-kind-icon">get<wbr>Location<wbr>From<wbr>Route</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_system_router_d_.router.html#getnextroute" class="tsd-kind-icon">get<wbr>Next<wbr>Route</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_router_d_.router.html#goto" class="tsd-kind-icon">go<wbr>To</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_system_router_d_.router.html#gotodashboard" class="tsd-kind-icon">go<wbr>ToDashboard</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_system_router_d_.router.html#gotoroute" class="tsd-kind-icon">go<wbr>ToRoute</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_router_d_.router.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_system_router_d_.router.html#refresh" class="tsd-kind-icon">refresh</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_system_router_d_.router.html#registerroutefamily" class="tsd-kind-icon">register<wbr>Route<wbr>Family</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="_system_router_d_.router.html#removehandler" class="tsd-kind-icon">remove<wbr>Handler</a>
@@ -1405,8 +1462,14 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_system_router_d_.routehandlermapitem.html" class="tsd-kind-icon">Route<wbr>Handler<wbr>Map<wbr>Item</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_system_router_d_.html#sammyhelper" class="tsd-kind-icon">Sammy<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_system_router_d_.html#canceled_error" class="tsd-kind-icon">CANCELED_<wbr>ERROR</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/_system_router_d_.html#sammyhelper-1" class="tsd-kind-icon">Sammy<wbr>Helper</a>

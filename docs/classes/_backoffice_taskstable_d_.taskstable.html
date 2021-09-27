@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TasksTable | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>TasksTable | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -95,11 +95,25 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#collapseall" class="tsd-kind-icon">collapse<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_taskstable_d_.taskstable.html#createimpl" class="tsd-kind-icon">create<wbr>Impl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_taskstable_d_.taskstable.html#createparams" class="tsd-kind-icon">create<wbr>Params</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#deletecard" class="tsd-kind-icon">delete<wbr>Card</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#expandall" class="tsd-kind-icon">expand<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#loadcurrenttasktree" class="tsd-kind-icon">load<wbr>Current<wbr>Task<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#loadfulltree" class="tsd-kind-icon">load<wbr>Full<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#opendialog" class="tsd-kind-icon">open<wbr>Dialog</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#openhelpbox" class="tsd-kind-icon">open<wbr>Help<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#refresh" class="tsd-kind-icon">refresh</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#rendercontrol" class="tsd-kind-icon">render<wbr>Control</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#resetfilter" class="tsd-kind-icon">reset<wbr>Filter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#showbyperformers" class="tsd-kind-icon">show<wbr>ByPerformers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#showfinished" class="tsd-kind-icon">show<wbr>Finished</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#showoverdue" class="tsd-kind-icon">show<wbr>Overdue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#showunfinished" class="tsd-kind-icon">show<wbr>Unfinished</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_taskstable_d_.taskstable.html#togglerow" class="tsd-kind-icon">toggle<wbr>Row</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Css<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/TasksTable.d.ts:85</li>
+							<li>Defined in BackOffice/TasksTable.d.ts:90</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -148,9 +162,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:89</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:94</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="collapseall" class="tsd-anchor"></a>
+					<h3>collapse<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">collapse<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:103</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Разворачивает все задания. @covered</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -165,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:90</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:95</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -182,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:82</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:87</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -199,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:84</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_system_controlimpl_d_.controlimpl.html" class="tsd-signature-type">ControlImpl</a></h4>
@@ -216,10 +252,176 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:83</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:88</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_backoffice_taskstable_d_.taskstableparams.html" class="tsd-signature-type">TasksTableParams</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deletecard" class="tsd-anchor"></a>
+					<h3>delete<wbr>Card</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Card<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:123</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Удаляет дочернюю карточку из системы.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expandall" class="tsd-anchor"></a>
+					<h3>expand<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Разворачивает все задания. @covered</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadcurrenttasktree" class="tsd-anchor"></a>
+					<h3>load<wbr>Current<wbr>Task<wbr>Tree</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Current<wbr>Task<wbr>Tree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:101</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает полное дерево заданий. @covered</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadfulltree" class="tsd-anchor"></a>
+					<h3>load<wbr>Full<wbr>Tree</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Full<wbr>Tree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:99</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает полное дерево заданий. @covered</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="opendialog" class="tsd-anchor"></a>
+					<h3>open<wbr>Dialog</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Dialog<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Показывает диалог с таблицией. Актуально для режима отображения в виде кнопки.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="openhelpbox" class="tsd-anchor"></a>
+					<h3>open<wbr>Help<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Help<wbr>Box<span class="tsd-signature-symbol">(</span>cardId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:119</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Открывает справочное окно для карточки</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cardId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="refresh" class="tsd-anchor"></a>
+					<h3>refresh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:107</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Перезагружает данные таблицы.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,10 +435,157 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/TasksTable.d.ts:91</li>
+									<li>Defined in BackOffice/TasksTable.d.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resetfilter" class="tsd-anchor"></a>
+					<h3>reset<wbr>Filter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Filter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:117</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Сбрасывает фильтр.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showbyperformers" class="tsd-anchor"></a>
+					<h3>show<wbr>ByPerformers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>ByPerformers<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:115</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Применяет фильтр по имени сотрудника</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showfinished" class="tsd-anchor"></a>
+					<h3>show<wbr>Finished</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Finished<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:109</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Применяет фильтр &quot;Завершенные&quot;</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showoverdue" class="tsd-anchor"></a>
+					<h3>show<wbr>Overdue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Overdue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:113</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Применяет фильтр &quot;Просроченные&quot;</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showunfinished" class="tsd-anchor"></a>
+					<h3>show<wbr>Unfinished</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Unfinished<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:111</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Применяет фильтр &quot;Незавершенные&quot;</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="togglerow" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Row<span class="tsd-signature-symbol">(</span>visibleIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, expand<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/TasksTable.d.ts:121</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Сворачивает или разворачивает список дочерних карточек.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>visibleIndex: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> expand: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -264,6 +613,9 @@
 								<a href="_backoffice_taskstable_d_.taskstable.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#collapseall" class="tsd-kind-icon">collapse<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_backoffice_taskstable_d_.taskstable.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -276,7 +628,46 @@
 								<a href="_backoffice_taskstable_d_.taskstable.html#createparams" class="tsd-kind-icon">create<wbr>Params</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#deletecard" class="tsd-kind-icon">delete<wbr>Card</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#expandall" class="tsd-kind-icon">expand<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#loadcurrenttasktree" class="tsd-kind-icon">load<wbr>Current<wbr>Task<wbr>Tree</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#loadfulltree" class="tsd-kind-icon">load<wbr>Full<wbr>Tree</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#opendialog" class="tsd-kind-icon">open<wbr>Dialog</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#openhelpbox" class="tsd-kind-icon">open<wbr>Help<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#refresh" class="tsd-kind-icon">refresh</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_backoffice_taskstable_d_.taskstable.html#rendercontrol" class="tsd-kind-icon">render<wbr>Control</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#resetfilter" class="tsd-kind-icon">reset<wbr>Filter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#showbyperformers" class="tsd-kind-icon">show<wbr>ByPerformers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#showfinished" class="tsd-kind-icon">show<wbr>Finished</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#showoverdue" class="tsd-kind-icon">show<wbr>Overdue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#showunfinished" class="tsd-kind-icon">show<wbr>Unfinished</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_taskstable_d_.taskstable.html#togglerow" class="tsd-kind-icon">toggle<wbr>Row</a>
 							</li>
 						</ul>
 					</li>

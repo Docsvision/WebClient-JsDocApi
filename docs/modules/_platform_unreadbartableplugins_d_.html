@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;Platform/UnreadBarTablePlugins.d&quot; | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>&quot;Platform/UnreadBarTablePlugins.d&quot; | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -65,10 +65,13 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbarfeature" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Feature</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbarplugins" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Plugins</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbarserviceprovider" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Service<wbr>Provider</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbartablecellplugin" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Cell<wbr>Plugin</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbartableheadercellplugin" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowplugin" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Plugin</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowdecorator" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Decorator</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowmounteffect" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Mount<wbr>Effect</a></li>
 							</ul>
 						</section>
 					</div>
@@ -77,50 +80,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="unreadbarserviceprovider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Service<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Service<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="unreadbarfeature" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Feature</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Feature<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"UnreadBarFeature"</span><span class="tsd-signature-symbol"> = &quot;UnreadBarFeature&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:7</li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ICompositionPlugin</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>services: <a href="_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ICompositionPlugin</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="unreadbartablecellplugin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Cell<wbr>Plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Cell<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICompositionPlugin</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ICellData</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="unreadbarplugins" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Plugins</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Plugins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITablePlugins</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:6</li>
+							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:13</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="unreadbartableheadercellplugin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICompositionPlugin</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IColumnData</span><span class="tsd-signature-symbol">, </span><a href="_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="unreadbarserviceprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Service<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Service<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TablePlugins.ServiceProvider</span><span class="tsd-signature-symbol">&lt;</span><a href="_platform__unreadbar_d_.html#_unreadbar" class="tsd-signature-type">$UnreadBar</a><span class="tsd-signature-symbol"> | </span><a href="_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$Domain</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:9</li>
@@ -128,12 +110,42 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="unreadbartablerowplugin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICompositionPlugin</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRowData</span><span class="tsd-signature-symbol">, </span><a href="_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="unreadbartablecellplugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Cell<wbr>Plugin</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Cell<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TablePlugins.Cell.Component</span><span class="tsd-signature-symbol">&lt;</span><a href="_platform__unreadbar_d_.html#_unreadbar" class="tsd-signature-type">$UnreadBar</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="unreadbartableheadercellplugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TablePlugins.HeaderCell.Component</span><span class="tsd-signature-symbol">&lt;</span><a href="_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="unreadbartablerowdecorator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Decorator</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Decorator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TablePlugins.Row.Decorator</span><span class="tsd-signature-symbol">&lt;</span><a href="_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol"> | </span><a href="_platform__unreadbar_d_.html#_unreadbar" class="tsd-signature-type">$UnreadBar</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:11</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="unreadbartablerowmounteffect" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Mount<wbr>Effect</h3>
+					<div class="tsd-signature tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Mount<wbr>Effect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TablePlugins.Row.MountEffect</span><span class="tsd-signature-symbol">&lt;</span><a href="_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol"> | </span><a href="_platform__unreadbar_d_.html#_unreadbar" class="tsd-signature-type">$UnreadBar</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/UnreadBarTablePlugins.d.ts:10</li>
 						</ul>
 					</aside>
 				</section>
@@ -150,6 +162,12 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_platform_unreadbartableplugins_d_.html#unreadbarfeature" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Feature</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_platform_unreadbartableplugins_d_.html#unreadbarplugins" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Plugins</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_platform_unreadbartableplugins_d_.html#unreadbarserviceprovider" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Service<wbr>Provider</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
@@ -159,7 +177,10 @@
 						<a href="_platform_unreadbartableplugins_d_.html#unreadbartableheadercellplugin" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Header<wbr>Cell<wbr>Plugin</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowplugin" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Plugin</a>
+						<a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowdecorator" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Decorator</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_platform_unreadbartableplugins_d_.html#unreadbartablerowmounteffect" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Table<wbr>Row<wbr>Mount<wbr>Effect</a>
 					</li>
 				</ul>
 			</nav>

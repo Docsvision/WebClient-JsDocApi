@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FolderDataLoadingService | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>FolderDataLoadingService | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -86,6 +86,14 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#currentdata" class="tsd-kind-icon">current<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#pagesize" class="tsd-kind-icon">page<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#setcurrentdata" class="tsd-kind-icon">set<wbr>Current<wbr>Data</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#addplugin" class="tsd-kind-icon">add<wbr>Plugin</a></li>
@@ -94,6 +102,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#loaddata" class="tsd-kind-icon">load<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#removeplugin" class="tsd-kind-icon">remove<wbr>Plugin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#setdefaultdataloader" class="tsd-kind-icon">set<wbr>Default<wbr>Data<wbr>Loader</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#sortby" class="tsd-kind-icon">sort<wbr>By</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#updateusersettings" class="tsd-kind-icon">update<wbr>User<wbr>Settings</a></li>
 							</ul>
 						</section>
@@ -106,13 +115,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Folder<wbr>Data<wbr>Loading<wbr>Service<span class="tsd-signature-symbol">(</span>defaultDataLoader<span class="tsd-signature-symbol">: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a>, services<span class="tsd-signature-symbol">: </span><a href="../modules/_standardservices_d_.html#_devicetype" class="tsd-signature-type">$DeviceType</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_layoutservices_d_.html#_currentlocation" class="tsd-signature-type">$CurrentLocation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html" class="tsd-signature-type">FolderDataLoadingService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Folder<wbr>Data<wbr>Loading<wbr>Service<span class="tsd-signature-symbol">(</span>defaultDataLoader<span class="tsd-signature-symbol">: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a>, services<span class="tsd-signature-symbol">: </span><a href="../modules/_platform_folderdataloadingservice_d_.html#_folderdataloadingdependencies" class="tsd-signature-type">$FolderDataLoadingDependencies</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html" class="tsd-signature-type">FolderDataLoadingService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:13</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:19</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -121,12 +130,45 @@
 									<h5>defaultDataLoader: <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a></h5>
 								</li>
 								<li>
-									<h5>services: <a href="../modules/_standardservices_d_.html#_devicetype" class="tsd-signature-type">$DeviceType</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_layoutservices_d_.html#_currentlocation" class="tsd-signature-type">$CurrentLocation</a></h5>
+									<h5>services: <a href="../modules/_platform_folderdataloadingservice_d_.html#_folderdataloadingdependencies" class="tsd-signature-type">$FolderDataLoadingDependencies</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html" class="tsd-signature-type">FolderDataLoadingService</a></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentdata" class="tsd-anchor"></a>
+					<h3>current<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/FolderDataLoadingService.d.ts:25</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pagesize" class="tsd-anchor"></a>
+					<h3>page<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">page<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/FolderDataLoadingService.d.ts:27</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="setcurrentdata" class="tsd-anchor"></a>
+					<h3>set<wbr>Current<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Current<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/FolderDataLoadingService.d.ts:26</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -141,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:16</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:18</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IFolderDataLoadingPlugin[]</span></h4>
@@ -181,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:15</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:21</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -198,28 +240,25 @@
 					<a name="loaddata" class="tsd-anchor"></a>
 					<h3>load<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Data<span class="tsd-signature-symbol">(</span>refresh<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, currentData<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ITableData</span>, customLoader<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Data<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_platform_ifolderloadrequest_d_.ifolderloadrequest.html" class="tsd-signature-type">IFolderLoadRequest</a>, customLoader<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:19</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:28</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> refresh: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currentData: <span class="tsd-signature-type">ITableData</span></h5>
+									<h5>options: <a href="../interfaces/_platform_ifolderloadrequest_d_.ifolderloadrequest.html" class="tsd-signature-type">IFolderLoadRequest</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customLoader: <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ITableData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:17</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -256,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:20</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,23 +309,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateusersettings" class="tsd-anchor"></a>
-					<h3>update<wbr>User<wbr>Settings</h3>
+					<a name="sortby" class="tsd-anchor"></a>
+					<h3>sort<wbr>By</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>User<wbr>Settings<span class="tsd-signature-symbol">(</span>currentData<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ITableData</span>, customLoader<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">sort<wbr>By<span class="tsd-signature-symbol">(</span>columnId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sortDirection<span class="tsd-signature-symbol">: </span><a href="../enums/_generated_docsvision_webclient_models_d_.system.web.ui.webcontrols.sortdirection.html" class="tsd-signature-type">SortDirection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/FolderDataLoadingService.d.ts:21</li>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currentData: <span class="tsd-signature-type">ITableData</span></h5>
+									<h5>columnId: <span class="tsd-signature-type">string</span></h5>
 								</li>
+								<li>
+									<h5>sortDirection: <a href="../enums/_generated_docsvision_webclient_models_d_.system.web.ui.webcontrols.sortdirection.html" class="tsd-signature-type">SortDirection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateusersettings" class="tsd-anchor"></a>
+					<h3>update<wbr>User<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>User<wbr>Settings<span class="tsd-signature-symbol">(</span>customLoader<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Platform/FolderDataLoadingService.d.ts:31</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customLoader: <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a></h5>
 								</li>
@@ -315,6 +377,15 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#currentdata" class="tsd-kind-icon">current<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#pagesize" class="tsd-kind-icon">page<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#setcurrentdata" class="tsd-kind-icon">set<wbr>Current<wbr>Data</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#addplugin" class="tsd-kind-icon">add<wbr>Plugin</a>
 							</li>
@@ -334,12 +405,18 @@
 								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#setdefaultdataloader" class="tsd-kind-icon">set<wbr>Default<wbr>Data<wbr>Loader</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#sortby" class="tsd-kind-icon">sort<wbr>By</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_folderdataloadingservice_d_.folderdataloadingservice.html#updateusersettings" class="tsd-kind-icon">update<wbr>User<wbr>Settings</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_platform_folderdataloadingservice_d_.html#_folderdataloadingdependencies" class="tsd-kind-icon">$<wbr>Folder<wbr>Data<wbr>Loading<wbr>Dependencies</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

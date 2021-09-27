@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileListControlLogic | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>FileListControlLogic | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -111,6 +111,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#changefiletypeonserver" class="tsd-kind-icon">change<wbr>File<wbr>Type<wbr>OnServer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#checksignaturefiles" class="tsd-kind-icon">check<wbr>Signature<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#clearfileitems" class="tsd-kind-icon">clear<wbr>File<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#closeallmenusbut" class="tsd-kind-icon">close<wbr>All<wbr>Menus<wbr>But</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#deinitfileitem" class="tsd-kind-icon">deinit<wbr>File<wbr>Item</a></li>
@@ -123,10 +124,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploader" class="tsd-kind-icon">initJQuery<wbr>Uploader</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploaderforaddfileversions" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Add<wbr>File<wbr>Versions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploaderforaddfiles" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Add<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploaderforsignedfile" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Signed<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#issignaturefile" class="tsd-kind-icon">is<wbr>Signature<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#loadfilemodel" class="tsd-kind-icon">load<wbr>File<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#loadfilesfrommodel" class="tsd-kind-icon">load<wbr>Files<wbr>From<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#loadfilespart" class="tsd-kind-icon">load<wbr>Files<wbr>Part</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#lockfile" class="tsd-kind-icon">lock<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onfilesignadded" class="tsd-kind-icon">on<wbr>File<wbr>Sign<wbr>Added</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onfileversionadded" class="tsd-kind-icon">on<wbr>File<wbr>Version<wbr>Added</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onfilesadded" class="tsd-kind-icon">on<wbr>Files<wbr>Added</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onsaved" class="tsd-kind-icon">on<wbr>Saved</a></li>
@@ -216,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">generate<wbr>Link<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/FileListControlLogic.d.ts:27</li>
+							<li>Defined in BackOffice/FileListControlLogic.d.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -341,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:39</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:41</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -351,6 +355,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checksignaturefiles" class="tsd-anchor"></a>
+					<h3>check<wbr>Signature<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Signature<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>files: <span class="tsd-signature-type">File[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -427,7 +454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:28</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -456,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:29</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:31</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -485,16 +512,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:42</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:21</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd><p>Use <a href="_legacy_utils_d_.helpers.html#showfilepreview">Helpers.ShowFilePreview</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -524,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:24</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:25</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -547,7 +567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:61</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:63</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[]</span></h4>
@@ -619,7 +639,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:26</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:27</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -666,7 +686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:25</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:26</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -679,6 +699,76 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initjqueryuploaderforsignedfile" class="tsd-anchor"></a>
+					<h3>initJQuery<wbr>Uploader<wbr>For<wbr>Signed<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Signed<wbr>File<span class="tsd-signature-symbol">(</span>attach<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, fileItem<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a>, canRename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:28</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>attach: <a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a></h5>
+								</li>
+								<li>
+									<h5>fileItem: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+								</li>
+								<li>
+									<h5>canRename: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fileItem<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>fileItem: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="issignaturefile" class="tsd-anchor"></a>
+					<h3>is<wbr>Signature<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Signature<wbr>File<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:64</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -738,7 +828,7 @@
 					<a name="loadfilespart" class="tsd-anchor"></a>
 					<h3>load<wbr>Files<wbr>Part</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Files<wbr>Part<span class="tsd-signature-symbol">(</span>skipCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, maxCount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Files<wbr>Part<span class="tsd-signature-symbol">(</span>skipCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -751,9 +841,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>skipCount: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxCount: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -784,6 +871,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="onfilesignadded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>File<wbr>Sign<wbr>Added</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Sign<wbr>Added<span class="tsd-signature-symbol">(</span>fileItem<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a>, attach<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, canRename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:58</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileItem: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+								</li>
+								<li>
+									<h5>attach: <a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> canRename: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="onfileversionadded" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>File<wbr>Version<wbr>Added</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
@@ -793,7 +912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:58</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:59</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -819,7 +938,7 @@
 					<a name="onfilesadded" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Files<wbr>Added</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Files<wbr>Added<span class="tsd-signature-symbol">(</span>main<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, attach<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Files<wbr>Added<span class="tsd-signature-symbol">(</span>main<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, attach<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistattachelements_d_.filelistattachedelements.html" class="tsd-signature-type">FileListAttachedElements</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -843,7 +962,7 @@
 									<h5>data: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -857,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:21</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JQueryDeferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -874,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:60</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:62</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -923,7 +1042,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:37</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:39</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -960,7 +1079,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:38</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:40</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1006,7 +1125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:59</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:60</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1035,7 +1154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:23</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1114,7 +1233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:40</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1215,7 +1334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:22</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1232,7 +1351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:31</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:33</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1258,7 +1377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in BackOffice/FileListControlLogic.d.ts:30</li>
+									<li>Defined in BackOffice/FileListControlLogic.d.ts:32</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1328,6 +1447,9 @@
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#changefiletypeonserver" class="tsd-kind-icon">change<wbr>File<wbr>Type<wbr>OnServer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#checksignaturefiles" class="tsd-kind-icon">check<wbr>Signature<wbr>Files</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#clearfileitems" class="tsd-kind-icon">clear<wbr>File<wbr>Items</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1364,6 +1486,12 @@
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploaderforaddfiles" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Add<wbr>Files</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#initjqueryuploaderforsignedfile" class="tsd-kind-icon">initJQuery<wbr>Uploader<wbr>For<wbr>Signed<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#issignaturefile" class="tsd-kind-icon">is<wbr>Signature<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#loadfilemodel" class="tsd-kind-icon">load<wbr>File<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1374,6 +1502,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#lockfile" class="tsd-kind-icon">lock<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onfilesignadded" class="tsd-kind-icon">on<wbr>File<wbr>Sign<wbr>Added</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_backoffice_filelistcontrollogic_d_.filelistcontrollogic.html#onfileversionadded" class="tsd-kind-icon">on<wbr>File<wbr>Version<wbr>Added</a>

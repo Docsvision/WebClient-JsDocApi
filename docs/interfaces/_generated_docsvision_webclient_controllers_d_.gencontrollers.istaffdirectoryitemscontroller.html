@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IStaffDirectoryItemsController | Docsvision 5 Web-client 5.5.15. JavaScript API</title>
+	<title>IStaffDirectoryItemsController | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.15. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -93,7 +93,20 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#addtofavorites" class="tsd-kind-icon">add<wbr>ToFavorites</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#addtogroup" class="tsd-kind-icon">add<wbr>ToGroup</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#checkaccountname" class="tsd-kind-icon">check<wbr>Account<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#copygroup" class="tsd-kind-icon">copy<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#copyunit" class="tsd-kind-icon">copy<wbr>Unit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getemployeegroups" class="tsd-kind-icon">get<wbr>Employee<wbr>Groups</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getstaffdata" class="tsd-kind-icon">get<wbr>Staff<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getunitmanagerforemployee" class="tsd-kind-icon">get<wbr>Unit<wbr>Manager<wbr>For<wbr>Employee</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#loadstaffdata" class="tsd-kind-icon">load<wbr>Staff<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#moveemployee" class="tsd-kind-icon">move<wbr>Employee</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#movegroup" class="tsd-kind-icon">move<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#moveunit" class="tsd-kind-icon">move<wbr>Unit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#removeemployeefromgroup" class="tsd-kind-icon">remove<wbr>Employee<wbr>From<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#setemployeegroups" class="tsd-kind-icon">set<wbr>Employee<wbr>Groups</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#takegroupsandsetgroups" class="tsd-kind-icon">take<wbr>Groups<wbr>And<wbr>Set<wbr>Groups</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1350</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1466</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,6 +146,226 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="addtogroup" class="tsd-anchor"></a>
+					<h3>add<wbr>ToGroup</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>ToGroup<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.addtogrouprequestmodel.html" class="tsd-signature-type">AddToGroupRequestModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1496</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds employees and departments to group</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.addtogrouprequestmodel.html" class="tsd-signature-type">AddToGroupRequestModel</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Instance od the <a href="../modules/_generated_docsvision_webclient_models_d_.genmodels.html">GenModels</a></p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="checkaccountname" class="tsd-anchor"></a>
+					<h3>check<wbr>Account<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Account<wbr>Name<span class="tsd-signature-symbol">(</span>accountName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.accountcheckresult.html" class="tsd-signature-type">AccountCheckResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1470</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks account name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>accountName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.accountcheckresult.html" class="tsd-signature-type">AccountCheckResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="copygroup" class="tsd-anchor"></a>
+					<h3>copy<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Group<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1520</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy group</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="copyunit" class="tsd-anchor"></a>
+					<h3>copy<wbr>Unit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Unit<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1512</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy unit</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getemployeegroups" class="tsd-anchor"></a>
+					<h3>get<wbr>Employee<wbr>Groups</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Employee<wbr>Groups<span class="tsd-signature-symbol">(</span>employeeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_legacy_nativefunctions_d_.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffgroupdatamodel.html" class="tsd-signature-type">StaffGroupDataModel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1474</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets employee groups</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>employeeId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_legacy_nativefunctions_d_.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffgroupdatamodel.html" class="tsd-signature-type">StaffGroupDataModel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getstaffdata" class="tsd-anchor"></a>
+					<h3>get<wbr>Staff<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Staff<wbr>Data<span class="tsd-signature-symbol">(</span>requestModel<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.employeelistrequestmodel.html" class="tsd-signature-type">EmployeeListRequestModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1504</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>POST: /StaffDirectoryItems/GetStaffData</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>requestModel: <a href="_generated_docsvision_webclient_models_d_.genmodels.employeelistrequestmodel.html" class="tsd-signature-type">EmployeeListRequestModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getunitmanagerforemployee" class="tsd-anchor"></a>
+					<h3>get<wbr>Unit<wbr>Manager<wbr>For<wbr>Employee</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Unit<wbr>Manager<wbr>For<wbr>Employee<span class="tsd-signature-symbol">(</span>employeeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.employeedatamodel.html" class="tsd-signature-type">EmployeeDataModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1500</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets first manager for unit hierarchy</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>employeeId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.employeedatamodel.html" class="tsd-signature-type">EmployeeDataModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="loadstaffdata" class="tsd-anchor"></a>
 					<h3>load<wbr>Staff<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -142,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1346</li>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1462</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,6 +396,198 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffloadresponse.html" class="tsd-signature-type">StaffLoadResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="moveemployee" class="tsd-anchor"></a>
+					<h3>move<wbr>Employee</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Employee<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.employeemovemodel.html" class="tsd-signature-type">EmployeeMoveModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1524</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Move employee to another unit</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.employeemovemodel.html" class="tsd-signature-type">EmployeeMoveModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="movegroup" class="tsd-anchor"></a>
+					<h3>move<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Group<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1516</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Move group to another parent</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="moveunit" class="tsd-anchor"></a>
+					<h3>move<wbr>Unit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Unit<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1508</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Move unit to another parent</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="_generated_docsvision_webclient_models_d_.genmodels.staffdirectoryitemsmovemodel.html" class="tsd-signature-type">StaffDirectoryItemsMoveModel</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removeemployeefromgroup" class="tsd-anchor"></a>
+					<h3>remove<wbr>Employee<wbr>From<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Employee<wbr>From<wbr>Group<span class="tsd-signature-symbol">(</span>groupId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, employeeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1490</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes staff employee from group</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>groupId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>employeeId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setemployeegroups" class="tsd-anchor"></a>
+					<h3>set<wbr>Employee<wbr>Groups</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Employee<wbr>Groups<span class="tsd-signature-symbol">(</span>employeeGroupsQuery<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.setemployeegroupsquery.html" class="tsd-signature-type">SetEmployeeGroupsQuery</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.setemployeegroupsresult.html" class="tsd-signature-type">SetEmployeeGroupsResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1478</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets employee groups</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>employeeGroupsQuery: <a href="_generated_docsvision_webclient_models_d_.genmodels.setemployeegroupsquery.html" class="tsd-signature-type">SetEmployeeGroupsQuery</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.setemployeegroupsresult.html" class="tsd-signature-type">SetEmployeeGroupsResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="takegroupsandsetgroups" class="tsd-anchor"></a>
+					<h3>take<wbr>Groups<wbr>And<wbr>Set<wbr>Groups</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">take<wbr>Groups<wbr>And<wbr>Set<wbr>Groups<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="_generated_docsvision_webclient_models_d_.genmodels.takeandsetgroupsrequest.html" class="tsd-signature-type">TakeAndSetGroupsRequest</a>, options<span class="tsd-signature-symbol">?: </span><a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.takeandsetgroupsresult.html" class="tsd-signature-type">TakeAndSetGroupsResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in Generated/DocsVision.WebClient.Controllers.d.ts:1483</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set groups for all employees in <a href="../modules/_generated_docsvision_webclient_models_d_.genmodels.html">GenModels</a>.
+									Groups taken from <a href="../modules/_generated_docsvision_webclient_models_d_.genmodels.html">GenModels</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="_generated_docsvision_webclient_models_d_.genmodels.takeandsetgroupsrequest.html" class="tsd-signature-type">TakeAndSetGroupsRequest</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_legacy_utils_d_.requestoptions.html" class="tsd-signature-type">RequestOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_generated_docsvision_webclient_models_d_.genmodels.takeandsetgroupsresult.html" class="tsd-signature-type">TakeAndSetGroupsResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -187,7 +612,46 @@
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#addtofavorites" class="tsd-kind-icon">add<wbr>ToFavorites</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#addtogroup" class="tsd-kind-icon">add<wbr>ToGroup</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#checkaccountname" class="tsd-kind-icon">check<wbr>Account<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#copygroup" class="tsd-kind-icon">copy<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#copyunit" class="tsd-kind-icon">copy<wbr>Unit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getemployeegroups" class="tsd-kind-icon">get<wbr>Employee<wbr>Groups</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getstaffdata" class="tsd-kind-icon">get<wbr>Staff<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#getunitmanagerforemployee" class="tsd-kind-icon">get<wbr>Unit<wbr>Manager<wbr>For<wbr>Employee</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#loadstaffdata" class="tsd-kind-icon">load<wbr>Staff<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#moveemployee" class="tsd-kind-icon">move<wbr>Employee</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#movegroup" class="tsd-kind-icon">move<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#moveunit" class="tsd-kind-icon">move<wbr>Unit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#removeemployeefromgroup" class="tsd-kind-icon">remove<wbr>Employee<wbr>From<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#setemployeegroups" class="tsd-kind-icon">set<wbr>Employee<wbr>Groups</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_generated_docsvision_webclient_controllers_d_.gencontrollers.istaffdirectoryitemscontroller.html#takegroupsandsetgroups" class="tsd-kind-icon">take<wbr>Groups<wbr>And<wbr>Set<wbr>Groups</a>
 							</li>
 						</ul>
 					</li>
