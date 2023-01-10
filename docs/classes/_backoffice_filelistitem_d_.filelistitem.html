@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileListItem | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>FileListItem | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -73,13 +73,18 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">FileListItem</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html" class="tsd-signature-type">IFileListItem</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -90,6 +95,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_backoffice_filelistitem_d_.filelistitem.html#commentsdialogopen" class="tsd-kind-icon">comments<wbr>Dialog<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_backoffice_filelistitem_d_.filelistitem.html#cssclasses" class="tsd-kind-icon">css<wbr>Classes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_backoffice_filelistitem_d_.filelistitem.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_backoffice_filelistitem_d_.filelistitem.html#file" class="tsd-kind-icon">file</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_backoffice_filelistitem_d_.filelistitem.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a></li>
@@ -119,10 +125,21 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cssclasses" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> css<wbr>Classes</h3>
+					<div class="tsd-signature tsd-kind-icon">css<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in BackOffice/FileListItem.d.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="data" class="tsd-anchor"></a>
 					<h3>data</h3>
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.layoutfilemodel.html" class="tsd-signature-type">LayoutFileModel</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html">IFileListItem</a>.<a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html#data">data</a></p>
 						<ul>
 							<li>Defined in BackOffice/FileListItem.d.ts:10</li>
 						</ul>
@@ -133,6 +150,7 @@
 					<h3>file</h3>
 					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">File</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html">IFileListItem</a>.<a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html#file">file</a></p>
 						<ul>
 							<li>Defined in BackOffice/FileListItem.d.ts:19</li>
 						</ul>
@@ -173,6 +191,7 @@
 					<h3>state</h3>
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../enums/_backoffice_filelistitemstate_d_.filelistitemstate.html" class="tsd-signature-type">FileListItemState</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html">IFileListItem</a>.<a href="../interfaces/_backoffice_ifilelistitem_d_.ifilelistitem.html#state">state</a></p>
 						<ul>
 							<li>Defined in BackOffice/FileListItem.d.ts:20</li>
 						</ul>
@@ -242,11 +261,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-kind-icon">File<wbr>List<wbr>Item</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_backoffice_filelistitem_d_.filelistitem.html#commentsdialogopen" class="tsd-kind-icon">comments<wbr>Dialog<wbr>Open</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_backoffice_filelistitem_d_.filelistitem.html#cssclasses" class="tsd-kind-icon">css<wbr>Classes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_backoffice_filelistitem_d_.filelistitem.html#data" class="tsd-kind-icon">data</a>

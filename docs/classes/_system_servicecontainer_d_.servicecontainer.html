@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ServiceContainer | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>ServiceContainer | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -333,7 +333,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>descriptor<span class="tsd-signature-symbol">: </span><a href="_system_service_d_.service.html" class="tsd-signature-type">Service</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -625,7 +625,7 @@
 									<h5>serviceFactory: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TValue</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -688,7 +688,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>metaKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MetaT</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -745,7 +745,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>metaKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MetaT</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -881,8 +881,9 @@
 							<p>this</p>
 							<p>Пример использования:</p>
 							<pre><code><span class="hljs-builtin-name">export</span><span class="hljs-built_in"> type </span><span class="hljs-variable">$MyService</span> = { myService: MyService };
-serviceContainer.register(<span class="hljs-string">&quot;myService&quot;</span>, () =&gt; new MyService());
-serviceContainer.with&lt;<span class="hljs-variable">$MyService</span>&gt;().myService.doSomething();</code></pre>
+serviceContainer.register(<span class="hljs-string">"myService"</span>, () =&gt; new MyService());
+serviceContainer.with&lt;<span class="hljs-variable">$MyService</span>&gt;().myService.doSomething();
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -934,7 +935,8 @@ function foo(service: <span class="hljs-variable">$MyService1</span> &amp; <span
 
 let myService1 = serviceContainer.addService&lt;<span class="hljs-variable">$MyService1</span>&gt;({ myService1: new MyService1()});
 let myService2 = serviceContainer.addService&lt;<span class="hljs-variable">$MyService2</span>&gt;({ myService2: new MyService2()});
-foo(serviceContainer.withAll(myService1, myService2));</code></pre>
+foo(serviceContainer.withAll(myService1, myService2));
+</code></pre>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
@@ -1069,7 +1071,7 @@ foo(serviceContainer.withAll(myService1, myService2));</code></pre>
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_system_servicecontainer_d_.servicecontainer.html" class="tsd-kind-icon">Service<wbr>Container</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -1133,22 +1135,22 @@ foo(serviceContainer.withAll(myService1, myService2));</code></pre>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#factories" class="tsd-kind-icon">Factories</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-kind-icon">Optional</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#servicecontainerfluent" class="tsd-kind-icon">Service<wbr>Container<wbr>Fluent</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#servicecontainerfluentnext" class="tsd-kind-icon">Service<wbr>Container<wbr>Fluent<wbr>Next</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#servicegetter" class="tsd-kind-icon">Service<wbr>Getter</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_system_servicecontainer_d_.html#servicesetter" class="tsd-kind-icon">Service<wbr>Setter</a>
 					</li>
 				</ul>

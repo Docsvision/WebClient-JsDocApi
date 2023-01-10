@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ITaskListProps | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>ITaskListProps | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -88,7 +88,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#items" class="tsd-kind-icon">items</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#itemscount" class="tsd-kind-icon">items<wbr>Count</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#itemsloading" class="tsd-kind-icon">items<wbr>Loading</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#nametaskclick" class="tsd-kind-icon">name<wbr>Task<wbr>Click</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#openmode" class="tsd-kind-icon">open<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#rowclick" class="tsd-kind-icon">rowclick</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#services" class="tsd-kind-icon">services</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_itasklistprops_d_.itasklistprops.html#tabstop" class="tsd-kind-icon">tab<wbr>Stop</a></li>
 							</ul>
@@ -104,7 +106,7 @@
 					<div class="tsd-signature tsd-kind-icon">digest<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:5</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:7</li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +116,7 @@
 					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TaskDataModel[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:7</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:9</li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">items<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:9</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +136,17 @@
 					<div class="tsd-signature tsd-kind-icon">items<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:8</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nametaskclick" class="tsd-anchor"></a>
+					<h3>name<wbr>Task<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">name<wbr>Task<wbr>Click<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="_backoffice_itaskrowclickeventargs_d_.itaskrowclickeventargs.html" class="tsd-signature-type">ITaskRowClickEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -144,7 +156,17 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/_generated_docsvision_webclient_models_d_.genmodels.tasksopenmode.html" class="tsd-signature-type">TasksOpenMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:10</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rowclick" class="tsd-anchor"></a>
+					<h3>rowclick</h3>
+					<div class="tsd-signature tsd-kind-icon">rowclick<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="_backoffice_itaskrowclickeventargs_d_.itaskrowclickeventargs.html" class="tsd-signature-type">ITaskRowClickEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -154,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_system__router_d_.html#_routernavigation" class="tsd-signature-type">$RouterNavigation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:11</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Stop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/ITaskListProps.d.ts:6</li>
+							<li>Defined in BackOffice/ITaskListProps.d.ts:8</li>
 						</ul>
 					</aside>
 				</section>
@@ -182,7 +204,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_backoffice_itasklistprops_d_.itasklistprops.html" class="tsd-kind-icon">ITask<wbr>List<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -198,7 +220,13 @@
 								<a href="_backoffice_itasklistprops_d_.itasklistprops.html#itemsloading" class="tsd-kind-icon">items<wbr>Loading</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_backoffice_itasklistprops_d_.itasklistprops.html#nametaskclick" class="tsd-kind-icon">name<wbr>Task<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_backoffice_itasklistprops_d_.itasklistprops.html#openmode" class="tsd-kind-icon">open<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_backoffice_itasklistprops_d_.itasklistprops.html#rowclick" class="tsd-kind-icon">rowclick</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_backoffice_itasklistprops_d_.itasklistprops.html#services" class="tsd-kind-icon">services</a>

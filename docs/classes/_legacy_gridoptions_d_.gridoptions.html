@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GridOptions | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>GridOptions | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -80,7 +80,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><span class="tsd-signature-type">object</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,6 +100,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#enablemobileformat" class="tsd-kind-icon">enable<wbr>Mobile<wbr>Format</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#enablepaging" class="tsd-kind-icon">enable<wbr>Paging</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#enablesorting" class="tsd-kind-icon">enable<wbr>Sorting</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#enabletoolbar" class="tsd-kind-icon">enable<wbr>Toolbar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#enableunreadbar" class="tsd-kind-icon">enable<wbr>Unread<wbr>Bar</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#folderheader" class="tsd-kind-icon">folder<wbr>Header</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#folderid" class="tsd-kind-icon">folder<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_legacy_gridoptions_d_.gridoptions.html#isfilterallowed" class="tsd-kind-icon">is<wbr>Filter<wbr>Allowed</a></li>
@@ -124,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">card<wbr>Source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:19</li>
+							<li>Defined in Legacy/GridOptions.d.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Mobile<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:18</li>
+							<li>Defined in Legacy/GridOptions.d.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -144,43 +146,19 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:8</li>
+							<li>Defined in Legacy/GridOptions.d.ts:9</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="dataloader" class="tsd-anchor"></a>
 					<h3>data<wbr>Loader</h3>
-					<div class="tsd-signature tsd-kind-icon">data<wbr>Loader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>Loader<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:24</li>
+							<li>Defined in Legacy/GridOptions.d.ts:27</li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>requestData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, isMobile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>requestData: <span class="tsd-signature-type">any</span></h5>
-											</li>
-											<li>
-												<h5>isMobile: <span class="tsd-signature-type">boolean</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="enablebatchoperations" class="tsd-anchor"></a>
@@ -188,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Batch<wbr>Operations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:14</li>
+							<li>Defined in Legacy/GridOptions.d.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -198,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Grouping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:12</li>
+							<li>Defined in Legacy/GridOptions.d.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Item<wbr>Details<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:13</li>
+							<li>Defined in Legacy/GridOptions.d.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Mobile<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:16</li>
+							<li>Defined in Legacy/GridOptions.d.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Paging<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:10</li>
+							<li>Defined in Legacy/GridOptions.d.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +216,27 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Sorting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
+							<li>Defined in Legacy/GridOptions.d.ts:13</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="enabletoolbar" class="tsd-anchor"></a>
+					<h3>enable<wbr>Toolbar</h3>
+					<div class="tsd-signature tsd-kind-icon">enable<wbr>Toolbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
 							<li>Defined in Legacy/GridOptions.d.ts:11</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="enableunreadbar" class="tsd-anchor"></a>
+					<h3>enable<wbr>Unread<wbr>Bar</h3>
+					<div class="tsd-signature tsd-kind-icon">enable<wbr>Unread<wbr>Bar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Legacy/GridOptions.d.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">folder<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:23</li>
+							<li>Defined in Legacy/GridOptions.d.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">folder<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:20</li>
+							<li>Defined in Legacy/GridOptions.d.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -268,7 +266,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Filter<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:15</li>
+							<li>Defined in Legacy/GridOptions.d.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -278,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Mobile<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:17</li>
+							<li>Defined in Legacy/GridOptions.d.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -288,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:9</li>
+							<li>Defined in Legacy/GridOptions.d.ts:10</li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +296,7 @@
 					<div class="tsd-signature tsd-kind-icon">save<wbr>Grid<wbr>User<wbr>Settings<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:22</li>
+							<li>Defined in Legacy/GridOptions.d.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +306,7 @@
 					<div class="tsd-signature tsd-kind-icon">search<wbr>Parameters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:21</li>
+							<li>Defined in Legacy/GridOptions.d.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -318,7 +316,7 @@
 					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_gridcontroller" class="tsd-signature-type">$GridController</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:25</li>
+							<li>Defined in Legacy/GridOptions.d.ts:28</li>
 						</ul>
 					</aside>
 				</section>
@@ -328,7 +326,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:5</li>
+							<li>Defined in Legacy/GridOptions.d.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -338,7 +336,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:6</li>
+							<li>Defined in Legacy/GridOptions.d.ts:7</li>
 						</ul>
 					</aside>
 				</section>
@@ -348,7 +346,7 @@
 					<div class="tsd-signature tsd-kind-icon">wrap<wbr>Row<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Legacy/GridOptions.d.ts:7</li>
+							<li>Defined in Legacy/GridOptions.d.ts:8</li>
 						</ul>
 					</aside>
 				</section>
@@ -366,7 +364,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_legacy_gridoptions_d_.gridoptions.html" class="tsd-kind-icon">Grid<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -398,6 +396,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_legacy_gridoptions_d_.gridoptions.html#enablesorting" class="tsd-kind-icon">enable<wbr>Sorting</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_legacy_gridoptions_d_.gridoptions.html#enabletoolbar" class="tsd-kind-icon">enable<wbr>Toolbar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_legacy_gridoptions_d_.gridoptions.html#enableunreadbar" class="tsd-kind-icon">enable<wbr>Unread<wbr>Bar</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_legacy_gridoptions_d_.gridoptions.html#folderheader" class="tsd-kind-icon">folder<wbr>Header</a>

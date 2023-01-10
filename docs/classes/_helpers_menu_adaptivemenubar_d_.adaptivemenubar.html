@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AdaptiveMenuBar | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>AdaptiveMenuBar | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,15 +69,15 @@
 							<p>Пример использования:</p>
 							<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuBar</span> <span class="hljs-attr">expanded</span>=<span class="hljs-string">{this.state.menuBarExpanded}</span> &gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuContent</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuItem</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.info(&quot;Command 1 clicked&quot;) } &gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuItem</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.info("Command 1 clicked") } &gt;
             Комманда 1
         <span class="hljs-tag">&lt;/<span class="hljs-name">AdaptiveMenuBarItem</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuBarItem</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.info(&quot;Command 2 clicked&quot;)} &gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">AdaptiveMenuBarItem</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> console.info("Command 2 clicked")} &gt;
             Комманда 2
         <span class="hljs-tag">&lt;/<span class="hljs-name">AdaptiveMenuBarItem</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">AdaptiveMenuContent</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">AdaptiveMenuBar</span>&gt;</span></code></pre>
-							<p>См. также <a href="../modules/_helpers_menu_content_adaptivemenucontent_d_.html#adaptivemenucontent">AdaptiveMenuContent</a>, {@link AdaptiveMenuBarItem}</p>
+<span class="hljs-tag">&lt;/<span class="hljs-name">AdaptiveMenuBar</span>&gt;</span>
+</code></pre><p>См. также <a href="../modules/_helpers_menu_content_adaptivemenucontent_d_.html#adaptivemenucontent">AdaptiveMenuContent</a>, {@link AdaptiveMenuBarItem}</p>
 						</dd>
 					</dl>
 				</div>
@@ -86,10 +86,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">any</span>
+						<a href="_helpers_menu_adaptivemenubar_d_.adaptivemenubar.html" class="tsd-signature-type">AdaptiveMenuBar</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_helpers_menu_adaptivemenubar_d_.iadaptivemenubarprops.html" class="tsd-signature-type">IAdaptiveMenuBarProps</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_helpers_menu_adaptivemenubar_d_.iadaptivemenubarstate.html" class="tsd-signature-type">IAdaptiveMenuBarState</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">AdaptiveMenuBar</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_helpers_menu_adaptivemenubar_d_.adaptivemenubar.html" class="tsd-signature-type">AdaptiveMenuBar</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -133,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:37</li>
+									<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,14 +160,14 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Close<wbr>Menu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:39</li>
+							<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -180,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">popover<span class="tsd-signature-symbol">:</span> <a href="_helpers_popoverhelpers_popover_d_.popover.html" class="tsd-signature-type">Popover</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:37</li>
+							<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -197,7 +202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:40</li>
+									<li>Defined in Helpers/Menu/AdaptiveMenuBar.d.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSX.Element</span></h4>
@@ -218,7 +223,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_helpers_menu_adaptivemenubar_d_.adaptivemenubar.html" class="tsd-kind-icon">Adaptive<wbr>Menu<wbr>Bar</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -237,10 +242,10 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_helpers_menu_adaptivemenubar_d_.iadaptivemenubarprops.html" class="tsd-kind-icon">IAdaptive<wbr>Menu<wbr>Bar<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_helpers_menu_adaptivemenubar_d_.iadaptivemenubarstate.html" class="tsd-kind-icon">IAdaptive<wbr>Menu<wbr>Bar<wbr>State</a>
 					</li>
 				</ul>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileService | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>FileService | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -72,7 +72,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><a href="../interfaces/_system__fileservice_d_.ifileservice.html" class="tsd-signature-type">IFileService</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -129,7 +129,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in System/FileService.d.ts:7</li>
+									<li>Defined in System/FileService.d.ts:6</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_system_fileservice_d_.fileservice.html" class="tsd-signature-type">FileService</a></h4>
@@ -142,20 +142,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="_selectedfile" class="tsd-anchor"></a>
 					<h3>_selected<wbr>File</h3>
-					<div class="tsd-signature tsd-kind-icon">_selected<wbr>File<span class="tsd-signature-symbol">:</span> <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></div>
+					<div class="tsd-signature tsd-kind-icon">_selected<wbr>File<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/FileService.d.ts:5</li>
+							<li>Defined in System/FileService.d.ts:4</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="filegroups" class="tsd-anchor"></a>
 					<h3>file<wbr>Groups</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Groups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileListItem[][]</span></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Groups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IFileServiceItem[][]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/FileService.d.ts:7</li>
+							<li>Defined in System/FileService.d.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -164,18 +164,19 @@
 					<h3>file<wbr>List<wbr>Was<wbr>Changed</h3>
 					<div class="tsd-signature tsd-kind-icon">file<wbr>List<wbr>Was<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#filelistwaschanged">fileListWasChanged</a></p>
 						<ul>
-							<li>Defined in System/FileService.d.ts:23</li>
+							<li>Defined in System/FileService.d.ts:22</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="files" class="tsd-anchor"></a>
 					<h3>files</h3>
-					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileListItem[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IFileServiceItem[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/FileService.d.ts:6</li>
+							<li>Defined in System/FileService.d.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -184,8 +185,9 @@
 					<h3>selected<wbr>File<wbr>Was<wbr>Changed</h3>
 					<div class="tsd-signature tsd-kind-icon">selected<wbr>File<wbr>Was<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="_system_simpleevent_d_.simpleevent.html" class="tsd-signature-type">SimpleEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#selectedfilewaschanged">selectedFileWasChanged</a></p>
 						<ul>
-							<li>Defined in System/FileService.d.ts:22</li>
+							<li>Defined in System/FileService.d.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -196,28 +198,28 @@
 					<a name="selectedfile" class="tsd-anchor"></a>
 					<h3>selected<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> selectedFile<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> selectedFile<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> selectedFile<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> selectedFile<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in System/FileService.d.ts:8</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></h4>
+						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
 									<li>Defined in System/FileService.d.ts:9</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in System/FileService.d.ts:10</li>
-								</ul>
-							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>val: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+									<h5>val: <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -231,22 +233,23 @@
 					<a name="addnewfile" class="tsd-anchor"></a>
 					<h3>add<wbr>New<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>New<wbr>File<span class="tsd-signature-symbol">(</span>newFile<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a>, fileList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>New<wbr>File<span class="tsd-signature-symbol">(</span>newFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a>, fileList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IFileServiceItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#addnewfile">addNewFile</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:19</li>
+									<li>Defined in System/FileService.d.ts:18</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>newFile: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+									<h5>newFile: <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fileList: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fileList: <span class="tsd-signature-type">IFileServiceItem[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -257,19 +260,20 @@
 					<a name="deletefile" class="tsd-anchor"></a>
 					<h3>delete<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>File<span class="tsd-signature-symbol">(</span>fileForDelete<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>File<span class="tsd-signature-symbol">(</span>fileForDelete<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#deletefile">deleteFile</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:20</li>
+									<li>Defined in System/FileService.d.ts:19</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fileForDelete: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+									<h5>fileForDelete: <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -280,16 +284,17 @@
 					<a name="getfilegroups" class="tsd-anchor"></a>
 					<h3>get<wbr>File<wbr>Groups</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>File<wbr>Groups<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[][]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>File<wbr>Groups<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileServiceItem[][]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#getfilegroups">getFileGroups</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:12</li>
+									<li>Defined in System/FileService.d.ts:11</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[][]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IFileServiceItem[][]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -297,16 +302,17 @@
 					<a name="getfiles" class="tsd-anchor"></a>
 					<h3>get<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileServiceItem[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#getfiles">getFiles</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:11</li>
+									<li>Defined in System/FileService.d.ts:10</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileListItem[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IFileServiceItem[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -314,19 +320,23 @@
 					<a name="registerfiles" class="tsd-anchor"></a>
 					<h3>register<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileServiceItem[]</span>, order<span class="tsd-signature-symbol">?: </span><a href="../enums/_system__fileservice_d_.fileserviceorder.html" class="tsd-signature-type">FileServiceOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#registerfiles">registerFiles</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:14</li>
+									<li>Defined in System/FileService.d.ts:13</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>files: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5>files: <span class="tsd-signature-type">IFileServiceItem[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> order: <a href="../enums/_system__fileservice_d_.fileserviceorder.html" class="tsd-signature-type">FileServiceOrder</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -337,19 +347,23 @@
 					<a name="setfilegroups" class="tsd-anchor"></a>
 					<h3>set<wbr>File<wbr>Groups</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>File<wbr>Groups<span class="tsd-signature-symbol">(</span>groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[][]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>File<wbr>Groups<span class="tsd-signature-symbol">(</span>groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileServiceItem[][]</span>, files<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IFileServiceItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#setfilegroups">setFileGroups</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:13</li>
+									<li>Defined in System/FileService.d.ts:12</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>groups: <span class="tsd-signature-type">FileListItem[][]</span></h5>
+									<h5>groups: <span class="tsd-signature-type">IFileServiceItem[][]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> files: <span class="tsd-signature-type">IFileServiceItem[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -360,19 +374,20 @@
 					<a name="unregisterfiles" class="tsd-anchor"></a>
 					<h3>un<wbr>Register<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">un<wbr>Register<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileListItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">un<wbr>Register<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileServiceItem[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#unregisterfiles">unRegisterFiles</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:15</li>
+									<li>Defined in System/FileService.d.ts:14</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>files: <span class="tsd-signature-type">FileListItem[]</span></h5>
+									<h5>files: <span class="tsd-signature-type">IFileServiceItem[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -383,19 +398,20 @@
 					<a name="updatefile" class="tsd-anchor"></a>
 					<h3>update<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_system__fileservice_d_.ifileservice.html">IFileService</a>.<a href="../interfaces/_system__fileservice_d_.ifileservice.html#updatefile">updateFile</a></p>
 								<ul>
-									<li>Defined in System/FileService.d.ts:21</li>
+									<li>Defined in System/FileService.d.ts:20</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>file: <a href="_backoffice_filelistitem_d_.filelistitem.html" class="tsd-signature-type">FileListItem</a></h5>
+									<h5>file: <a href="../interfaces/_system__fileservice_d_.ifileserviceitem.html" class="tsd-signature-type">IFileServiceItem</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -416,7 +432,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_system_fileservice_d_.fileservice.html" class="tsd-kind-icon">File<wbr>Service</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UnreadBarService | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>UnreadBarService | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -79,7 +79,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><a href="../interfaces/_platform__unreadbar_d_.iunreadbarservice.html" class="tsd-signature-type">IUnreadBarService</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -114,19 +114,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Unread<wbr>Bar<wbr>Service<span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$Domain</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_platform_unreadbarservice_d_.unreadbarservice.html" class="tsd-signature-type">UnreadBarService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Unread<wbr>Bar<wbr>Service<span class="tsd-signature-symbol">(</span>services<span class="tsd-signature-symbol">: </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$Domain</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__refreshunreadcounters_d_.html#_refreshunreadcounters" class="tsd-signature-type">$RefreshUnreadCounters</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__currentfolder_d_.html#_currentfolder" class="tsd-signature-type">$CurrentFolder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_platform_unreadbarservice_d_.unreadbarservice.html" class="tsd-signature-type">UnreadBarService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Platform/UnreadBarService.d.ts:12</li>
+									<li>Defined in Platform/UnreadBarService.d.ts:14</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>services: <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$Domain</span></h5>
+									<h5>services: <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_cardcontroller" class="tsd-signature-type">$CardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__unreadcounter_d_.html#_unreadcounter" class="tsd-signature-type">$UnreadCounter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">$Domain</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__refreshunreadcounters_d_.html#_refreshunreadcounters" class="tsd-signature-type">$RefreshUnreadCounters</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_platform__currentfolder_d_.html#_currentfolder" class="tsd-signature-type">$CurrentFolder</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_platform_unreadbarservice_d_.unreadbarservice.html" class="tsd-signature-type">UnreadBarService</a></h4>
@@ -142,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">perform<wbr>Once<span class="tsd-signature-symbol">:</span> <a href="_legacy_utils_d_.performonce.html" class="tsd-signature-type">PerformOnce</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/UnreadBarService.d.ts:11</li>
+							<li>Defined in Platform/UnreadBarService.d.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -151,8 +151,9 @@
 					<h3>row<wbr>Toggled</h3>
 					<div class="tsd-signature tsd-kind-icon">row<wbr>Toggled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRowData</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_platform__unreadbar_d_.iunreadbarservice.html">IUnreadBarService</a>.<a href="../interfaces/_platform__unreadbar_d_.iunreadbarservice.html#rowtoggled">rowToggled</a></p>
 						<ul>
-							<li>Defined in Platform/UnreadBarService.d.ts:12</li>
+							<li>Defined in Platform/UnreadBarService.d.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -168,8 +169,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_platform__unreadbar_d_.iunreadbarservice.html">IUnreadBarService</a>.<a href="../interfaces/_platform__unreadbar_d_.iunreadbarservice.html#toggleunread">toggleUnread</a></p>
 								<ul>
-									<li>Defined in Platform/UnreadBarService.d.ts:14</li>
+									<li>Defined in Platform/UnreadBarService.d.ts:16</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -196,7 +198,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_platform_unreadbarservice_d_.unreadbarservice.html" class="tsd-kind-icon">Unread<wbr>Bar<wbr>Service</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommonComboBox | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>CommonComboBox | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -68,26 +68,26 @@
 						<dd><p>Хелпер для создания комбобокса (позволяет выбирать значение из выпадающего списка)</p>
 							<p>Пример использования:</p>
 							<pre><code>constructor() {
-    <span class="hljs-built_in">this</span>.state.elements = [
-        { <span class="hljs-attr">id:</span> <span class="hljs-string">&#x27;1&#x27;</span>, <span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;Первый элемент&#x27;</span> },
-        { <span class="hljs-attr">id:</span> <span class="hljs-string">&#x27;2&#x27;</span>, <span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;Второй элемент&#x27;</span> },
-        { <span class="hljs-attr">id:</span> <span class="hljs-string">&#x27;3&#x27;</span>, <span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;Третий элемент&#x27;</span>, <span class="hljs-attr">disabled:</span> <span class="hljs-literal">true</span> },
-        { <span class="hljs-attr">id:</span> <span class="hljs-string">&#x27;4&#x27;</span>, <span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;Четвёртый элемент&#x27;</span> }
+    <span class="hljs-keyword">this</span>.state.elements = [
+        { <span class="hljs-string">id:</span> <span class="hljs-string">'1'</span>, <span class="hljs-string">title:</span> <span class="hljs-string">'Первый элемент'</span> },
+        { <span class="hljs-string">id:</span> <span class="hljs-string">'2'</span>, <span class="hljs-string">title:</span> <span class="hljs-string">'Второй элемент'</span> },
+        { <span class="hljs-string">id:</span> <span class="hljs-string">'3'</span>, <span class="hljs-string">title:</span> <span class="hljs-string">'Третий элемент'</span>, <span class="hljs-string">disabled:</span> <span class="hljs-literal">true</span> },
+        { <span class="hljs-string">id:</span> <span class="hljs-string">'4'</span>, <span class="hljs-string">title:</span> <span class="hljs-string">'Четвёртый элемент'</span> }
     ];
-    <span class="hljs-built_in">this</span>.state.selectedID = <span class="hljs-string">&#x27;2&#x27;</span>;
+    <span class="hljs-keyword">this</span>.state.selectedID = <span class="hljs-string">'2'</span>;
 }
 
 render() {
-    <span class="hljs-keyword">return</span> &lt;CommonComboBox elements={<span class="hljs-built_in">this</span>.state.elements}
+    <span class="hljs-keyword">return</span> &lt;CommonComboBox elements={<span class="hljs-keyword">this</span>.state.elements}
         allowEmpty={<span class="hljs-literal">true</span>}
         tabIndex
-        selectedID={<span class="hljs-built_in">this</span>.state.selectedID}
-        defaultTitle=<span class="hljs-string">&quot;Выберите элемент из списка&quot;</span>
-        onChange={(<span class="hljs-attr">selectedElement:</span> IComboBoxElement) =&gt; {
-            <span class="hljs-built_in">this</span>.setState({ <span class="hljs-attr">selectedID:</span> selectedElement.id });
+        selectedID={<span class="hljs-keyword">this</span>.state.selectedID}
+        defaultTitle=<span class="hljs-string">"Выберите элемент из списка"</span>
+        onChange={(<span class="hljs-string">selectedElement:</span> IComboBoxElement) =&gt; {
+            <span class="hljs-keyword">this</span>.setState({ <span class="hljs-string">selectedID:</span> selectedElement.id });
         }} /&gt;
-}</code></pre>
-						</dd>
+}
+</code></pre></dd>
 					</dl>
 				</div>
 			</section>
@@ -95,10 +95,15 @@ render() {
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">any</span>
+						<a href="_helpers_combobox_commoncombobox_d_.commoncombobox.html" class="tsd-signature-type">CommonComboBox</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_helpers_combobox_commoncombobox_d_.icommoncomboboxprops.html" class="tsd-signature-type">ICommonComboBoxProps</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_helpers_combobox_commoncombobox_d_.icommoncomboboxstate.html" class="tsd-signature-type">ICommonComboBoxState</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">CommonComboBox</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_helpers_combobox_commoncombobox_d_.commoncombobox.html" class="tsd-signature-type">CommonComboBox</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -228,7 +233,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, disableFallbackToEmptyElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, props<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_helpers_combobox_commoncombobox_d_.icommoncomboboxprops.html" class="tsd-signature-type">ICommonComboBoxProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_combobox_data_clientmodels_icomboboxelement_d_.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -278,7 +283,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_combobox_data_clientmodels_icomboboxelement_d_.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -319,7 +324,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>selectedID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -360,7 +365,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_combobox_data_clientmodels_icomboboxelement_d_.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_combobox_data_clientmodels_icomboboxelement_d_.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -404,7 +409,7 @@ render() {
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helpers_combobox_data_clientmodels_icomboboxelement_d_.icomboboxelement.html" class="tsd-signature-type">IComboBoxElement</a>, mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"prev"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"next"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -600,7 +605,7 @@ render() {
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_helpers_combobox_commoncombobox_d_.commoncombobox.html" class="tsd-kind-icon">Common<wbr>Combo<wbr>Box</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -652,10 +657,10 @@ render() {
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_helpers_combobox_commoncombobox_d_.icommoncomboboxprops.html" class="tsd-kind-icon">ICommon<wbr>Combo<wbr>Box<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_helpers_combobox_commoncombobox_d_.icommoncomboboxstate.html" class="tsd-kind-icon">ICommon<wbr>Combo<wbr>Box<wbr>State</a>
 					</li>
 				</ul>

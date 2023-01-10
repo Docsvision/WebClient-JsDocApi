@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IFileSignInteractionModel | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>IFileSignInteractionModel | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -78,6 +78,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#aftersigncallback" class="tsd-kind-icon">after<wbr>Sign<wbr>Callback</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#afterviewsigncallback" class="tsd-kind-icon">after<wbr>View<wbr>Sign<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#beforeshowsigndialogcallback" class="tsd-kind-icon">before<wbr>Show<wbr>Sign<wbr>Dialog<wbr>Callback</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#beforesigncallback" class="tsd-kind-icon">before<wbr>Sign<wbr>Callback</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#beforeviewsigncallback" class="tsd-kind-icon">before<wbr>View<wbr>Sign<wbr>Callback</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#documentid" class="tsd-kind-icon">document<wbr>Id</a></li>
@@ -98,7 +99,7 @@
 					<div class="tsd-signature tsd-kind-icon">after<wbr>Sign<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:13</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -108,9 +109,34 @@
 					<div class="tsd-signature tsd-kind-icon">after<wbr>View<wbr>Sign<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:14</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:21</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="beforeshowsigndialogcallback" class="tsd-anchor"></a>
+					<h3>before<wbr>Show<wbr>Sign<wbr>Dialog<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Show<wbr>Sign<wbr>Dialog<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="beforesigncallback" class="tsd-anchor"></a>
@@ -118,14 +144,14 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Sign<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:11</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -143,14 +169,14 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>View<wbr>Sign<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:12</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -168,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">document<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:7</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -178,14 +204,14 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:8</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:14</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IFileSignInfo[]</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -200,10 +226,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="services" class="tsd-anchor"></a>
 					<h3>services</h3>
-					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_legacy_documentcard_d_.html#_documentcardcontroller" class="tsd-signature-type">$DocumentCardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_layoutdocumentcontroller" class="tsd-signature-type">$LayoutDocumentController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_standardservices_d_.html#_webviewiosenabled" class="tsd-signature-type">$WebViewIOSEnabled</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_legacy_documentcard_d_.html#_documentcardcontroller" class="tsd-signature-type">$DocumentCardController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_layoutdocumentcontroller" class="tsd-signature-type">$LayoutDocumentController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_servicecontainer_d_.html#optional" class="tsd-signature-type">Optional</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_standardservices_d_.html#_webviewiosenabled" class="tsd-signature-type">$WebViewIOSEnabled</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_backoffice__cloudsignature_d_.html#_cloudsignature" class="tsd-signature-type">$CloudSignature</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_backoffice__cryptopro_d_.html#_cryptopro" class="tsd-signature-type">$CryptoPro</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_applicationsettings" class="tsd-signature-type">$ApplicationSettings</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__requestmanager_d_.html#_requestmanager" class="tsd-signature-type">$RequestManager</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_standardservices_d_.html#_webviewiosenabled" class="tsd-signature-type">$WebViewIOSEnabled</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_signaturecontroller" class="tsd-signature-type">$SignatureController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__localstorage_d_.html#_localstorage" class="tsd-signature-type">$LocalStorage</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_signaturemethodscontroller" class="tsd-signature-type">$SignatureMethodsController</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system__messagebox_d_.html#_messagebox" class="tsd-signature-type">$MessageBox</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_system_layoutservices_d_.html#_cardinfo" class="tsd-signature-type">$CardInfo</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:15</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">sign<wbr>Button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:9</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -223,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">view<wbr>Sign<wbr>Button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:10</li>
+							<li>Defined in BackOffice/IFileSignInteractionModel.d.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +267,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html" class="tsd-kind-icon">IFile<wbr>Sign<wbr>Interaction<wbr>Model</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -249,6 +275,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#afterviewsigncallback" class="tsd-kind-icon">after<wbr>View<wbr>Sign<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#beforeshowsigndialogcallback" class="tsd-kind-icon">before<wbr>Show<wbr>Sign<wbr>Dialog<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_backoffice_ifilesigninteractionmodel_d_.ifilesigninteractionmodel.html#beforesigncallback" class="tsd-kind-icon">before<wbr>Sign<wbr>Callback</a>

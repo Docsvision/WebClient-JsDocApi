@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ModalStack | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>ModalStack | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,48 +69,49 @@
 						поэтому интегрировать его самостоятельно обычно не требуется.</p>
 					</div>
 					<p>Пример использования (регистрируемся при показе окна и убираем регистрацию при скрытии):</p>
-					<pre><code><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> IModalProps {
+					<pre><code>export <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IModalProps</span> </span>{
 }
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> IModalState {
-    <span class="hljs-attr">zIndex</span>: <span class="hljs-built_in">number</span>;
+export <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IModalState</span> </span>{
+    zIndex: number;
 }
 
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Modal</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">IModalProps</span>, <span class="hljs-title">IModalState</span>&gt; </span>{
-    <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">props</span>)</span> {
-        <span class="hljs-built_in">super</span>(props);
+export <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Modal</span> <span class="hljs-title">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-type">IModalProps, IModalState</span>&gt; </span>{
+    <span class="hljs-keyword">constructor</span>(props) {
+        <span class="hljs-keyword">super</span>(props);
 
-        <span class="hljs-built_in">this</span>.state = {
-            <span class="hljs-attr">zIndex</span>: ModalStack.DEFAULT_ZINDEX
+        <span class="hljs-keyword">this</span>.state = {
+            zIndex: ModalStack.DEFAULT_ZINDEX
         }
     }
 
-    <span class="hljs-function"><span class="hljs-title">componentDidMount</span>(<span class="hljs-params"></span>)</span> {
-        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.props.visible) {
-            ModalStack.register(<span class="hljs-built_in">this</span>, <span class="hljs-function"><span class="hljs-params">newZIndex</span> =&gt;</span> <span class="hljs-built_in">this</span>.setState({ <span class="hljs-attr">zIndex</span>: newZIndex }));
+    componentDidMount() {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.props.visible) {
+            ModalStack.register(<span class="hljs-keyword">this</span>, newZIndex =&gt; <span class="hljs-keyword">this</span>.setState({ zIndex: newZIndex }));
         }
     }
 
-    <span class="hljs-function"><span class="hljs-title">componentWillReceiveProps</span>(<span class="hljs-params">nextProps: IModalBackdropProps</span>)</span> {
-        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.props.visible != nextProps.visible) {
+    componentWillReceiveProps(nextProps: IModalBackdropProps) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.props.visible != nextProps.visible) {
             <span class="hljs-keyword">if</span> (nextProps.visible) {
-                ModalStack.register(<span class="hljs-built_in">this</span>, <span class="hljs-function"><span class="hljs-params">newZIndex</span> =&gt;</span> <span class="hljs-built_in">this</span>.setState({ <span class="hljs-attr">zIndex</span>: newZIndex }));
+                ModalStack.register(<span class="hljs-keyword">this</span>, newZIndex =&gt; <span class="hljs-keyword">this</span>.setState({ zIndex: newZIndex }));
             } <span class="hljs-keyword">else</span> {
-                ModalStack.unregister(<span class="hljs-built_in">this</span>);
+                ModalStack.unregister(<span class="hljs-keyword">this</span>);
             }
         }
     }
 
-    <span class="hljs-function"><span class="hljs-title">componentWillUnmount</span>(<span class="hljs-params"></span>)</span> {
-        ModalStack.unregister(<span class="hljs-built_in">this</span>);
+    componentWillUnmount() {
+        ModalStack.unregister(<span class="hljs-keyword">this</span>);
     }
 
-    <span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span> {
+    render() {
         <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">zIndex:</span> <span class="hljs-attr">this.state.zIndex</span> }}&gt;</span>Моё модальное окно<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+            &lt;div style={{ zIndex: <span class="hljs-keyword">this</span>.state.zIndex }}&gt;Моё модальное окно&lt;/div&gt;
         );
     }
-}</code></pre>
+}
+</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -149,8 +150,8 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="default_zindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> DEFAULT_<wbr>ZINDEX</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>ZINDEX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1000</span><span class="tsd-signature-symbol"> = 1000</span></div>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT_<wbr>ZINDEX</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>ZINDEX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1000</span><span class="tsd-signature-symbol"> =&nbsp;1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in System/ModalStack.d.ts:59</li>
@@ -233,7 +234,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>newZIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -305,7 +306,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_system_modalstack_d_.modalstack.html" class="tsd-kind-icon">Modal<wbr>Stack</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
@@ -333,7 +334,7 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_system_modalstack_d_.imodalstackitem.html" class="tsd-kind-icon">IModal<wbr>Stack<wbr>Item</a>
 					</li>
 				</ul>

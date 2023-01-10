@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CacheManagementService | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>CacheManagementService | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -79,7 +79,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><a href="../interfaces/_platform__cachemanagement_d_.icachemanagementservice.html" class="tsd-signature-type">ICacheManagementService</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,6 +96,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_cachemanagementservice_d_.cachemanagementservice.html#resetcache" class="tsd-kind-icon">reset<wbr>Cache</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_platform_cachemanagementservice_d_.cachemanagementservice.html#updatecache" class="tsd-kind-icon">update<wbr>Cache</a></li>
 							</ul>
 						</section>
 					</div>
@@ -138,6 +139,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_platform__cachemanagement_d_.icachemanagementservice.html">ICacheManagementService</a>.<a href="../interfaces/_platform__cachemanagement_d_.icachemanagementservice.html#resetcache">resetCache</a></p>
 								<ul>
 									<li>Defined in Platform/CacheManagementService.d.ts:8</li>
 								</ul>
@@ -146,6 +148,33 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>objects: <a href="../enums/_platform__cachemanagement_d_.systemcacheobjects.html" class="tsd-signature-type">SystemCacheObjects</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updatecache" class="tsd-anchor"></a>
+					<h3>update<wbr>Cache</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Cache<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="../enums/_platform__cachemanagement_d_.systemcacheobjects.html" class="tsd-signature-type">SystemCacheObjects</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_platform__cachemanagement_d_.icachemanagementservice.html">ICacheManagementService</a>.<a href="../interfaces/_platform__cachemanagement_d_.icachemanagementservice.html#updatecache">updateCache</a></p>
+								<ul>
+									<li>Defined in Platform/CacheManagementService.d.ts:9</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="../enums/_platform__cachemanagement_d_.systemcacheobjects.html" class="tsd-signature-type">SystemCacheObjects</a></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">unknown</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -166,7 +195,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_platform_cachemanagementservice_d_.cachemanagementservice.html" class="tsd-kind-icon">Cache<wbr>Management<wbr>Service</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -175,11 +204,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_cachemanagementservice_d_.cachemanagementservice.html#resetcache" class="tsd-kind-icon">reset<wbr>Cache</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_platform_cachemanagementservice_d_.cachemanagementservice.html#updatecache" class="tsd-kind-icon">update<wbr>Cache</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_platform_cachemanagementservice_d_.html#user_avatar_cache_key" class="tsd-kind-icon">USER_<wbr>AVATAR_<wbr>CACHE_<wbr>KEY</a>
 					</li>
 				</ul>

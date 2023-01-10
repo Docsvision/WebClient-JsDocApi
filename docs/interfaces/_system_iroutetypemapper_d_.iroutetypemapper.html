@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRouteTypeMapper | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>IRouteTypeMapper | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -84,6 +84,31 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_platform_approvalvisualizationroutetypemapper_d_.approvalvisualizationroutetypemapper.html" class="tsd-signature-type">ApprovalVisualizationRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_barcoderoutetypemapper_d_.barcoderoutetypemapper.html" class="tsd-signature-type">BarcodeRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_cardeditroutetypemapper_d_.cardeditroutetypemapper.html" class="tsd-signature-type">CardEditRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_cardshowroutetypemapper_d_.cardshowroutetypemapper.html" class="tsd-signature-type">CardShowRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_cardtestroutetypemapper_d_.cardtestroutetypemapper.html" class="tsd-signature-type">CardTestRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_cardviewroutetypemapper_d_.cardviewroutetypemapper.html" class="tsd-signature-type">CardViewRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_customhtmlpageroutetypemapper_d_.customhtmlpageroutetypemapper.html" class="tsd-signature-type">CustomHtmlPageRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_dashboardroutetypemapper_d_.dashboardroutetypemapper.html" class="tsd-signature-type">DashboardRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_departmentroweditroutetypemapper_d_.departmentroweditroutetypemapper.html" class="tsd-signature-type">DepartmentRowEditRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_departmentrowviewroutetypemapper_d_.departmentrowviewroutetypemapper.html" class="tsd-signature-type">DepartmentRowViewRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_directoryviewroutetypemapper_d_.directoryviewroutetypemapper.html" class="tsd-signature-type">DirectoryViewRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_folderroutetypemapper_d_.folderroutetypemapper.html" class="tsd-signature-type">FolderRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_layoutpageroutetypemapper_d_.layoutpageroutetypemapper.html" class="tsd-signature-type">LayoutPageRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_organizationroweditroutetypemapper_d_.organizationroweditroutetypemapper.html" class="tsd-signature-type">OrganizationRowEditRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_organizationrowviewroutetypemapper_d_.organizationrowviewroutetypemapper.html" class="tsd-signature-type">OrganizationRowViewRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_redirectroutetypemapper_d_.redirectroutetypemapper.html" class="tsd-signature-type">RedirectRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_roweditroutetypemapper_d_.roweditroutetypemapper.html" class="tsd-signature-type">RowEditRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_rowviewroutetypemapper_d_.rowviewroutetypemapper.html" class="tsd-signature-type">RowViewRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_serverdefinedroutetypemapper_d_.serverdefinedroutetypemapper.html" class="tsd-signature-type">ServerDefinedRouteTypeMapper</a></li>
+					<li><a href="../classes/_platform_simpleroutetypemapper_d_.simpleroutetypemapper.html" class="tsd-signature-type">SimpleRouteTypeMapper</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -108,7 +133,7 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="hashpattern" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> hash<wbr>Pattern</h3>
+					<h3>hash<wbr>Pattern</h3>
 					<div class="tsd-signature tsd-kind-icon">hash<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -120,8 +145,9 @@
 							<p>Должно возвращать описание <a href="http://sammyjs.org/docs/routes">пути роута для SammyJS</a>.</p>
 						</div>
 						<p>При реализации можно использовать методы класса <a href="../classes/_system_routehelpers_d_.routehelpers.html">RouteHelpers</a>, например:</p>
-						<pre><code> <span class="hljs-regexp">//</span> В результате получится <span class="hljs-comment">#/Folder/:FolderId</span>
- hashPattern = RouteHelpers.makeHashPattern(<span class="hljs-string">&#x27;#/Folder/&#x27;</span>, [FolderRouteParameters.FolderId]);</code></pre>
+						<pre><code> <span class="hljs-comment">// В результате получится #/Folder/:FolderId</span>
+ hashPattern = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">RouteHelpers</span>.</span></span>make<span class="hljs-constructor">HashPattern('#<span class="hljs-operator">/</span>Folder<span class="hljs-operator">/</span>', [FolderRouteParameters.FolderId])</span>;
+</code></pre>
 					</div>
 				</section>
 			</section>
@@ -216,7 +242,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_system_iroutetypemapper_d_.iroutetypemapper.html" class="tsd-kind-icon">IRoute<wbr>Type<wbr>Mapper</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">

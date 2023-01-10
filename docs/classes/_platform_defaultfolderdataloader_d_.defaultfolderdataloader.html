@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DefaultFolderDataLoader | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>DefaultFolderDataLoader | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -66,13 +66,21 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">DefaultFolderDataLoader</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_platform_foldercardsdashboardwidgetdataloader_d_.foldercardsdashboardwidgetdataloader.html" class="tsd-signature-type">FolderCardsDashboardWidgetDataLoader</a>
+							</li>
+							<li>
+								<a href="_platform_recentcardsdashboardwidgetdataloader_d_.recentcardsdashboardwidgetdataloader.html" class="tsd-signature-type">RecentCardsDashboardWidgetDataLoader</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">any</span></li>
+					<li><a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html" class="tsd-signature-type">IFolderDataLoader</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -89,6 +97,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html#services" class="tsd-kind-icon">services</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -134,8 +143,19 @@
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html">IFolderDataLoader</a>.<a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html#id">id</a></p>
 						<ul>
 							<li>Defined in Platform/DefaultFolderDataLoader.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="services" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> services</h3>
+					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <a href="../modules/_generated_docsvision_webclient_controllers_d_.html#_gridcontroller" class="tsd-signature-type">$GridController</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/DefaultFolderDataLoader.d.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -146,11 +166,12 @@
 					<a name="load" class="tsd-anchor"></a>
 					<h3>load</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.cardlistrequestmodel.html" class="tsd-signature-type">CardListRequestModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.cardlistrequestmodel.html" class="tsd-signature-type">CardListRequestModel</a>, isMobile<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodelex.html" class="tsd-signature-type">GridViewModelEx</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html">IFolderDataLoader</a>.<a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html#load">load</a></p>
 								<ul>
 									<li>Defined in Platform/DefaultFolderDataLoader.d.ts:8</li>
 								</ul>
@@ -160,8 +181,11 @@
 								<li>
 									<h5>request: <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.cardlistrequestmodel.html" class="tsd-signature-type">CardListRequestModel</a></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> isMobile: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodel.html" class="tsd-signature-type">GridViewModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridviewmodelex.html" class="tsd-signature-type">GridViewModelEx</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,11 +193,12 @@
 					<a name="saveusersettings" class="tsd-anchor"></a>
 					<h3>save<wbr>User<wbr>Settings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>User<wbr>Settings<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, viewId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, gridUserSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridusersettingsdata.html" class="tsd-signature-type">GridUserSettingsData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>User<wbr>Settings<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, viewId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, gridUserSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridusersettingsdata.html" class="tsd-signature-type">GridUserSettingsData</a>, instanceId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html">IFolderDataLoader</a>.<a href="../interfaces/_platform_ifolderdataloader_d_.ifolderdataloader.html#saveusersettings">saveUserSettings</a></p>
 								<ul>
 									<li>Defined in Platform/DefaultFolderDataLoader.d.ts:9</li>
 								</ul>
@@ -188,6 +213,9 @@
 								</li>
 								<li>
 									<h5>gridUserSettings: <a href="../interfaces/_generated_docsvision_webclient_models_d_.genmodels.gridusersettingsdata.html" class="tsd-signature-type">GridUserSettingsData</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> instanceId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -208,7 +236,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html" class="tsd-kind-icon">Default<wbr>Folder<wbr>Data<wbr>Loader</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -216,6 +244,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html#services" class="tsd-kind-icon">services</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_platform_defaultfolderdataloader_d_.defaultfolderdataloader.html#load" class="tsd-kind-icon">load</a>

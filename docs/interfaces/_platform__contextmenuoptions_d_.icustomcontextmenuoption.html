@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICustomContextMenuOption | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>ICustomContextMenuOption | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -77,9 +77,14 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#action" class="tsd-kind-icon">action</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#blockid" class="tsd-kind-icon">block<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#composition" class="tsd-kind-icon">composition</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#disabled" class="tsd-kind-icon">disabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#iconclassname" class="tsd-kind-icon">icon<wbr>Class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#order" class="tsd-kind-icon">order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#visible" class="tsd-kind-icon">visible</a></li>
 							</ul>
 						</section>
@@ -94,22 +99,22 @@
 					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/$ContextMenuOptions.d.ts:5</li>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:7</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TableCompositions.Row</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.HeaderRow</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TableCompositions.Row</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.HeaderRow</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.Cell</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>context: <span class="tsd-signature-type">TableCompositions.Row</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.HeaderRow</span></h5>
+												<h5>context: <span class="tsd-signature-type">TableCompositions.Row</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.HeaderRow</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TableCompositions.Cell</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -120,9 +125,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="blockid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> block<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">block<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:13</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="classname" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="composition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> composition</h3>
+					<div class="tsd-signature tsd-kind-icon">composition<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in Platform/$ContextMenuOptions.d.ts:8</li>
@@ -130,12 +155,37 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="disabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> disabled</h3>
+					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:15</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Операция отключена</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="iconclassname" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon<wbr>Class<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">icon<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/$ContextMenuOptions.d.ts:6</li>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:9</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +195,17 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/$ContextMenuOptions.d.ts:4</li>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="order" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> order</h3>
+					<div class="tsd-signature tsd-kind-icon">order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Platform/$ContextMenuOptions.d.ts:7</li>
+							<li>Defined in Platform/$ContextMenuOptions.d.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -171,25 +231,43 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_platform__contextmenuoptions_d_.icontextmenuoptionsservice.html" class="tsd-kind-icon">IContext<wbr>Menu<wbr>Options<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_platform__contextmenuoptions_d_.icustomcontextmenublock.html" class="tsd-kind-icon">ICustom<wbr>Context<wbr>Menu<wbr>Block</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html" class="tsd-kind-icon">ICustom<wbr>Context<wbr>Menu<wbr>Option</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#action" class="tsd-kind-icon">action</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#blockid" class="tsd-kind-icon">block<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#composition" class="tsd-kind-icon">composition</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#disabled" class="tsd-kind-icon">disabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#iconclassname" class="tsd-kind-icon">icon<wbr>Class<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#order" class="tsd-kind-icon">order</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_platform__contextmenuoptions_d_.icustomcontextmenuoption.html#visible" class="tsd-kind-icon">visible</a>
@@ -198,11 +276,44 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_platform__contextmenuoptions_d_.icustomcontextmenustatedata.html" class="tsd-kind-icon">ICustom<wbr>Context<wbr>Menu<wbr>State<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_platform__contextmenuoptions_d_.idataitem.html" class="tsd-kind-icon">IData<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_platform__contextmenuoptions_d_.idataitemfilter.html" class="tsd-kind-icon">IData<wbr>Item<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_platform__contextmenuoptions_d_.idataitemprovider.html" class="tsd-kind-icon">IData<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_platform__contextmenuoptions_d_.iparamsitemprovider.html" class="tsd-kind-icon">IParams<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_platform__contextmenuoptions_d_.html#_contextmenuoptions" class="tsd-kind-icon">$<wbr>Context<wbr>Menu<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_platform__contextmenuoptions_d_.html#_contextmenuoptions-1" class="tsd-kind-icon">$<wbr>Context<wbr>Menu<wbr>Options</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#contextmenucomppositiontypes" class="tsd-kind-icon">Context<wbr>Menu<wbr>Compposition<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#contextmenuitemsmanagementdata" class="tsd-kind-icon">Context<wbr>Menu<wbr>Items<wbr>Management<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#contextmenuitemsmanagementdatafilter" class="tsd-kind-icon">Context<wbr>Menu<wbr>Items<wbr>Management<wbr>Data<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#contextmenuitemsmanagementdataprovider" class="tsd-kind-icon">Context<wbr>Menu<wbr>Items<wbr>Management<wbr>Data<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#custommenucompositions" class="tsd-kind-icon">Custom<wbr>Menu<wbr>Compositions</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#custommenueventtarget" class="tsd-kind-icon">Custom<wbr>Menu<wbr>Event<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_platform__contextmenuoptions_d_.html#custommenustatedata" class="tsd-kind-icon">Custom<wbr>Menu<wbr>State<wbr>Data</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IExtension | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>IExtension | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -72,13 +72,20 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">any</span>
+						<span class="tsd-signature-type">object</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">IExtension</span>
 							</li>
 						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_system_basicextension_d_.basicextension.html" class="tsd-signature-type">BasicExtension</a></li>
+					<li><a href="../classes/_platform_platformextension_d_.platformextension.html" class="tsd-signature-type">PlatformExtension</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -110,7 +117,7 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="controls" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> controls</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> controls</h3>
 					<div class="tsd-signature tsd-kind-icon">controls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IControlDescription[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -125,7 +132,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="globaleventhandlers" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> global<wbr>Event<wbr>Handlers</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> global<wbr>Event<wbr>Handlers</h3>
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Event<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventHandlersMap[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -141,7 +148,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="globalservices" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> global<wbr>Services</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> global<wbr>Services</h3>
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Services<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Service[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -156,7 +163,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="layoutservices" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> layout<wbr>Services</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> layout<wbr>Services</h3>
 					<div class="tsd-signature tsd-kind-icon">layout<wbr>Services<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Service[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -171,7 +178,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
+					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -186,7 +193,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="version" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> version</h3>
+					<h3>version</h3>
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
@@ -217,7 +224,7 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Служит для добавления локализаций в <a href="../modules/_system_resources_d_.html#resources">resources</a></p>
+									<p>Служит для добавления локализаций в {@link resources}</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_system_ilocalizationsmap_d_.ilocalizationsmap.html" class="tsd-signature-type">ILocalizationsMap</a></h4>
@@ -260,7 +267,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_system_iextension_d_.iextension.html" class="tsd-kind-icon">IExtension</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">

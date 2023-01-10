@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BaseControlParams | Docsvision 5 Web-client 5.5.16. JavaScript API</title>
+	<title>BaseControlParams | Docsvision 5 Web-client 5.5.17. JavaScript API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
@@ -24,7 +24,7 @@
 						<li class="state loading">Подготавливается поисковый индекс...</li>
 						<li class="state failure">Поисковый индекс недоступен</li>
 					</ul>
-					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.16. JavaScript API</a>
+					<a href="../index.html" class="title">Docsvision 5 Web-client 5.5.17. JavaScript API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -73,8 +73,8 @@
 					Например:</p>
 					<pre><code><span class="hljs-meta">@r</span> isLoaded?: <span class="hljs-keyword">boolean</span>;
 <span class="hljs-meta">@rw</span> visibility?: <span class="hljs-keyword">boolean</span> = <span class="hljs-literal">true</span>;
-<span class="hljs-meta">@event</span> click?: BasicApiEvent&lt;IClickEventArgs&gt;;</code></pre>
-					<p>Свойства, которые не существенны для контрола (либо имеют значения по умолчанию) должны быть помечены как необязательные
+<span class="hljs-meta">@event</span> click?: BasicApiEvent&lt;IClickEventArgs&gt;;
+</code></pre><p>Свойства, которые не существенны для контрола (либо имеют значения по умолчанию) должны быть помечены как необязательные
 						(с помощью знака вопроса, например <code>@rw compactMode?: boolean = false;</code>). Это позволит не указывать данные свойства при создании контрола
 					через JSX из скриптов.</p>
 					<p>Получение и запись значения публичных свойств можно переопределить в методах <a href="_system_basecontrol_d_.basecontrol.html#setparamvalue">BaseControl.setParamValue</a>,
@@ -88,7 +88,283 @@
 						<span class="target">BaseControlParams</span>
 						<ul class="tsd-hierarchy">
 							<li>
+								<a href="_platform_panel_d_.panelparams.html" class="tsd-signature-type">PanelParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_filelistcontrol_d_.filelistcontrolparams.html" class="tsd-signature-type">FileListControlParams</a>
+							</li>
+							<li>
+								<a href="_platform_filepreview_d_.filepreviewparams.html" class="tsd-signature-type">FilePreviewParams</a>
+							</li>
+							<li>
 								<a href="../interfaces/_system_basecontrol_d_.basecontrolstate.html" class="tsd-signature-type">BaseControlState</a>
+							</li>
+							<li>
+								<a href="_system_inputbasedcontrol_d_.inputbasedcontrolparams.html" class="tsd-signature-type">InputBasedControlParams</a>
+							</li>
+							<li>
+								<a href="_system_locationcontainercontrol_d_.locationcontainercontrolparams.html" class="tsd-signature-type">LocationContainerControlParams</a>
+							</li>
+							<li>
+								<a href="_approval_agreementhistory_d_.agreementhistoryparams.html" class="tsd-signature-type">AgreementHistoryParams</a>
+							</li>
+							<li>
+								<a href="_approval_agreementlist_d_.agreementlistparams.html" class="tsd-signature-type">AgreementListParams</a>
+							</li>
+							<li>
+								<a href="_approval_agreementmanagement_d_.agreementmanagementparams.html" class="tsd-signature-type">AgreementManagementParams</a>
+							</li>
+							<li>
+								<a href="_approval_cardapprovalcycle_d_.cardapprovalcycleparams.html" class="tsd-signature-type">CardApprovalCycleParams</a>
+							</li>
+							<li>
+								<a href="_approval_cardapprovalstage_d_.cardapprovalstageparams.html" class="tsd-signature-type">CardApprovalStageParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_acknowledgementlist_d_.acknowledgementlistparams.html" class="tsd-signature-type">AcknowledgementListParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_authenticationkindsoptions_d_.authenticationkindsparams.html" class="tsd-signature-type">AuthenticationKindsParams</a>
+							</li>
+							<li>
+								<a href="_platform_custombutton_d_.custombuttonparams.html" class="tsd-signature-type">CustomButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_folder_d_.folderparams.html" class="tsd-signature-type">FolderParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_emailbuttonoptions_d_.emailbuttonparams.html" class="tsd-signature-type">EmailButtonParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_childtasksperforming_d_.params.html" class="tsd-signature-type">Params</a>
+							</li>
+							<li>
+								<a href="_backoffice_comments_d_.commentsparams.html" class="tsd-signature-type">CommentsParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_createrelatedcardbutton_d_.createrelatedcardbuttonparams.html" class="tsd-signature-type">CreateRelatedCardButtonParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_taskstree_d_.taskstreeparams.html" class="tsd-signature-type">TasksTreeParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_delegatebatchoperation_d_.delegatebatchoperationparams.html" class="tsd-signature-type">DelegateBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_deleteshortcutbatchoperation_d_.deleteshortcutbatchoperationparams.html" class="tsd-signature-type">DeleteShortcutBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_staffdirectory_d_.staffdirectoryparams.html" class="tsd-signature-type">StaffDirectoryParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_displayinitiator_d_.displayinitiatorparams.html" class="tsd-signature-type">DisplayInitiatorParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_displayperformers_d_.displayperformersparams.html" class="tsd-signature-type">DisplayPerformersParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_grouptaskcardselectperformers_d_.grouptaskcardselectperformersparams.html" class="tsd-signature-type">GroupTaskCardSelectPerformersParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_history_d_.historyparams.html" class="tsd-signature-type">HistoryParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_webframedirectorysearchpanel_d_.webframedirectorysearchpanelparams.html" class="tsd-signature-type">WebFrameDirectorySearchPanelParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_printbutton_d_.printbuttonparams.html" class="tsd-signature-type">PrintButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_filepicker_d_.filepickerparams.html" class="tsd-signature-type">FilePickerParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_signaturebuttonoptions_d_.signaturebuttonparams.html" class="tsd-signature-type">SignatureButtonParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_state_d_.stateparams.html" class="tsd-signature-type">StateParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_statebuttons_d_.statebuttonsparams.html" class="tsd-signature-type">StateButtonsParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_taskcardcompletionoption_d_.taskcardcompletionoptionparams.html" class="tsd-signature-type">TaskCardCompletionOptionParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_taskdelegationinfo_d_.taskdelegationinfoparams.html" class="tsd-signature-type">TaskDelegationInfoParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_tasks_d_.tasksparams.html" class="tsd-signature-type">TasksParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_taskstable_d_.taskstableparams.html" class="tsd-signature-type">TasksTableParams</a>
+							</li>
+							<li>
+								<a href="_backoffice_uniquenesscheck_d_.uniquenesscheckparams.html" class="tsd-signature-type">UniquenessCheckParams</a>
+							</li>
+							<li>
+								<a href="_platform_image_d_.imageparams.html" class="tsd-signature-type">ImageParams</a>
+							</li>
+							<li>
+								<a href="_legacy_baserazorcontrol_d_.baserazorcontrolparams.html" class="tsd-signature-type">BaseRazorControlParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframesearchpanel_d_.webframesearchpanelparams.html" class="tsd-signature-type">WebFrameSearchPanelParams</a>
+							</li>
+							<li>
+								<a href="_platform_addfiletotable_d_.addfiletotableparams.html" class="tsd-signature-type">AddFileToTableParams</a>
+							</li>
+							<li>
+								<a href="_platform_foldergrid_d_.foldergridparams.html" class="tsd-signature-type">FolderGridParams</a>
+							</li>
+							<li>
+								<a href="_platform_autoconsolidation_d_.autoconsolidationparams.html" class="tsd-signature-type">AutoConsolidationParams</a>
+							</li>
+							<li>
+								<a href="_platform_barcodesearchbutton_d_.barcodesearchbuttonparams.html" class="tsd-signature-type">BarcodeSearchButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_batchselectionstate_d_.batchselectionstateparams.html" class="tsd-signature-type">BatchSelectionStateParams</a>
+							</li>
+							<li>
+								<a href="_platform_buttonpositionsselection_d_.buttonpositionsparams.html" class="tsd-signature-type">ButtonPositionsParams</a>
+							</li>
+							<li>
+								<a href="_platform_cardmanagement_d_.cardmanagementparams.html" class="tsd-signature-type">CardManagementParams</a>
+							</li>
+							<li>
+								<a href="_platform_certificatesettings_d_.certificatesettingsparams.html" class="tsd-signature-type">CertificateSettingsParams</a>
+							</li>
+							<li>
+								<a href="_platform_commentfile_d_.commentfileparams.html" class="tsd-signature-type">CommentFileParams</a>
+							</li>
+							<li>
+								<a href="_platform_completetaskcondition_d_.completetaskconditionparams.html" class="tsd-signature-type">CompleteTaskConditionParams</a>
+							</li>
+							<li>
+								<a href="_platform_configurablemainmenucontainerbutton_d_.configurablemainmenucontainerbuttonparams.html" class="tsd-signature-type">ConfigurableMainMenuContainerButtonParams</a>
+							</li>
+							<li>
+								<a href="_system_layoutscript_d_.layoutscriptparams.html" class="tsd-signature-type">LayoutScriptParams</a>
+							</li>
+							<li>
+								<a href="_platform_copyshortcutbatchoperation_d_.copyshortcutbatchoperationparams.html" class="tsd-signature-type">CopyShortcutBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_platform_diagramoptions_d_.diagramparams.html" class="tsd-signature-type">DiagramParams</a>
+							</li>
+							<li>
+								<a href="_platform_cryptoproinfo_d_.cryptoproinfoparams.html" class="tsd-signature-type">CryptoProInfoParams</a>
+							</li>
+							<li>
+								<a href="_platform_deletebatchoperation_d_.deletebatchoperationparams.html" class="tsd-signature-type">DeleteBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_platform_downloadalltablefiles_d_.downloadalltablefilesparams.html" class="tsd-signature-type">DownloadAllTableFilesParams</a>
+							</li>
+							<li>
+								<a href="_platform_downloadfilesbatchoperation_d_.downloadfilesbatchoperationparams.html" class="tsd-signature-type">DownloadFilesBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_platform_dvwebtoolinfo_d_.dvwebtoolinfoparams.html" class="tsd-signature-type">DVWebToolInfoParams</a>
+							</li>
+							<li>
+								<a href="_platform_emptycontrolstub_d_.emptycontrolstubparams.html" class="tsd-signature-type">EmptyControlStubParams</a>
+							</li>
+							<li>
+								<a href="_platform_exportesignbutton_d_.exportesignbuttonparams.html" class="tsd-signature-type">ExportESignButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_favorite_d_.favoriteparams.html" class="tsd-signature-type">FavoriteParams</a>
+							</li>
+							<li>
+								<a href="_platform_foldername_d_.foldernameparams.html" class="tsd-signature-type">FolderNameParams</a>
+							</li>
+							<li>
+								<a href="_platform_gridfilteritem_d_.gridfilteritemparams.html" class="tsd-signature-type">GridFilterItemParams</a>
+							</li>
+							<li>
+								<a href="_platform_gridfilterresetbutton_d_.gridfilterresetbuttonparams.html" class="tsd-signature-type">GridFilterResetButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_gridoperationspanel_d_.gridoperationspanelparams.html" class="tsd-signature-type">GridOperationsPanelParams</a>
+							</li>
+							<li>
+								<a href="_platform_htmlview_d_.htmlviewparams.html" class="tsd-signature-type">HtmlViewParams</a>
+							</li>
+							<li>
+								<a href="_platform_label_d_.labelparams.html" class="tsd-signature-type">LabelParams</a>
+							</li>
+							<li>
+								<a href="_platform_layouticonbutton_d_.layouticonbuttonparams.html" class="tsd-signature-type">LayoutIconButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_mainmenupinbutton_d_.mainmenupinbuttonparams.html" class="tsd-signature-type">MainMenuPinButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_moveshortcutbatchoperation_d_.moveshortcutbatchoperationparams.html" class="tsd-signature-type">MoveShortcutBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_platform_nobatchoperationsmessage_d_.nobatchoperationsmessageparams.html" class="tsd-signature-type">NoBatchOperationsMessageParams</a>
+							</li>
+							<li>
+								<a href="_platform_querycondition_d_.queryconditionparams.html" class="tsd-signature-type">QueryConditionParams</a>
+							</li>
+							<li>
+								<a href="_platform_readbatchoperation_d_.readbatchoperationparams.html" class="tsd-signature-type">ReadBatchOperationParams</a>
+							</li>
+							<li>
+								<a href="_platform_refreshfolderstreebutton_d_.refreshfolderstreebuttonparams.html" class="tsd-signature-type">RefreshFoldersTreeButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_resetsettings_d_.resetsettingsparams.html" class="tsd-signature-type">ResetSettingsParams</a>
+							</li>
+							<li>
+								<a href="_platform_savingbuttons_d_.savingbuttonsparams.html" class="tsd-signature-type">SavingButtonsParams</a>
+							</li>
+							<li>
+								<a href="_platform_scanbutton_d_.scanbuttonparams.html" class="tsd-signature-type">ScanButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_searchingresults_d_.searchingresultsparams.html" class="tsd-signature-type">SearchingResultsParams</a>
+							</li>
+							<li>
+								<a href="_platform_unlockcards_d_.unlockcardsparams.html" class="tsd-signature-type">UnlockCardsParams</a>
+							</li>
+							<li>
+								<a href="_platform_url_d_.urlparams.html" class="tsd-signature-type">UrlParams</a>
+							</li>
+							<li>
+								<a href="_platform_userculture_d_.usercultureparams.html" class="tsd-signature-type">UserCultureParams</a>
+							</li>
+							<li>
+								<a href="_platform_userinfo_d_.params.html" class="tsd-signature-type">Params</a>
+							</li>
+							<li>
+								<a href="_platform_webframecompanylogo_d_.webframecompanylogoparams.html" class="tsd-signature-type">WebFrameCompanyLogoParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframecontent_d_.webframecontentparams.html" class="tsd-signature-type">WebFrameContentParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframecurrentpagename_d_.webframecurrentpagenameparams.html" class="tsd-signature-type">WebFrameCurrentPageNameParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframehelpbutton_d_.webframehelpbuttonparams.html" class="tsd-signature-type">WebFrameHelpButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframemainmenubutton_d_.webframemainmenubuttonparams.html" class="tsd-signature-type">WebFrameMainMenuButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframenavigationbarbackbutton_d_.webframenavigationbarbackbuttonparams.html" class="tsd-signature-type">WebFrameNavigationBarBackButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframenavigationbarcreatebutton_d_.webframenavigationbarcreatebuttonparams.html" class="tsd-signature-type">WebFrameNavigationBarCreateButtonParams</a>
+							</li>
+							<li>
+								<a href="_platform_webframeuserpanel_d_.webframeuserpanelparams.html" class="tsd-signature-type">WebFrameUserPanelParams</a>
+							</li>
+							<li>
+								<a href="_system_datagridcontrol_d_.datagridcontrolparams.html" class="tsd-signature-type">DataGridControlParams</a>
 							</li>
 						</ul>
 					</li>
@@ -123,6 +399,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#parent" class="tsd-kind-icon">parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#standardcssclass" class="tsd-kind-icon">standard<wbr>Css<wbr>Class</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#tabstop" class="tsd-kind-icon">tab<wbr>Stop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#tag" class="tsd-kind-icon">tag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#unloading" class="tsd-kind-icon">unloading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#validation" class="tsd-kind-icon">validation</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_system_basecontrol_d_.basecontrolparams.html#visibility" class="tsd-kind-icon">visibility</a></li>
@@ -141,7 +418,7 @@
 					<div class="tsd-signature tsd-kind-icon">blur<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_iblureventargs_d_.iblureventargs.html" class="tsd-signature-type">IBlurEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:103</li>
+							<li>Defined in System/BaseControl.d.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -156,7 +433,7 @@
 					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:95</li>
+							<li>Defined in System/BaseControl.d.ts:98</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,7 +448,7 @@
 					<div class="tsd-signature tsd-kind-icon">compact<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:75</li>
+							<li>Defined in System/BaseControl.d.ts:78</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +464,7 @@
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_helpers_controlselector_icontrolcontainer_d_.icontrolcontainer.html" class="tsd-signature-type">IControlContainer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:85</li>
+							<li>Defined in System/BaseControl.d.ts:88</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +479,7 @@
 					<div class="tsd-signature tsd-kind-icon">control<wbr>Component<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:49</li>
+							<li>Defined in System/BaseControl.d.ts:50</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -217,7 +494,7 @@
 					<div class="tsd-signature tsd-kind-icon">control<wbr>Type<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:47</li>
+							<li>Defined in System/BaseControl.d.ts:48</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,7 +509,7 @@
 					<div class="tsd-signature tsd-kind-icon">custom<wbr>Css<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:58</li>
+							<li>Defined in System/BaseControl.d.ts:59</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +524,7 @@
 					<div class="tsd-signature tsd-kind-icon">custom<wbr>Css<wbr>Style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.CSSProperties</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:77</li>
+							<li>Defined in System/BaseControl.d.ts:80</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,7 +539,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Source<wbr>Card<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:87</li>
+							<li>Defined in System/BaseControl.d.ts:90</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -277,7 +554,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Source<wbr>Card<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:93</li>
+							<li>Defined in System/BaseControl.d.ts:96</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -292,7 +569,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Source<wbr>Row<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:91</li>
+							<li>Defined in System/BaseControl.d.ts:94</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -307,7 +584,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Source<wbr>Section<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:89</li>
+							<li>Defined in System/BaseControl.d.ts:92</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -322,7 +599,7 @@
 					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:64</li>
+							<li>Defined in System/BaseControl.d.ts:65</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -337,7 +614,7 @@
 					<div class="tsd-signature tsd-kind-icon">focus<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_ifocuseventargs_d_.ifocuseventargs.html" class="tsd-signature-type">IFocusEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:101</li>
+							<li>Defined in System/BaseControl.d.ts:104</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -352,7 +629,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Loaded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:83</li>
+							<li>Defined in System/BaseControl.d.ts:86</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -369,7 +646,7 @@
 					<div class="tsd-signature tsd-kind-icon">loaded<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_ieventargs_d_.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:105</li>
+							<li>Defined in System/BaseControl.d.ts:108</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -384,7 +661,7 @@
 					<div class="tsd-signature tsd-kind-icon">mouse<wbr>Out<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_imouseouteventargs_d_.imouseouteventargs.html" class="tsd-signature-type">IMouseOutEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:99</li>
+							<li>Defined in System/BaseControl.d.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -399,7 +676,7 @@
 					<div class="tsd-signature tsd-kind-icon">mouse<wbr>Over<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_imouseovereventargs_d_.imouseovereventargs.html" class="tsd-signature-type">IMouseOverEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:97</li>
+							<li>Defined in System/BaseControl.d.ts:100</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -414,7 +691,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:51</li>
+							<li>Defined in System/BaseControl.d.ts:52</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -429,7 +706,7 @@
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="_system_basecontrol_d_.basecontrol.html" class="tsd-signature-type">BaseControl</a><span class="tsd-signature-symbol">&lt;</span><a href="_system_basecontrol_d_.basecontrolparams.html" class="tsd-signature-type">BaseControlParams</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_system_basecontrol_d_.basecontrolstate.html" class="tsd-signature-type">BaseControlState</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:45</li>
+							<li>Defined in System/BaseControl.d.ts:46</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -444,7 +721,7 @@
 					<div class="tsd-signature tsd-kind-icon">standard<wbr>Css<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:56</li>
+							<li>Defined in System/BaseControl.d.ts:57</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -460,7 +737,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Stop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:70</li>
+							<li>Defined in System/BaseControl.d.ts:73</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -476,12 +753,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in System/BaseControl.d.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Хранит дополнительную информацию или настройки в виде строкового ресурса</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="unloading" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unloading</h3>
 					<div class="tsd-signature tsd-kind-icon">unloading<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#cancelableapievent" class="tsd-signature-type">CancelableApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_ieventargs_d_.ieventargs.html" class="tsd-signature-type">IEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:107</li>
+							<li>Defined in System/BaseControl.d.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -496,7 +788,7 @@
 					<div class="tsd-signature tsd-kind-icon">validation<span class="tsd-signature-symbol">:</span> <a href="../modules/_system_apievent_d_.html#basicapievent" class="tsd-signature-type">BasicApiEvent</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_ivalidateeventargs_d_.ivalidateeventargs.html" class="tsd-signature-type">IValidateEventArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:109</li>
+							<li>Defined in System/BaseControl.d.ts:112</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -511,7 +803,7 @@
 					<div class="tsd-signature tsd-kind-icon">visibility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:60</li>
+							<li>Defined in System/BaseControl.d.ts:61</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -526,7 +818,7 @@
 					<div class="tsd-signature tsd-kind-icon">visibility<wbr>Edit<wbr>Operation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:62</li>
+							<li>Defined in System/BaseControl.d.ts:63</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -541,7 +833,7 @@
 					<div class="tsd-signature tsd-kind-icon">wrapper<span class="tsd-signature-symbol">:</span> <a href="_system_basecontrol_d_.basecontrol.html" class="tsd-signature-type">BaseControl</a><span class="tsd-signature-symbol">&lt;</span><a href="_system_basecontrol_d_.basecontrolparams.html" class="tsd-signature-type">BaseControlParams</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_system_basecontrol_d_.basecontrolstate.html" class="tsd-signature-type">BaseControlState</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in System/BaseControl.d.ts:111</li>
+							<li>Defined in System/BaseControl.d.ts:114</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -562,12 +854,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_system_basecontrol_d_.basecontrol.html" class="tsd-kind-icon">Base<wbr>Control</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_system_basecontrol_d_.basecontrolparams.html" class="tsd-kind-icon">Base<wbr>Control<wbr>Params</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -637,6 +929,9 @@
 								<a href="_system_basecontrol_d_.basecontrolparams.html#tabstop" class="tsd-kind-icon">tab<wbr>Stop</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_system_basecontrol_d_.basecontrolparams.html#tag" class="tsd-kind-icon">tag</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_system_basecontrol_d_.basecontrolparams.html#unloading" class="tsd-kind-icon">unloading</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -655,13 +950,16 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_system_basecontrol_d_.basecontrolstate.html" class="tsd-kind-icon">Base<wbr>Control<wbr>State</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_system_basecontrol_d_.html#layoutcontrol" class="tsd-kind-icon">Layout<wbr>Control</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_system_basecontrol_d_.html#base_control_system_handler" class="tsd-kind-icon">BASE_<wbr>CONTROL_<wbr>SYSTEM_<wbr>HANDLER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_system_basecontrol_d_.html#default_control_name" class="tsd-kind-icon">DEFAULT_<wbr>CONTROL_<wbr>NAME</a>
 					</li>
 				</ul>
